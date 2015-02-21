@@ -1,0 +1,20 @@
+EXPORTS
+	OnGetInformation
+	OnCreate
+	OnDestroy
+	OnSave
+
+	OnProcessMessage
+	OnRightButtonClick
+	OnLeftButtonClick
+
+	OnConfigure
+
+	DialogProc
+
+	OnDrop
+	OnDragEnter
+	OnDragOver
+
+	OnSelect
+	OnDeselect

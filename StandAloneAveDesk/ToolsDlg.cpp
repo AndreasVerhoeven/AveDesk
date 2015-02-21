@@ -1,0 +1,6 @@
+// ToolsDlg.cpp : Implementierung von CToolsDlg
+#include "stdafx.h"
+#include "ToolsDlg.h"
+
+/////////////////////////////////////////////////////////////////////////////
+// CToolsDlg

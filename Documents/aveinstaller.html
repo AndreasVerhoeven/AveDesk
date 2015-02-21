@@ -1,0 +1,208 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF">
+<h1>AveInstaller </h1>
+<p>&nbsp;</p>
+<h2>Description</h2>
+<p>AveInstaller (for lack of a better name) is an integrated desklet / skin / 
+  whatever installer in AveDesk 1.2. The installer is able to automatically unzip 
+  <i>zipped</i> files and to put the files in the right place. To do this, the 
+  ZIP-file must be specially prepared: it must not be password-protected and, 
+  more important, must include the file <b>avedesk_installer.xml</b> inside the 
+  ZIP file. This XML-file contains information about where to place files, requirements 
+  to install and actions to perform</p>
+<h2><br>
+  avedesk_installer.xml</h2>
+<p>This file contains all the information needed by the AveInstaller. It's a standard 
+  XML-file and must start with an <b>AveInstaller</b> node. There are also six 
+  mandatory sections/childnodes:</p>
+<ul>
+  <li>About </li>
+  <li>Requirements</li>
+  <li>BeforeCopy</li>
+  <li>CopyInformation</li>
+  <li>AfterCopy</li>
+  <li>AfterCopyFailed</li>
+</ul>
+<p>The flow of operation is determined by these five of the six sections; the 
+  About section is only for informational purposes. In text, the flow of operation 
+  is described as:<br>
+  <b>If</b> all <i>Requirements</i> are met, <b>then</b> the <i>BeforeCopy</i> 
+  actions are invoked <b>and</b> the <i>CopyInformation</i> is used to copy files 
+  from the ZIP-file. <b>If</b> copying the files was <b>succesfull</b>, <b>then 
+  </b>the <i>AfterCopy</i> actions are invoked, <b>else</b> the <i>AfterCopyFailed</i> 
+  actions are invoked. <br>
+  <br>
+  In a pseudo programming-language, this is described as:<br>
+  
+<pre><font facename="Courier New">
+<b><font face="Courier New, Courier, mono">if</font></b><font face="Courier New, Courier, mono">( AreMet(Requirements) )
+{
+	DoActions (BeforeCopy);
+	<b>if</b>( CopiedSuccessFully (CopyInformation) )
+ 	{
+		DoActions (AfterCopy);
+	}
+	<b>else</b>
+	{
+		DoActions (AfterCopyFailed);
+	}
+}</font>
+ </font></pre>
+<h3>About section</h3>
+<p>The About section is a simple section that provides some basic information 
+  about the files to install. It's childnodes are:</p>
+<ul>
+  <li><b>Author</b> , the name of the author of this package.</li>
+  <li><b>Email</b> , (optional) the e-mail address of the author.</li>
+  <li><b>HomePage</b> , (optional) the homepage of the author.</li>
+  <li><b>Version</b> , the version of the file(s) to install.</li>
+  <li><b>Description</b> , a basic description of the file(s) to install.</li>
+  <li><b>URL</b> , (optional) the URL where this package was offered for download.</li>
+  <li><b>GUID </b>, (optional) a GUID of this package. - Might be used for in 
+    future for automatical downloads maybe.</li>
+</ul>
+<h3>&nbsp;</h3>
+<h3>Requirements section</h3>
+<p>The Requirements sections contains requirements that must be met before the 
+  installation of the files will actually start. If one of the requirements in 
+  this section is not met, the installation will fail immediately.</p>
+<p>Each requirement is added to this section as a childnode with the name <b>Item</b>. 
+  Furthermore, each item must have a <b>Type</b> attribute which determines the 
+  type of requirement. The following Types are currently implemented in <i>AveDesk 
+  1.2</i> : </p>
+<table width="100%" border="1" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="19%"><b>Type</b></td>
+    <td width="20%"><b> Minimal installer version</b></td>
+    <td width="61%"><b>Description</b></td>
+  </tr>
+  <tr> 
+    <td width="19%">RequiredAveDeskVersion</td>
+    <td width="20%">1.2</td>
+    <td width="61%">Will succeed if the installed AveDesk version is equal to 
+      or higher than the version in this Item.<br>
+      The required version must be described in the node's <b>text</b> in the 
+      Major.Minor format. <br>
+      Example:<br>
+      &lt;Item Type=&quot;RequiredAveDeskVersion&quot;&gt;1.2&lt;/Item&gt;</td>
+  </tr>
+  <tr> 
+    <td width="19%">RequiredInstallerVersion</td>
+    <td width="20%">1.2</td>
+    <td width="61%">Will succeed if the Installer version is equal to or higher 
+      than the version in this Item.<br>
+      The required version must be described in the node's <b>text</b> in the 
+      Major.Minor format. <br>
+      Example:<br>
+      &lt;Item Type=&quot;RequiredInstallerVersion&quot;&gt;1.2&lt;/Item&gt;</td>
+  </tr>
+  <tr> 
+    <td width="19%">AcceptText</td>
+    <td width="20%">1.2</td>
+    <td width="61%">Will succeed if the user accepts the text. The text must be 
+      in a child node with the name Text.<br>
+      Example:<br>
+      &lt;Item Type=&quot;AcceptText&quot;&gt;<br>
+      &lt;Text&gt;You need to accept this text. Accept?&lt;/Text&gt;<br>
+      &lt;/Item&gt; </td>
+  </tr>
+  <tr> 
+    <td width="19%">FileExists</td>
+    <td width="20%">1.2</td>
+    <td width="61%">Will succeed if the file that is described in this node, exists. 
+      The file must be described in terms of a File/Directory node structure. 
+      It's possible to check for more files by simply describing them too in the 
+      File/Directory node structure.<br>
+      Example:<br>
+      &lt;Item Type=&quot;FileExists&quot;&gt;<br>
+      &lt;Directory BaseFolder=&quot;Desklets&quot;&gt;<br>
+      &lt;Directory Name=&quot;Puzzle&quot;&gt;<br>
+      &lt;File&gt;puzzle.dll&lt;/File&gt;<br>
+      &lt;/Directory&gt;<br>
+      &lt;/Directory&gt; <br>
+      &lt;/Item&gt; </td>
+  </tr>
+  <tr>
+    <td width="19%">Not</td>
+    <td width="20%">1.2</td>
+    <td width="61%"> 
+      <p>This will succeed if the requirement included in this node does <b>not</b> 
+        succeed. THe included requirement must be a childnode with the name <b>Item</b> 
+        inside this node.<br>
+        Example:<br>
+        &lt;!-- checks if Desklets\Puzzle\puzzle.dll does not already exists --&gt;<br>
+        &lt;Item Type=&quot;Not&quot;&gt;<br>
+        &lt;Item Type=&quot;FileExists&quot;&gt;<br>
+        &lt;Directory BaseFolder=&quot;Desklets&quot;&gt;<br>
+        &lt;Directory Name=&quot;Puzzle&quot;&gt;<br>
+        &lt;File&gt;puzzle.dll&lt;/File&gt;<br>
+        &lt;/Directory&gt;<br>
+        &lt;/Directory&gt; <br>
+        &lt;/Item&gt;<br>
+        &lt;/Item&gt; </p>
+      </td>
+  </tr>
+</table>
+<h4>OnError sub-sections</h4>
+<p>Each Requirement item can have an (optional) OnError sub-node. This will give 
+  the author an opportunity to have more detailed error-messages or even giving 
+  the Installer the possibility to recover from the error. For example, if a ZIP 
+  files contains a skin for the Puzzle desklet, the author can have the existence 
+  of the puzzle desklet as a requirement. In the OnError of the requirement-item, 
+  he will be able to give a download-URL to the puzzle desklet, so the installer 
+  can automatically download and install this desklet if it's not already installed.<br>
+  The OnError node can have the following optional childnodes:
+<ul>
+  <li><b>Message</b> , a message to display if the requirement failes</li>
+  <li><b>URL</b> , a URL where a package can be downloaded to 'fix' this requirement.</li>
+  <li><b>HomePage</b> , a homepage where the user can manually download or find 
+    information about the requirement.</li>
+  <li><b>GUID</b> , a GUID which can be used in the future.</li>
+</ul>
+<p>&nbsp;</p><h3>Actions (BeforeCopy, AfterCopy, AfterCopyFailed)</h3>
+<p>The BeforyCopy, AfterCopy and AfterCopyFailed subsections are all the same 
+  type of section: they invoke actions. The difference between them is the time 
+  when those actions are involved:<br>
+  BeforyCopy's actions are invoked before the files are actually copied, but after 
+  the requirements where checked (and passed).<br>
+  AfterCopy's actions are invoked if copying the files was successfully.<br>
+  AfterCopyFailed's actions are invoked if copying the files was NOT successfull.<br>
+  <br>
+  Each of those sections can include multiple actions. Each action is listed under 
+  an <i>childnode</i> with the name <b>Item</b>. The <b>Type</b>-attribute of 
+  each of the Item-childnodes specify the type of action. This is a similiar system 
+  like the requirements section. <br>
+  The following action-Types are currently implemented in <i>AveDesk 1.2</i>:</p>
+<table width="100%" border="1" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="17%"><b>Type</b></td>
+    <td width="20%"><b>Minimal installer version</b></td>
+    <td width="63%"><b>Description</b></td>
+  </tr>
+  <tr> 
+    <td width="17%">ShowBitmap</td>
+    <td width="20%">1.2</td>
+    <td width="63%">This will show a bitmap file (PNG, BMP, GIF, JPG) file as 
+      a splashscreen. The filename of the bitmap to use is relative to the ZIP-file's 
+      root and must be given as the text of the item-node.<br>
+      Example:<br>
+      &lt;Item Type=&quot;ShowBitmap&quot;&gt;About.png&lt;/Item&gt;</td>
+  </tr>
+  <tr>
+    <td width="17%">LoadDesklet</td>
+    <td width="20%">1.2</td>
+    <td width="63%">This will load a desklet from a config file. The config file 
+      must be embedded into the Item-node as a childnode. Since AveDesk1.2's config 
+      files are XML files to, this can simply be copy-pasted into the installers 
+      XML file.<br>
+      Example ommited for brevity.</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</body>
+</html>

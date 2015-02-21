@@ -1,0 +1,142 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Dutch (Netherlands) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NLD)
+#ifdef _WIN32
+LANGUAGE LANG_DUTCH, SUBLANG_DUTCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SKIN DIALOG DISCARDABLE  0, 0, 242, 137
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Skin"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Here you can select the skin that is used by this widget.",
+                    IDC_STATIC,10,10,225,10
+    COMBOBOX        IDC_SKIN,10,25,104,55,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Current Skin Information",IDC_STATIC,10,45,225,85
+    LTEXT           "Name:",IDC_STATIC,29,60,22,8
+    LTEXT           "Author:",IDC_STATIC,27,75,24,8
+    LTEXT           "Comments:",IDC_STATIC,15,90,36,8
+    LTEXT           "%NAME%",IDC_NAME,65,60,160,8
+    LTEXT           "%AUTHOR%",IDC_AUTHOR,65,75,160,8
+    EDITTEXT        IDC_INFO,65,90,160,35,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_NOHIDESEL | ES_OEMCONVERT | 
+                    ES_READONLY | ES_WANTRETURN | WS_VSCROLL
+END
+
+IDD_FORMATS DIALOG DISCARDABLE  0, 0, 262, 156
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Formats"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Here you can select the output formats for PNG to ICO conversion. If there are files currently dropped, they will need to be converted again.",
+                    IDC_STATIC,10,10,245,25
+    CONTROL         "16 x 16",IDC_16,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    55,60,39,10
+    CONTROL         "24 x 24",IDC_24,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    55,75,39,10
+    CONTROL         "32 x 32",IDC_32,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    55,90,39,10
+    CONTROL         "48 x 48",IDC_48,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    55,105,39,10
+    CONTROL         "64 x 64",IDC_64,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    125,60,39,10
+    CONTROL         "72 x 72",IDC_72,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    125,75,39,10
+    CONTROL         "96 x 96",IDC_96,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    125,90,39,10
+    CONTROL         "128 x 128",IDC_128,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,125,105,47,10
+    GROUPBOX        "ICON Output Formats",IDC_STATIC,45,49,136,70
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_SKIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 235
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 130
+    END
+
+    IDD_FORMATS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 255
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 149
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Dutch (Netherlands) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

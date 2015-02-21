@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!--
+ Copyrights The AveScripter Tutorial, 2005.
+-->
+<root>
+   <skininfo>
+      <author>Andreas Verhoeven</author>
+      <name>New Desklets</name>
+      <notes>Shows a list of new desklets available of avedesk.philc.ca</notes>
+      <version>1</version>
+   </skininfo>
+
+   <skindata>
+      <desklet>
+         <alpha>255</alpha>
+         <resources></resources>
+      </desklet>
+	   <sides>
+		     <side id="0" width="300" height="220" />
+	   </sides>
+
+	   <layers>
+			<layer src="background.png" x="0" y="0" />
+			<layer src="rssknob.png" x="210" y="30" />
+	   </layers>
+
+   </skindata>
+</root> 

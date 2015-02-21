@@ -1,0 +1,52 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: PidlShortcut - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "c:\DOCUME~1\andreas\LOCALS~1\Temp\RSP980.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "PIDLSHORTCUT_EXPORTS" /Fp"Release/PidlShortcut.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\Coding\Projects\Test\docs\SDK\PidlShortcut\PidlShortcutDesklet.cpp"
+]
+Creating command line "cl.exe @c:\DOCUME~1\andreas\LOCALS~1\Temp\RSP980.tmp" 
+Creating temporary file "c:\DOCUME~1\andreas\LOCALS~1\Temp\RSP981.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"Release/PidlShortcut.pdb" /machine:I386 /def:".\exports.def" /out:"d:\modding\avedesk\desklets\PidlShortcut\PidlShortcut.dll" /implib:"Release/PidlShortcut.lib" 
+.\Release\AveDeskUtil.obj
+.\Release\Behaviour.obj
+.\Release\BehaviourFactory.obj
+.\Release\DeskletSDK.obj
+.\Release\DriveBehaviour.obj
+.\Release\FolderBehaviour.obj
+.\Release\IShortcutDesklet.obj
+.\Release\Layer.obj
+.\Release\Layers.obj
+.\Release\MainRootItemBehaviour.obj
+.\Release\NetworkConnectionBehaviour.obj
+.\Release\Pidl.obj
+.\Release\PidlDropBox.obj
+.\Release\PidlShortcutDesklet.obj
+.\Release\RecycleBinBehaviour.obj
+.\Release\ShellFolder.obj
+.\Release\ShellHelper.obj
+.\Release\ShellItemBehaviour.obj
+.\Release\SkinEnumerator.obj
+.\Release\Script1.res
+]
+Creating command line "link.exe @c:\DOCUME~1\andreas\LOCALS~1\Temp\RSP981.tmp"
+<h3>Output Window</h3>
+Compiling...
+PidlShortcutDesklet.cpp
+Linking...
+   Creating library Release/PidlShortcut.lib and object Release/PidlShortcut.exp
+
+
+
+<h3>Results</h3>
+PidlShortcut.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

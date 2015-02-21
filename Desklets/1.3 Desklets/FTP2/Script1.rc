@@ -1,0 +1,327 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Dutch (Netherlands) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NLD)
+#ifdef _WIN32
+LANGUAGE LANG_DUTCH, SUBLANG_DUTCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_FTP DIALOG DISCARDABLE  0, 0, 312, 239
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Here you can configure the settings for this FTP desklet.",
+                    IDC_STATIC,10,5,285,15
+    LTEXT           "Server",IDC_STATIC,12,55,22,8
+    EDITTEXT        IDC_HOST,56,53,135,12,ES_AUTOHSCROLL
+    LTEXT           "Username",IDC_STATIC,12,75,33,8
+    EDITTEXT        IDC_USERNAME,56,73,135,12,ES_AUTOHSCROLL
+    LTEXT           "Password",IDC_STATIC,12,97,32,8
+    EDITTEXT        IDC_PASSWORD,56,94,135,12,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "Port",IDC_STATIC,201,56,14,8
+    EDITTEXT        IDC_PORT,225,53,32,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "&Passive Mode (for firewalls)",IDC_PASSIVE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,55,113,101,10
+    LTEXT           "Directory",IDC_STATIC,10,132,29,8
+    EDITTEXT        IDC_DIR,54,130,135,12,ES_AUTOHSCROLL
+    GROUPBOX        "Link Format",IDC_STATIC,10,148,295,66
+    EDITTEXT        IDC_LINKFORMAT,60,162,175,12,ES_AUTOHSCROLL
+    LTEXT           "Specials: {server}, {username}, {password}, {port}, {directory}, {file}",
+                    IDC_STATIC,20,178,210,8
+    PUSHBUTTON      "Save As &Preset",IDSAVE,11,220,80,14
+    LTEXT           "For example: http://www.domain.com/{file} or ftp://{username}:{password}@{server}:{port}/{file}",
+                    IDC_STATIC,20,193,215,18
+    LTEXT           "Name",IDC_STATIC,11,34,20,8
+    EDITTEXT        IDC_NAME,55,32,135,12,ES_AUTOHSCROLL
+END
+
+IDD_IMAGES DIALOG DISCARDABLE  0, 0, 337, 204
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Here you can configure the images used by this desklet for different states.",
+                    IDC_STATIC,7,8,270,12
+    LTEXT           "Normal",IDC_STATIC,5,40,23,8
+    CONTROL         "",IDC_IMGNORMAL,"Static",SS_BLACKFRAME,5,52,75,65
+    PUSHBUTTON      "Set &Normal Image",IDSETNORMAL,5,120,75,14
+    LTEXT           "Can Transfer",IDC_STATIC,89,40,42,8
+    CONTROL         "",IDC_IMGTRANSFER,"Static",SS_BLACKFRAME,89,52,75,65
+    PUSHBUTTON      "Set &Transfer Image",IDSETTRANSFER,89,120,75,14
+    LTEXT           "Uploading",IDC_STATIC,173,40,33,8
+    CONTROL         "",IDC_IMGUPLOADING,"Static",SS_BLACKFRAME,173,52,75,65
+    PUSHBUTTON      "Set &Uploading Image",IDSETUPLOADING,173,120,75,14
+    LTEXT           "Error",IDC_STATIC,255,40,16,8
+    CONTROL         "",IDC_IMGERROR,"Static",SS_BLACKFRAME,255,52,75,65
+    PUSHBUTTON      "Set &Error Image",IDSETERRORIMG,255,120,75,14
+    PUSHBUTTON      "&Skin Choosing Mode",IDSKINPICKERMODE,10,157,75,14
+END
+
+IDD_PROGRESS DIALOG DISCARDABLE  0, 0, 262, 174
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Here you can define the image that is used to display the progress of uploading a file.",
+                    IDC_STATIC,5,5,250,20
+    LTEXT           "Progress Image",IDC_STATIC,11,36,50,8
+    CONTROL         "",IDC_IMGPROGRESS,"Static",SS_BLACKFRAME,10,49,80,71
+    PUSHBUTTON      "Set &Progress Image",IDSETPROGRESS,10,124,80,14
+    LTEXT           "Placement",IDC_STATIC,100,37,34,8
+    LTEXT           "Here you can define the placement where the progressbar is drawn. All values are based are on a 192 x 192 scale.",
+                    IDC_STATIC,100,50,155,25
+    LTEXT           "Left",IDC_STATIC,100,89,17,8
+    EDITTEXT        IDC_LEFT,122,87,30,12,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "Right",IDC_STATIC,165,89,17,8
+    EDITTEXT        IDC_RIGHT,192,87,30,12,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "Top",IDC_STATIC,100,108,17,8
+    EDITTEXT        IDC_TOP,122,105,30,12,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "Bottom",IDC_STATIC,165,107,23,8
+    EDITTEXT        IDC_BOTTOM,192,105,30,12,ES_RIGHT | ES_AUTOHSCROLL
+    PUSHBUTTON      "&Preview",IDPREVIEW,175,155,50,14
+    LTEXT           "Direction",IDC_STATIC,100,130,29,8
+    COMBOBOX        IDC_DIR,135,128,87,30,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "&Skin Choosing Mode",IDSKINPICKINGMODE2,10,157,75,14
+END
+
+IDD_LINKS DIALOG DISCARDABLE  0, 0, 186, 94
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Links"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT,0,0,185,93,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+END
+
+IDD_OTHER DIALOG DISCARDABLE  0, 0, 307, 137
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Other Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "&Show extended error information in a popup window.",
+                    IDC_SHOWERROR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,
+                    20,181,10
+    CONTROL         "&Zip files before uploading them",IDC_ZIP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,70,181,10
+    GROUPBOX        "Errors",IDC_STATIC,5,5,295,36
+    GROUPBOX        "Auto-Zipping",IDC_STATIC,5,53,295,36
+END
+
+IDD_SKIN DIALOG DISCARDABLE  0, 0, 337, 176
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Skin"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Here you can select the skin that is used by this widget.",
+                    IDC_STATIC,10,10,225,10
+    COMBOBOX        IDC_SKIN,10,25,104,55,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Current Skin Information",IDC_STATIC,10,45,225,85
+    LTEXT           "Name:",IDC_STATIC,29,60,22,8
+    LTEXT           "Author:",IDC_STATIC,27,75,24,8
+    LTEXT           "Comments:",IDC_STATIC,15,90,36,8
+    LTEXT           "%NAME%",IDC_NAME2,65,60,160,8
+    LTEXT           "%AUTHOR%",IDC_AUTHOR,65,75,160,8
+    EDITTEXT        IDC_INFO,65,90,160,35,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_OEMCONVERT | ES_READONLY | ES_WANTRETURN | WS_VSCROLL
+    PUSHBUTTON      "&Skin Editing Mode",IDADVANCEDMODE,10,157,75,14
+END
+
+IDD_UPLOADBITMAP DIALOG DISCARDABLE  0, 0, 222, 145
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_3DLOOK | DS_CENTER | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Upload Bitmap"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,105,125,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,165,125,50,14
+    LTEXT           "Filename",IDC_STATIC,68,4,29,8
+    EDITTEXT        IDC_FILENAME,68,16,128,12,ES_AUTOHSCROLL
+    GROUPBOX        "Format",IDC_STATIC,68,33,128,68
+    CONTROL         "&PNG",IDC_PNG,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,
+                    77,44,108,10
+    CONTROL         "&BMP",IDC_BMP,"Button",BS_AUTORADIOBUTTON,77,58,113,10
+    CONTROL         "&JPG, quality:",IDC_JPG,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,77,72,50,10
+    CONTROL         "Generate &Thumbnail",IDC_THUMBNAIL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,68,107,80,10
+    CONTROL         "Slider2",IDC_QUALITY,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,89,87,100,12
+    LTEXT           "%Q%",IDC_QUALITYTEXT,132,73,17,8
+    CONTROL         "",IDC_IMG,"Static",SS_BITMAP,5,6,50,42
+    LTEXT           "Width: ?\nHeight ?",IDC_SIZES,5,54,48,27
+END
+
+IDD_ZIP DIALOG DISCARDABLE  0, 0, 222, 121
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_3DLOOK | DS_CENTER | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Uploading Files Zipped"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,105,103,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,165,103,50,14
+    LTEXT           "Filename",IDC_STATIC,65,8,29,8
+    EDITTEXT        IDC_FILENAME,65,19,129,12,ES_AUTOHSCROLL
+    GROUPBOX        "Method",IDC_STATIC,65,37,129,58
+    CONTROL         "Zip all files into one archive",IDC_ZIPALL,"Button",
+                    BS_AUTORADIOBUTTON,73,49,114,10
+    CONTROL         "Zip each file into its own archive",IDC_ZIPOWN,"Button",
+                    BS_AUTORADIOBUTTON,73,64,114,10
+    CONTROL         "Do not zip files, just upload them",IDC_ZIPNONE,"Button",
+                    BS_AUTORADIOBUTTON,73,79,114,10
+    ICON            "",IDC_STATIC,14,11,21,20
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_FTP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 305
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 232
+    END
+
+    IDD_IMAGES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 330
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 197
+    END
+
+    IDD_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 255
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 167
+    END
+
+    IDD_LINKS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_OTHER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 300
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 130
+    END
+
+    IDD_SKIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 330
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_UPLOADBITMAP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 215
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 138
+    END
+
+    IDD_ZIP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 215
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 114
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_DIR1                "Left-to-Right"
+    IDS_DIR2                "Right-to-left"
+    IDS_DIR3                "Top-to-Bottom"
+    IDS_DIR4                "Bottom-to-Top"
+END
+
+#endif    // Dutch (Netherlands) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

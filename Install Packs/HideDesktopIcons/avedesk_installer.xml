@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AveInstaller>
+
+	<About>
+		<Author>Andreas Verhoeven</Author>
+		<Email>averhoev.2@hccnet.nl</Email>
+		<HomePage>http://www.avedesk.com</HomePage>
+
+		<Name>Hide Desktop Icons Add-on Module</Name>
+		<Version>1.0</Version>
+		<Description>Hides your desktop icons automatically when AveDesk is loaded!</Description>
+		<URL>http://www.mpj.tomaatnet.nl/hidedesktopicons.aveinst</URL>
+		<GUID>BE58393E-ABA0-4566-B26D-29EFC545044D</GUID>
+	</About>
+
+	<Requirements>
+		<Item Type="RequiredAveDeskVersion">1.2</Item>
+		<Item Type="RequiredInstallerVersion">1.2</Item>
+	</Requirements>
+
+	<BeforeCopy>
+		<Item Type="UnloadModule">
+			<Directory BaseFolder="AveDesk">
+				<Directory Name="Modules">
+					<File>HideDesktopIconsModule.dll</File>
+				</Directory>
+			</Directory>
+		</Item>
+	</BeforeCopy>
+	
+	<CopyInformation>
+		<Directory BaseFolder="AveDesk">
+			<Directory Name="Modules">
+				<File Alias="DLL">HideDesktopIconsModule.dll</File>
+			</Directory>
+		</Directory>
+
+	</CopyInformation>
+
+	<AfterCopy>
+		<Item Type="InstallModule" UseAlias="True">DLL</Item>
+		<Item Type="ShowBitmap">About.png</Item>
+	</AfterCopy>
+
+	<AfterCopyFailed>
+		<Item Type="ShowMessage">
+			<Caption>Failed</Caption>
+			<Text>The installation failed.</Text>
+		</Item>
+	</AfterCopyFailed>
+
+</AveInstaller>

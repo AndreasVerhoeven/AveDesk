@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AveInstaller>
+
+	<About>
+		<Author>Andreas Verhoeven</Author>
+		<Email>averhoev.2@hccnet.nl</Email>
+		<HomePage>http://www.avedesk.com</HomePage>
+
+		<Name>AveTunes</Name>
+		<Version>2.6</Version>
+		<Description>An iTunes remote with style. Supports animation.</Description>
+		<URL>http://www.mpj.tomaatnet.nl/avetunes.dll</URL>
+		<GUID>{Some-guid}</GUID>
+	</About>
+
+	<Requirements>
+		<Item Type="RequiredAveDeskVersion">1.2</Item>
+		<Item Type="RequiredInstallerVersion">1.2</Item>
+	</Requirements>
+
+	<BeforeCopy>
+		<Item Type="SuspendDesklet">
+			<Directory BaseFolder="Desklets">
+				<Directory Name="AveTunes">
+					<File>iTunesWidget.dll</File>
+				</Directory>
+			</Directory>
+		</Item>
+	</BeforeCopy>
+	
+	<CopyInformation>
+		<Directory BaseFolder="Desklets">
+			<Directory Name="AveTunes">
+				<CopyAll Recursively="true"/>
+			</Directory>
+		</Directory>
+
+	</CopyInformation>
+
+	<AfterCopySucceeded>
+		<Item Type="ShowBitmap">about.png</Item>
+		<Item Type="DoIf">
+			<If Type="Not">
+				<Item Type="DeskletIsUsed">
+					<Directory BaseFolder="Desklets">
+						<Directory Name="AveTunes">
+							<File>iTunesWidget.dll</File>
+						</Directory>
+					</Directory>					
+				</Item>
+			</If>
+			<Then Type="LoadDesklet">
+			<Desklet><DLL>desklets\avetunes\ituneswidget.dll</DLL></Desklet>
+			</Then>
+		</Item>
+	</AfterCopySucceeded>
+
+	<AfterCopyFailed>
+		<Item Type="ShowMessage">
+			<Caption>Failed</Caption>
+			<Text>The installation failed.</Text>
+		</Item>
+	</AfterCopyFailed>
+
+</AveInstaller>

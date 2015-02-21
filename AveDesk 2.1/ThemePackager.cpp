@@ -1,0 +1,22 @@
+// ThemePackager.cpp: implementation of the CThemePackager class.
+//
+//////////////////////////////////////////////////////////////////////
+
+#include "stdafx.h"
+#include "ThemePackager.h"
+
+//////////////////////////////////////////////////////////////////////
+// Construction/Destruction
+//////////////////////////////////////////////////////////////////////
+
+CThemePackager::CThemePackager(Docklet::DockletsMap& docklets, CRITICAL_SECTION* cs) :
+	m_Docklets(docklets),
+	m_CriticalSection(cs)
+{
+
+}
+
+CThemePackager::~CThemePackager()
+{
+
+}

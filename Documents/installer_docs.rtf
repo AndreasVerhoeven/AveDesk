@@ -1,0 +1,271 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1043{\fonttbl{\f0\fswiss\fcharset0 Arial;}{\f1\fmodern\fprq1\fcharset0 Courier New;}{\f2\fswiss\fprq2\fcharset0 Arial;}{\f3\fnil\fcharset2 Symbol;}}
+\viewkind4\uc1\pard\b\f0\fs20 AveDesk Installer Documentation\b0\par
+\par
+AveDesk 1.2 comes with an integrated 'things' installer. This installer is able to copy files, perform actions and check requirements. This document will describe the structure and the way to create an AveDesk 1.2 Installer package.\par
+\par
+\par
+\b Package\b0\par
+\par
+An installable package for AveDesk is simply a zipped file, with the extension renamed to aveinst. For example, MyDesklet.zip should become MyDesklet.aveinst.\par
+Another requirement is that each package has the file avedesk_installer.xml in its root. This XML file will descrive the behaviour of the installation process: which requirements this package has, which files to copy whereto and what actions to take.\par
+\par
+\par
+\b AveDesk_Installer.XML Outline\par
+\par
+\b0 As said before, the avedesk_installer.xml file describes the behaviour of the installation process. For that purpose, some pre-defined nodes need to be defined. This section will describe the general use of those nodes.\par
+\par
+The main node of the XML file should be the \i AveInstaller\i0  node. Example:\par
+\tab\f1 <?xml version="1.0" encoding="UTF-8"?>\par
+\tab <AveInstaller>\par
+\tab </AveInstaller>\par
+\f2\par
+This AveInstaller-main node must have the following child-nodes: About, Dependencies, Requirements, BeforeCopy, CopyInformation, AfterCopySucceeded, AfterCopyFailed.\par
+Each of those child-nodes, which will be referred to as sections also, will be discussed in more detail.\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\b About section\par
+\par
+\b0 The About section is for providing basic information about the package.\par
+\par
+The following child-nodes should be present:\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-720\li720\b Author \b0 , the authors name\par
+\b{\pntext\f3\'B7\tab}Email \b0 , the authors e-mailaddress (optional)\par
+\b{\pntext\f3\'B7\tab}HomePage \b0 , the authors homepage (optional)\par
+\b{\pntext\f3\'B7\tab}Name \b0 , the package name\par
+\b{\pntext\f3\'B7\tab}Version \b0 , the package version in major.minor format\par
+\b{\pntext\f3\'B7\tab}Description \b0 , a short description of this package\par
+\b{\pntext\f3\'B7\tab}URL \b0 , the URL where this package could be downloaded\par
+\b{\pntext\f3\'B7\tab}GUID \b0 , a Globally Unique IDentifier for this package\par
+\pard\par
+Example:\par
+\f1\tab <About>\par
+\tab\tab <Author>Andreas Verhoeven</Author>\par
+\tab\tab <Email>averhoev.2@hccnet.nl</Email>\par
+\tab\tab <HomePage>http://www.avedesk.com</HomePage>\par
+\par
+\tab\tab <Name>DesktopGrabber Add-on Module</Name>\par
+\tab\tab <Version>1.0</Version>\par
+\tab\tab <Description>\par
+\tab\tab\tab Dropped files on the desktop will become desklets!\tab\tab </Description>\par
+\tab\tab <URL>\par
+\tab\tab\tab http://www.mpj.tomaatnet.nl/desktopgrabber.aveinst\tab\tab </URL>\par
+\tab\tab <GUID>EFB7AAEF-F02C-4EF1-85FF-D6E2D77B95C1</GUID>\par
+\tab </About>\f2\par
+\par
+\par
+\b\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+Dependencies section\b0\par
+\par
+This section is actually for future usage (uninstaller), but should nonetheless be included already. The section consists of a list of GUIDs of other packages that this package depends on.\par
+\par
+Example:\par
+\f1\tab <Dependencies>\par
+\tab\tab <Item>E0289F6C-8F58-4752-9F39-022F36EC9D65</Item>\par
+\tab </Dependencies>\f2\par
+\par
+\par
+\b\par
+\par
+\par
+\par
+\par
+\par
+\par
+Requirements section\b0\par
+\f0\par
+The requirements section is used to make sure that requirements this packages will need, are actually present. For example, a skin for an iTunes remote desklet required the particular iTunes remote desklet to be installed.\par
+\par
+\par
+\b\i OnError sub-section\b0\i0\par
+If an requirement was not met ,he AveDesk installer will try to correct the situation so that the requirement will be met. In the iTunes remote desklet example, the particular desklet could be automatically downloaded and installed before the skin-installation is continued.\par
+To be able to do this, each requirement can have an OnError child-node. In this OnError subsection, an URL can be specified where a package can be downloaded that will correct the non-met-requirement.\par
+\par
+The following child-nodes can be provided:\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-720\li720 Message, a message that will be displayed to the end-user if the requirement fails.\par
+{\pntext\f3\'B7\tab}HomePage, the url to an website where there is more information about the error.\par
+{\pntext\f3\'B7\tab}DownloadableFile , a DownloadableFile node to a package that will be downloaded and installed if the requirement fails. The package should make the requirement not fail anymore.\par
+\pard\par
+A DownloadableFile node is a very simple node with two child-nodes:\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-720\li720 URL, the url where the file can be downloaded.\par
+{\pntext\f3\'B7\tab}GUID, for future-usage actually, but you can specify the GUID of the package you want to have downloaded here. \b NOTE: does not work in AveDesk 1.2.\b0\par
+\pard\par
+Example:\par
+\f1\tab <OnError>\par
+\tab\tab <Message>You will need PIDLShortcut for this.</Message>\par
+\tab\tab <DownloadableFile>\par
+\tab\tab\tab <URL>\par
+\tab\tab\tab\tab http://mpj.tomaatnet.nl/PidlShortcut.aveinst\par
+\tab\tab\tab </URL>\par
+\tab\tab </DownloadableFile>\par
+\tab </OnError>\f0\par
+\par
+\par
+\b Requirements\b0\par
+\par
+The requirements is simply a list of Item-nodes. Each Item-node must have an Type-attribute that will describe the Requirement-type, like \i RequiredAveDeskVersion\i0 .\par
+Example:\par
+\f1\tab <Requirements>\par
+\tab\tab <Item Type="RequiredAveDeskVersion">1.2</Item>\par
+\tab\tab <Item Type="RequiredInstallerVersion">1.2</Item>\par
+\tab\tab <Item Type="FileExists">\par
+\tab\tab\tab <Directory BaseFolder="Desklets">\par
+\tab\tab\tab\tab <Directory Name="PidlShortcut">\par
+\tab\tab\tab\tab\tab <File>pidlshortcut.dll</File>\par
+\tab\tab\tab\tab </Directory>\par
+\tab\tab\tab </Directory>\par
+\par
+\tab\tab\tab <OnError>\par
+\tab\tab\tab\tab <Message>\par
+\tab\tab\tab\tab\tab You will need PIDLShortcut for this.\par
+\tab\tab\tab\tab </Message>\par
+\tab\tab\tab\tab <DownloadableFile>\par
+\tab\tab\tab\tab\tab <URL>\par
+\tab\tab\tab\tab http://mpj.tomaatnet.nl/PidlShortcut.aveinst\par
+\tab\tab\tab\tab\tab </URL>\par
+\tab\tab\tab\tab </DownloadableFile>\par
+\tab\tab\tab </OnError>\par
+\tab\tab </Item>\par
+\tab </Requirements>\f0\par
+\par
+All requirement-types can be found in \b\i Requirements.rtf \b0\i0 .\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\b BeforeCopy section\par
+\par
+\b0 The BeforeCopy section is a list of Actions that will be performed before any files are actually copied. Those actions will only be performed if all requirements in the \i Requirements section \i0 were met.\b\par
+\b0 The actions are listed as a Item-type node.\par
+Example:\par
+\f1\tab <BeforeCopy>\par
+\tab\tab <Item Type="UnloadModule">\par
+\tab\tab\tab <Directory BaseFolder="Desklets">\par
+\tab\tab\tab\tab <Directory Name="Pidlshortcut">\par
+\tab\tab\tab\tab\tab <File>desktopmodule.dll</File>\par
+\tab\tab\tab\tab </Directory>\par
+\tab\tab\tab </Directory>\par
+\tab\tab </Item>\par
+\tab </BeforeCopy>\f0\par
+\par
+All action-types can be found in \b\i Actions.rft.\b0\i0\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\b CopyInformation Section\par
+\par
+\b0 This section defines which file from the ZIPped package are actually copied whereto. \par
+To describe which files and directories to copy, this section makes use of the File/DirectoryDescriptions (see: FileDescriptionNodes.rtf).\par
+\par
+There are two basic nodes to describe files: Directory and File. Both of them will discussed briefly here.\par
+\par
+\b\i Directory\b0\i0\par
+A Directory-node represents a directory (also known as folder). A directory can hold files and other directories), thus a Directory-node can also have File-childnodes and Directory-childnodes.\par
+A Directory has two attributes:\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-720\li720 Name, the name of the directory\par
+{\pntext\f3\'B7\tab}BaseFolder, a special AveDesk folder (optional). The possibilities are: Desklets, Docklets, Effects, AveDesk, Labels, Languages, Themes and User. They all directly map to their real counterpart, except for AveDesk, which is the AveDesk root folder and User, which is the folder where user-settings are stored.\par
+\pard\par
+If you define a BaseFolder attribute, all files and sub-directories that are described in that particular Directory-node will be copied relative to the special folder on the users harddisk.\par
+For example, if you set BaseFolder="Desklets", all files and directories in that node will be copied into AveDesk\\Desklets.\par
+\par
+The Name attribute of a Directory-node describes both a folder on the users harddisk and a folder in the ZIP. In other words, directories that should be copied to the users harddisk must have an directory in the ZIPped package with exactly the same name.\par
+\par
+NOTE: If you define a Base-folder, it's not necessary to set the Name atrribute: the root of the ZIPped package will be used as the directory to copy from. However, you can set the Name attribute if you want the installer to get the files from that directory. For example, you can have a Desklets directory in your ZIPped package, thus you would use \f1 <Directory BaseFolder="Desklets" Name="Desklets"> \f2 to copy the files in the ZIPped Desklets folder to the special Desklets folder on the users harddisk.\par
+\par
+\b\i File\par
+\b0\i0 A File-node represents a file in the ZIPped package that should be copied to the users harddisk. The file is relative to the Directory-node it is a child of.\par
+The filename must be provided in the File-node's text.\par
+\par
+A File-node has one handy optional attribute: Alias. This Alias-attribute can be used to give an alias to a file that has been copied to the users harddisk. The alias, then, can be used in other sections, such as the AfterCopySucceeded section to quickly use that file. \par
+For example, If you want to load a module with the \i InstallModule-action\i0 , you can set the Alias of the File-node for the module's DLL file to something like Alias="ModuleDLL". Later on, in the AfterCopySucceeded section, you could use this Alias in the \i InstallModule-action\i0 . This way, you don't have to describe the same directory/file structure again.\par
+\par
+\par
+\b CopyAll\b0\par
+\par
+\f0 The CopyAll-node is a special, handy node for copying all files in a Directory-node without specifiying all the child File- and Directory-nodes. The CopyAll-node has one attribute: Recursively. If Recursively="true" then all files and directories in the subdirectories will also be copied, otherwise only the files in the current directory will be copied.\i\par
+\i0\par
+Example:\par
+\f1\tab <CopyInformation>\par
+\tab\tab <Directory BaseFolder="Desklets">\par
+\tab\tab\tab <Directory Name="Pidlshortcut">\par
+\tab\tab\tab\tab <File Alias="DLL">DesktopModule.dll</File>\par
+\tab\tab\tab </Directory>\par
+\tab\tab </Directory>\par
+\tab </CopyInformation>\par
+\f0\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\b AfterCopySucceeded section\par
+\par
+\b0 This is another Actions-section, like the \i BeforeCopy section\i0 . The difference is that the actions in this section are only performed after copying all files in the \i CopyInformation section \i0 succeeded.\par
+Example:\par
+\f1\tab <AfterCopySucceeded>\par
+\tab\tab <Item Type="InstallModule" UseAlias="True">DLL</Item>\par
+\tab\tab <Item Type="ShowBitmap">About.png</Item>\par
+\tab </AfterCopySucceeded>\f0\par
+\par
+All action-types can be found in \b\i Actions.rft\b0\i0 .\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\b AfterCopyFailed section\par
+\par
+\b0 This is another Actions-section, like the \i BeforeCopy section\i0 . The difference is that the actions in this section are only performed after copying of the files in the \i CopyInformation section \i0 failed.\par
+Example:\par
+\f1\tab <AfterCopyFailed>\par
+\tab\tab <Item Type="ShowMessage">\par
+\tab\tab\tab <Caption>Failed</Caption>\par
+\tab\tab\tab <Text>The installation failed.</Text>\par
+\tab\tab </Item>\par
+\tab </AfterCopyFailed>\f0\par
+\par
+All action-types can be found in \b\i Actions.rft\b0\i0 .\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+-------------------------------------------------------\par
+(c) copyright Andreas Verhoeven 2005\par
+\par
+}
+ 

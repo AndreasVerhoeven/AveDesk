@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		{3F44B74D-68DC-44D0-B8AA-5CE6CBD4DF71} = s 'AveDesk'
+		'AveDesk.EXE'
+		{
+			val AppID = s {3F44B74D-68DC-44D0-B8AA-5CE6CBD4DF71}
+		}
+	}
+}

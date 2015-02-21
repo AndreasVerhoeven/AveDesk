@@ -1,0 +1,21 @@
+HKCR
+{
+	AveDesk.EffectLet.1 = s 'EffectLet-Klasse'
+	{
+		CLSID = s '{6B91160A-4E1C-4131-BC82-C188EB1CDE8A}'
+	}
+	AveDesk.EffectLet = s 'EffectLet-Klasse'
+	{
+		CLSID = s '{6B91160A-4E1C-4131-BC82-C188EB1CDE8A}'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {6B91160A-4E1C-4131-BC82-C188EB1CDE8A} = s 'EffectLet-Klasse'
+		{
+			ProgID = s 'AveDesk.EffectLet.1'
+			VersionIndependentProgID = s 'AveDesk.EffectLet'
+			val AppID = s '{3F44B74D-68DC-44D0-B8AA-5CE6CBD4DF71}'
+			LocalServer32 = s '%Module%'
+		}
+	}
+}

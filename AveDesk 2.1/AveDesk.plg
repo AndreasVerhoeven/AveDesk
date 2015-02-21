@@ -1,0 +1,521 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: AveDesk - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "c:\DOCUME~1\andreas\LOCALS~1\Temp\RSP50.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /Gi /GR /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/AveDesk.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\Coding\Projects\AveDesk\AveDesk 1.3\AveInstRequiredDeskletVersion.cpp"
+"E:\Coding\Projects\AveDesk\AveDesk 1.3\AveInstRequiredInstallerVersion.cpp"
+]
+Creating command line "cl.exe @c:\DOCUME~1\andreas\LOCALS~1\Temp\RSP50.tmp" 
+Creating temporary file "c:\DOCUME~1\andreas\LOCALS~1\Temp\RSP51.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/AveDesk.pdb" /debug /machine:I386 /nodefaultlib:"libc.lib" /def:".\AveDesk.def" /out:"g:\avedesk\AveDesk\AveDesk.exe" /pdbtype:sept /warn:0 
+".\Debug\AveDeskGlobalSettings.obj"
+".\Debug\GlobalSettingsClickSheet.obj"
+".\Debug\GlobalSettingsEffectSheet.obj"
+".\Debug\GlobalSettingsMoveSheet.obj"
+".\Debug\GlobalSettingsOtherSheet.obj"
+".\Debug\GlobalSettingsSelectSheet.obj"
+".\Debug\GlobalSettingsShowCaseSheet.obj"
+".\Debug\GlobalSettingsToolsSheet.obj"
+".\Debug\GlobalSettingsTraySheet.obj"
+".\Debug\ConfigShadowWindow.obj"
+".\Debug\ConfigSubShadowWindow.obj"
+".\Debug\DeskletAdvancedSheet.obj"
+".\Debug\DeskletAppearanceSheet.obj"
+".\Debug\DeskletLabelSheet.obj"
+".\Debug\ShadowPropertiesDlg.obj"
+".\Debug\Unzipper.obj"
+".\Debug\AboutDlg.obj"
+".\Debug\AddDeskletDlg.obj"
+".\Debug\Application.obj"
+".\Debug\AvailableDeskletsAPI.obj"
+".\Debug\Avedesk.obj"
+".\Debug\AveDeskFileAssociation.obj"
+".\Debug\AveDeskletFile.obj"
+".\Debug\AveEnvironment.obj"
+".\Debug\AveImage.obj"
+".\Debug\AveInstAbout.obj"
+".\Debug\AveInstAction.obj"
+".\Debug\AveInstActions.obj"
+".\Debug\AveInstActionsFactory.obj"
+".\Debug\AveInstaller.obj"
+".\Debug\AveInstallerEnvironment.obj"
+".\Debug\AveInstallFile.obj"
+".\Debug\AveInstBitmapWindow.obj"
+".\Debug\AveInstCancelable.obj"
+".\Debug\AveInstCopyInformation.obj"
+".\Debug\AveInstCopyItem.obj"
+".\Debug\AveInstCopyItemAllFilesAndSubFolders.obj"
+".\Debug\AveInstCopyItemDirectory.obj"
+".\Debug\AveInstCopyItemFile.obj"
+".\Debug\AveInstDependencies.obj"
+".\Debug\AveInstDeskletUsedRequirement.obj"
+".\Debug\AveInstDoIfAction.obj"
+".\Debug\AveInstDownloadAndInstallAction.obj"
+".\Debug\AveInstError.obj"
+".\Debug\AveInstFileDirOperation.obj"
+".\Debug\AveInstFileFetcher.obj"
+".\Debug\AveInstFontAction.obj"
+".\Debug\AveInstInstallModuleAction.obj"
+".\Debug\AveInstLoadDeskletAction.obj"
+".\Debug\AveInstLoadTheme.obj"
+".\Debug\AveInstNotRequired.obj"
+".\Debug\AveInstPackageManager.obj"
+".\Debug\AveInstProgressIndicator.obj"
+".\Debug\AveInstProgressWindow.obj"
+".\Debug\AveInstRegisterCOMServerAction.obj"
+".\Debug\AveInstReloadLanguage.obj"
+".\Debug\AveInstReqItem.obj"
+".\Debug\AveInstRequiredAveDeskVersion.obj"
+".\Debug\AveInstRequiredDeskletVersion.obj"
+".\Debug\AveInstRequiredFile.obj"
+".\Debug\AveInstRequiredInstallerVersion.obj"
+".\Debug\AveInstRequiredPackage.obj"
+".\Debug\AveInstRequiredToAcceptText.obj"
+".\Debug\AveInstRequirements.obj"
+".\Debug\AveInstRequirementsFactory.obj"
+".\Debug\AveInstRunScriptAction.obj"
+".\Debug\AveInstShowBitmapAction.obj"
+".\Debug\AveInstShowTextAction.obj"
+".\Debug\AveInstSuspendDeskletAction.obj"
+".\Debug\AveInstSuspendedDesklets.obj"
+".\Debug\AveInstSuspendedDeskletsList.obj"
+".\Debug\AveInstUnloadLanguage.obj"
+".\Debug\AveInstUnloadModuleAction.obj"
+".\Debug\AveThemeFile.obj"
+".\Debug\CloseButton.obj"
+".\Debug\CloseButtonMouseOverPolicy.obj"
+".\Debug\CloseButtonPolicy.obj"
+".\Debug\ColorButton.obj"
+".\Debug\ColorMatrix.obj"
+".\Debug\ColorMatrixHelper.obj"
+".\Debug\ContainerLayer.obj"
+".\Debug\ControlDlg.obj"
+".\Debug\CSpecializedShowCaseTrackBar.obj"
+".\Debug\Debug.obj"
+".\Debug\Desklet.obj"
+".\Debug\DeskletBrowserDlg.obj"
+".\Debug\DeskletCollection.obj"
+".\Debug\DeskletFilter.obj"
+".\Debug\DeskletFinder.obj"
+".\Debug\DeskletInfo.obj"
+".\Debug\DeskletInfos.obj"
+".\Debug\DeskletItem.obj"
+".\Debug\DeskletProvider.obj"
+".\Debug\Desklets.obj"
+".\Debug\DeskletSkin.obj"
+".\Debug\DeskletSkinEnumerator.obj"
+".\Debug\DeskletSkinInfo.obj"
+".\Debug\DeskletSkins.obj"
+".\Debug\DeskletsView.obj"
+".\Debug\docklet.obj"
+".\Debug\dockletdll.obj"
+".\Debug\DownloadableFileDescription.obj"
+".\Debug\DragAnimationWindow.obj"
+".\Debug\drawplugin.obj"
+".\Debug\DrawPluginInstance.obj"
+".\Debug\DropSettingsImpl.obj"
+".\Debug\EffectLet.obj"
+".\Debug\EnumDeskletDragDropFormats.obj"
+".\Debug\FlipAnimation.obj"
+".\Debug\FlipAnimWrapper.obj"
+".\Debug\FoundDeskletEntry.obj"
+".\Debug\helper_funcs.obj"
+".\Debug\IconAnimator.obj"
+".\Debug\IconWindow.obj"
+".\Debug\IIconAnimatorCallback.obj"
+".\Debug\image_funcs.obj"
+".\Debug\Images.obj"
+".\Debug\INI_API_Interceptor.obj"
+".\Debug\InstallErrorDlg.obj"
+".\Debug\IObservable.obj"
+".\Debug\IObserver.obj"
+".\Debug\IPersistable.obj"
+".\Debug\IProgressIndicator.obj"
+".\Debug\label.obj"
+".\Debug\labelbackground.obj"
+".\Debug\LabelProperties.obj"
+".\Debug\Layer.obj"
+".\Debug\LayerFuncs.obj"
+".\Debug\Matrix.obj"
+".\Debug\Module.obj"
+".\Debug\Modules.obj"
+".\Debug\ModulesDlg.obj"
+".\Debug\NewFeedDlg.obj"
+".\Debug\Od_docklet.obj"
+".\Debug\od_docklet_instance.obj"
+".\Debug\oLayer.obj"
+".\Debug\oLayers.obj"
+".\Debug\Pidl.obj"
+".\Debug\PidlDropBox.obj"
+".\Debug\Policies.obj"
+".\Debug\Preference.obj"
+".\Debug\Preferences.obj"
+".\Debug\shadowProperties.obj"
+".\Debug\ShellHelper.obj"
+".\Debug\ShowCase1.obj"
+".\Debug\SkinEnumerator.obj"
+".\Debug\StdAfx.obj"
+".\Debug\SuckyAnimation.obj"
+".\Debug\ThemeBrowserDlg.obj"
+".\Debug\ThemeIniToXMLMapper.obj"
+".\Debug\ThemePackager.obj"
+".\Debug\Timer.obj"
+".\Debug\Tools.obj"
+".\Debug\TrayAnimationData.obj"
+".\Debug\TrayIconAnimation.obj"
+".\Debug\UpdateBounds.obj"
+".\Debug\WaterAnimation.obj"
+".\Debug\XMLLoader.obj"
+".\Debug\XMLSaver.obj"
+".\Debug\resources.res"
+]
+Creating command line "link.exe @c:\DOCUME~1\andreas\LOCALS~1\Temp\RSP51.tmp"
+Creating temporary file "c:\DOCUME~1\andreas\LOCALS~1\Temp\RSP52.bat" with contents
+[
+@echo off
+"g:\avedesk\avedesk\AveDesk.exe" /RegServer
+echo regsvr32 exec. time > ".\Debug\regsvr32.trg"
+echo Server registration done!
+]
+Creating command line "c:\DOCUME~1\andreas\LOCALS~1\Temp\RSP52.bat"
+Compiling...
+AveInstRequiredDeskletVersion.cpp
+AveInstRequiredInstallerVersion.cpp
+Generating Code...
+Linking...
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+   Creating library g:\avedesk\AveDesk\AveDesk.lib and object g:\avedesk\AveDesk\AveDesk.exp
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+LINK : warning LNK4199: /DELAYLOAD:uxtheme.dll ignored; no imports found from uxtheme.dll
+<h3>Output Window</h3>
+Performing registration
+Server registration done!
+
+
+
+<h3>Results</h3>
+AveDesk.exe - 0 error(s), 316 warning(s)
+</pre>
+</body>
+</html>

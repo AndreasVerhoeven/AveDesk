@@ -1,0 +1,10 @@
+EXPORTS
+	OnGetInformation
+	OnCreate
+	OnDestroy
+	OnSave
+	OnProcessMessage
+	OnLeftButtonClick
+
+	OnMouseOn
+	OnMouseOut

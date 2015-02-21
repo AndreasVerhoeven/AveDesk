@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<!--
+ Copyrights The AveScripter Tutorial, 2005.
+-->
+<root>
+   <skininfo>
+      <author>Andreas Verhoeven</author>
+      <name>WebsiteChecker</name>
+      <notes>Checks the status of a website</notes>
+      <version>1</version>
+   </skininfo>
+
+   <skindata>
+      <desklet>
+         <alpha>255</alpha>
+         <resources></resources>
+		 <ctrlresources>Controls</ctrlresources>
+
+		 <language>JScript</language>
+		 <script>Checker.js</script>
+		 <oncreate>init();</oncreate>
+		 
+      </desklet>
+
+	<parameters>
+		<param name="NAME" save="yes" default="AveDesk" />
+		<param name="URL" save="yes" default="http://www.avedesk.needlemen.com" />
+		<param name="CHECKINTERVAL" save="yes" default="1800000"  />
+		<param name="HASH" save="yes" default="" />
+	</parameters>
+	
+  	  <timers>
+		 <timer name="siteChecker" interval="%CHECKINTERVAL%" type="1" ontimer="checkSite();"/>
+	  </timers>
+
+	   <sides>
+		     <side id="0" width="142" height="76" closex="12" closey="22" />
+			 <side id="1" width="224" height="202" closex="4" closey="4" />
+	   </sides>
+
+		<layers side="0">
+			
+			<layer name="frontside" src="images/frontside.png" x="0" y="0" />
+			<layer name="nameText" x="10" y="8" width="120" height="30" src="!TXT:%NAME%" fontname="Lucida Sans Unicode" fontsize="18" fontcolor="clBlack" fontalign="CT" fontstyle="B" />
+
+			<layer name="status" src="images/nochanges.png" x="18" y="37" mousecursor="IDC_HAND" onclick="checkSite();" />
+
+			<layer name="flipit" src="images/flipit.png" x="120"  y="28" alpha="0" onmouseenter="!EFFECT:SHOW,SELF,255,10,10" onmouseexit="!EFFECT:HIDE,SELF,0" fullhittest="yes" mousecursor="IDC_HAND" onclick="!FLIP:1" />
+		</layers>
+
+		<layers side="1">
+			<layer name="bg" src="images/backside.png" x="0" y="0" />
+			<layer x="16" y="12" width="120" height="20" src="!TXT:Name" fontname="Lucida Sans Unicode" fontsize="12" fontcolor="clWhite" fontalign="LT" fontstyle="B" />
+
+			<layer src="controls/box.png" x="18" y="30" />
+
+			<layer x="16" y="60" width="120" height="20" src="!TXT:URL" fontname="Lucida Sans Unicode" fontsize="12" fontcolor="clWhite" fontalign="LT" fontstyle="B" />
+
+			<layer src="controls/box.png" x="18" y="78" />
+
+			<layer x="16" y="108" width="120" height="20" src="!TXT:Interval" fontname="Lucida Sans Unicode" fontsize="12" fontcolor="clWhite" fontalign="LT" fontstyle="B" />
+
+			<layer name="bg_donebut" src="controls/done.png" dsrc="controls/done_pressed.png" x="150" y="160" onclick="onDonebut();"/>
+		</layers>
+
+		<controls side="1">
+			<control name="intervalList" type="DROPDOWNLIST" x="17" y="124" width="160" height="25" fontsize="12" fontname="Lucida Sans Unicode" fontstyle="B" visible="yes" fontcolor="clBlack" value="%CHECKINTERVAL%" listvalues="1 Minute=60000;2 Minutes=120000;5 Minutes=300000;10Minutes=600000;Quart of an Hour=900000;Half of an Hour=1800000;Hour=3600000;2 Hours=7200000;Half of a day=43200000;Day=86400000" />
+
+			<control name="nameBox" type="EDITBOX" x="21" y="31" width="161" height="23" fontname="Lucida Sans Unicode" fontsize="9" fontbg="clHighlight" fontalign="LT" value="%NAME%" />
+
+			<control name="urlBox" type="EDITBOX" x="21" y="79" width="161" height="23" fontname="Lucida Sans Unicode" fontsize="9" fontbg="clHighlight" fontalign="LT" value="%URL%" />
+
+		</controls>
+
+   </skindata>
+</root> 

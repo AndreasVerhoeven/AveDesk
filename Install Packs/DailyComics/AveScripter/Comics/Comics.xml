@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<!--
+ Copyrights The AveScripter Tutorial, 2005.
+-->
+<root>
+   <skininfo>
+      <author>Andreas Verhoeven</author>
+      <name>Daily Comics</name>
+      <notes>Shows daily comics from UComics.com. Comics can be selected through a drop-down list.</notes>
+      <version>1</version>
+   </skininfo>
+
+   <skindata>
+      <desklet>
+         <alpha>255</alpha>
+         <resources></resources>
+		 <ctrlresources>Controls</ctrlresources>
+
+		 <language>JScript</language>
+		 <script>Comics.js</script>
+		 <oncreate>adjustLayersForMode();loadNewComic(new Date(), "comic");buildList();</oncreate>
+		 <onmousescroll>UpdateScrollPosition();</onmousescroll>
+		 
+      </desklet>
+
+	<parameters>
+		<param name="comicType" save="yes" default="ch" />
+		<param name="currentMode" save="yes" default="0"  />
+	</parameters>
+	
+  	  <timers>
+		 <timer name="comicChecker" interval="28800" type="4" ontimer="loadNewComic(new Date(), 'comic');"/>
+	  </timers>
+
+	   <sides>
+		     <side id="0" width="677" height="298" closex="12" closey="22" />
+			 <side id="1" width="677" height="298" closex="12" closey="62" />
+	   </sides>
+
+		<layers side="0">
+			
+			<layer name="top" src="images/top.png" x="0" y="20" height="62" width="677" visible="false" />
+			<layer name="mini" src="images/small.png" x="0" y="20" />
+			<layer name="mid" src="images/mid.png" x="0" y="82" height="174" width="677" visible="false" />
+			<layer name="bot" src="images/bot.png" x="0" y="256" width="677" height="31" visible="false" />
+			<layer name="comic" x="20" y="68" width="600" height="190"  visible="false" />
+			<layer name="comic2" x="0" y="0" visible="false" />
+			<!--
+			<layer name="top" src="images/top.png" x="0" y="20" height="62" width="677" />
+			<layer name="mini" src="images/small.png" x="0" y="20" visible="false" />
+			<layer name="mid" src="images/mid.png" x="0" y="82" height="174" width="677" />
+			<layer name="bot" src="images/bot.png" x="0" y="256" width="677" height="31" />
+			<layer name="comic" x="20" y="69" width="600" height="190" />
+			<layer name="comic2" x="0" y="0" visible="false" />
+			-->
+			<layer name="logo" src="images/logos/%comicType%.png" x="0" y="0" onmousemove="onLogoMouseMove();" onmouseexit="onLogoMouseOut();" onclick="toggleMode();" />
+
+			<layer name="flipit" src="images/flip.png" x="634"  y="252" alpha="0" onmouseenter="!EFFECT:SHOW,SELF,255,10,10" onmouseexit="!EFFECT:HIDE,SELF,0" fullhittest="yes" mousecursor="IDC_HAND" onclick="!FLIP:1" />
+		</layers>
+
+		<layers side="1">
+			<layer name="bg" src="images/backside.png" x="0" y="20" />
+			<layer name="bg_ucomislogo" src="images/ucomics.png" x="220" y="110" onclick="this.io.shellexecutes('http://www.ucomics.com');" mousecursor="IDC_HAND" />
+			<layer name="bg_donebut" src="controls/done.png" dsrc="controls/done_pressed.png" x="586" y="230" onclick="!FLIP:0"/>
+		</layers>
+
+		<controls side="0">
+			<control name="scroller" type="VERTICAL_SCROLLBAR" x="630" y="70" width="19" height="180" fontalign="LT" value="0" scrollbarsize="0" onchange="onScrollbar();" visible="false" />
+			<control name="comicList" type="DROPDOWNLIST" onchange="onComicChange();" x="140" y="36" width="160" height="25" fontsize="12" fontname="Lucida Sans Unicode" fontstyle="B" visible="yes" fontcolor="clBlack" value="%comicType%" listvalues="type city name" />
+		</controls>
+
+<!--
+	   <layers side="0">
+			<layer name="frame" src="images/frame.png" x="0" y="0" />
+			<layer name="title" src="!TXT:Scribbly" x="106" y="-1" width="120" height="34" fontname="Lucida Sans Unicode" fontsize="25" fontcolor="clWhite" fontstyle="B" fontalign="LT" alpha="100"
+				onclick="changeToComic(new Date());" fullhittest="yes" mousecursor="IDC_HAND" />
+		<layer name="comic" src="!WEBIMG:http://scribbly.nl/beheer/upload/25-november-krant.gif" x="16" y="36" width="500" height="153" />
+			<layer name="nextbut" src="images/next.png" dsrc="images/next_down.png" onclick="doNext();" x="34" y="8" mousecursor="IDC_HAND" />
+			<layer name="prevbut" src="images/prev.png" dsrc="images/prev_down.png" onclick="doPrev();" x="12" y="8" mousecursor="IDC_HAND" />
+			
+			<layer src="images/flip.png" x="513"  y="185" alpha="0" onmouseenter="!EFFECT:SHOW,SELF,255,10,10" onmouseexit="!EFFECT:HIDE,SELF,0" mousecursor="32649" fullhittest="yes" onclick="!FLIP:1" />
+		
+	   </layers>
+-->
+   </skindata>
+</root> 

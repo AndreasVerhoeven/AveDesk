@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<!--
+ Copyrights The AveScripter Tutorial, 2005.
+-->
+<root>
+   <skininfo>
+      <author>Andreas Verhoeven</author>
+      <name>New Desklets</name>
+      <notes>Shows a list of new desklets available of avedesk.philc.ca</notes>
+      <version>1</version>
+   </skininfo>
+
+   <skindata>
+      <desklet>
+         <alpha>255</alpha>
+         <resources></resources>
+		 <ctrlresources>Controls</ctrlresources>
+
+		 <language>JScript</language>
+		 <script>NewDesklets.js</script>
+      </desklet>
+
+		<parameters>
+			<param name="RssType" default="1" save="yes" />
+			<param name="UpdateInterval" default="60" save="yes" />
+		</parameters>
+
+	  	<xmls>
+		 <!-- A dummy url is used for the RSS feed, the actual URL is http://avedesk.philc.ca/modules/PDdownloads/latestrss.php?cid=%RssType% -->
+		  <xml src="http://mpj.tomaatnet.nl/sample_rss%RssType%.xml" interval="%UpdateInterval%" usewintmp="yes" />
+	    </xmls>
+
+	   <sides>
+		     <side id="0" width="300" height="220" closex="12" closey="12" />
+			 <side id="1" width="300" height="220" closex="14" closey="24" />
+	   </sides>
+
+	   <controls side="1">
+	      <control name="editUpdateInterval" type="EDITBOX" x="184" y="61" width="76" height="23" fontname="Lucida Sans Unicode" fontsize="9" fontbg="clHighlight" fontalign="LT" value="%UpdateInterval%" />
+		  <control name="droplistType" type="DROPDOWNLIST" x="20" y="120" width="150" height="23" fontsize="14" fontname="Lucida Sans Unicode" fontstyle="B" visible="yes" fontcolor="clwhite" listvalues="All Desklets=1;AveScripter Only=2" value="%RssType%" />
+    </controls>
+	
+		<layers side="1">
+			<layer src="backside.png" x="0" y="0" />
+			<layer src="Controls/done.png" dsrc="Controls/done_pressed.png" onclick="onClickDone();" x="212" y="170" />
+			<layer text="Which Desklets To Show?" x="20" y="96" height="20" width="200" fontname="Lucida Sans Unicode" fontsize="14" fontcolor="clWhite" fontstyle="B" fontalign="LT" />
+			<layer text="Update Interval (min)" x="20" y="60" height="20" width="160" fontname="Lucida Sans Unicode" fontsize="14" fontcolor="clWhite" fontstyle="B" fontalign="LT" />
+			<layer src="controls/box.png" x="184" y="59" width="80" height="24" />
+		</layers>
+
+	   <layers side="0">
+			<layer src="background.png" x="0" y="0" />
+			<layer src="rssknob.png" x="210" y="30" />
+			<layer src="flipit.png" x="274"  y="194" alpha="0" onmouseenter="!EFFECT:SHOW,SELF,255,10,10" onmouseexit="!EFFECT:HIDE,SELF,0" mousecursor="32649" fullhittest="yes" onclick="!FLIP:1" />
+
+			<layer text="!XMLTXT:0[rss//channel//item[1]//title]" x="20" y="60" height="20" width="260" fontname="Lucida Sans Unicode" fontsize="14" fontcolor="clWhite" fontstyle="B" fontalign="LT" onmouseenter="highlight(true);" onmouseexit="highlight(false);" fullhittest="yes" mousecursor="32649" onclick="onClickItem(1)" />
+
+			<layer text="!XMLTXT:0[rss//channel//item[2]//title]" x="20" y="80" height="20" width="260" fontname="Lucida Sans Unicode" fontsize="14" fontcolor="clWhite" fontstyle="B" fontalign="LT" onmouseenter="highlight(true);" onmouseexit="highlight(false);" fullhittest="yes" mousecursor="32649" onclick="onClickItem(2)" />
+
+			<layer text="!XMLTXT:0[rss//channel//item[3]//title]" x="20" y="100" height="20" width="260" fontname="Lucida Sans Unicode" fontsize="14" fontcolor="clWhite" fontstyle="B" fontalign="LT" onmouseenter="highlight(true);" onmouseexit="highlight(false);" fullhittest="yes" mousecursor="32649" onclick="onClickItem(3)" />
+
+			<layer text="!XMLTXT:0[rss//channel//item[4]//title]" x="20" y="120" height="20" width="260" fontname="Lucida Sans Unicode" fontsize="14" fontcolor="clWhite" fontstyle="B" fontalign="LT" onmouseenter="highlight(true);" onmouseexit="highlight(false);" fullhittest="yes" mousecursor="32649" onclick="onClickItem(4)" />
+
+			<layer text="!XMLTXT:0[rss//channel//item[5]//title]" x="20" y="140" height="20" width="260" fontname="Lucida Sans Unicode" fontsize="14" fontcolor="clWhite" fontstyle="B" fontalign="LT" onmouseenter="highlight(true);" onmouseexit="highlight(false);" fullhittest="yes" mousecursor="32649" onclick="onClickItem(5)" />
+
+			<layer text="!XMLTXT:0[rss//channel//item[6]//title]" x="20" y="160" height="20" width="260" fontname="Lucida Sans Unicode" fontsize="14" fontcolor="clWhite" fontstyle="B" fontalign="LT" onmouseenter="highlight(true);" onmouseexit="highlight(false);" fullhittest="yes" mousecursor="32649" onclick="onClickItem(6)" />
+
+	   </layers>
+
+   </skindata>
+</root> 

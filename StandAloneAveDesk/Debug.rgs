@@ -1,0 +1,24 @@
+HKCR
+{
+	AveDesk.Debug.1 = s 'Debug Class'
+	{
+		CLSID = s '{1F91B833-C7CA-4C74-B40E-678859A7F9AF}'
+	}
+	AveDesk.Debug = s 'Debug Class'
+	{
+		CLSID = s '{1F91B833-C7CA-4C74-B40E-678859A7F9AF}'
+		CurVer = s 'AveDesk.Debug.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {1F91B833-C7CA-4C74-B40E-678859A7F9AF} = s 'Debug Class'
+		{
+			ProgID = s 'AveDesk.Debug.1'
+			VersionIndependentProgID = s 'AveDesk.Debug'
+			ForceRemove 'Programmable'
+			LocalServer32 = s '%MODULE%'
+			val AppID = s '{3F44B74D-68DC-44D0-B8AA-5CE6CBD4DF71}'
+			'TypeLib' = s '{D3B05B76-65F3-4BDD-A382-543B957A4DDC}'
+		}
+	}
+}

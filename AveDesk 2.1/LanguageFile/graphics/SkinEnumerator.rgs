@@ -1,0 +1,21 @@
+HKCR
+{
+	AveDesk.SkinEnumerator.1 = s 'SkinEnumerator Class'
+	{
+		CLSID = s '{5D033EFE-4518-4EE4-83E8-262850E64640}'
+	}
+	AveDesk.SkinEnumerator = s 'SkinEnumerator Class'
+	{
+		CLSID = s '{5D033EFE-4518-4EE4-83E8-262850E64640}'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {5D033EFE-4518-4EE4-83E8-262850E64640} = s 'SkinEnumerator Class'
+		{
+			ProgID = s 'AveDesk.SkinEnumerator.1'
+			VersionIndependentProgID = s 'AveDesk.SkinEnumerator'
+			val AppID = s '{3F44B74D-68DC-44D0-B8AA-5CE6CBD4DF71}'
+			LocalServer32 = s '%Module%'
+		}
+	}
+}

@@ -1,0 +1,17 @@
+EXPORTS
+	OnGetInformation
+	OnCreate
+	OnDestroy
+	OnSave
+	OnDragDropDataRequest
+	OnAddPropertySheets
+	OnLeftButtonClick
+	OnDrop
+	OnDragEnter
+	OnDragOver
+	OnProcessMessage
+	OnMouseOn
+	OnMouseOut
+	OnMouseWheelForward
+	OnMouseWheelBackward
+	OnMouseMove

@@ -1,0 +1,37 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: FTP2 - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "c:\DOCUME~1\andreas\LOCALS~1\Temp\RSP448.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "FTP2_EXPORTS" /Fp"Release/FTP2.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\Coding\Projects\Test\docs\SDK\FTP2\ftp.cpp"
+]
+Creating command line "cl.exe @c:\DOCUME~1\andreas\LOCALS~1\Temp\RSP448.tmp" 
+Creating temporary file "c:\DOCUME~1\andreas\LOCALS~1\Temp\RSP449.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"Release/FTP.pdb" /machine:I386 /nodefaultlib:"libc.lib" /def:".\ftp.def" /out:"d:\modding\avedesk\desklets/FTP/FTP.dll" /implib:"Release/FTP.lib" 
+.\Release\DeskletSDK.obj
+.\Release\FILEMISC.OBJ
+.\Release\ftp.obj
+.\Release\Zipper.obj
+.\Release\Script1.res
+]
+Creating command line "link.exe @c:\DOCUME~1\andreas\LOCALS~1\Temp\RSP449.tmp"
+<h3>Output Window</h3>
+Compiling...
+ftp.cpp
+Linking...
+   Creating library Release/FTP.lib and object Release/FTP.exp
+
+
+
+<h3>Results</h3>
+FTP.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

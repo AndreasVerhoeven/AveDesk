@@ -1,0 +1,62 @@
+<!-- default policy file for AveDesk 2.0 -->
+<!-- author: Andreas Verhoeven -->
+<policies>
+	<policy>
+		<GUID value="TEMP_GUID_NOTES" />
+
+		<info>
+			<version value="200" />
+			<author value="ave" />
+		</info>
+
+		<loading>
+			<allowMultipleInstances		value="false" />
+			<parseCommandLine			value="false" />
+			<doCOMServer				value="false" />
+			<doSettingOverrides			value="false" />
+			<loadLanguage				value="false" />
+			<startShowCase				value="false" />
+			<loadSettings				value="true" />
+			<registerAveDeskCOMLibrary	value="false" />
+			<loadSettings				value="false" />
+			<registerClipboardFormat	value="false" />
+			<loadTheme					value="true" />
+			<doFirstBootIntro			value="true" />
+			<deskletForFirstBoot		value="stickynotes.avedesklet" />
+			<firstBootWhenEmptyTheme	value="true" />
+		</loading>
+
+		<closing>
+			<fadeAllOut					value="true" />
+			<saveSettings				value="true" />
+			<saveTheme					value="true" />
+		</closing>
+
+		<paths>
+			<themesFolderName			value="themes" />
+			<settingsFolderName			value="AveStickyNotes" />
+		</paths>
+
+		<files>
+			<themeFileName				value="stickies.avetheme" />
+		</files>
+
+		<resources>
+			<cache value="true" />
+		</resources>
+
+		<ui>
+			<trayicon>
+				<show			value="true" />
+				<iconfile		value="trayicon.ico" />
+				<noAnimation	value="true" />
+				<tooltip		value="Sticky Notes" />
+				<menu>
+					<allow		value="true" />
+					<ownmenu	value="true" />
+
+				</menu>
+			</trayicon>
+		</ui>
+	</policy>
+</policies>

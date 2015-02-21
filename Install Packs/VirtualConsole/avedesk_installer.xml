@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AveInstaller>
+
+	<About>
+		<!-- tell us about yourself :) -->
+		<Author>{YOURNAME}</Author>
+		<Email>{YOUREMAIL}</Email>
+		<HomePage>{YOURHOMEPAGE}</HomePage>
+
+		<Name>{YOURDESKLETNAME}</Name>
+		<Version>{YOURVERSION}</Version>
+		<Description>{DESCRIPTION}</Description>
+		<URL>{THEURLWHERETHISPACKAGECANBEFOUND}</URL>
+		<!-- you could use gen_guid.vbs for this in AveDesk/Documentation -->
+		<!-- btw, you can copy the text of a messagebox by just pressing CTRL+C when it has the focus -->
+		<GUID>{NEWGUIDHERE}</GUID>
+	</About>
+
+	<!-- no dependencies -->
+	<Dependencies/>
+
+	<Requirements>
+		<!-- avedesk 1.2 is required -->
+		<Item Type="RequiredAveDeskVersion">1.2</Item>
+		<!-- avedesk installer 1.2 is required -->
+		<Item Type="RequiredInstallerVersion">1.2</Item>
+	</Requirements>
+
+	<BeforeCopy>
+		<!-- in case this will be an update, temporarily suspend any running virtual console desklets -->
+		<Item Type="SuspendDesklet">
+			<Directory BaseFolder="Desklets">
+				<Directory Name="VirtualConsole">
+					<File>VirtualConsole.dll</File>
+				</Directory>
+			</Directory>
+		</Item>
+	</BeforeCopy>
+	
+	<CopyInformation>
+		<!-- which files to copy whereto -->
+
+		<!-- all goes into the desklets folder, since it's a desklet :) -->
+		<Directory BaseFolder="Desklets">
+			<!-- make a new folder for this desklet -->
+			<Directory Name="VirtualConsole">
+				<!-- copy the dll and assign it an alias -->
+				<File Alias="DLL">VirtualConsole.dll</File>
+				<!-- copy any other files left -->
+				<CopyAll Recursively="true"/>
+			</Directory>
+		</Directory>
+	</CopyInformation>
+
+	<AfterCopySucceeded>
+		<!-- if you want a splashscreen to show, include it in the root of the zip as splashscreen.png -->
+		<Item Type="ShowBitmap">splashscreen.png</Item>
+		<Item Type="LoadDesklet">
+			<!-- 
+			     1) Select the desklet instance that has your config in the AveDesk control panel
+			     2) Go to: Desklet->Export and save it as myconfig.avedesklet
+			     3) Open the file you have just saved
+			     4) Copy the entire Desklet-node (so, not the AveDesk-node!)
+			     5) Paste it here
+			     6) Remove these comments.
+			-->
+		</Item>
+	</AfterCopySucceeded>
+
+	<AfterCopyFailed>
+		<Item Type="ShowMessage">
+			<Caption>Failed</Caption>
+			<Text>The installation failed.</Text>
+		</Item>
+	</AfterCopyFailed>
+
+</AveInstaller>

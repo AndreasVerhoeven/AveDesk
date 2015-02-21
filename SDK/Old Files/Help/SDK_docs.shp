@@ -1,0 +1,3146 @@
+##v##00.4.50
+EditHelpFileTitle.Text=The Desklet SDK
+form2.STextForeHeadline.Color=0
+form2.STextForeText.Color=0
+form2.STextBackHeadline.Color=16777215
+form2.STextBackText.Color=16777215
+form2.STextHeadlineFont.Caption=Arial
+form2.STextTextFont.Caption=Arial
+form2.sTextFontSizeForHeadline.Caption=12
+form2.sTextFontSizeForText.Caption=9
+form2.CBoxBold.Checked=1
+form2.CBoxNoForeColor.Checked=1
+form2.CBoxLanguageID.ItemIndex=0
+form2.CBoxCharSet.ItemIndex=0
+form2.EditContents.Text=Contents
+form2.EditFrontpageName.Text=Front page with index
+form2.CBoxDontMakeFrontpage.Checked=1
+form2.EditLogoPath.Text=
+form2.EditFrontpageButtonCaption.Text=Front page
+form2.RGroupHorizontalAlignment.ItemIndex=0
+form2.RGroupVerticalAlignment.ItemIndex=0
+form2.CBoxBlankLineBeforeEachHeading.Checked=1
+form2.CBoxMakeFrontPageButton.Checked=0
+form2.SpinEditFrontpageIDnumber.Value=9999
+form2.CBoxAddAboutMenu.Checked=0
+form2.EditAboutMenuCaption.Text=&About this help file...
+form2.CBoxPopupPagesForAboutMenu.Tag=-1
+form2.EditConstantNameFilePrefix.Text=pageConstants_
+form2.EditConstantNameFileExt.Text=txt
+form5.sTextColor1=0
+form5.sTextColor2=9743070
+form5.sTextColor3=12386403
+form5.sTextColor4=255
+form5.sTextColor5=8421376
+form5.sTextColor6=8650752
+form5.sTextColor7=33280
+form5.sTextColor8=32896
+form5.sTextColor9=13026246
+form5.sTextColor10=16711680
+form5.sTextColor11=65280
+form5.sTextColor12=8651007
+form5.sTextColor13=16777215
+form5.sTextColor14=16757429
+form5.sTextColor15=9764863
+form5.sTextColor16=8421504
+form5.sTextComment1=
+form5.sTextComment2=
+form5.sTextComment3=
+form5.sTextComment4=
+form5.sTextComment5=
+form5.sTextComment6=
+form5.sTextComment7=
+form5.sTextComment8=
+form5.sTextComment9=
+form5.sTextComment10=
+form5.sTextComment11=
+form5.sTextComment12=
+form5.sTextComment13=
+form5.sTextComment14=
+form5.sTextComment15=
+form5.sTextComment16=
+NumOfPages=121
+------------ end of project settings / page settings follow ------------
+pageC.pages[0].ImageIndex=-1
+pageTitle(0).Text=Introduction
+getPageConstantLabel(0).Caption=
+getPageContentHeaderLabel(0).Caption=
+pageKeywords(0).Text=
+pageC.pages[1].ImageIndex=-1
+pageTitle(1).Text=Working of Desklets
+getPageConstantLabel(1).Caption=
+getPageContentHeaderLabel(1).Caption=
+pageKeywords(1).Text=
+pageC.pages[2].ImageIndex=-1
+pageTitle(2).Text=Layers - Introduction
+getPageConstantLabel(2).Caption=
+getPageContentHeaderLabel(2).Caption=
+pageKeywords(2).Text=
+pageC.pages[3].ImageIndex=-1
+pageTitle(3).Text=Layers Overview
+getPageConstantLabel(3).Caption=
+getPageContentHeaderLabel(3).Caption=
+pageKeywords(3).Text=
+pageC.pages[4].ImageIndex=-1
+pageTitle(4).Text=DeskletLayerAdd
+getPageConstantLabel(4).Caption=
+getPageContentHeaderLabel(4).Caption=
+pageKeywords(4).Text=
+pageC.pages[5].ImageIndex=-1
+pageTitle(5).Text=DeskletLayerCount
+getPageConstantLabel(5).Caption=
+getPageContentHeaderLabel(5).Caption=
+pageKeywords(5).Text=
+pageC.pages[6].ImageIndex=-1
+pageTitle(6).Text=DeskletLayerGetLayer
+getPageConstantLabel(6).Caption=
+getPageContentHeaderLabel(6).Caption=
+pageKeywords(6).Text=
+pageC.pages[7].ImageIndex=-1
+pageTitle(7).Text=DeskletLayerRemove
+getPageConstantLabel(7).Caption=
+getPageContentHeaderLabel(7).Caption=
+pageKeywords(7).Text=
+pageC.pages[8].ImageIndex=-1
+pageTitle(8).Text=DeskletLayerMergeAll
+getPageConstantLabel(8).Caption=
+getPageContentHeaderLabel(8).Caption=
+pageKeywords(8).Text=
+pageC.pages[9].ImageIndex=-1
+pageTitle(9).Text=DeskletLayerMergeVisible
+getPageConstantLabel(9).Caption=
+getPageContentHeaderLabel(9).Caption=
+pageKeywords(9).Text=
+pageC.pages[10].ImageIndex=-1
+pageTitle(10).Text=DeskletLayerMoveBottom
+getPageConstantLabel(10).Caption=
+getPageContentHeaderLabel(10).Caption=
+pageKeywords(10).Text=
+pageC.pages[11].ImageIndex=-1
+pageTitle(11).Text=DeskletLayerMoveDown
+getPageConstantLabel(11).Caption=
+getPageContentHeaderLabel(11).Caption=
+pageKeywords(11).Text=
+pageC.pages[12].ImageIndex=-1
+pageTitle(12).Text=DeskletLayerMoveTop
+getPageConstantLabel(12).Caption=
+getPageContentHeaderLabel(12).Caption=
+pageKeywords(12).Text=
+pageC.pages[13].ImageIndex=-1
+pageTitle(13).Text=DeskletLayerMoveUp
+getPageConstantLabel(13).Caption=
+getPageContentHeaderLabel(13).Caption=
+pageKeywords(13).Text=
+pageC.pages[14].ImageIndex=-1
+pageTitle(14).Text=DeskletLayerReset
+getPageConstantLabel(14).Caption=
+getPageContentHeaderLabel(14).Caption=
+pageKeywords(14).Text=
+pageC.pages[15].ImageIndex=-1
+pageTitle(15).Text=DeskletLayerSetAlpha
+getPageConstantLabel(15).Caption=
+getPageContentHeaderLabel(15).Caption=
+pageKeywords(15).Text=
+pageC.pages[16].ImageIndex=-1
+pageTitle(16).Text=DeskletLayerSetColorMatrix
+getPageConstantLabel(16).Caption=
+getPageContentHeaderLabel(16).Caption=
+pageKeywords(16).Text=
+pageC.pages[17].ImageIndex=-1
+pageTitle(17).Text=DeskletLayerSetHue
+getPageConstantLabel(17).Caption=
+getPageContentHeaderLabel(17).Caption=
+pageKeywords(17).Text=
+pageC.pages[18].ImageIndex=-1
+pageTitle(18).Text=DeskletLayerSetImage
+getPageConstantLabel(18).Caption=
+getPageContentHeaderLabel(18).Caption=
+pageKeywords(18).Text=
+pageC.pages[19].ImageIndex=-1
+pageTitle(19).Text=DeskletLayerSetImageFile
+getPageConstantLabel(19).Caption=
+getPageContentHeaderLabel(19).Caption=
+pageKeywords(19).Text=
+pageC.pages[20].ImageIndex=-1
+pageTitle(20).Text=DeskletLayerSetRotation
+getPageConstantLabel(20).Caption=
+getPageContentHeaderLabel(20).Caption=
+pageKeywords(20).Text=
+pageC.pages[21].ImageIndex=-1
+pageTitle(21).Text=DeskletLayerSetSaturation
+getPageConstantLabel(21).Caption=
+getPageContentHeaderLabel(21).Caption=
+pageKeywords(21).Text=
+pageC.pages[22].ImageIndex=-1
+pageTitle(22).Text=DeskletLayerSetVisibility
+getPageConstantLabel(22).Caption=
+getPageContentHeaderLabel(22).Caption=
+pageKeywords(22).Text=
+pageC.pages[23].ImageIndex=-1
+pageTitle(23).Text=DeskletLayerSetPlacement
+getPageConstantLabel(23).Caption=
+getPageContentHeaderLabel(23).Caption=
+pageKeywords(23).Text=
+pageC.pages[24].ImageIndex=-1
+pageTitle(24).Text=DeskletLayerSetIconState
+getPageConstantLabel(24).Caption=
+getPageContentHeaderLabel(24).Caption=
+pageKeywords(24).Text=
+pageC.pages[25].ImageIndex=-1
+pageTitle(25).Text=DeskletDoAttentionAnimation
+getPageConstantLabel(25).Caption=
+getPageContentHeaderLabel(25).Caption=
+pageKeywords(25).Text=
+pageC.pages[26].ImageIndex=-1
+pageTitle(26).Text=DeskletGetAlpha
+getPageConstantLabel(26).Caption=
+getPageContentHeaderLabel(26).Caption=
+pageKeywords(26).Text=
+pageC.pages[27].ImageIndex=-1
+pageTitle(27).Text=DeskletGetLabel
+getPageConstantLabel(27).Caption=
+getPageContentHeaderLabel(27).Caption=
+pageKeywords(27).Text=
+pageC.pages[28].ImageIndex=-1
+pageTitle(28).Text=DeskletGetPosition
+getPageConstantLabel(28).Caption=
+getPageContentHeaderLabel(28).Caption=
+pageKeywords(28).Text=
+pageC.pages[29].ImageIndex=-1
+pageTitle(29).Text=DeskletGetRect
+getPageConstantLabel(29).Caption=
+getPageContentHeaderLabel(29).Caption=
+pageKeywords(29).Text=
+pageC.pages[30].ImageIndex=-1
+pageTitle(30).Text=DeskletGetRotation
+getPageConstantLabel(30).Caption=
+getPageContentHeaderLabel(30).Caption=
+pageKeywords(30).Text=
+pageC.pages[31].ImageIndex=-1
+pageTitle(31).Text=DeskletGetSize
+getPageConstantLabel(31).Caption=
+getPageContentHeaderLabel(31).Caption=
+pageKeywords(31).Text=
+pageC.pages[32].ImageIndex=-1
+pageTitle(32).Text=DeskletHide
+getPageConstantLabel(32).Caption=
+getPageContentHeaderLabel(32).Caption=
+pageKeywords(32).Text=
+pageC.pages[33].ImageIndex=-1
+pageTitle(33).Text=DeskletIsVisible
+getPageConstantLabel(33).Caption=
+getPageContentHeaderLabel(33).Caption=
+pageKeywords(33).Text=
+pageC.pages[34].ImageIndex=-1
+pageTitle(34).Text=DeskletSetAlpha
+getPageConstantLabel(34).Caption=
+getPageContentHeaderLabel(34).Caption=
+pageKeywords(34).Text=
+pageC.pages[35].ImageIndex=-1
+pageTitle(35).Text=DeskletSetImage
+getPageConstantLabel(35).Caption=
+getPageContentHeaderLabel(35).Caption=
+pageKeywords(35).Text=
+pageC.pages[36].ImageIndex=-1
+pageTitle(36).Text=DeskletSetImageFile
+getPageConstantLabel(36).Caption=
+getPageContentHeaderLabel(36).Caption=
+pageKeywords(36).Text=
+pageC.pages[37].ImageIndex=-1
+pageTitle(37).Text=DeskletSetImageOverlay
+getPageConstantLabel(37).Caption=
+getPageContentHeaderLabel(37).Caption=
+pageKeywords(37).Text=
+pageC.pages[38].ImageIndex=-1
+pageTitle(38).Text=DeskletSetImageOverlayFile
+getPageConstantLabel(38).Caption=
+getPageContentHeaderLabel(38).Caption=
+pageKeywords(38).Text=
+pageC.pages[39].ImageIndex=-1
+pageTitle(39).Text=DeskletSetLabel
+getPageConstantLabel(39).Caption=
+getPageContentHeaderLabel(39).Caption=
+pageKeywords(39).Text=
+pageC.pages[40].ImageIndex=-1
+pageTitle(40).Text=DeskletSetPosition
+getPageConstantLabel(40).Caption=
+getPageContentHeaderLabel(40).Caption=
+pageKeywords(40).Text=
+pageC.pages[41].ImageIndex=-1
+pageTitle(41).Text=DeskletSetRotation
+getPageConstantLabel(41).Caption=
+getPageContentHeaderLabel(41).Caption=
+pageKeywords(41).Text=
+pageC.pages[42].ImageIndex=-1
+pageTitle(42).Text=DeskletSetSize
+getPageConstantLabel(42).Caption=
+getPageContentHeaderLabel(42).Caption=
+pageKeywords(42).Text=
+pageC.pages[43].ImageIndex=-1
+pageTitle(43).Text=DeskletShow
+getPageConstantLabel(43).Caption=
+getPageContentHeaderLabel(43).Caption=
+pageKeywords(43).Text=
+pageC.pages[44].ImageIndex=-1
+pageTitle(44).Text=DeskletLoad
+getPageConstantLabel(44).Caption=
+getPageContentHeaderLabel(44).Caption=
+pageKeywords(44).Text=
+pageC.pages[45].ImageIndex=-1
+pageTitle(45).Text=DeskletRemove
+getPageConstantLabel(45).Caption=
+getPageContentHeaderLabel(45).Caption=
+pageKeywords(45).Text=
+pageC.pages[46].ImageIndex=-1
+pageTitle(46).Text=DeskletActivateExtendedDragDrop
+getPageConstantLabel(46).Caption=
+getPageContentHeaderLabel(46).Caption=
+pageKeywords(46).Text=
+pageC.pages[47].ImageIndex=-1
+pageTitle(47).Text=DeskletBrowseForImage
+getPageConstantLabel(47).Caption=
+getPageContentHeaderLabel(47).Caption=
+pageKeywords(47).Text=
+pageC.pages[48].ImageIndex=-1
+pageTitle(48).Text=DeskletDeactivateExtendedDragDrop
+getPageConstantLabel(48).Caption=
+getPageContentHeaderLabel(48).Caption=
+pageKeywords(48).Text=
+pageC.pages[49].ImageIndex=-1
+pageTitle(49).Text=DeskletDefaultConfigDialog
+getPageConstantLabel(49).Caption=
+getPageContentHeaderLabel(49).Caption=
+pageKeywords(49).Text=
+pageC.pages[50].ImageIndex=-1
+pageTitle(50).Text=DeskletGetParentOK
+getPageConstantLabel(50).Caption=
+getPageContentHeaderLabel(50).Caption=
+pageKeywords(50).Text=
+pageC.pages[51].ImageIndex=-1
+pageTitle(51).Text=DeskletGetRelativeFolder
+getPageConstantLabel(51).Caption=
+getPageContentHeaderLabel(51).Caption=
+pageKeywords(51).Text=
+pageC.pages[52].ImageIndex=-1
+pageTitle(52).Text=DeskletGetRootFolder
+getPageConstantLabel(52).Caption=
+getPageContentHeaderLabel(52).Caption=
+pageKeywords(52).Text=
+pageC.pages[53].ImageIndex=-1
+pageTitle(53).Text=DeskletLoadGDIPlusImage
+getPageConstantLabel(53).Caption=
+getPageContentHeaderLabel(53).Caption=
+pageKeywords(53).Text=
+pageC.pages[54].ImageIndex=-1
+pageTitle(54).Text=DeskletManager
+getPageConstantLabel(54).Caption=
+getPageContentHeaderLabel(54).Caption=
+pageKeywords(54).Text=
+pageC.pages[55].ImageIndex=-1
+pageTitle(55).Text=DeskletSetStatic
+getPageConstantLabel(55).Caption=
+getPageContentHeaderLabel(55).Caption=
+pageKeywords(55).Text=
+pageC.pages[56].ImageIndex=-1
+pageTitle(56).Text=DeskletAddPropertySheet
+getPageConstantLabel(56).Caption=
+getPageContentHeaderLabel(56).Caption=
+pageKeywords(56).Text=
+pageC.pages[57].ImageIndex=-1
+pageTitle(57).Text=DeskletAddDragDropFormat
+getPageConstantLabel(57).Caption=
+getPageContentHeaderLabel(57).Caption=
+pageKeywords(57).Text=
+pageC.pages[58].ImageIndex=-1
+pageTitle(58).Text=DeskletRemoveDragDropFormat
+getPageConstantLabel(58).Caption=
+getPageContentHeaderLabel(58).Caption=
+pageKeywords(58).Text=
+pageC.pages[59].ImageIndex=-1
+pageTitle(59).Text=GetDLLPath
+getPageConstantLabel(59).Caption=
+getPageContentHeaderLabel(59).Caption=
+pageKeywords(59).Text=
+pageC.pages[60].ImageIndex=-1
+pageTitle(60).Text=IsDataObjectHDROP
+getPageConstantLabel(60).Caption=
+getPageContentHeaderLabel(60).Caption=
+pageKeywords(60).Text=
+pageC.pages[61].ImageIndex=-1
+pageTitle(61).Text=LockHDROP
+getPageConstantLabel(61).Caption=
+getPageContentHeaderLabel(61).Caption=
+pageKeywords(61).Text=
+pageC.pages[62].ImageIndex=-1
+pageTitle(62).Text=ShowContextMenu
+getPageConstantLabel(62).Caption=
+getPageContentHeaderLabel(62).Caption=
+pageKeywords(62).Text=
+pageC.pages[63].ImageIndex=-1
+pageTitle(63).Text=UnlockHDROP
+getPageConstantLabel(63).Caption=
+getPageContentHeaderLabel(63).Caption=
+pageKeywords(63).Text=
+pageC.pages[64].ImageIndex=-1
+pageTitle(64).Text=WritePrivateProfileInt
+getPageConstantLabel(64).Caption=
+getPageContentHeaderLabel(64).Caption=
+pageKeywords(64).Text=
+pageC.pages[65].ImageIndex=-1
+pageTitle(65).Text=DropStruct
+getPageConstantLabel(65).Caption=
+getPageContentHeaderLabel(65).Caption=
+pageKeywords(65).Text=
+pageC.pages[66].ImageIndex=-1
+pageTitle(66).Text=PropertyDialogStruct
+getPageConstantLabel(66).Caption=
+getPageContentHeaderLabel(66).Caption=
+pageKeywords(66).Text=
+pageC.pages[67].ImageIndex=-1
+pageTitle(67).Text=TabPage
+getPageConstantLabel(67).Caption=
+getPageContentHeaderLabel(67).Caption=
+pageKeywords(67).Text=
+pageC.pages[68].ImageIndex=-1
+pageTitle(68).Text=Property Pages
+getPageConstantLabel(68).Caption=
+getPageContentHeaderLabel(68).Caption=
+pageKeywords(68).Text=
+pageC.pages[69].ImageIndex=-1
+pageTitle(69).Text=Default Property Pages
+getPageConstantLabel(69).Caption=
+getPageContentHeaderLabel(69).Caption=
+pageKeywords(69).Text=
+pageC.pages[70].ImageIndex=-1
+pageTitle(70).Text=Other Property Pages
+getPageConstantLabel(70).Caption=
+getPageContentHeaderLabel(70).Caption=
+pageKeywords(70).Text=
+pageC.pages[71].ImageIndex=-1
+pageTitle(71).Text=Property Pages and DLGPROCs
+getPageConstantLabel(71).Caption=
+getPageContentHeaderLabel(71).Caption=
+pageKeywords(71).Text=
+pageC.pages[72].ImageIndex=-1
+pageTitle(72).Text=Guidelines Introduction
+getPageConstantLabel(72).Caption=
+getPageContentHeaderLabel(72).Caption=
+pageKeywords(72).Text=
+pageC.pages[73].ImageIndex=-1
+pageTitle(73).Text=Icons
+getPageConstantLabel(73).Caption=
+getPageContentHeaderLabel(73).Caption=
+pageKeywords(73).Text=
+pageC.pages[74].ImageIndex=-1
+pageTitle(74).Text=Layers
+getPageConstantLabel(74).Caption=
+getPageContentHeaderLabel(74).Caption=
+pageKeywords(74).Text=
+pageC.pages[75].ImageIndex=-1
+pageTitle(75).Text=Left-click behaviour
+getPageConstantLabel(75).Caption=
+getPageContentHeaderLabel(75).Caption=
+pageKeywords(75).Text=
+pageC.pages[76].ImageIndex=-1
+pageTitle(76).Text=Right-click behaviour
+getPageConstantLabel(76).Caption=
+getPageContentHeaderLabel(76).Caption=
+pageKeywords(76).Text=
+pageC.pages[77].ImageIndex=-1
+pageTitle(77).Text=Label
+getPageConstantLabel(77).Caption=
+getPageContentHeaderLabel(77).Caption=
+pageKeywords(77).Text=
+pageC.pages[78].ImageIndex=-1
+pageTitle(78).Text=Property Pages
+getPageConstantLabel(78).Caption=
+getPageContentHeaderLabel(78).Caption=
+pageKeywords(78).Text=
+pageC.pages[79].ImageIndex=-1
+pageTitle(79).Text=Resources
+getPageConstantLabel(79).Caption=
+getPageContentHeaderLabel(79).Caption=
+pageKeywords(79).Text=
+pageC.pages[80].ImageIndex=-1
+pageTitle(80).Text=Events Introduction
+getPageConstantLabel(80).Caption=
+getPageContentHeaderLabel(80).Caption=
+pageKeywords(80).Text=
+pageC.pages[81].ImageIndex=-1
+pageTitle(81).Text=OnCreate
+getPageConstantLabel(81).Caption=
+getPageContentHeaderLabel(81).Caption=
+pageKeywords(81).Text=
+pageC.pages[82].ImageIndex=-1
+pageTitle(82).Text=OnDestroy
+getPageConstantLabel(82).Caption=
+getPageContentHeaderLabel(82).Caption=
+pageKeywords(82).Text=
+pageC.pages[83].ImageIndex=-1
+pageTitle(83).Text=OnGetInformation
+getPageConstantLabel(83).Caption=
+getPageContentHeaderLabel(83).Caption=
+pageKeywords(83).Text=
+pageC.pages[84].ImageIndex=-1
+pageTitle(84).Text=Required Events
+getPageConstantLabel(84).Caption=
+getPageContentHeaderLabel(84).Caption=
+pageKeywords(84).Text=
+pageC.pages[85].ImageIndex=-1
+pageTitle(85).Text=OnLeftButtonClick
+getPageConstantLabel(85).Caption=
+getPageContentHeaderLabel(85).Caption=
+pageKeywords(85).Text=
+pageC.pages[86].ImageIndex=-1
+pageTitle(86).Text=OnRightButtonClick
+getPageConstantLabel(86).Caption=
+getPageContentHeaderLabel(86).Caption=
+pageKeywords(86).Text=
+pageC.pages[87].ImageIndex=-1
+pageTitle(87).Text=OnMouseMove
+getPageConstantLabel(87).Caption=
+getPageContentHeaderLabel(87).Caption=
+pageKeywords(87).Text=
+pageC.pages[88].ImageIndex=-1
+pageTitle(88).Text=OnMouseOn
+getPageConstantLabel(88).Caption=
+getPageContentHeaderLabel(88).Caption=
+pageKeywords(88).Text=
+pageC.pages[89].ImageIndex=-1
+pageTitle(89).Text=OnMouseOut
+getPageConstantLabel(89).Caption=
+getPageContentHeaderLabel(89).Caption=
+pageKeywords(89).Text=
+pageC.pages[90].ImageIndex=-1
+pageTitle(90).Text=OnMouseWheelForward
+getPageConstantLabel(90).Caption=
+getPageContentHeaderLabel(90).Caption=
+pageKeywords(90).Text=
+pageC.pages[91].ImageIndex=-1
+pageTitle(91).Text=OnMouseWheelBackward
+getPageConstantLabel(91).Caption=
+getPageContentHeaderLabel(91).Caption=
+pageKeywords(91).Text=
+pageC.pages[92].ImageIndex=-1
+pageTitle(92).Text=OnAcceptDropFiles
+getPageConstantLabel(92).Caption=
+getPageContentHeaderLabel(92).Caption=
+pageKeywords(92).Text=
+pageC.pages[93].ImageIndex=-1
+pageTitle(93).Text=OnDragEnter
+getPageConstantLabel(93).Caption=
+getPageContentHeaderLabel(93).Caption=
+pageKeywords(93).Text=
+pageC.pages[94].ImageIndex=-1
+pageTitle(94).Text=OnDragLeave
+getPageConstantLabel(94).Caption=
+getPageContentHeaderLabel(94).Caption=
+pageKeywords(94).Text=
+pageC.pages[95].ImageIndex=-1
+pageTitle(95).Text=OnDragOver
+getPageConstantLabel(95).Caption=
+getPageContentHeaderLabel(95).Caption=
+pageKeywords(95).Text=
+pageC.pages[96].ImageIndex=-1
+pageTitle(96).Text=OnDrop
+getPageConstantLabel(96).Caption=
+getPageContentHeaderLabel(96).Caption=
+pageKeywords(96).Text=
+pageC.pages[97].ImageIndex=-1
+pageTitle(97).Text=OnDragDropDataRequest
+getPageConstantLabel(97).Caption=
+getPageContentHeaderLabel(97).Caption=
+pageKeywords(97).Text=
+pageC.pages[98].ImageIndex=-1
+pageTitle(98).Text=DROPEFFECT
+getPageConstantLabel(98).Caption=
+getPageContentHeaderLabel(98).Caption=
+pageKeywords(98).Text=
+pageC.pages[99].ImageIndex=-1
+pageTitle(99).Text=OnSave
+getPageConstantLabel(99).Caption=
+getPageContentHeaderLabel(99).Caption=
+pageKeywords(99).Text=
+pageC.pages[100].ImageIndex=-1
+pageTitle(100).Text=OnProcesssMessage
+getPageConstantLabel(100).Caption=
+getPageContentHeaderLabel(100).Caption=
+pageKeywords(100).Text=
+pageC.pages[101].ImageIndex=-1
+pageTitle(101).Text=OnAddPropertySheets
+getPageConstantLabel(101).Caption=
+getPageContentHeaderLabel(101).Caption=
+pageKeywords(101).Text=
+pageC.pages[102].ImageIndex=-1
+pageTitle(102).Text=Effects
+getPageConstantLabel(102).Caption=
+getPageContentHeaderLabel(102).Caption=
+pageKeywords(102).Text=
+pageC.pages[103].ImageIndex=-1
+pageTitle(103).Text=Working of Effects
+getPageConstantLabel(103).Caption=
+getPageContentHeaderLabel(103).Caption=
+pageKeywords(103).Text=
+pageC.pages[104].ImageIndex=-1
+pageTitle(104).Text=Events
+getPageConstantLabel(104).Caption=
+getPageContentHeaderLabel(104).Caption=
+pageKeywords(104).Text=
+pageC.pages[105].ImageIndex=-1
+pageTitle(105).Text=OnDrawPluginInfo
+getPageConstantLabel(105).Caption=
+getPageContentHeaderLabel(105).Caption=
+pageKeywords(105).Text=
+pageC.pages[106].ImageIndex=-1
+pageTitle(106).Text=OnCreate
+getPageConstantLabel(106).Caption=
+getPageContentHeaderLabel(106).Caption=
+pageKeywords(106).Text=
+pageC.pages[107].ImageIndex=-1
+pageTitle(107).Text=OnConfigure
+getPageConstantLabel(107).Caption=
+getPageContentHeaderLabel(107).Caption=
+pageKeywords(107).Text=
+pageC.pages[108].ImageIndex=-1
+pageTitle(108).Text=OnSave
+getPageConstantLabel(108).Caption=
+getPageContentHeaderLabel(108).Caption=
+pageKeywords(108).Text=
+pageC.pages[109].ImageIndex=-1
+pageTitle(109).Text=OnDestroy
+getPageConstantLabel(109).Caption=
+getPageContentHeaderLabel(109).Caption=
+pageKeywords(109).Text=
+pageC.pages[110].ImageIndex=-1
+pageTitle(110).Text=OnEvent
+getPageConstantLabel(110).Caption=
+getPageContentHeaderLabel(110).Caption=
+pageKeywords(110).Text=
+pageC.pages[111].ImageIndex=-1
+pageTitle(111).Text=BeforeDraw
+getPageConstantLabel(111).Caption=
+getPageContentHeaderLabel(111).Caption=
+pageKeywords(111).Text=
+pageC.pages[112].ImageIndex=-1
+pageTitle(112).Text=AfterDraw
+getPageConstantLabel(112).Caption=
+getPageContentHeaderLabel(112).Caption=
+pageKeywords(112).Text=
+pageC.pages[113].ImageIndex=-1
+pageTitle(113).Text=DrawPluginSDK
+getPageConstantLabel(113).Caption=
+getPageContentHeaderLabel(113).Caption=
+pageKeywords(113).Text=
+pageC.pages[114].ImageIndex=-1
+pageTitle(114).Text=DeskletRedraw
+getPageConstantLabel(114).Caption=
+getPageContentHeaderLabel(114).Caption=
+pageKeywords(114).Text=
+pageC.pages[115].ImageIndex=-1
+pageTitle(115).Text=DeskletSetSizeAndPosition
+getPageConstantLabel(115).Caption=
+getPageContentHeaderLabel(115).Caption=
+pageKeywords(115).Text=
+pageC.pages[116].ImageIndex=-1
+pageTitle(116).Text=AveDesk 1.2
+getPageConstantLabel(116).Caption=
+getPageContentHeaderLabel(116).Caption=
+pageKeywords(116).Text=
+pageC.pages[117].ImageIndex=-1
+pageTitle(117).Text=1.2 Function Overview
+getPageConstantLabel(117).Caption=
+getPageContentHeaderLabel(117).Caption=
+pageKeywords(117).Text=
+pageC.pages[118].ImageIndex=-1
+pageTitle(118).Text=DeskletGetWrapper
+getPageConstantLabel(118).Caption=
+getPageContentHeaderLabel(118).Caption=
+pageKeywords(118).Text=
+pageC.pages[119].ImageIndex=-1
+pageTitle(119).Text=DeskletSetSubLabelW
+getPageConstantLabel(119).Caption=
+getPageContentHeaderLabel(119).Caption=
+pageKeywords(119).Text=
+pageC.pages[120].ImageIndex=-1
+pageTitle(120).Text=DeskletGetRelativeFolderW
+getPageConstantLabel(120).Caption=
+getPageContentHeaderLabel(120).Caption=
+pageKeywords(120).Text=
+pageC.pages[121].ImageIndex=-1
+pageTitle(121).Text=DeskletGetRootFolderW
+getPageConstantLabel(121).Caption=
+getPageContentHeaderLabel(121).Caption=
+pageKeywords(121).Text=
+------------ end of page titles / full text of pages follow ------------
+----- SHM ---- page 0 ---- 
+Desklets in AveDesk are plug ins which can set their icon, communicate with their host (AveDesk) and respond to events. To have all kinds of possibilities, desklets are DLL files rather than scripts. Creating desklets will therefore be more difficult, but they can be much more powerfull.
+
+To create desklets, a programming language capable of creating Windows DLL-files, like C or Delphi, should be used. To use all features of AveDesk, the programming language should also be capable of using Microsofts GDI+.
+----- SHM ---- page 1 ---- 
+Desklets and AveDesk will be communication with eachother by calling means of events and callback functions. AveDesk will  trigger events like OnClick and OnSave when an user interacts with a desklet. The desklet can respond by using the callback functions like SetLabel and SetImage.
+----- SHM ---- page 2 ---- 
+AveDesk is able to use layers for desklets. Layers can be seen as transparent overlays were the programmer can draw upon. Each layer is independent of all other layers. When the desklet is finally rendered, AveDesk will draw all layers on the icon, starting with the lowest layer and ending with the highest layer. It follows that the order in which the layers are placed does matter.
+
+AveDesk gives the user the ability to change the icon for a desklet. An icon is a static image that will be used by the user to reconize the desklet. Also, the icon is the layer that will gade a dropshadow if the user enables dropshadow for a desklet. 
+AveDesk will search through all layers starting from the lowest (id=0) layer, until it finds a layer that <b>is visible</b> and <b>is not set to canBeIxcon=false</b>. The first layer that meets these requirements is seen as the desklets icon.
+Because the programmer does not want every layer to be used as an icon, he can set use this function to exclude the layer from the list of possible layers that can be used as an icon.
+
+Each layer is identified by a placement number. The first layer has number 0 , the second, 'till DeskletLayerCount() - 1. If a layer is removed, the other layers will be renumbered according to their new position. 
+
+<b>Example:</b>
+<i>Layer 0 "A"
+Layer 1 "B"
+Layer 2 "C"
+Layer 3 "D"
+</i>
+
+After Layer 1 has been removed:
+<i>Layer 0 "A"
+Layer 1 "C"
+Layer 2 "D"</i>
+
+
+If you don't need the extra functionality of layers, you can simply use DeskletSetImage() and DeskletSetImageFile(). AveDesk will then automatically create a single layer for you.
+----- SHM ---- page 3 ---- 
+<b>Basic functions:</b>
+<jump=SHM_contents0006>DeskletLayerCount</jump>
+<jump=SHM_contents0005>DeskletLayerAdd</jump>
+<jump=SHM_contents0008>DeskletLayerRemove</jump>
+
+<b>Reordering functions:</b>
+<jump=SHM_contents0014>DeskletLayerMoveUp</jump>
+<jump=SHM_contents0012>DeskletLayerMoveDown</jump>
+<jump=SHM_contents0013>DeskletLayerMoveTop</jump>
+<jump=SHM_contents0011>DeskletLayerMoveBottom</jump>
+<jump=SHM_contents0009>DeskletLayerMergeAll</jump>
+<jump=SHM_contents0010>DeskletLayerMergeVisible</jump>
+
+<b>Appearance functions:</b>
+<jump=SHM_contents0019>DeskletLayerSetImage</jump>
+<jump=SHM_contents0020>DeskletLayerSetImageFile</jump>
+<jump=SHM_contents0017>DeskletLayerSetColorMatrix</jump>
+<jump=SHM_contents0023>DeskletLayerSetVisibility</jump>
+<jump=SHM_contents0021>DeskletLayerSetRotation</jump>
+<jump=SHM_contents0016>DeskletLayerSetAlpha</jump>
+<jump=SHM_contents0018>DeskletLayerSetHue</jump>
+<jump=SHM_contents0022>DeskletLayerSetSaturation</jump>
+<jump=SHM_contents0024>DeskletLayerSetPlacement</jump>
+<jump=SHM_contents0015>DeskletLayerReset</jump>
+
+<b>Other functions:</b>
+<jump=SHM_contents0025>DeskletLayerSetIconState</jump>
+----- SHM ---- page 4 ---- 
+This function will add a new layer to the desklet above all other layers.
+
+<b>unsigned int  CALLBACK DeskletLayerAdd(HWND hwndDesklet, char* name);</b>
+
+<b>Conditions</b>
+pre:		hwndDesklet is a valid window handle to a desklet
+post: 	A new layer has been created above all other layers.
+
+<b>Parameters</b>
+	<i><b>HWND hwndDesklet</b></i>
+		an HWND that is received by the OnCreate event and identifies this 
+		desklet.
+	<i><b>char* name</b></i>
+		The name of this layer. PLEASE use this naming-system: <b>DeskletName.LayerName</b>. For example, a desklet named "AnalogClock" Can add the following layers:
+		<i>AnalogClock.HourHand</i>
+		<i>AnalogClock.MinuteHand</i>
+		<i>AnalogClock.SecondHand</i>
+
+<b>Return Values</b>
+The return value is the place of this layer in the array of layers. You can use this number to make calls to other layer functions.
+
+<b>Remarks</b>
+none
+----- SHM ---- page 5 ---- 
+This function will return the number of current layers a desklet has.
+
+<b>unsigned int CALLBACK DeskletLayerCount(HWND hwndDesklet);</b>
+
+<b>Conditions</b>
+pre:		hwndDesklet is a valid window handle to a desklet
+post:	the number of layers for this desklet has been returned
+
+<b>Parameters</b>
+	<i><b>HWND hwndDesklet</b></i>
+		an HWND that is received by the OnCreate event and identifies this 
+		desklet.
+
+<b>Return Values</b>
+The return value is the number of layers that is currently in use by the desklet identified by hwndDesklet. If hwndDesklet does not point to a window that is a desklet, 0 has been returned.
+
+<b>Remarks</b>
+none
+----- SHM ---- page 6 ---- 
+This function retrieves a layers id by its name.
+
+<b>unsigned int CALLBACK DeskletLayerGetLayer(HWND hwndDesklet, char* name, bool* success);</b>
+
+<b>Conditions</b>
+pre:   hwndDesklet is not 0, name is not 0
+post: the layers id with name name has been returned.
+
+<b>Parameters</b>
+		<i><b>HWND hwndDesklet</b></i>
+		an HWND that is received by the OnCreate event and identifies this 
+		desklet.
+
+		<i><b>char* name</b></i>
+		the name of the layer to find.
+
+		<i><b>bool* succes</b></i>
+		If this is not NULL, this value will be set to TRUE if the layer was found succesfull, otherwise it will be set to FALSE.
+
+<b>Return Values</b>
+If the layer is found, its id has been returned. Otherwise 0 (the if of the background layer) is returned.
+
+<b>Remarks</b>
+none
+----- SHM ---- page 7 ---- 
+This function will remove a layer from a desklet.
+
+<b>void  CALLBACK DeskletLayerRemove(HWND hwndDesklet, unsigned int id, bool redraw);</b>
+
+<b>Conditions</b>
+pre:		hwndDesklet is a valid window handle to a desklet and id < DeskletLayerCount()
+post: 	The layer with id has been removed from the desklet.
+
+<b>Parameters</b>
+	<i><b>HWND hwndDesklet</b></i>
+		an HWND that is received by the OnCreate event and identifies this 
+		desklet.
+	<i><b>unsigned int id</b></i>
+		The id of the layer to remove. Must be smaller than DeskletLayerCount()
+	<i><b>bool redraw</b></i>
+		If this value is true, the desklet will redraw itself, otherwise it won't. If you want to remove a lot of layers in once, you should set this value to false for all calls to DeskletLayerRemove  except the last call to DeskletLayerRemove. This is for optimal performance.
+
+<b>Return Values</b>
+none
+
+<b>Remarks</b>
+If you remove a layer, all other layers above that layer will have an id that is one less than its previous id.
+----- SHM ---- page 8 ---- 
+This function will merge all layers into one layer that is at the bottom of the layers list.
+
+<b>void  CALLBACK DeskletLayerMergeAll(HWND hwndDesklet, bool redraw);</b>
+
+<b>Conditions</b>
+pre:		hwndDesklet is a valid window handle to a desklet and id < DeskletLayerCount()
+post: 	The layer with id has been moved to the top of the layers list.
+
+<b>Parameters</b>
+	<i><b>HWND hwndDesklet</b></i>
+		an HWND that is received by the OnCreate event and identifies this 
+		desklet.
+	<i><b>bool redraw</b></i>
+		If this value is true, the desklet will redraw itself, otherwise it won't. If you want to move a lot of layers in once, you should set this value to false for all calls to this function  except the last call to DeskletLayerRemove. This is for optimal performance.
+
+<b>Return Values</b>
+none
+
+<b>Remarks</b>
+The layer at the bottom will be seen as the docklets icon and therefore, the image filename will be stored if there is one. Because all layers are merged, there won't be a filename to save.
+Also, the shadowing option only applies to the bottom layer. 
+----- SHM ---- page 9 ---- 
+This function will merge all layers that are currently set to visible into the layer that has the lowest id.
+
+<b>void  CALLBACK DeskletLayerMergeVisible(HWND hwndDesklet,  bool redraw);</b>
+
+<b>Conditions</b>
+pre:		hwndDesklet is a valid window handle to a desklet and id < DeskletLayerCount()
+post: 	The layer with id has been moved to the top of the layers list.
+
+<b>Parameters</b>
+	<i><b>HWND hwndDesklet</b></i>
+		an HWND that is received by the OnCreate event and identifies this 
+		desklet.
+	<i><b>bool redraw</b></i>
+		If this value is true, the desklet will redraw itself, otherwise it won't. If you want to move a lot of layers in once, you should set this value to false for all calls to this function  except the last call to DeskletLayerRemove. This is for optimal performance.
+
+<b>Return Values</b>
+none
+
+<b>Remarks</b>
+----- SHM ---- page 10 ---- 
+This function will move a layer to the bottom of the layers list.
+
+<b>void  CALLBACK DeskletLayerMoveBottom(HWND hwndDesklet, unsigned int id, bool redraw);</b>
+
+<b>Conditions</b>
+pre:		hwndDesklet is a valid window handle to a desklet and id < DeskletLayerCount()
+post: 	The layer with id has been moved to the top of the layers list.
+
+<b>Parameters</b>
+	<i><b>HWND hwndDesklet</b></i>
+		an HWND that is received by the OnCreate event and identifies this 
+		desklet.
+	<i><b>unsigned int id</b></i>
+		The id of the layer to move. Must be smaller than DeskletLayerCount()
+	<i><b>bool redraw</b></i>
+		If this value is true, the desklet will redraw itself, otherwise it won't. If you want to move a lot of layers in once, you should set this value to false for all calls to this function  except the last call to DeskletLayerRemove. This is for optimal performance.
+
+<b>Return Values</b>
+none
+
+<b>Remarks</b>
+The layer at the bottom will be seen as the docklets icon and therefore, the image filename will be stored if there is one. Also, the shadowing option only applies to the bottom layer.
+----- SHM ---- page 11 ---- 
+This function will move a layer down in the layers list by one if possible.
+
+<b>void  CALLBACK DeskletLayerMoveDown(HWND hwndDesklet, unsigned int id, bool redraw);</b>
+
+<b>Conditions</b>
+pre:		hwndDesklet is a valid window handle to a desklet and id < DeskletLayerCount()
+post: 	The layer with id has been moved down by one if possible.
+
+<b>Parameters</b>
+	<i><b>HWND hwndDesklet</b></i>
+		an HWND that is received by the OnCreate event and identifies this 
+		desklet.
+	<i><b>unsigned int id</b></i>
+		The id of the layer to move. Must be smaller than DeskletLayerCount()
+	<i><b>bool redraw</b></i>
+		If this value is true, the desklet will redraw itself, otherwise it won't. If you want to move a lot of layers in once, you should set this value to false for all calls to this function  except the last call to DeskletLayerRemove. This is for optimal performance.
+
+<b>Return Values</b>
+none
+
+<b>Remarks</b>
+none
+----- SHM ---- page 12 ---- 
+This function will move a layer to the top of the layers list.
+
+<b>void  CALLBACK DeskletLayerMoveTop(HWND hwndDesklet, unsigned int id, bool redraw);</b>
+
+<b>Conditions</b>
+pre:		hwndDesklet is a valid window handle to a desklet and id < DeskletLayerCount()
+post: 	The layer with id has been moved to the top of the layers list.
+
+<b>Parameters</b>
+	<i><b>HWND hwndDesklet</b></i>
+		an HWND that is received by the OnCreate event and identifies this 
+		desklet.
+	<i><b>unsigned int id</b></i>
+		The id of the layer to move. Must be smaller than DeskletLayerCount()
+	<i><b>bool redraw</b></i>
+		If this value is true, the desklet will redraw itself, otherwise it won't. If you want to move a lot of layers in once, you should set this value to false for all calls to this function  except the last call to DeskletLayerRemove. This is for optimal performance.
+
+<b>Return Values</b>
+none
+
+<b>Remarks</b>
+none
+----- SHM ---- page 13 ---- 
+This function will move a layer up in the layers list by one if possible.
+
+<b>void  CALLBACK DeskletLayerMoveUp(HWND hwndDesklet, unsigned int id, bool redraw);</b>
+
+<b>Conditions</b>
+pre:		hwndDesklet is a valid window handle to a desklet and id < DeskletLayerCount()
+post: 	The layer with id has been moved up by one if possible.
+
+<b>Parameters</b>
+	<i><b>HWND hwndDesklet</b></i>
+		an HWND that is received by the OnCreate event and identifies this 
+		desklet.
+	<i><b>unsigned int id</b></i>
+		The id of the layer to move. Must be smaller than DeskletLayerCount()
+	<i><b>bool redraw</b></i>
+		If this value is true, the desklet will redraw itself, otherwise it won't. If you want to move a lot of layers in once, you should set this value to false for all calls to this function  except the last call to DeskletLayerRemove. This is for optimal performance.
+
+<b>Return Values</b>
+none
+
+<b>Remarks</b>
+none
+----- SHM ---- page 14 ---- 
+This function will set the parameters for a layer to the default ones.
+
+<b>void  CALLBACK DeskletLayerSetSaturation(HWND hwndDesklet, unsigned int id, bool redraw;</b>
+
+<b>Conditions</b>
+pre:		hwndDesklet is a valid window handle to a desklet and id < DeskletLayerCount().
+post: 	The layer with id has been moved to the top of the layers list.
+
+<b>Parameters</b>
+	<i><b>HWND hwndDesklet</b></i>
+		an HWND that is received by the OnCreate event and identifies this 
+		desklet.
+	<i><b>unsigned int id</b></i>
+		The id of the layer to move. Must be smaller than DeskletLayerCount()
+	<i><b>bool redraw</b></i>
+		If this value is true, the desklet will redraw itself, otherwise it won't. If you want to do a lot of updating, set to to false and set it with the last updating function to true.
+
+<b>Return Values</b>
+none
+
+<b>Remarks</b>
+The default values for a layer are:
+	- No ColorMatrix is used
+	- alpha is 255
+	- rotation is 0
+	- hue is 0
+	- saturation is 100
+----- SHM ---- page 15 ---- 
+This function will set the alpha level for this layer.
+
+<b>void  CALLBACK DeskletLayerSetRotation(HWND hwndDesklet, unsigned int id, bool redraw, BYTE alpha);</b>
+
+<b>Conditions</b>
+pre:		hwndDesklet is a valid window handle to a desklet and id < DeskletLayerCount().
+post: 	The layer with id has been moved to the top of the layers list.
+
+<b>Parameters</b>
+	<i><b>HWND hwndDesklet</b></i>
+		an HWND that is received by the OnCreate event and identifies this 
+		desklet.
+	<i><b>unsigned int id</b></i>
+		The id of the layer to move. Must be smaller than DeskletLayerCount()
+	<i><b>bool redraw</b></i>
+		If this value is true, the desklet will redraw itself, otherwise it won't. If you want to do a lot of updating, set to to false and set it with the last updating function to true.
+	<i><b>BYTE alpha</b></i>
+		This value will be used for the rotation of the layer. It ranges from 0 (totally transparent) to 255 (opaque).
+
+<b>Return Values</b>
+none
+
+<b>Remarks</b>
+Using an alpha level different than 255 can result in extra CPU usage.
+----- SHM ---- page 16 ---- 
+This function will set the colormatrix for this image.
+
+<b>void  CALLBACK DeskletLayerSetColorMatrix(HWND hwndDesklet, unsigned int id, bool redraw, ColorMatrix* matrix);</b>
+
+<b>Conditions</b>
+pre:		hwndDesklet is a valid window handle to a desklet and id < DeskletLayerCount().
+post: 	The layer with id has been moved to the top of the layers list.
+
+<b>Parameters</b>
+	<i><b>HWND hwndDesklet</b></i>
+		an HWND that is received by the OnCreate event and identifies this 
+		desklet.
+	<i><b>unsigned int id</b></i>
+		The id of the layer to move. Must be smaller than DeskletLayerCount()
+	<i><b>bool redraw</b></i>
+		If this value is true, the desklet will redraw itself, otherwise it won't.If you want to do a lot of updating, set to to false and set it with the last updating function to true.
+	<i><b>ColorMatrix* matrix</b></i>
+		The ColorMatrix that this desklet should be going to use. If this value is NULL, the ColorMatrix will be reset.
+
+<b>Return Values</b>
+none
+
+<b>Remarks</b>
+Using a ColorMatrix for a layer can result in extra CPU usage.
+----- SHM ---- page 17 ---- 
+This function will set the hue level for this layer.
+
+<b>void  CALLBACK DeskletLayerSetHue(HWND hwndDesklet, unsigned int id, bool redraw, int hue);</b>
+
+<b>Conditions</b>
+pre:		hwndDesklet is a valid window handle to a desklet and id < DeskletLayerCount().
+post: 	The layer with id has been moved to the top of the layers list.
+
+<b>Parameters</b>
+	<i><b>HWND hwndDesklet</b></i>
+		an HWND that is received by the OnCreate event and identifies this 
+		desklet.
+	<i><b>unsigned int id</b></i>
+		The id of the layer to move. Must be smaller than DeskletLayerCount()
+	<i><b>bool redraw</b></i>
+		If this value is true, the desklet will redraw itself, otherwise it won't. If you want to do a lot of updating, set to to false and set it with the last updating function to true.
+	<i><b>int hue</b></i>
+		This value will be used for the hue-rotation and is therefore in degrees.
+
+<b>Return Values</b>
+none
+
+<b>Remarks</b>
+Using an hue level different than 0 can result in extra CPU usage.
+----- SHM ---- page 18 ---- 
+This function will set the image for this layer.
+
+<b>void  CALLBACK DeskletLayerSetImage(HWND hwndDesklet, unsigned int id, bool redraw, Gdiplus::Image* img, bool AutoDel);</b>
+
+<b>Conditions</b>
+pre:		hwndDesklet is a valid window handle to a desklet and id < DeskletLayerCount()
+post: 	The layer with id has been moved to the top of the layers list.
+
+<b>Parameters</b>
+	<i><b>HWND hwndDesklet</b></i>
+		an HWND that is received by the OnCreate event and identifies this 
+		desklet.
+	<i><b>unsigned int id</b></i>
+		The id of the layer to move. Must be smaller than DeskletLayerCount()
+	<i><b>bool redraw</b></i>
+		If this value is true, the desklet will redraw itself, otherwise it won't.If you want to do a lot of updating, set to to false and set it with the last updating function to true.
+	<i><b>Gdiplus::Image* img</b></i>
+		The Gdiplus::Image you want to set for this layer.
+	<i><b>bool AutoDel</b></i>
+		If this value is set to true, AveDesk will get ownership of the Gdiplus::Image img object and will free it when it is no longer needed. If it is false, the desklet is responsible for freeing the image.
+
+<b>Return Values</b>
+none
+
+<b>Remarks</b>
+----- SHM ---- page 19 ---- 
+This function will set the image file for this layer.
+
+<b>void  CALLBACK DeskletLayerSetImageFile(HWND hwndDesklet, unsigned int id, bool redraw, char* filename);</b>
+
+<b>Conditions</b>
+pre:		hwndDesklet is a valid window handle to a desklet and id < DeskletLayerCount()
+post: 	The layer with id has been moved to the top of the layers list.
+
+<b>Parameters</b>
+	<i><b>HWND hwndDesklet</b></i>
+		an HWND that is received by the OnCreate event and identifies this 
+		desklet.
+	<i><b>unsigned int id</b></i>
+		The id of the layer to move. Must be smaller than DeskletLayerCount()
+	<i><b>bool redraw</b></i>
+		If this value is true, the desklet will redraw itself, otherwise it won't.If you want to do a lot of updating, set to to false and set it with the last updating function to true.
+	<i><b>char* image</b></i>
+		Points to a filename of an image that will be used for the image of this layer. The filename can be an absolute path or a relative path. In case of a relative path, the filename is relative from AveDesk's root directory.
+		<b>Also,</b> if this is the background layer (with id == 0), this filename will be stored and will be used if the desklet is loaded to set the background image automatically again.
+
+<b>Return Values</b>
+none
+
+<b>Remarks</b>
+----- SHM ---- page 20 ---- 
+This function will set the rotation for this layer.
+
+<b>void  CALLBACK DeskletLayerSetRotation(HWND hwndDesklet, unsigned int id, bool redraw, int rotation);</b>
+
+<b>Conditions</b>
+pre:		hwndDesklet is a valid window handle to a desklet and id < DeskletLayerCount().
+post: 	The layer with id has been moved to the top of the layers list.
+
+<b>Parameters</b>
+	<i><b>HWND hwndDesklet</b></i>
+		an HWND that is received by the OnCreate event and identifies this 
+		desklet.
+	<i><b>unsigned int id</b></i>
+		The id of the layer to move. Must be smaller than DeskletLayerCount()
+	<i><b>bool redraw</b></i>
+		If this value is true, the desklet will redraw itself, otherwise it won't. If you want to do a lot of updating, set to to false and set it with the last updating function to true.
+	<i><b>int rotation</b></i>
+		This value will be used for the rotation in degrees of the layer.
+
+<b>Return Values</b>
+none
+
+<b>Remarks</b>
+Using a rotation that is not equal 0 can result in extra CPU usage.
+----- SHM ---- page 21 ---- 
+This function will set the saturation level for this layer.
+
+<b>void  CALLBACK DeskletLayerSetSaturation(HWND hwndDesklet, unsigned int id, bool redraw, unsigned int saturation);</b>
+
+<b>Conditions</b>
+pre:		hwndDesklet is a valid window handle to a desklet and id < DeskletLayerCount().
+post: 	The layer with id has been moved to the top of the layers list.
+
+<b>Parameters</b>
+	<i><b>HWND hwndDesklet</b></i>
+		an HWND that is received by the OnCreate event and identifies this 
+		desklet.
+	<i><b>unsigned int id</b></i>
+		The id of the layer to move. Must be smaller than DeskletLayerCount()
+	<i><b>bool redraw</b></i>
+		If this value is true, the desklet will redraw itself, otherwise it won't. If you want to do a lot of updating, set to to false and set it with the last updating function to true.
+	<i><b>unsigned int saturation</b></i>
+		This value will be used for the saturation level of the layer. A value of 0 means a grayscalled layer, with 100 being normal.
+
+<b>Return Values</b>
+none
+
+<b>Remarks</b>
+Using a saturation level different than 100 can result in extra CPU usage.
+----- SHM ---- page 22 ---- 
+This function will set the visibility used by this layer.
+
+<b>void  CALLBACK DeskletLayerSetVisibility(HWND hwndDesklet, unsigned int id, bool redraw, bool visibility);</b>
+
+<b>Conditions</b>
+pre:		hwndDesklet is a valid window handle to a desklet and id < DeskletLayerCount().
+post: 	The layer with id has been moved to the top of the layers list.
+
+<b>Parameters</b>
+	<i><b>HWND hwndDesklet</b></i>
+		an HWND that is received by the OnCreate event and identifies this 
+		desklet.
+	<i><b>unsigned int id</b></i>
+		The id of the layer to move. Must be smaller than DeskletLayerCount()
+	<i><b>bool redraw</b></i>
+		If this value is true, the desklet will redraw itself, otherwise it won't. If you want to do a lot of updating, set to to false and set it with the last updating function to true.
+	<i><b>bool visibility</b></i>
+		The visibility to use. If it is false, the layer will not be visible in the desklet, otherwise it will.
+
+<b>Return Values</b>
+none
+
+<b>Remarks</b>
+----- SHM ---- page 23 ---- 
+This function will change the placement of a layer. You can think of it as a simple transformation.
+
+<b>void CALLBACK DeskletLayerSetPlacement(HWND hwndDesklet, unsigned int id, bool redraw, bool usePlacement, RECT* r, int xScale, int yScale);</b>
+
+<b>Conditions</b>
+pre:	hwndDesklet is not 0, r is not 0 if usePlacement is true
+post:	the layers placement is updated
+
+<b>Parameters</b>
+	<i><b>HWND hwndDesklet</b></i>
+		an HWND that is received by the OnCreate event and identifies this 
+		desklet.
+
+	<i><b>unsigned int id</b></i>
+		The id of the layer to apply the placement to. Must be smaller than DeskletLayerCount()
+
+	<i><b>bool redraw</b></i>
+		If true, the desklet will be redrawn.
+
+	<i><b>bool usePlacement</b></i>
+		This parameter determines if placement is used for this desklet.
+	
+	<i><b>RECT* r</b></i>
+		If usePlacement is true, this rectangle will be used as the bounding rectangle for the placement.
+	
+	<i><b>int xScale</b></i>
+		This value determines the scale for the x-components of r. See the remarks for more.
+
+	<i><b>int yScale</b></i>
+		This value determines the scale for the y-components of r. See the remarks for more.
+
+<b>Return Values</b>
+	<none>
+
+<b>Remarks</b>
+	Normally, layers are scaled to the desklets size. If the desklet is sized 128 x 128, the layer will be drawn at P(0,0) with a size of 128 x 128. If you set placement to true, instead of those default values, the values you specified in r will be used. Because, layers cannot be scaled independently of the desklet, you need to specify the scale of these values. You do this using the xScale and yScale parameters.
+For example, r = { 10,10, 50,50 } and xScale = 100, yScale = 100.
+if the desklet is 128 x 128 sized, this layer will be drawn from 128 * 10 / 100, 128 * 10 /100 to 128 * 50/100, 128 * 50 /100 = 12, 12 to 64, 64.
+----- SHM ---- page 24 ---- 
+This function will determine if the layer can be seen as an icon. For more, see the remarks.
+
+<b>void CALLBACK DeskletLayerSetIconState(HWND hwndDesklet, unsigned int id, bool redraw, bool canBeIcon);</b>
+
+<b>Conditions</b>
+pre:	hwndDesklet is not 0, r is not 0 if usePlacement is true
+post:	the layers placement is updated
+
+<b>Parameters</b>
+	<i><b>HWND hwndDesklet</b></i>
+		an HWND that is received by the OnCreate event and identifies this 
+		desklet.
+
+	<i><b>unsigned int id</b></i>
+		The id of the layer to apply the placement to. Must be smaller than DeskletLayerCount()
+
+	<i><b>bool redraw</b></i>
+		If true, the desklet will be redrawn.
+
+	<i><b>bool canBeIcon</b></i>
+		Should be true if you want this layer to be seen as an layer that can be the icon, otherwise false.
+
+<b>Return Values</b>
+	<none>
+
+<b>Remarks</b>
+	AveDesk gives the user the ability to change the icon for a desklet. An icon is a static image that will be used by the user to reconize the desklet. Also, the icon is the layer that will gade a dropshadow if the user enables dropshadow for a desklet. 
+AveDesk will search through all layers starting from the lowest (id=0) layer, until it finds a layer that <b>is visible</b> and <b>is not set to canBeIxcon=false</b>. The first layer that meets these requirements is seen as the desklets icon.
+Because the programmer does not want every layer to be used as an icon, he can set use this function to exclude the layer from the list of possible layers that can be used as an icon.
+----- SHM ---- page 25 ---- 
+This function will animate the desklets icon.
+
+<b>void CALLBACK DeskletDoAttentionAnimation(HWND hwndDesklet, INT iAnimationType, UINT speed);</b>
+
+<b>Conditions</b>
+pre:  hwndDesklet is not 0, iAnimationType is one of the constants described in the remarks
+post: the animation defined by iAnimationType is performed, the functions returns before the animation is started
+
+<b>Parameters</b>
+	<i><b>HWND hwndDesklet</b></i>
+	an HWND that is received by the OnCreate event and identifies this 
+	desklet.
+
+	<i><b>INT iAnimationType</b></i>
+	Determines which type of animation to do. See the remarks section for current supported animations.
+
+	<i><b>UINT speed</b></i>
+	The delay in milliseconds between each "frame" of the animation.
+
+<b>Return Values</b>
+none
+
+<b>Remarks</b>
+	AveDesk 1.1 currently support the following animations:
+	ANIMATION_NONE
+		no animation.
+	ANIMATION_FADEIN
+		The desklet fades in from alpha 0 to the value of the current alpha for the desklet. Also, the desklet is made visible.
+	ANIMATION_FADEOUT
+		The desklet fades out from the value of the current alpha for the desklet to an alpha level of 0. Also, the desklet is hidden.
+	ANIMATION_FADEINANDOUT
+		A combination of ANIMATION_FADEIN and ANIMATION_FADEOUT.
+	ANIMATION_FADEOUTANDIN
+		A combination of ANIMATION_FADEOUT and ANIMATION_FADEIN.
+----- SHM ---- page 26 ---- 
+This function will retrieve the desklets alpha level.
+
+<b>BYTE CALLBACK DeskletGetAlpha(HWND hwndDesklet)</b>
+
+<b>Conditions</b>
+pre:   hwndDesklet is not 0
+post: the desklets alpha level has been returned
+
+<b>Parameters</b>
+	<i><b>HWND hwndDesklet</b></i>
+	an HWND that is received by the OnCreate event and identifies this 
+	desklet.
+
+<b>Return Values</b>
+The current desklets alpha level.
+
+<b>Remarks</b>
+none
+----- SHM ---- page 27 ---- 
+This function will retrieve the desklets label.
+
+<b>int CALLBACK DeskletGetLabel(HWND hwndDesklet,char* szLabel);</b>
+
+<b>Conditions</b>
+pre:   hwndDesklet is not 0 
+post: the number of characters for the current label (including the 0-character) has been returned
+
+<b>Parameters</b>
+	<i><b>HWND hwndDesklet</b></i>
+	an HWND that is received by the OnCreate event and identifies this 
+	desklet.
+
+	<i><b>char* szLabel</b></i>
+	This will receive the current lable of the desklet. If this is 0, only, the number of characters (including the 0-character) is returned and the label is not changed.
+
+<b>Return Values</b>
+The number of characters for the current label (including the NULL-terminating character) is returned.
+
+<b>Remarks</b>
+none
+----- SHM ---- page 28 ---- 
+This function retrieves the desklets position.
+
+<b>void CALLBACK DeskletGetPosition(HWND hwndDesklet,POINT *p)</b>
+
+<b>Conditions</b>
+pre:   hwndDesklet is not 0, p is not 0
+post: the desklets position is stored in p
+
+<b>Parameters</b>
+	<i><b>HWND hwndDesklet</b></i>
+	an HWND that is received by the OnCreate event and identifies this 
+	desklet.
+
+	<i><b>POINT* p</b></i>
+	A pointer to a POINT-struct that has allocated memory to hold
+	the x- and y-position of this desklet.
+
+<b>Return Values</b>
+none
+
+<b>Remarks</b>
+none
+----- SHM ---- page 29 ---- 
+This function will retrieve the desklets bounding rectangle.
+
+<b>BOOL CALLBACK DeskletGetRect(HWND hwndDesklet,RECT *rcDesklet);</b>
+
+<b>Conditions</b>
+pre:   hwndDesklet is not 0 and rcDesklet is not 0
+post: true has been returned if the desklet is visible, otherwise false
+
+<b>Parameters</b>
+	<i><b>HWND hwndDesklet</b></i>
+	an HWND that is received by the OnCreate event and identifies this 
+	desklet.
+
+	<i><b>RECT *rcDesklet</b></i>
+	This will receive the current bounding rectangle of the desklet.
+
+<b>Return Values</b>
+The desklet visibility status has been returned.
+
+<b>Remarks</b>
+none
+----- SHM ---- page 30 ---- 
+This function will retrieve the desklets rotation in degrees.
+
+<b>INT CALLBACK DeskletGetRotation(HWND hwndDesklet)</b>
+
+<b>Conditions</b>
+pre:   hwndDesklet is not 0
+post: the desklets rotation level is returned.
+
+<b>Parameters</b>
+	<i><b>HWND hwndDesklet</b></i>
+	an HWND that is received by the OnCreate event and identifies this 
+	desklet.
+
+<b>Return Values</b>
+The desklets current rotation in degrees is returned.
+
+<b>Remarks</b>
+none
+----- SHM ---- page 31 ---- 
+This function will retrieve the desklets size.
+
+<b>void CALLBACK DeskletGetSize(HWND hwndDesklet,SIZE *s)</b>
+
+<b>Conditions</b>
+pre:   hwndDesklet is not 0, s is not 0
+post: the desklets size is stored in s
+
+<b>Parameters:</b>
+	<i><b>HWND hwndDesklet</b></i>
+	an HWND that is received by the OnCreate event and identifies this 
+	desklet.
+
+	<i><b>SIZE* s</b></i>
+	A pointer to a SIZE-struct that has allocacted memory to hold the
+	width and height of this desklet.
+
+<b>Return Values</b>
+none
+
+<b>Remarks</b>
+none
+----- SHM ---- page 32 ---- 
+This function will hide a desklet.
+
+<b>void CALLBACK DeskletHide(HWND hwndDesklet)</b>
+
+<b>Conditions</b>
+pre:   hwndDesklet is not 0
+post: the desklet and its label is hidden
+
+<b>Parameters</b>
+	<i><b>HWND hwndDesklet</b></i>
+	an HWND that is received by the OnCreate event and identifies this 
+	desklet.
+	
+
+<b>Return Values</b>
+none
+
+<b>Remarks</b>
+none
+----- SHM ---- page 33 ---- 
+This function will retrieve the desklets visibility.
+
+<b>BOOL CALLBACK DeskletIsVisible(HWND hwndDesklet);</b>
+
+<b>Conditions</b>
+pre:   hwndDesklet is not 0
+post: true has been returned if the desklet is visible, otherwise false
+
+<b>Parameters</b>
+	<i><b>HWND hwndDesklet</b></i>
+	an HWND that is received by the OnCreate event and identifies this 
+	desklet.
+
+<b>Return Values</b>
+TRUE is returned if the desklet is currently visible, otherwise FALSE is returned.
+
+<b>Remarks</b>
+none
+----- SHM ---- page 34 ---- 
+This function updates the desklets alpha level.
+
+<b>void CALLBACK DeskletSetAlpha(HWND hwndDesklet,BYTE alpha)</b>
+
+<b>Conditions</b>
+pre:   hwndDesklet is not 0
+post: the desklets alpha level is set to alpha and the desklet is redrawn
+
+<b>Parameters</b>
+	<i><b>HWND hwndDesklet</b></i>
+	an HWND that is received by the OnCreate event and identifies this 
+	desklet.
+
+	<i><b>BYTE alpha</b></i>
+	The new alpha level this desklet should use. The alpha level ranges
+	from 0 (totally transparent) to 255 (totally opaque).
+
+<b>Return Values</b>
+none
+
+<b>Remarks</b>
+none
+----- SHM ---- page 35 ---- 
+This function will set an image for a desklet.
+
+<b>void CALLBACK DeskletSetImage(HWND hwndDesklet, Image *lpImageNew,BOOL autoDel=TRUE);</b>
+
+<b>Conditions</b>
+pre:   hwndDesklet is not 0 and lpImageNew is not 0
+post: the desklets icon is changed to this image
+
+<b>Parameters</b>
+	<i><b>HWND hwndDesklet</b></i>
+	an HWND that is received by the OnCreate event and identifies this 
+	desklet.
+
+	<i><b>Image* lpImageNew</b></i>
+	The Image object to use as the desklets new icon.
+
+	<i><b>BOOL autoDel=TRUE</b></i>
+	if this is TRUE, AveDesk releases the memory for lpImageNew when no longer needed. Otherwise, the desklet must do it itself.
+
+<b>Return Values</b>
+none
+
+<b>Remarks</b>
+Changing the desklets image doesn't change the overlay image.
+----- SHM ---- page 36 ---- 
+This function will set an image file for a desklet.
+
+<b>void CALLBACK DeskletSetImageFile(HWND hwndDesklet,char *szImage);</b>
+
+<b>Conditions</b>
+pre:   hwndDesklet is not 0 and szImage is not 0
+post: the desklets icon image is changed to this image
+
+<b>Parameters</b>
+	<i><b>HWND hwndDesklet</b></i>
+	an HWND that is received by the OnCreate event and identifies this 
+	desklet.
+
+	<i><b>char* szImage</b></i>
+	The  file to load set as image. This can be any filetype supported by GDI+, but  it's common to use png files. This can also be a filepath relative to the root directory of AveDesk. If the file cannot be found, the default.png file in the roof of the AveDesk directory is used as the filepath.
+
+<b>Return Values</b>
+none
+
+<b>Remarks</b>
+Changing the desklets image doesn't change the overlay image.
+----- SHM ---- page 37 ---- 
+<b>void CALLBACK DeskletSetImageOverlay(HWND hwndDesklet, Image *lpImageNew,BOOL bAutomaticallyDeleteImage=TRUE);</b>
+
+Obsolute.
+----- SHM ---- page 38 ---- 
+<b>void CALLBACK DeskletSetImageOverlayFile(HWND hwndDesklet,char *szImage);</b>
+
+Obsolute.
+----- SHM ---- page 39 ---- 
+This function will updates the desklets label.
+
+<b>int CALLBACK DeskletSetLabel(HWND hwndDesklet, char* szLabel);</b>
+
+<b>Conditions</b>
+pre:   hwndDesklet is not 0 and szLabel is not 0
+post: the number of copied characters has been returned (including the 0-character)
+
+<b>Parameters</b>
+	<i><b>HWND hwndDesklet</b></i>
+	an HWND that is received by the OnCreate event and identifies this 
+	desklet.
+
+	<i><b>char* szLabel</b></i>
+	The new label of this desklet.
+
+<b>Return Values</b>
+the number of copied characters has been returned (including the 0-character).
+
+<b>Remarks</b>
+none
+----- SHM ---- page 40 ---- 
+This function will update a desklets position.
+
+<b>void CALLBACK DeskletSetPosition(HWND hwndDesklet,POINT *p)</b>
+
+<b>Conditions</b>
+pre:   hwndDesklet is not 0, p is not 0
+post: the desklet is repositioned at point p
+
+<b>Parameters</b>
+	<i><b>HWND hwndDesklet</b></i>
+	an HWND that is received by the OnCreate event and identifies this 
+	desklet.
+
+	<i><b>POINT* p</b></i>
+	A pointer to a POINT struct that holds the x and y coordinates
+	the desklet should be repositioned at.
+
+<b>Return Values</b>
+none
+
+<b>Remarks</b>
+none
+----- SHM ---- page 41 ---- 
+This function updates the desklets rotation.
+
+<b>void CALLBACK DeskletSetRotation(HWND hwndDesklet,INT rotation)</b>
+
+<b>Conditions</b>
+pre:   hwndDesklet is not 0
+post: the desklets rotation level is set to rotation
+
+<b>Parameters</b>
+	<i><b>HWND hwndDesklet</b></i>
+	an HWND that is received by the OnCreate event and identifies this 
+	desklet.
+
+	<i><b>INT rotation</b></i>
+	The new rotation level this desklet should use. Rotation is given in 
+	degrees (360 degrees is a full turn) and is going clock-wise. The rotation
+	level could also be negative and more than 360 degrees.
+
+<b>Return Values</b>
+none
+
+<b>Remarks</b>
+none
+----- SHM ---- page 42 ---- 
+This function will update the desklets size.
+
+<b>void CALLBACK DeskletSetSize(HWND hwndDesklet,SIZE *s)</b>
+
+<b>Conditions</b>
+pre:   hwndDesklet is not 0, s is not 0
+post: the desklet is resized to size s
+
+<b>Parameters</b>
+	<i><b>HWND hwndDesklet</b></i>
+	an HWND that is received by the OnCreate event and identifies this 
+	desklet.
+
+	<i><b>SIZE* s</b></i>
+	A pointer to a SIZE struct that holds the width and height
+	that the desklet should be resized to.
+
+<b>Return Values</b>
+none
+
+<b>Remarks</b>
+none
+----- SHM ---- page 43 ---- 
+This function will show a desklet.
+
+<b>void CALLBACK DeskletHide(HWND hwndDesklet)</b>
+
+<b>Conditions</b>
+pre:   hwndDesklet is not 0
+post: the desklet and its label is shown
+
+<b>Parameters</b>
+	<i><b>HWND hwndDesklet</b></i>
+	an HWND that is received by the OnCreate event and identifies this 
+	desklet.
+	
+
+<b>Return Values</b>
+none
+
+<b>Remarks</b>
+none
+----- SHM ---- page 44 ---- 
+This function will load a desklet.
+
+<b>HWND CALLBACK DeskletLoad(char* filename,char* ini, char* iniGroup,void** p,bool makeVisible=false)</b>
+
+<b>Conditions</b>
+pre:   filename is not 0
+post: the desklet with as DLL filename has been loaded. The HWND of the desklet
+	has been returned if it is properly created, otherwise 0 has been returned
+
+<b>Parameters</b>
+	<i><b>char* filename</b></i>
+	The absolute filename of the desklet to load. If you want to clone a desklet, call GetModuleFileName() with this desklets hInstanceDLL.
+
+	<i><b>char* ini</b></i>
+	The INI-file to load settings from, can be 0. In case of 0, no settings are loaded and the e default settings are used.
+	
+	<i><b>char* iniGroup</b></i>
+	The INI-sectionto loadd settings from, can be 0. In case of 0, no settings are loaded an the default settings are used.
+
+	<i><b>void** p</b></i>
+	This will receive the pointer that the desklet returns from the OnCreate() function.
+
+	<i><b>bool makeVisible=false</b></i>
+	If true, the docklet is made visible when loading. If false the docklet is not made 	visible , until a call to DeskletShow(). Set this to false if you want to tweak the desklets settings. After tweaking, call DeskletShow().
+
+<b>Return Values</b>
+The HWND of the newly created desklet has been returned if this function was succesfull, otherwise NULL was returned.
+
+<b>Remarks</b>
+none
+----- SHM ---- page 45 ---- 
+This function will remove a desklet.
+
+<b>BOOL CALLBACK DeskletRemove(HWND hwndDesklet, bool Ask);</b>
+
+<b>Conditions</b>
+pre:   hwndDesklet is not 0
+post: if the desklet is removed TRUE has been returned, otherwise FALSE
+
+<b>Parameters</b>
+	<b><i>HWND hwndDesklet</i></b>
+	an HWND that is received by the OnCreate event and identifies this 
+	desklet.
+
+	<i><b>bool Ask</b></i>
+	if true, then a dialog is shown asking the user if he want to remove the 
+	desklet. If the user says not to remove the desklet, it is not removed.
+	if false, the desklet is removed without asking the user.
+
+
+<b>Return Values</b>
+TRUE if it has been removed, otherwise FALSE.
+
+<b>Remarks</b>
+none
+----- SHM ---- page 46 ---- 
+This function makes the desklet to use OLE drag-'n -drop.
+
+void CALLBACK DeskletActivateExtendedDragDrop(HWND hwndDesklet);
+
+<b>Conditions</b>
+pre:   hwndDesklet is not 0
+post: the desklets will accept OLE drag-'n-drop operations.
+
+<b>Parameters</b>
+	<i><b>HWND hwndDesklet</b></i>
+	an HWND that is received by the OnCreate event and identifies this 
+	desklet.
+
+<b>Return Values</b>
+none
+
+<b>Remarks</b>
+none
+----- SHM ---- page 47 ---- 
+This function will let the user browse for an image.
+
+<b>BOOL CALLBACK DeskletBrowseForImage(HWND hwndParent,char *szImage);</b>
+
+<b>Conditions</b>
+pre:   szImage is not 0
+post: TRUE has been returned if the user selected an image, FALSE if not.
+
+<b>Parameters</b>
+	<i><b>HWND hwndParent</b></i>
+	an HWND that the choose-file dialog uses as his parent.
+
+	<i><b>char* szImage</b></i>
+	If the user selected an image, the filepath of that image is copied into szImage. This will be a relative path when possible, otherwise it will be an absolute path.
+
+<b>Return Values</b>
+TRUE has been returned if the user selected an image, FALSE if not.
+
+<b>Remarks</b>
+none
+----- SHM ---- page 48 ---- 
+This function makes the desklet NOT to use OLE drag-'n -drop.
+
+<b>void CALLBACK DeskletDeactivateExtendedDragDrop(HWND hwndDesklet);</b>
+
+<b>Conditions</b>
+pre:   hwndDesklet is not 0
+post: the desklets will not accept OLE drag-'n-drop operations.
+
+<b>Parameters</b>
+	<i><b>HWND hwndDesklet</b></i>
+	an HWND that is received by the OnCreate event and identifies this 
+	desklet.
+
+<b>Return Values</b>
+none
+
+<b>Remarks</b>
+none
+----- SHM ---- page 49 ---- 
+This function will show the default configure dialog.
+
+<b>void CALLBACK DeskletDefaultConfigDialog(HWND hwndDesklet, PropertyDialogStruct *pds);</b>
+
+<b>Conditions</b>
+pre:  hwndDesklet is not 0 
+post: the default configuration dialog is shown for this desklet.
+
+<b>Parameters</b>
+	<i><b>HWND hwndDesklet</b></i>
+	an HWND that is received by the OnCreate event and identifies this 
+	desklet.
+
+	<i><b>PropertyDialogStruct *pds</b></i>
+	A pointer to  PropertyDialogStruct. for more info, see the document property_pages.rtf . If this is 0, no property pages are added to the dialog.
+
+<b>Return Values</b>
+none
+
+<b>Remarks</b>
+This function will get an extended version in future releases of AveDesk.
+----- SHM ---- page 50 ---- 
+This function will return the identifier of the default configure dialogs OK button. 
+
+<b>UINT CALLBACK DeskletGetParentOK();</b>
+
+<b>Conditions</b>
+post: the ID from the default config parent OK-button has been returned.
+
+<b>Parameters</b>
+none
+
+<b>Return Values</b>
+THe ID from the default config dialog OK-button has been returned.
+
+<b>Remarks</b>
+This is the same as IDOK, but this function has been added for comatibility with other programming languages.
+----- SHM ---- page 51 ---- 
+This function will retrieve the relative folder of the desklet.
+
+<b>void CALLBACK DeskletGetRelativeFolder(HWND hwndDesklet, char *szFolder)</b>
+
+<b>Conditions</b>
+pre:  hwndDesklet is not 0 and szFolder is not 0
+post: the relative folder of this desklet is copied into szFolder
+
+<b>Parameters</b>
+	<i><b>HWND hwndDesklet</b></i>
+	an HWND that is received by the OnCreate event and identifies this 
+	desklet.
+
+	<i><b>char *szFolder</b></i>
+	This will receive the relative folder for this desklet. The relative folder is the path relative to the root of the AveDesk directory. This always ends with a backslash.
+
+<b>Return Values</b>
+none
+
+<b>Remarks</b>
+none
+----- SHM ---- page 52 ---- 
+<b>void CALLBACK DeskletGetRootFolder(HWND hwndDesklet,char *szFolder);</b>
+
+Obsolete. Use GetDLLPath() instead.
+----- SHM ---- page 53 ---- 
+This function will load an image file.
+
+<b>Bitmap* CALLBACK DeskletLoadGDIPlusImage(char *szImage);</b>
+
+<b>Conditions</b>
+pre:   szImage is not 0
+post: a pointer to a new Bitmap object holding the image to load has been returned
+
+<b>Parameters</b>
+	<i><b>char* szImage</b></i>
+	The  file to load. This can be any filetype supported by GDI+, but  it's common to use png files. This can also be a filepath relative to the root directory of AveDesk. If the file cannot be found, the default.png file in the roof of the AveDesk directory is used as the filepath.
+
+<b>Return Values</b>
+a pointer to a new Bitmap object holding the image to load has been returned.
+
+<b>Remarks</b>
+none
+----- SHM ---- page 54 ---- 
+This function will perform a global manager action.
+
+<b>void CALLBACK DeskletManager(UINT action);</b>
+
+<b>Conditions</b>
+pre:   action is one of the constants described in the remarks
+post: the action that is described in the remarks is performed based upon the action parameter
+
+<b>Parameters</b>
+	<i><b>UINT action</b></i>
+		An DM_ action constant, see more in the remarks
+
+<b>Return Values</b>
+none
+
+<b>Remarks</b>
+	AveDesk 1.1 supports the following actions:
+
+	DM_CONTROLPANEL   
+		the desklet control panel is opened
+	DM_SAVE
+ 		saves the current configuration
+	DM_ABOUT
+		the about box is opened
+	DM_HELP
+		the help file is opened
+	DM_EXIT
+		AveDesk is closed and the configuration is saved
+	DM_GLOBALSETTINGS
+		the global settings dialog is opened
+	DM_DEFAULTDESKLETPROPERTIES
+		The default desklet properties dialog is opened
+	DM_ADD
+		The add a desklet dialog is opened
+----- SHM ---- page 55 ---- 
+This function sets the desklet static status.
+
+void CALLBACK DeskletSetStatic(HWND hwndDesklet, bool staticValue);
+
+<b>Conditions</b>
+pre:   hwndDesklet is not 0
+post: the desklets static state is set according to staticValue
+
+<b>Parameters</b>
+	<i><b>HWND hwndDesklet</b></i>
+	an HWND that is received by the OnCreate event and identifies this 
+	desklet.
+
+	<i><b>bool staticValue</b></i>
+	the new value of the static-state for this desklet.
+
+<b>Return Values</b>
+none
+
+<b>Remarks</b>
+	A desklet that shows the same image always and without setting its overlay, could set its state to static. When a desklet is in static mode, resources for the image are freed and are only loaded when the desklets size, alpha, rotation, quality or dropshadow changes. It is best to call this function in the OnCreate() event.
+
+<b>Note</b>
+	The static-state of a desklet is not saved. Therefore, it should be set in the OnCreate().
+----- SHM ---- page 56 ---- 
+This function adds a propertysheet to a desklets config dialogue.
+
+<b>int CALLBACK DeskletAddPropertySheet(HWND hwndDesklet, HPROPSHEETPAGE hpg);</b>
+
+<b>Conditions</b>
+pre:  hwndDesklet is not 0, hpg is not 0
+post: the propertysheet hpg has been added to the desklets config dialogue
+
+<b>Parameters</b>
+	<i><b>HWND hwndDesklet</b></i>
+		an HWND that is received by the OnCreate event and identifies this 
+		desklet.
+
+	<i><b>HPROPSHEETPAGE hpg</b></i>
+		A propertysheet page created with the CreatePropertySheetPage() API that will be added to this desklets config dialogue.
+
+<b>Return Values</b>
+The number of propertysheets <b>after adding hpg</b> has been returned.
+
+<b>Remarks</b>
+This function only works in the OnAddPropertySheet() event.
+----- SHM ---- page 57 ---- 
+This function can be used to add a format to the list of FORMATETCs that this desklets supports when it is dragged.
+
+<b>void CALLBACK DeskletAddDragDropFormat(HWND hwndDesklet,FORMATETC* format);</b>
+
+<b>Conditions</b>
+pre:	hwndDesklet, format are not 0
+post:	format has been added to the list of FORMATETC's that the desklets supports and will forward to the OnDragDropDataRequest event.
+
+<b>Parameters</b>
+	<b><i>HWND hwndDesklet</i></b>
+		A HWND received by the OnCreate that identifies the desklet that you want the poistion and size to change.
+
+	<b><i>FORMATETC* format</i></b>
+		The FORMATETC structure that describes the data format that will be added to the internal FORMATETC list of the desklet.
+
+<b>Return Values</b>
+	<none>
+
+<b>Remarks</b>
+	<none>
+----- SHM ---- page 58 ---- 
+This function can be used to remove a format to the list of FORMATETCs that this desklets supports when it is dragged.
+
+<b>void CALLBACK DeskletRemoveDragDropFormat(HWND hwndDesklet,FORMATETC* format);</b>
+
+<b>Conditions</b>
+pre:	hwndDesklet, format are not 0
+post:	format has been removed from the list of FORMATETC's that the desklets supports and will forward to the OnDragDropDataRequest event.
+
+<b>Parameters</b>
+	<b><i>HWND hwndDesklet</i></b>
+		A HWND received by the OnCreate that identifies the desklet that you want the poistion and size to change.
+
+	<b><i>FORMATETC* format</i></b>
+		The FORMATETC structure that describes the data format that will be removed from the internal FORMATETC list of the desklet.
+
+<b>Return Values</b>
+	<none>
+
+<b>Remarks</b>
+	<none>
+----- SHM ---- page 59 ---- 
+<u>Helper function</u>
+
+This function will retrieve the folderpath of a DLL file.
+
+<b>void GetDLLPath(HMODULE hMod,char* path, DWORD nSize);</b>
+
+<b>Conditions</b>
+pre:  	path is not 0
+post:	the folderpath of the DLL pointed by hMod is stored in path.
+
+<b>Parameters</b>
+	<i><b>HMODULE hMod</b></i>
+		The DLL's Module to get the folderpath of.
+
+	<i><b>char* path</b></i>
+		The string the folderpath should be copied into.
+	
+	<i><b>DWORD nSize</b></i>
+		The maximum number of characters path can hold.
+
+<b>Return Values</b>
+none
+
+<b>Remarks</b>
+none
+----- SHM ---- page 60 ---- 
+<u>Helper function</u>
+
+This function will determine of a DATAOBJECT used in an OLE-drag-'n-drop operation can return an HDROP.
+
+<b>bool IsDataObjectHDROP(LPDATAOBJECT pDataObj);</b>
+
+<b>Conditions</b>
+pre:  pDataObj is not 0
+post: true has been returned if pDataObj can return an HDROP, otherwise false
+
+<b>Parameters</b>
+	<i><b>LPDATAOBJECT pDataObj</b></i>
+		A pointer to a DATAOBJECT get by one of the OLE drop events.
+
+<b>Return Values</b>
+ true has been returned if pDataObj can return an HDROP, otherwise false
+<b>Remarks</b>
+none
+
+----- SHM ---- page 61 ---- 
+<u>Helper function</u>
+
+This function will get a DropStruct structure from a DATAOBJECT received by an OLE-drag-'n-drop operation event.
+
+<b>DropStruct* LockHDROP(LPDATAOBJECT pDataObj);
+</b>
+<b>Conditions</b>
+pre:   pDataObj is not 0 and is capable of returning an HDROP
+post: a newly created DropStruct has been returned based on pDataObj if succeeded. Otherwise 0 is returned.
+
+
+<b>Parameters</b>
+	<i><b>LPDATAOBJECT pDataObj</b></i>
+		A pointer to a DATAOBJECT get by one of the OLE drop events.
+
+<b>Return Values</b>
+a newly created DropStruct has been returned based on pDataObj if succeeded. Otherwise NULL is returned.
+
+<b>Remarks</b>
+You must release the memory for this DropStruct with UnlockHDROP() when done using the HDROP.
+----- SHM ---- page 62 ---- 
+<u>Helper function</u>
+
+This function will show a shell context menu for a specific file.
+
+<b>int ShowContextMenu(HWND owner, HMENU menu, POINT* p, char* file);</b>
+
+<b>Conditions</b>
+pre:   owner is not 0
+post:  0 has been returned if a shellmenu action was performed or if there was no action performed. Otherwise, the value associated with the attached menu was returned.
+
+<b>Parameters</b>
+	<i><b>HWND owner</b></i>
+		The owner of the shellmenu. Make sure this isn't NULL.
+
+	<i><b>HMENU menu</b></i>
+		The menu to attach to the shellmenu. In case of this value being NULL, there is no menu attached to the shell menu. Please make sure each menu item in the MENU does have an ID of at least 10,000.
+
+	<i><b>POINT* p</b></i>
+		The point in screencoords where the popup menu should show up. In case of this value being NULL, the current mouse position is used.
+
+	<i><b>char* file</b></i>
+		The file where we wants to show a shell context menu for. Cannot be 0.
+
+<b>Return Values</b>
+0 has been returned if a shellmenu action was performed or if there was no action performed. Otherwise, the value associated with the attached menu was returned.
+
+<b>Remarks</b>
+----- SHM ---- page 63 ---- 
+<u>Helper function</u>
+
+This function will free any memory and resourced allocated by a previous call to LockHDROP() function.
+
+<b>void UnlockHDROP(DropStruct* ds);</b>
+
+<b>Conditions</b>
+pre:  ds is not 0
+post: ds has been freeed
+
+<b>Parameters</b>
+	<i><b>DropStruct* ds</b></i>
+		A pointer to a DropStruct structure obtained by a call to LockHDROP()
+
+<b>Return Values</b>
+none
+
+<b>Remarks</b>
+After calling this function, ds is not longer valid.
+----- SHM ---- page 64 ---- 
+<u>Helper function</u>
+
+This function will write a integer to an INI-file.
+
+<b>int WritePrivateProfileInt(LPCTSTR lpAppName, LPCTSTR lpKeyName, int iValue, LPCTSTR lpFileName);</b>
+
+For more information, see the WIN32 SDK WritePrivateProfileString() function.. This function works the same, except for integer values.
+----- SHM ---- page 65 ---- 
+<u>Structure</u>
+
+<b>struct DropStruct
+{
+public:
+	HDROP hDrop;
+	STGMEDIUM medium; 
+};</b>
+
+<b>Members</b>
+	<b><i>HDROP hDrop</i></b>
+		An HDROP structure that can be used with several WIN32 SDK APIs.
+	<b><i>STGMEDIUM medium</i></b>
+		Used to free the memory with UnlockHDROP(). This member can be safely ignored.
+----- SHM ---- page 66 ---- 
+<u>Structure</u>
+
+<b>struct PropertyDialogStruct
+{
+public:
+	LPARAM	lParam;			// reserved
+	UINT		pagesCount;			// number of pages
+	TabPage*	pages;			// array of pages
+};</b>
+
+The PropertyDialogStruct is used to hold several TabPages together.
+
+<b>Members</b>
+	<i><b>LPARAM lParam</b></i>
+		Reserved, must be 0.
+	<i><b>UINT pagesCount</b></i>
+		the number of pages.
+	<i><b>TabPage* pages</b></i>
+		A pointer to the first element of a TabPage-array. That TabPage-array must at least have pagesCount elements.
+----- SHM ---- page 67 ---- 
+<u>Structure</u>
+
+<b>struct TabPage
+{
+public:
+	char*		title;			// title of the page
+	int		titleLength;		// length of title
+	char*		resourceName;		// resource name
+	HINSTANCE	hInstance;			/* instance where resource is located*/
+	DLGPROC	dlgProc;			// callback dialog proc
+};</b>
+
+For every property page that you want to add to the default dialog, you must define a TabPage.
+
+<b>Members</b>
+
+	<i><b>char* title</b></i>
+		the title that the Tab for this property page must contain.
+	<i><b>int titleLength</b></i>
+		the length in characters (not including the 0-character) of title.
+	char* resourceName
+		the dialog resource to use for this property page.
+	<i><b>HINSTANCE hInstance</b></i>
+		the module where the resource is located.
+	<i><b>DLGPROC dlgProc</b></i>
+		the callback function that receives messages for the dialog that is representing the property page.
+----- SHM ---- page 68 ---- 
+To have all settings for a desklet on one place, AveDesk support property pages. A property page is a window that is under a tab. The user can select the property page by selecting the tab. The main advantage is that there is only one window, that looks the same for every desklet, but has different tabs for different settings.
+----- SHM ---- page 69 ---- 
+AveDesk does always provide three property pages to the user:
+ - Appearance
+ - Label
+ - Advanced
+
+These three property pages are always present in the desklets configure dialog. But the programmer can call some functions to make some properties not editable for the user.
+----- SHM ---- page 70 ---- 
+The programmer can define his own property pages by implementing the OnConfigure event. When the user request the configure dialog for a desklet, the function for this event is called, if it exists.
+
+Also, the programmer can at any time request the default configure dialog by calling the
+DeskletDefaultConfigureDialog(). Property pages can be added to the default configure dialog by defining a PropertyDialogStruct.
+
+Example:
+[Code snippet 1]
+This code snippet shows a property  page being added to the default configure dialog.
+	
+	// create a TabPage array to hold the new property page(s)
+ 	// parameters, currently we are using 1 property page.
+	TabPage tabs[1];
+
+	// set up the first property page -> Drive
+
+	// set up the callback DLGPROC
+	tabs[0].dlgProc = DialogProc;
+
+	// set up the title for the tab and the length of the title
+	tabs[0].title = "Drive";
+	tabs[0].titleLength = 5;
+
+	// set up the dialog resource to use
+	// lpData->GetInstance() returns the instance to this
+	// desklet that is passed to the OnCreate() event.
+	// we are using a dialog resource with id IDD_SELECTDRIVE
+	tabs[0].hInstance = lpData->GetInstance();
+	tabs[0].resourceName = MAKEINTRESOURCE(IDD_SELECTDRIVE);
+
+	// set up a PropertyDialogStruct that should be passed
+	// to the DeskletDefaultConfigDialog()
+	PropertyDialogStruct pds;
+
+	// the lParam member should always be 0
+	pds.lParam = 0;
+	
+	// pages must point to an array of TabPages so we 
+	// let it point to the first tabpage
+	pds.pages = &tabs[0];
+
+	// we are defining one property page
+	pds.pagesCount = 1;
+	
+	// let AveDesk show the default configure dialog
+	// for this desklet and say that we want to add
+	// our own property pages to it by passing
+	// it the address of our PropertyDialogStruct.
+	DeskletDefaultConfigDialog(lpData->GetWindow(),&pds);
+
+See also:
+<jump=SHM_contents0068>TabPage</jump>, <jump=SHM_contents0067>PropertyDialogStruct</jump>
+----- SHM ---- page 71 ---- 
+Property Pages act as normal dialogs, but there are 5 things you should care for:
+
+ - Showing the property page; when a property page is being showed, the WM_SHOWWINDOW is sent to the dialog with wParam as TRUE.
+
+ - Hiding the property page; when a property page is being hidden, the WM_SHOWWINDOW is sent with wParam as FALSE.
+
+ - When the configure dialogs OK button is pressed, the WM_COMMAND message is sent to the DlgProc with LOWORD(wParam) [id of the control] being the value of DeskletGetParentOK(). This value is most of the time the same as the regular IDOK.
+
+ - The lParam of the WM_INITDIALOG has the value of the value that was returned by the desklets OnCreate() event.
+
+ - There is no need to call DestroyWindow() or EndDialog(), because AveDesk wil handle that.
+----- SHM ---- page 72 ---- 
+To ensure every desklet can be used by anyone, these guidelines for desklet development are created. This document will give the developer all what he needs to make sure all the desklets - those created by him and those not created by him - have the seem look and feel.
+----- SHM ---- page 73 ---- 
+AveDesk is capable of using PNGs as icons. PNG-files provide per-pixel-alpha-transparency, which allows to have nice looking, anti-aliased icons. Please make sure that your icons use this feature of PNG-files.
+Also, the basic icon set of AveDesk provides photo-realistic icons. Although, the choose of icons used depends on the user - and therefore the developer is also free to use the icons he wish -, it is a good idea to use good looking, photo-realistic icons.
+A desklet should also be used at "all" possible sizes. Offcourse, for desklets that provide a text-overlay, the size could not be too smal, but in general a desklet should support 48 x 48 px to 192 x 192 px.
+----- SHM ---- page 74 ---- 
+Layers should be used for additional data represented as a graphic on the icon, like a percentage-used-bar on a Hard Disk desklet. Because layers are scaled to the currently selected size of the desklet, a developer should use DeskletGetSize() to get the overlays dimensions, for best quality and performance.
+----- SHM ---- page 75 ---- 
+Because AveDesk can be used as a desktop replacement, developers should use the left-click event to do something that makes sense. A mail-checker desklet for instance can launch a particular e-mail-client, a RSS-feed desklet can launch the clicked topic, etc... Note that a desklet should only do something on left-click if it makes sense.
+----- SHM ---- page 76 ---- 
+Because AveDesk can be used as a desktop replacement, developers must know that common users expect a menu on right click, just like normal icons would do. For example, a desklet that provides some sort of shortcut behaviour should provide a shell-contextmenu. 
+To have easy access to the shell-contextmenu, use the DeskletShowtShellContextMenu() API.
+
+Also, a desklet should always provide access to the default menu (the menu that pops up when the right click event is not handled). This can be done by using the DeskletGetDefaultMenu() API in combination with the DeskletHandleDefaultMenuCommand() API.
+----- SHM ---- page 77 ---- 
+Because users can hide labels, developers should make sure that there application doesn't rely on information in the label.
+Also labels should not contain to much information and should be used for a descriptive purpose only.
+----- SHM ---- page 78 ---- 
+To have a uniform and coherent look, desklets should use property pages for settings rather than own windows. Make sure there is not to much information on each property page. Therefore, each settings-category should have its own tab.
+----- SHM ---- page 79 ---- 
+Desklets should be as light as possible on using resources. If a desklet doesn't update itself very often ( ~ every half minute) than it should call DeskletSetStatic() with the statusValues set to TRUE in its OnCreate-event.
+----- SHM ---- page 80 ---- 
+Desklets can handle respond to events (like a mouseclick) by defining a function for the event. Each event, except some basic ones, is optional for the desklet to respond to. If a desklet must respond to an event, it should define the function for it.
+----- SHM ---- page 81 ---- 
+This function is called when a desklet is created. It is therefore required.
+
+<b>DOCKLET_DATA *CALLBACK OnCreate(HWND hwndDesklet, HINSTANCE Instance, char *szIni, char *szIniGroup);</b>
+
+<b>Parameters</b>
+	<i><b>HWND hwndDesklet</b></i>
+		The windows handle this desklet is associated with. It should be stored, because it is required to communicate with AveDesk through its functions.
+
+	<i><b>HINSTANCE hInstance</b></i>
+		Handle to the instance of this DLL.
+
+	<i><b>char *szIni</b></i>
+		The ini file the settings for this desklet are stored. It is 0 when the desklet is created for the first time.
+
+	<i><b>char *szIniGroup</b></i>
+		The section in the ini file where the settings for this desklet are stored. It is 0 when the desklet is created for the first time.
+
+<b>Return value</b>
+	Any pointer that you want to be associated with this particular desklet instance. The value is passed to all other events. It's is best to return a pointer to a struct / class holding this desklets settings.
+----- SHM ---- page 82 ---- 
+This function is called before the desklet is destroyed. The desklet should release all memory it is holding, terminate thread etc.
+
+<b>void CALLBACK OnDestroy(DOCKLET_DATA *lpData, HWND hwndDesklet);</b>
+
+<b>Parameters</b>
+	<i><b>DOCKLET_DATA *lpData</b></i>
+		The pointer value associated with this desklet instance that was returned by the OnCreate event.
+
+	<i><b>HWND hwndDesklet</b></i>
+		The handle to the window associated with this desklet. The window is destroyed by AveDesk.
+
+
+<b>Return value</b>
+none
+
+<b>Remarks</b>
+none
+----- SHM ---- page 83 ---- 
+This event is required for every desklet. It is used by AveDesk to get information about the desklet that is shown in the "Add desklet-dialog". This event is not associated with an instance of a desklet.
+
+<b>void CALLBACK OnGetInformation(char *szName, char *szAuthor, int *piVersion, char *szNotes);</b>
+
+Parameters:
+	<b>char* szName</b>
+		The name of this desklet should be copied into this buffer.
+
+	<b>char* szAuthor</b>
+		The name of the author of this desklet should be copied into this buffer.
+
+	<b>int *piVersion</b>
+		The version number should be copied into this buffer.
+
+	<b>char *szNotes</b>
+		Any additional thoughts/notes should be copied into this buffer.
+
+<b>Return value</b>
+none
+
+<b>Remarks</b>
+none
+----- SHM ---- page 84 ---- 
+There are 3 events that are required and must be implemented by a desklet to get reconized as a desklet:
+
+- OnGetInformation
+- OnCreate
+- OnDestroy
+
+----- SHM ---- page 85 ---- 
+This function is called when a desklet is left clicked. Clicks can be single clicks or double clicks depending on the users settings.
+
+<b>BOOL CALLBACK OnLeftButtonClick(DOCKLET_DATA *lpData,POINT *ptCursor, SIZE *sizeDesklet);</b>
+
+<b>Parameters</b>
+	<i><b>DOCKLET_DATA *lpData</b></i>
+		The pointer value associated with this desklet instance that was returned by the OnCreate event.
+
+	<i><b>POINT* ptCursor</b></i>
+		The position of the cursor on the time the user clicked the desklet relative to the the upperleft corner of the desklets image.
+	
+	<i><b>SIZE *sizeDesklet</b></i>
+		The size of the desklet when the user clicked the desklet.
+
+<b>Return value</b>
+The desklet should return TRUE if it processed the message, otherwise FALSE.
+
+<b>Remarks</b>
+none
+----- SHM ---- page 86 ---- 
+This function is called when a desklet is single right-clicked. If this event is not processed or implemented, AveDesk shows a default menu for the desklet.
+
+<b>BOOL CALLBACK OnRightButtonClick(DOCKLET_DATA *lpData,POINT *ptCursor, SIZE *sizeDesklet);</b>
+
+<b>Parameters</b>
+	<i><b>DOCKLET_DATA *lpData</b></i>
+		The pointer value associated with this desklet instance that was returned by the OnCreate event.
+
+	<i><b>POINT* ptCursor</b></i>
+		The position of the cursor on the time the user clicked the desklet relative to the the upperleft corner of the desklets image.
+	
+	<i><b>SIZE *sizeDesklet</b></i>
+		The size of the desklet when the user clicked the desklet.
+
+<b>Return value</b>
+The desklet should return TRUE if it processed the message, otherwise FALSE.
+
+<b>Remarks</b>
+none
+----- SHM ---- page 87 ---- 
+This function is called when the mouse is moved over the desklet.
+
+<b>BOOL CALLBACK OnMouseMove(DOCKLET_DATA* lpData, int x, int y);</b>
+
+<b>Parameters</b>
+	<i><b>DOCKLET_DATA *lpData</b></i>
+		The pointer value associated with this desklet instance that was returned by the OnCreate event.
+	<i><b>int x</b></i>
+		The x-coord of the mouse over the desklet.
+	<i><b>int y</b></i>
+		The y-coord of the mouse over the desklet.
+
+<b>Return value</b>
+The desklet should return TRUE if it processed the message, otherwise FALSE.
+
+<b>Remarks</b>
+none
+----- SHM ---- page 88 ---- 
+This function is called when the mouse enters the desklet.
+
+<b>BOOL CALLBACK OnMouseOn(DOCKLET_DATA* lpData);</b>
+
+<b>Parameters</b>
+	<i><b>DOCKLET_DATA *lpData</b></i>
+		The pointer value associated with this desklet instance that was returned by the OnCreate event.
+
+<b>Return Values</b>
+The desklet should return TRUE if it processed the message, otherwise FALSE.
+
+<b>Remarks</b>
+none
+
+----- SHM ---- page 89 ---- 
+This function is called when the mouse leaves the desklet.
+
+<b>BOOL CALLBACK OnMouseOut(DOCKLET_DATA* lpData);</b>
+
+<b>Parameters</b>
+	<i><b>DOCKLET_DATA *lpData</b></i>
+		The pointer value associated with this desklet instance that was returned by the OnCreate event.
+
+<b>Return value</b>
+The desklet should return TRUE if it processed the message, otherwise FALSE.
+
+<b>Remarks</b>
+none
+----- SHM ---- page 90 ---- 
+This function is called wwhen the user uses the mousewheel on a desklet.
+
+<b>BOOL CALLBACK  OnMouseWheelForward(DOCKLET_DATA* lpData, DWORD keysDown, int numScrolls, int x, int y)</b>
+
+<b>Parameters</b>
+	<b><i>DOCKLET_DATA* lpData</i></b>
+		The pointer value associated with this desklet instance that was returned by the OnCreate event.
+
+	<b><i>DWORD keysDown</i></b>
+		The keys that are being held down by the user.This parameter can be any combination of the following values: 
+			MK_CONTROL
+			MK_LBUTTON
+			MK_MBUTTON
+			MK_RBUTTON
+			MK_SHIFT
+
+	<b><i>int numScrolls</i></b>
+		Defines how many times the user scrolled the mousewheel.
+
+	<b><i>int x</i></b>
+		The x-component of the current position of the mouse relative to the desklet.
+
+	<b><i>int y</i></b>
+		The y-component of the current position of the mouse relative to the desklet.
+		
+<b>Return Values</b>
+	Return TRUE if you handle this event, otherwise return FALSE.
+
+<b>Remarks</b>
+none
+----- SHM ---- page 91 ---- 
+This function is called wwhen the user uses the mousewheel on a desklet.
+
+<b>BOOL CALLBACK  OnMouseWheelBackward(DOCKLET_DATA* lpData, DWORD keysDown, int numScrolls, int x, int y)</b>
+
+<b>Parameters</b>
+	<b><i>DOCKLET_DATA* lpData</i></b>
+		The pointer value associated with this desklet instance that was returned by the OnCreate event.
+
+	<b><i>DWORD keysDown</i></b>
+		The keys that are being held down by the user.This parameter can be any combination of the following values: 
+			MK_CONTROL
+			MK_LBUTTON
+			MK_MBUTTON
+			MK_RBUTTON
+			MK_SHIFT
+
+	<b><i>int numScrolls</i></b>
+		Defines how many times the user scrolled the mousewheel.
+
+	<b><i>int x</i></b>
+		The x-component of the current position of the mouse relative to the desklet.
+
+	<b><i>int y</i></b>
+		The y-component of the current position of the mouse relative to the desklet.
+		
+<b>Return Values</b>
+	Return TRUE if you handle this event, otherwise return FALSE.
+
+<b>Remarks</b>
+none
+----- SHM ---- page 92 ---- 
+BOOL OnAcceptDropFiles(DOCKLET_DATA *lpData);
+
+Obsolete. New desklets should iuse the DeskletActivateExtendedDragDrop() function.
+----- SHM ---- page 93 ---- 
+This function is called when DeskletActivateExtendedDragDrop() is called and therefore OLE-drag-'n-drop is enabled.
+
+<b>BOOL CALLBACK OnDragEnter(DOCKLET_DATA* lpData,IDataObject* obj,DWORD keys ,POINTL pnt ,DWORD* effect);</b>
+
+<b>Parameters</b>
+	<i><b>DOCKLET_DATA *lpData</b></i>
+		The pointer value associated with this desklet instance that was returned by the OnCreate event.
+	<i><b>IDataObject* obj</b></i>
+		A data-object associated with this OLE drag-'n-drop.
+	<i><b>DWORD keys</b></i>
+		Identifies the current state of the keyboard modifier keys on the keyboard. Valid values can be a combination of any of the flags MK_CONTROL, MK_SHIFT, MK_ALT, MK_BUTTON, MK_LBUTTON, MK_MBUTTON, and MK_RBUTTON. 
+	<i><b>POINTL pnt</b></i>
+		Points to the current cursor coordinates in the coordinate space of the drop target window. 
+	<i><b>DWORD* effect</i></b>
+		Specifies the current effect flag. Valid values are from the <jump=SHM_contents0099>DROPEFFECT</jump> enumeration. If you don't want to accept this drag, set it to DRAGEFFECT_NONE.
+
+<b>Example</b>
+
+	// this makes sure only files are accepted
+	if(!IsDataObjectHDROP(obj))*effect = DROPEFFECT_NONE;
+
+	if(*effect & DROPEFFECT_NONE)
+		lpData->AcceptDrop = false;
+	else
+		lpData->AcceptDrop = true;
+
+<b>Return Value</b>
+The desklet should return TRUE if it processed the message, otherwise FALSE.
+
+<b>Remarks</b>
+	AveDesk 1.1 provides several Helpfunctions to deal with OLE-drag-'n-'drop. For more information about this kind of drag-'n-drop, see the WIN32 SDK IDropTarget documentation.
+----- SHM ---- page 94 ---- 
+This function is called when DeskletActivateExtendedDragDrop() is called and therefore OLE-drag-'n-drop is enabled.
+
+<b>BOOL CALLBACK OnDragLeave(DOCKLET_DATA* lpData);</b>
+
+<b>Parameters</b>
+	<i><b>DOCKLET_DATA *lpData</b></i>
+		The pointer value associated with this desklet instance that was returned by the OnCreate event.
+
+<b>Example</b>
+
+	// this makes sure only files that we want to accept are accepted
+	// note that lpData->AcceptDrop is set in the OnDragEnter() event
+	if(lpData->AcceptDrop == false)*effect = DROPEFFECT_NONE;
+
+<b>Return Value</b>
+The desklet should return TRUE if it processed the message, otherwise FALSE.
+
+<b>Remarks</b>
+	AveDesk 1.1 provides several Helpfunctions to deal with OLE-drag-'n-'drop. For more information about this kind of drag-'n-drop, see the WIN32 SDK IDropTarget documentation.
+----- SHM ---- page 95 ---- 
+This function is called when DeskletActivateExtendedDragDrop() is called and therefore OLE-drag-'n-drop is enabled.
+
+<b>BOOL CALLBACK OnDragOver(DOCKLET_DATA* lpData,IDataObject* obj,DWORD keys ,POINTL pnt ,DWORD* effect);</b>
+
+<b>Parameters</b>
+	<i><b>DOCKLET_DATA *lpData</b></i>
+		The pointer value associated with this desklet instance that was returned by the OnCreate event.
+	<i><b>DWORD keys</b></i>
+		Identifies the current state of the keyboard modifier keys on the keyboard. Valid values can be a combination of any of the flags MK_CONTROL, MK_SHIFT, MK_ALT, MK_BUTTON, MK_LBUTTON, MK_MBUTTON, and MK_RBUTTON. 
+	<i><b>POINTL pnt</b></i>
+		Points to the current cursor coordinates in the coordinate space of the drop target window. 
+	<i><b>DWORD* effect</i></b>
+		Specifies the current effect flag. Valid values are from the <jump=SHM_contents0099>DROPEFFECT</jump> enumeration. If you don't want to accept this drag, set it to DRAGEFFECT_NONE.
+
+<b>Example</b>
+
+	// this makes sure only files that we want to accept are accepted
+	// note that lpData->AcceptDrop is set in the OnDragEnter() event
+	if(lpData->AcceptDrop == false)*effect = DROPEFFECT_NONE;
+
+<b>Return Value</b>
+The desklet should return TRUE if it processed the message, otherwise FALSE.
+
+<b>Remarks</b>
+	AveDesk 1.1 provides several Helpfunctions to deal with OLE-drag-'n-'drop. For more information about this kind of drag-'n-drop, see the WIN32 SDK IDropTarget documentation.
+----- SHM ---- page 96 ---- 
+This function is called when DeskletActivateExtendedDragDrop() is called and therefore OLE-drag-'n-drop is enabled.
+
+<b>BOOL CALLBACK OnDrop(DOCKLET_DATA* lpData,IDataObject* obj,DWORD keys ,POINTL pnt ,DWORD* effect);</b>
+
+<b>Parameters</b>
+	<i><b>DOCKLET_DATA *lpData</b></i>
+		The pointer value associated with this desklet instance that was returned by the OnCreate event.
+	<i><b>IDataObject* obj</b></i>
+		A data-object associated with this OLE drag-'n-drop.
+	<i><b>DWORD keys</b></i>
+		Identifies the current state of the keyboard modifier keys on the keyboard. Valid values can be a combination of any of the flags MK_CONTROL, MK_SHIFT, MK_ALT, MK_BUTTON, MK_LBUTTON, MK_MBUTTON, and MK_RBUTTON. 
+	<i><b>POINTL pnt</b></i>
+		Points to the current cursor coordinates in the coordinate space of the drop target window. 
+	<i><b>DWORD* effect</i></b>
+		Specifies the current effect flag. Valid values are from the <jump=SHM_contents0099>DROPEFFECT</jump> enumeration. If you don't want to accept this drag, set it to DRAGEFFECT_NONE.
+
+<b>Example</b>
+
+	// this makes sure only files are accepted
+	if(!IsDataObjectHDROP(obj))*effect = DROPEFFECT_NONE;
+
+	if(*effect & DROPEFFECT_NONE)
+		lpData->AcceptDrop = false;
+	else
+		lpData->AcceptDrop = true;
+
+<b>Return Value</b>
+The desklet should return TRUE if it processed the message, otherwise FALSE.
+
+<b>Remarks</b>
+	AveDesk 1.1 provides several Helpfunctions to deal with OLE-drag-'n-'drop. For more information about this kind of drag-'n-drop, see the WIN32 SDK IDropTarget documentation.
+----- SHM ---- page 97 ---- 
+This function is called when a request is being made for the data of one of the registered DragFormats.
+
+<b>BOOL CALLBACK OnDragDropDataRequest(DOCKLET_DATA*lpDatat,FORMATETC* pFetc, STGMEDIUM* pMedium);</b>
+
+<b>Parameters</b>
+	<b><i>DOCKLET_DATA* lpData</i></b>
+		The pointer value associated with this desklet instance that was returned by the OnCreate event.
+
+	<b><i>FORMATETC* pFetc</i></b>
+		The format data is requested for. Equals one of the registered dragformat.s
+
+	<b><i>STGMEDIUM* pMedium</i></b>
+		The STGMEDIUM you should use to transfer the data.
+		
+<b>Return Values</b>
+	Return TRUE if you handle this event, otherwise return FALSE.
+
+<b>Remarks</b>
+none
+----- SHM ---- page 98 ---- 
+DROPEFFECT name	Value	Description
+DROPEFFECT_NONE	0	Drop target cannot accept the data.
+DROPEFFECT_COPY	1	Drop results in a copy. The original data is untouched by the drag source.
+DROPEFFECT_MOVE	2	Drag source should remove the data.
+DROPEFFECT_LINK	4	Drag source should create a link to the original data.
+DROPEFFECT_SCROLL	0x80000000	Scrolling is about to start or is currently occurring in the target. This value is used in addition to the other values.
+
+(source: WIN32 SDK)
+----- SHM ---- page 99 ---- 
+This function is called when the desklet is saved.
+
+<b>void CALLBACK OnSave(DOCKLET_DATA *lpData, char *szIni, char *szIniGroup, BOOL bIsForExport);
+</b>
+
+<b>Parameters</b>
+	<i><b>DOCKLET_DATA *lpData</b></i>
+		The pointer value associated with this desklet instance that was returned by the OnCreate event.
+
+	<i><b>char *szIni</b></i>
+		The ini file where the settings for this desklet are saved.
+
+	<i><b>char *szIniGroup</b></i>
+		The ini section in the ini file where the settings for this desklet are saved.
+
+	<i><b>BOOL bIsForExport</b></i>
+		Not used in AveDesk 1.0. Only for compatibility with Object Dock docklets.
+
+<b>Return value</b>
+none
+
+<b>Remarks</b>
+none
+----- SHM ---- page 100 ---- 
+This function is called when a message is send to the window associated with this docklet.
+
+NOTE: Also, WM_DEVICECHANGE messages are sent to this function, even when the desklet is not a top-level window.
+
+For more information about Window Messages, see the WIN32 SDK.
+
+<b>void CALLBACK OnProcessMessage(DOCKLET_DATA *lpData,HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam);</b>
+
+<b>Parameters</b>
+	<i><b>DOCKLET_DATA *lpData</b></i>
+		The pointer value associated with this desklet instance that was returned by the OnCreate event.
+
+	<i><b>HWND hwnd</b></i>
+		The windows handle that is associated with this window and received the message.
+
+	<i><b>UINT msg</b></i>
+		message passed.
+
+	<i><b>WPARAM wParam</b></i>
+		Depends on the message passed.
+
+	<i><b>LPARAM lParam</b></i>
+		Depends on the message passed.
+
+<b>Return Values</b>
+none
+
+<b>Remarks</b>
+none
+----- SHM ---- page 101 ---- 
+This function is called before a config dialogue for the desklet is shown.
+
+<b>int CALLBACK OnAddPropertySheets(DOCKLET_DATA* lpData, int numPresent);</b>
+
+<b>Parameters</b>
+	<b><i>DOCKLET_DATA* lpData</i></b>
+		The pointer value associated with this desklet instance that was returned by the OnCreate event.
+
+	<b><i>int numPresent</i></b>
+		The number of propertysheets already present.
+
+<b>Return Values</b>
+	Please return the new number of propertysheets that this desklets config dialogue should have. If you want to return a value that indicates failure, return a negative value
+
+<b>Remarks</b>
+AveDesk1.1 switched to a more standard way of using propertysheets. In 1.0, an own implementation was used. In 1.1 the default WIN32 implementation of a propertysheet is used while being backward compatible with 1.0. For more information, see the WIN32 SDK.
+----- SHM ---- page 102 ---- 
+A novelty in AveDesk1.1 are Effects, also called - with a more technical name - DrawPlugins. The user can attach an effect to every desklet to modify the appearance of the desklet.
+A DrawPlugin will receive notifications of events so it can do different things based on different events. For example, a plugin can show a selectionbox behind the icon when it receives the OnSelect event and can remove this selectionbox when it receives the OnDeselect event.
+----- SHM ---- page 103 ---- 
+An instance of an effect is created for every desklet that will use a certain effect. This is done by a call to OnCreate. From this point, the Effect will receive notifications of events through its OnEvent function.
+
+Also, when a desklet is redrawn, the effects BeforeDraw function is called before the drawing so the plugin can change some parameters for the actual drawing-process. When all layers are drawn, the effects AfterDraw function is called. The combination of OnEvent and BeforeDraw/AfterDraw allows the plugin to only modify the appearance on certain states of the desklet.
+----- SHM ---- page 104 ---- 
+All events should be using the __stdcall calling-convention and should be created using DEF-linkage.
+
+There are 3 types of events:
+
+<b>Required Events</b>
+	These events must be in the plugin to be reconized as an effect by AveDesk.
+	
+	<jump=SHM_contents0106>OnDrawPluginInfo</jump>
+	<jump=SHM_contents0082>OnCreate</jump>
+<b>
+Plugin Events</b>
+	These events are for managing the plugins status and are optional to implement.
+
+	<jump=SHM_contents0108>OnConfigure</jump>
+	<jump=SHM_contents0100>OnSave</jump>
+	<jump=SHM_contents0083>OnDestroy</jump>
+
+
+<b>Effect Events</b>
+	These events are for modifying the desklets state and are optional to implement.
+
+	<jump=SHM_contents0111>OnEvent</jump>
+	<jump=SHM_contents0112>BeforeDraw</jump>
+	<jump=SHM_contents0113>AfterDraw</jump>
+----- SHM ---- page 105 ---- 
+This event is called when AveDesk needs to gather information from the plugin. It is not associated with a particular instance of an effect.
+
+<b>void __stdcall OnDrawPluginInfo(char* name, char* author, char* notes, int* version)</b>
+
+<b>Parameters</b>
+	<b><i>char* name</i></b>
+		You should copy the name of the effect into this buffer. The maximum length is 1024 characters.
+	
+	<b><i>char* author</i></b>
+		You should copy the authors name of the effect into this buffer. The maximum length  is 1024 characters.
+
+	<b><i>char* notes</i></b>
+		You should copy any additional comments into this buffer. The maximum length is 1024 characters.
+
+	<b><i>int* version</i></b>
+		You should copy the version number into version. For example *version = 100;
+
+<b>Return Values</b>	
+	<none>
+
+<b>Remarks</b>
+	<none>
+----- SHM ---- page 106 ---- 
+This event is called when a new instance of an effect is created.
+
+<b>PLUGIN_DATA* __stdcall OnCreate(HWND hwndDesklet, HINSTANCE hInstanceDll, char* iniFile, char* iniGroup);</b>
+
+<b>Parameters</b>
+	<b><i>HWND hwndDesklet</i></b>
+		The HWND of the desklet that this instance will be attached to. You can use this in several callback functions.
+
+	<b><i>HINSTANCE hInstanceDll</i></b>
+		The HINSTANCE of the DLL of this plugin.
+
+	<b><i>char* iniFile</i></b>
+		This will be the filename of the ini-file where you can load previous stored settings by a call to OnSave. It will be 0 if this is a newly created instance.
+
+	<b><i>char* iniGroup</i></b>
+		This will be the section of the ini-file where you can load previous stored settings by a call to OnSave. It will be 0 if this is a newly created instance.
+
+<b>Return Values</b>
+	You can return a pointer to an own defined struct or class. This pointer will be passed as a parameter with all other events.
+
+<b>Remarks</b>
+	<none>
+----- SHM ---- page 107 ---- 
+This event is called when the user wants to configure the effect.
+
+<b>void __stdcall OnConfigure(PLUGIN_DATA* lpData, HWND owner);</b>
+
+<b>Parameters</b>
+	<b><i>PLUGIN_DATA* lpData</i></b>
+		The pointer that was returned by the OnCreate event.
+
+	<b><i>HWND owner</i></b>
+		This should be the owner of any configuration dialogues you want to create.
+
+<b>Return Values</b>
+	<none>
+
+<b>Remarks</b>
+	If you do not implement this, the user will get a message telling him that the effect cannot be configured.
+----- SHM ---- page 108 ---- 
+This event is called when the desklet status is saved.
+
+<b>void __stdcall OnSave(PLUGIN_DATA* lpData,char* iniFile, char* iniGroup)</b>
+
+<b>Parameters</b>
+	<b><i>PLUGIN_DATA* lpData</i></b>
+		The pointer that was returned by the OnCreate event.
+
+	<b><i>char* iniFile</i></b>
+		The ini-file where you should write your settings to.
+
+	<b><i>char* iniGroup</i></b>
+		The section in iniFile where you should write your settings to.
+
+<b>Return Values</b>
+	<none>
+
+<b>Remarks</b>
+	<none>
+----- SHM ---- page 109 ---- 
+This event is called when the effect is destroyed.
+
+<b>void __stdcall OnDestroy(PLUGIN_DATA* lpData);</b>
+
+<b>Parameters</b>
+		<b><i>PLUGIN_DATA* lpData</i></b>
+			The pointer that was returned by the OnCreate event.
+
+<b>Return Values</b>
+	<none>
+
+<b>Remarks</b>
+	You must de-allocate any previously allocated memory for this effect-instance in this function. Also, destroy any created window and exit all created threads.
+----- SHM ---- page 110 ---- 
+This event is called whenever there occurs an event in the desklet that this effect-instance is attached to.
+
+<b>void __stdcall OnEvent(PLUGIN_DATA* lpData, UINT event);</b>
+
+<b>Parameters</b>
+		<b><i>PLUGIN_DATA* lpData</i></b>
+			The pointer that was returned by the OnCreate event.
+
+		<b><i>UINT event</i></b>
+			This will identify the event that occured. It could be one of the following values defined in <i>DrawPluginSDK.h</i>
+
+			<i>EVENT_ONMOUSEON</i>
+				Indicates that the mouse is moved over the desklet				
+
+			<i>EVENT_ONMOUSEOUT</i>
+				Indicates that the mouse is moved out of the desklet
+
+			<i>EVENT_ONSELECT</i>
+				Indicates that the desklet is selected
+
+			<i>EVENT_ONDESELECT</i>
+				Indicates that the desklet is deselected
+
+			<i>EVENT_ONSHOW</i>
+				Indicates that the desklet is shown
+
+			<i>EVENT_ONHIDE</i>
+				Indicates that the desklet is hidden
+
+			<i>EVENT_ONCONFIGURE</i>
+				Indicates that the desklets configure dialogue will be opened
+
+			<i>EVENT_ONSTARTMOVE</i>
+				Indicates that the user will start to move the desklet around
+
+			<i>EVENT_ONENDMOVE</i>
+				Indicates that the user ended to move the desklet around
+
+			<i>EVENT_ONLEFTCLICK</i>
+				Indicates that the user performed a left-click on the desklet. This can be either a single- or a doubleclick depending on the users settings.
+
+			<i>EVENT_ONRIGHTCLICK</i>
+				Indicates that the user performed a right-click on the desklet.
+
+<b>Return Values</b>
+	<none>
+
+<b>Remarks</b>
+	<none>
+----- SHM ---- page 111 ---- 
+This event is called whenever the desklets will be redrawn. It is called <b>before</b> the layers of the desklets are drawn.
+
+<b>void __stdcall BeforeDraw(PLUGIN_DATA* lpData, HWND hwnd,
+	Gdiplus::Graphics* g,
+		UINT left, UINT top, UINT width, UINT height,
+		Gdiplus::ColorMatrix* colormatrix, Gdiplus::Matrix* matrix,bool* modified,
+		bool isSelected, bool isMouseOn);</b>
+
+<b>Parameters</b>
+
+	<b><i>PLUGIN_DATA* lpData</i></b>
+		The pointer that was returned by the OnCreate event.
+
+	<b><i>HWND hwnd</i></b>
+		This is the HWND of the window that will show the icon.
+
+	<b><i>Gdiplus::Graphics* g</i></b>
+		A pointer to the Gdiplus Graphics object used for drawing the desklets layers.
+
+	<b><i>UINT left</i></b>
+		Determines the x-component where the layers will be drawn. You cannot be sure that this will be 0.
+
+	<b><i>UINT left</i></b>
+		Determines the y-component where the layers will be drawn. You cannot be sure that this will be 0.
+
+	<b><i>UINT width</i></b>
+		Determines the width of the layers that will be drawn.
+
+	<b><i>UINT height</i></b>
+		Determines the height of the layers that will be drawn.
+
+	<b><i>Gdiplus::ColorMatrix* colormatrix</i></b>
+		A pointer to the Gdiplus ColorMatrix object that will be used for drawing the desklets layers. If you make any changes to this object, you should set modified to true.
+
+	<b><i>Gdiplus::Matrix* m</i></b>
+		A pointer to the Gdiplus Matrix object that will be used for drawing the desklets layers. If you make any changes to this object, you should set modified to true.
+	
+	<b><i>bool* modified</i></b>
+		A pointer to a boolean value that you should set to true if you modify colormatrix or matrix.
+
+	<b><i>bool isSelected</i></b>
+		true if the desklet is currently selected, otherwise false.
+
+	<b><i>bool isMouseOn</i></b>
+		true if the mouse is over the desklet, otherwise false.
+
+<b>Return Values</b>
+	<none>
+
+<b>Remarks</b>
+	<none>
+----- SHM ---- page 112 ---- 
+This event is called whenever the desklets will be redrawn. It is called <b>after</b> the layers of the desklets are drawn.
+
+<b>void __stdcall AfterDraw(PLUGIN_DATA* lpData, HWND hwnd,
+	Gdiplus::Graphics* g, Gdiplus::Bitmap* bmp,
+		UINT left, UINT top, UINT width, UINT height,
+		Gdiplus::ColorMatrix* colormatrix, Gdiplus::Matrix* matrix,bool* modified,
+		bool isSelected, bool isMouseOn);</b>
+
+<b>Parameters</b>
+
+	<b><i>PLUGIN_DATA* lpData</i></b>
+		The pointer that was returned by the OnCreate event.
+
+	<b><i>HWND hwnd</i></b>
+		This is the HWND of the window that will show the icon.
+
+	<b><i>Gdiplus::Graphics* g</i></b>
+		A pointer to the Gdiplus Graphics object used for drawing the desklets layers.
+
+	<b><i>Gdiplus::Bitmap* bmp</i></b>
+		A pointer to the Gdiplus Bitmap object where all the layers are painted on. This bitmap is an 32bits ARGB-bitmap.
+
+	<b><i>UINT left</i></b>
+		Determines the x-component where the layers will be drawn. You cannot be sure that this will be 0.
+
+	<b><i>UINT left</i></b>
+		Determines the y-component where the layers will be drawn. You cannot be sure that this will be 0.
+
+	<b><i>UINT width</i></b>
+		Determines the width of the layers that will be drawn.
+
+	<b><i>UINT height</i></b>
+		Determines the height of the layers that will be drawn.
+
+	<b><i>Gdiplus::ColorMatrix* colormatrix</i></b>
+		A pointer to the Gdiplus ColorMatrix object that will be used for drawing the desklets layers. If you make any changes to this object, you should set modified to true.
+
+	<b><i>Gdiplus::Matrix* m</i></b>
+		A pointer to the Gdiplus Matrix object that will be used for drawing the desklets layers. If you make any changes to this object, you should set modified to true.
+	
+	<b><i>bool* modified</i></b>
+		A pointer to a boolean value that you should set to true if you modify colormatrix or matrix.
+
+	<b><i>bool isSelected</i></b>
+		true if the desklet is currently selected, otherwise false.
+
+	<b><i>bool isMouseOn</i></b>
+		true if the mouse is over the desklet, otherwise false.
+
+<b>Return Values</b>
+	<none>
+
+<b>Remarks</b>
+	<none>
+----- SHM ---- page 113 ---- 
+The DrawPluginSDK defines several constants and callback function that you can use with your effects.
+include <i>DrawPluginSDK.h<i> and attach <i>DrawPluginSDK.cpp</i> to your project.
+----- SHM ---- page 114 ---- 
+This function can be used to force a redraw of the desklet.
+
+<b>void __stdcall DeskletRedraw(HWND hwndDesklet);</b>
+
+<b>Conditions</b>
+pre:	hwndDesklet is not 0
+post:	the desklet identified by hwndDesklet has been redrawn
+
+<b>Parameters</b>
+	<b><i>HWND hwndDesklet</i></b>
+		A HWND received by the OnCreate that identifies the desklet that should be redrawn.
+
+<b>Return Values</b>
+	<none>
+
+<b>Remarks</b>
+	<none>
+----- SHM ---- page 115 ---- 
+This function can be used to change the desklets size and position in once.
+
+<b>void __stdcall DeskletSetSizeAndPosition(HWND hwndDesklet, POINT* p, SIZE* s, bool redraw);</b>
+
+<b>Conditions</b>
+pre:	hwndDesklet, p and s are nto 0
+post:	The desklets position and size has been changed and the desklet is redrawn when redraw is true
+
+<b>Parameters</b>
+	<b><i>HWND hwndDesklet</i></b>
+		A HWND received by the OnCreate that identifies the desklet that you want the poistion and size to change.
+
+	<b><i>POINT* p</i></b>
+		A pointer to an POINT object that holds the new X,Y-position coordinates for this desklet.
+
+	<b><i>SIZE* s</i></b>
+		A pointer to an SIZE object that holds the new width and height for this desklet.
+
+	<b><i>bool redraw</i></b>
+		If this value is true, the desklets position and size will be updated and the desklet will be redrawn. If it is value, the desklets position and size will be changed but not updated. This means that the user won't see the change, until the desklet is redrawn again.
+
+<b>Return Values</b>
+	<none>
+
+<b>Remarks</b>
+	<none>
+----- SHM ---- page 116 ---- 
+AveDesk 1.2 is the third release of the AveDesk application. It adds some convenient functions to the Desklet API, as well as some changes. The major changes, for the desklet programmer, will be listed.
+
+<b>Threading Model</b>
+Where the previous version of AveDesk were both single threaded applications, AveDesk 1.2 is a multi-threaded application: Each new desklet will run in its own thread, and will thus never block other desklets. The desklet don't have to be aware that it is running in in a multi-threaded environment now, because all API callbacks will be called from the <b>same thread</b>.
+
+<b>Different Saving Method</b>
+Previous versions of AveDesk did use an INI-file for saving settings. Because this method is particularly slow, AveDesk 1.2 now uses an XML based saving method. The desklets however, will still save and load their owner-settings from an INI-file, to make sure all old desklets will still work. 
+
+<b>Multiple-Useraccount Awareness</b>
+AveDesk 1.2 now support multiple user-accounts: Data is preferably saved in the %APPDATA%/AveDesk folder, but this can be overriden by the user. Therefore, the <i>DeskletGetDirectoryW</i> function can be used to get certain special directories.
+
+<b>UNICODE</b>
+AveDesk 1.1 and 1.0 were both non-UNICODE applications, for compatibility with Object Dock docklets. The 1.2-version uses UNICODE internally and externally: All API functions using strings are now also available in UNICODE variants by appending a W to the function-name. New 1.2-functions are only available in UNICODE form.
+----- SHM ---- page 117 ---- 
+AveDesk 1.2 has some new, handy functions available, as well as UNICODE versions of all "old" functions that are using strings.
+
+
+<b>COM/Scripting functions</b>
+DeskletGetWrapper
+
+<b>UNICODE versions</b>
+DeskletSetSubLabelW
+DeskletGetRelativeFolderW
+DeskletGetRootFolderW
+DeskletSetLabelW
+DeskletGetLabelW
+<b>NOTE: these functions might differ from their non-UNICODE equivalents</b>
+
+<b>Animation</b>
+DeskletFadeIn
+DeskletFadeOut
+
+<b>Saving/Loading</b>
+DeskletSaveW
+DeskletLoadFromConfigW
+DeskletLoadFromDLLW
+
+<b>Skins</b>
+DeskletSetSkinInfoW
+
+<b>Other</b>
+DeskletEnumRunningDesklets
+DeskletAsyncSetPointer
+DeskletGetDirectoryW
+----- SHM ---- page 118 ---- 
+This function will retrieve the COM wrapper for this desklet.
+
+BOOL CALLBACK DeskletGetWrapper(HWND hwndDesklet, /*out, retval*/ IDesklet **ptr);
+
+<b>Conditions</b>
+pre:   hwndDesklet is not 0 
+post: ptr is not NULL.
+
+<b>Parameters</b>
+	<i>HWND hwndDesklet</i>
+	an HWND that is received by the OnCreate event and identifies this 
+	desklet.
+
+	<i>/*out, retval*/ IDesklet **ptr</i>
+	A pointer to an IDesklet-pointer that will receive the IDesklet-object pointer.
+
+<b>Return Values</b>
+TRUE if successfull, otherwise FALSE.
+
+<b>Remarks</b>
+none
+----- SHM ---- page 119 ---- 
+This function will update the desklets sublabel.
+
+<b>int CALLBACK DeskletSetSubLabelW(HWND hwndDesklet, const WCHAR* szLabel);</b>
+
+<b>Conditions</b>
+pre:   hwndDesklet is not 0 and szLabel is not 0
+post: the number of copied characters has been returned (including the 0-character)
+
+<b>Parameters</b>
+	<i><b>HWND hwndDesklet</b></i>
+	an HWND that is received by the OnCreate event and identifies this 
+	desklet.
+
+	<i><b>const WCHAR* szLabel</b></i>
+	The new label of this desklet.
+
+<b>Return Values</b>
+the number of copied characters has been returned (including the 0-character).
+
+<b>Remarks</b>
+This is an UNICODE variant of the <jump=SHM_contents0040>DeskletSetSubLabel</jump> function.
+----- SHM ---- page 120 ---- 
+This function will retrieve the relative folder for this desklet.
+
+void CALLBACK DeskletGetRelativeFolderW(HWND hwndDocklet,WCHAR* folder);
+
+<b>Conditions</b>
+pre:   hwndDesklet is not 0 and folder is not 0, the buffer that folder is pointing to is at least MAX_PATH+1 characters long.
+post: the relative folder of the desklet has been copied into the folder buffer.
+
+<b>Parameters</b>
+	<i><b>HWND hwndDesklet</b></i>
+	an HWND that is received by the OnCreate event and identifies this 
+	desklet.
+
+	<i><b>WCHAR* folder</b></i>
+	The new buffer to copy the relative folder to. Must be able to hold at least MAX_PATH characters.
+
+<b>Return Values</b>
+none.
+
+<b>Remarks</b>
+This is an UNICODE variant of the <jump=SHM_contents0052>DeskletGetRelativeFolder</jump> function.
+----- SHM ---- page 121 ---- 
+This function will retrieve the relative folder for this desklet.
+
+void CALLBACK DeskletGetRelativeFolderW(HWND hwndDocklet,WCHAR* folder);
+
+<b>Conditions</b>
+pre:   hwndDesklet is not 0 and folder is not 0, the buffer that folder is pointing to is at least MAX_PATH+1 characters long.
+post: the relative folder of the desklet has been copied into the folder buffer.
+
+<b>Parameters</b>
+	<i><b>HWND hwndDesklet</b></i>
+	an HWND that is received by the OnCreate event and identifies this 
+	desklet.
+
+	<i><b>WCHAR* folder</b></i>
+	The new buffer to copy the relative folder to. Must be able to hold at least MAX_PATH characters.
+
+<b>Return Values</b>
+none.
+
+<b>Remarks</b>
+This is an UNICODE variant of the <jump=SHM_contents0052>DeskletGetRelativeFolder</jump> function.

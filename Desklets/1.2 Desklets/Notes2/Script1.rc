@@ -1,0 +1,189 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Dutch (Netherlands) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NLD)
+#ifdef _WIN32
+LANGUAGE LANG_DUTCH, SUBLANG_DUTCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CONFIGTEXT DIALOG DISCARDABLE  0, 0, 302, 183
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Text"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "&Font Properties",IDSELECTFONT,25,80,80,14
+    LTEXT           "Here you can set the properties for this note, like fontface, style, size, rotation etc...",
+                    IDC_STATIC,15,4,250,16
+    PUSHBUTTON      "&Font Color",IDSELECTCOLOR,25,140,80,14
+    GROUPBOX        "Font",IDC_STATIC,15,65,265,50
+    LTEXT           "Rotation",IDC_STATIC,30,100,28,8
+    EDITTEXT        IDC_FONTROTATION,64,98,36,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    GROUPBOX        "Color",IDC_STATIC,15,125,265,50
+    LTEXT           "Alpha",IDC_STATIC,39,161,19,8
+    EDITTEXT        IDC_COLORALPHA,64,159,36,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_TEXT,15,25,264,40,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    CONTROL         "&Drop a shadow",IDC_SHADOW,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,120,82,64,10
+END
+
+IDD_CONFIGSCROLL DIALOG DISCARDABLE  0, 0, 242, 158
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Scroll"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "The text on the note can scroll on mouseover if it doesn't fit on the notespaper. Here you can enable this and set some properties for it.",
+                    IDC_STATIC,10,5,215,25
+    GROUPBOX        "",IDC_STATIC,10,35,215,105
+    CONTROL         "&Enable Scrolling On Mouseover",IDC_DOSCROLLING,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,36,115,10
+    LTEXT           "Speed",IDC_STATIC,32,57,22,8
+    CONTROL         "Slider1",IDC_SPEED,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,56,55,161,15
+    LTEXT           "Slow",IDC_STATIC,54,70,16,8
+    LTEXT           "Fast",IDC_STATIC,200,70,14,8
+    LTEXT           "Smoothness",IDC_STATIC,14,92,40,8
+    CONTROL         "Slider1",IDC_SMOOTHNESS,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,56,90,161,15
+    LTEXT           "Unsmooth",IDC_STATIC,59,105,33,8
+    LTEXT           "Smooth",IDC_STATIC,189,105,25,8
+    CONTROL         "On mouse-out, go back to the beginning of the text",
+                    IDC_GOBACKTOTOP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,
+                    125,175,10
+END
+
+IDD_CONFIGBR DIALOG DISCARDABLE  0, 0, 247, 133
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Bounding Rectangle"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Here you can configure the bounding rectangle for the text. This defines the rectangle where the text can be drawn on the background. All values are on scale 192 x 192.",
+                    IDC_STATIC,10,5,223,25
+    LTEXT           "Left",IDC_STATIC,20,45,13,8
+    EDITTEXT        IDC_LEFT,39,43,32,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Right",IDC_STATIC,85,45,18,8
+    EDITTEXT        IDC_RIGHT,105,43,32,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Top",IDC_STATIC,19,67,14,8
+    EDITTEXT        IDC_TOP,39,65,32,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Bottom",IDC_STATIC,80,67,23,8
+    EDITTEXT        IDC_BOTTOM,105,65,32,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+END
+
+IDD_TEXTEDITOR DIALOG DISCARDABLE  0, 0, 117, 92
+STYLE WS_POPUP | WS_THICKFRAME
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_TEXT,0,0,117,92,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_CONFIGTEXT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 295
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_CONFIGSCROLL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 235
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 151
+    END
+
+    IDD_CONFIGBR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 126
+    END
+
+    IDD_TEXTEDITOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 110
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 85
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Dutch (Netherlands) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

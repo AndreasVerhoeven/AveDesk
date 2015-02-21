@@ -1,0 +1,24 @@
+HKCR
+{
+	AveDesk.Images.1 = s 'AveImages Class'
+	{
+		CLSID = s '{84FB0245-179D-4640-9230-6785828C686D}'
+	}
+	AveDesk.Images = s 'AveImages Class'
+	{
+		CLSID = s '{84FB0245-179D-4640-9230-6785828C686D}'
+		CurVer = s 'AveDesk.Images.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {84FB0245-179D-4640-9230-6785828C686D} = s 'AveImages Class'
+		{
+			ProgID = s 'AveDesk.Images.1'
+			VersionIndependentProgID = s 'AveDesk.Images'
+			ForceRemove 'Programmable'
+			LocalServer32 = s '%MODULE%'
+			val AppID = s '{3F44B74D-68DC-44D0-B8AA-5CE6CBD4DF71}'
+			'TypeLib' = s '{D3B05B76-65F3-4BDD-A382-543B957A4DDC}'
+		}
+	}
+}

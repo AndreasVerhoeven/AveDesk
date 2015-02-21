@@ -1,0 +1,230 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Dutch (Netherlands) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NLD)
+#ifdef _WIN32
+LANGUAGE LANG_DUTCH, SUBLANG_DUTCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SHORTCUT DIALOG DISCARDABLE  0, 0, 317, 194
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Shortcut"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Here you can set the properties for this shortcut.",
+                    IDC_STATIC,12,8,152,8
+    EDITTEXT        IDC_PATH,62,67,180,14,ES_AUTOHSCROLL
+    GROUPBOX        "Path",IDC_STATIC,12,25,295,70
+    PUSHBUTTON      "Browse...",IDBROWSE,249,67,50,14
+    GROUPBOX        "Other options",IDC_STATIC,12,105,295,80
+    LTEXT           "Parameters",IDC_STATIC,20,123,36,8
+    EDITTEXT        IDC_PARAMS,62,121,180,13,ES_AUTOHSCROLL
+    LTEXT           "Start In",IDC_STATIC,20,144,24,8
+    EDITTEXT        IDC_STARTIN,62,141,180,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse...",IDBROWSE2,249,141,50,14
+    LTEXT           "Execute As",IDC_STATIC,20,165,37,8
+    COMBOBOX        IDC_EXECUTEAS,62,163,180,30,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    ICON            "",IDC_ICONDROP,28,64,20,20,SS_NOTIFY
+    LTEXT           "This is the path this shorcut points to. You can either set it manually, use the browse-button or drop a file from Explorer onto this tab.",
+                    IDC_STATIC,25,37,270,22
+    EDITTEXT        IDC_PIDLSTRING,60,85,180,14,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+END
+
+IDD_LABEL DIALOG DISCARDABLE  0, 0, 307, 220
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "The shortcut desklet is able to automatically adjust the main label and the sublabel based on the file it points to. Here you can adjust this behaviour.",
+                    IDC_STATIC,12,7,283,20
+    GROUPBOX        "Sublabel",IDC_STATIC,12,32,283,120
+    EDITTEXT        IDC_SUBLABEL,19,44,261,14,ES_AUTOHSCROLL
+    LISTBOX         IDC_FORMATS,20,65,145,80,LBS_USETABSTOPS | 
+                    LBS_NOINTEGRALHEIGHT | NOT WS_BORDER | WS_VSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "Mainlabel",IDC_STATIC,12,156,283,55
+    CONTROL         "&Automatically set the mainlabel to the name of the file the desklet points to.",
+                    IDC_AUTOSETCAPTION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    25,180,255,10
+END
+
+IDD_ICON DIALOG DISCARDABLE  0, 0, 342, 220
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Here you can specify which images are used by this desklet.",
+                    IDC_STATIC,15,8,190,8
+    CONTROL         "Use the &system icons",IDC_USESHELLIMAGES,"Button",
+                    BS_AUTORADIOBUTTON,24,25,83,10
+    GROUPBOX        "",IDC_STATIC,15,42,313,168
+    CONTROL         "Use &custom images...",IDC_USECUSTOMIMAGES,"Button",
+                    BS_AUTORADIOBUTTON,24,42,83,10
+END
+
+IDD_IMAGE DIALOG DISCARDABLE  0, 0, 93, 126
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "%Name%",IDC_TITLE,12,6,70,10
+    CONTROL         "",IDC_IMG,"Static",SS_BITMAP | SS_NOTIFY,8,23,77,72
+    PUSHBUTTON      "&Set Image",IDSETIMAGE,8,105,77,14
+END
+
+IDD_ASKBIN DIALOG DISCARDABLE  0, 0, 362, 73
+STYLE DS_SYSMODAL | DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Recycle Bin"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Remove Desklet and File(s)",IDOK,14,52,97,14
+    PUSHBUTTON      "Cancel",IDCANCEL,302,52,50,14
+    LTEXT           "What do you want to do?",IDC_STATIC,53,11,296,24
+    PUSHBUTTON      "Remove File(s) Only",IDOK2,118,52,85,14
+    PUSHBUTTON      "Remove Desklet Only",IDOK3,210,52,85,14
+    ICON            "",IDC_BINICON,14,9,21,20
+END
+
+IDC_BEHAVIOUR DIALOG DISCARDABLE  0, 0, 277, 154
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Behaviour"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Here you will be able to fine-tune the behaviour of this desklet.",
+                    IDC_STATIC,15,10,245,15
+    GROUPBOX        "Media/Drive removal",IDC_STATIC,15,30,245,60
+    LTEXT           "Here you can define what this desklet will do if the (removable) drive to where it points to, is ejected or removed.",
+                    IDC_STATIC,30,44,220,20
+    COMBOBOX        IDC_DRIVEREMOVAL,29,71,220,30,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_SHORTCUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 187
+    END
+
+    IDD_LABEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 300
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 213
+    END
+
+    IDD_ICON, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 335
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 213
+    END
+
+    IDD_IMAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 86
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+
+    IDD_ASKBIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 355
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 66
+    END
+
+    IDC_BEHAVIOUR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 270
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_AVEDESK             BITMAP  DISCARDABLE     "ad_bmp.bmp"
+#endif    // Dutch (Netherlands) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

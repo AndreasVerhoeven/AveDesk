@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AveInstaller>
+
+	<About>
+		<Author>{YOURNAME}</Author>
+		<Email>{YOUREMAIL}</Email>
+		<HomePage>{YOURHOMEPAGE}</HomePage>
+
+		<Name>{YOURCONFIGNAME}</Name>
+		<Version>{YOURVERSION}</Version>
+		<Description>{YOURDESCRIPTION}</Description>
+		<URL>{DOWNLOADURLFORTHISPACKAGE}</URL>
+		<GUID>{NEWGUIDHERE}</GUID>
+	</About>
+
+	<Dependencies>
+		<Item>807BF0E6-B135-4E6C-A267-6106469700B4</Item>
+	</Dependencies>
+
+	<Requirements>
+		<Item Type="RequiredAveDeskVersion">1.2</Item>
+		<Item Type="RequiredInstallerVersion">1.2</Item>
+		<Item Type="FileExists">
+			<Directory BaseFolder="Docklets">
+				<Directory Name="SysStats">
+					<File>SysStats.dll</File>
+				</Directory>
+			</Directory>
+
+			<OnError>
+				<Message>You will need SysStats for this.</Message>
+				<DownloadableFile>
+					<URL>http://dockex.com/__dkpackage.php?dk=38</URL>
+				</DownloadableFile>
+			</OnError>
+		</Item>
+	</Requirements>
+
+	<BeforeCopy/>
+	
+	<CopyInformation>
+		<Directory BaseFolder="Docklets" Name="Docklets">
+			<Directory Name="SysStats">
+				<CopyAll Recursively="yes"/>
+			</Directory>
+		</Directory>
+
+	</CopyInformation>
+
+	<AfterCopySucceeded>
+		<Item Type="ShowBitmap">About.png</Item>
+		<Item Type="LoadDesklet">
+			<!-- 
+			     1) Select the SysStats instance that has your config in the AveDesk control panel
+			     2) Go to: Desklet->Export and save it as myconfig.avedesklet
+			     3) Open the file you have just saved
+			     4) Copy the entire Desklet-node (so, not the AveDesk-node!)
+			     5) Paste it here
+			     6) Remove these comments.
+			-->
+		</Item>
+	</AfterCopySucceeded>
+
+	<AfterCopyFailed>
+		<Item Type="ShowMessage">
+			<Caption>Installation Failed</Caption>
+			<Text>The installation for this config failed.</Text>
+		</Item>
+	</AfterCopyFailed>
+
+</AveInstaller>

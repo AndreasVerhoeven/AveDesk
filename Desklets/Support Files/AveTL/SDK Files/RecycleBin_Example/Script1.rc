@@ -1,0 +1,156 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Dutch (Netherlands) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NLD)
+#ifdef _WIN32
+LANGUAGE LANG_DUTCH, SUBLANG_DUTCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CONFIGLABELFORMAT DIALOG DISCARDABLE  0, 0, 257, 133
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Label Format"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Here you can configure the label format for this recyclebin desklet.",
+                    IDC_STATIC,10,5,215,10
+    LTEXT           "Formats:",IDC_STATIC,12,40,28,8
+    LTEXT           "number of items",IDC_STATIC,45,50,50,8
+    LTEXT           "size of the recyclebin in bytes. The size is automatically adjusted.",
+                    IDC_STATIC,45,65,125,19
+    LTEXT           "percentage sign",IDC_STATIC,45,90,52,8
+    LTEXT           "%n",IDC_STATIC,12,50,10,8
+    LTEXT           "%s",IDC_STATIC,12,65,10,8
+    LTEXT           "%%",IDC_STATIC,12,90,12,8
+    EDITTEXT        IDC_LABEL,12,20,205,12,ES_AUTOHSCROLL
+    LTEXT           "%#",IDC_STATIC,12,105,11,8
+    LTEXT           "newline",IDC_STATIC,45,105,25,8
+END
+
+IDD_CONFIGIMAGES DIALOG DISCARDABLE  0, 0, 307, 174
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Images"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Here you can configure the images used by this recyclebin desklet. There are two images for two different states: empty and full.",
+                    IDC_STATIC,10,10,205,25
+    LTEXT           "Emtpy",IDC_STATIC,15,50,20,8
+    CONTROL         "",IDC_EMPTYIMG,"Static",SS_BLACKFRAME,15,60,80,70
+    PUSHBUTTON      "Set &Empty Image",IDSETEMPTY,15,135,80,14
+    LTEXT           "Full",IDC_STATIC,117,50,12,8
+    CONTROL         "",IDC_FULLIMG,"Static",SS_BLACKFRAME,117,60,80,70
+    PUSHBUTTON      "&Set &Full Image",IDSETFULL,116,135,81,14
+    LTEXT           "Eject",IDC_STATIC,219,50,17,8
+    CONTROL         "",IDC_EJECTIMG,"Static",SS_BLACKFRAME,219,60,80,70
+    PUSHBUTTON      "Set &Eject Image",IDSETEJECT,218,135,81,14
+END
+
+IDD_CONFIGOTHER DIALOG DISCARDABLE  0, 0, 237, 158
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Other"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Here you can configure other options for this recycledesklet.",
+                    IDC_STATIC,15,5,195,20
+    CONTROL         "&Ask before deleting a file",IDC_ASK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,40,93,10
+    CONTROL         "&Do not move the file to the recyclebin, but delete it forever",
+                    IDC_NORECYCLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,
+                    60,198,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_CONFIGLABELFORMAT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 250
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 126
+    END
+
+    IDD_CONFIGIMAGES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 300
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 167
+    END
+
+    IDD_CONFIGOTHER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 230
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 151
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Dutch (Netherlands) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

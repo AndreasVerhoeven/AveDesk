@@ -1,0 +1,39 @@
+EXPORTS
+
+	AveGetVersion
+
+	AveCreateResources
+	AveFreeResources
+
+	AveCreateControlContainer
+	AveFreeControlContainer
+	AveAddControlToContainer
+	AveRemoveControlFromContainer
+	AveGetControlFromContainer
+	AveEmptyContainer
+	AveSetFocusToControl
+
+	AveLockContainer
+	AveUnlockContainer
+	AveIsContainerLocked
+	
+	
+	AveCreateControl
+	AveFreeControl
+
+
+	AveLockControl
+	AveUnlockControl
+	AveIsControlLocked
+
+	AveForwardMessage
+	AveForwardMouseWheelForward
+	AveForwardMouseWheelBackward
+	AveForwardMouseDown
+	AveForwardMouseUp
+	AveForwardMouseClick
+	AveForwardMouseOut
+	AveForwardMouseMove
+	AveForwardMouseOn
+
+	AveSendMessage

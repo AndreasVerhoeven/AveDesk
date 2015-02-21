@@ -1,0 +1,759 @@
+// AveDesk.idl : IDL source for AveDesk.exe
+import "oaidl.idl";
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (AveDesk.tlb) and marshalling code.
+
+//import "oaidl.idl";
+//import "ocidl.idl";
+[
+	uuid(D3B05B76-65F3-4BDD-A382-543B957A4DDC),
+	version(1.0),
+	helpstring("AveDesk 1.0 Type Library")
+]
+library AveDeskLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+// forward declare interfaces
+	interface IDesklet;
+	interface IDesklets;
+	interface IApplication;
+	interface IPreferences;
+	interface IPreference;
+	interface IColorMatrix;
+	interface IMatrix;
+	interface ITimer;
+	interface IDebugHelperClient;
+	interface IDebugHelperServer;
+	interface IAveImage;
+	interface IAveImages;
+	interface IDeskletInfo;
+	interface IDeskletInfos;
+	interface ILayer;
+	interface ILayers;
+	interface IRenderCanvas;
+	interface IShowCase;
+	interface IDeskletSkin;
+	interface IDeskletSkins;
+// enumerations
+	[uuid(BB5D3FA0-53D8-48ad-8829-BF56C4BE58D0)]
+	typedef enum DeskletStyles
+	{
+		styleAveNormal		= 0,
+		styleBottom		= 1,
+		styleTop		= 2,
+		styleIcon		= 3,
+		styleShowCase	= 4
+	}DeskletStyles;
+
+
+// interfaces
+	[
+		object,
+		dual,
+		uuid(03EAD5B9-6670-4329-8AC0-A624DED8B816),
+		pointer_default(unique)
+	]
+	interface IRenderCanvas : IDispatch
+	{
+		[id(1024)]HRESULT GetGraphics([out, retval] int * pVal);
+		[id(1025)]HRESULT GetHDC([out, retval] int * pVal);
+	};
+	[
+		uuid(03B4FEC0-1F1C-4931-82FD-9C748834D944),
+		helpstring("_IDeskletEvents Interface")
+	]
+	dispinterface _IDeskletEvents
+	{
+		properties:
+		methods:
+	};
+
+	[
+		object,
+		uuid(33E08302-3F13-40B5-9134-DEEAABE6B6AD),
+		dual,
+		helpstring("IDesklet Interface"),
+		pointer_default(unique)
+	]
+	interface IDesklet : IDispatch
+	{
+		[propget, id(1), helpstring("property Label")] HRESULT Label([out, retval] BSTR *pVal);
+		[propput, id(1), helpstring("property Label")] HRESULT Label([in] BSTR newVal);
+		[propget, id(2), helpstring("property SubLabel")] HRESULT SubLabel([out, retval] BSTR *pVal);
+		[propput, id(2), helpstring("property SubLabel")] HRESULT SubLabel([in] BSTR newVal);
+		[propget, id(3), helpstring("property Application")] HRESULT Application([out, retval] IApplication* *pVal);
+		[id(4), helpstring("method Redraw")] HRESULT Redraw();
+		[propget, id(5)] HRESULT ColorMatrix([out, retval]IColorMatrix **pVal);
+		[propget, id(6), helpstring("property PositionMatrix")] HRESULT PositionMatrix([out, retval] IMatrix * *pVal);
+		[propget, id(7), helpstring("property Visible")] HRESULT Visible([out, retval] VARIANT_BOOL *pVal);
+		[propput, id(7), helpstring("property Visible")] HRESULT Visible([in] VARIANT_BOOL newVal);
+		[propget, id(8), helpstring("property Alpha")] HRESULT Alpha([out, retval] int *pVal);
+		[propput, id(8), helpstring("property Alpha")] HRESULT Alpha([in] int newVal);
+		[propget, id(9), helpstring("property Rotation")] HRESULT Rotation([out, retval] int *pVal);
+		[propput, id(9), helpstring("property Rotation")] HRESULT Rotation([in] int newVal);
+		[propget, id(10), helpstring("property Left")] HRESULT Left([out, retval] int *pVal);
+		[propput, id(10), helpstring("property Left")] HRESULT Left([in] int newVal);
+		[propget, id(11), helpstring("property Top")] HRESULT Top([out, retval] int *pVal);
+		[propput, id(11), helpstring("property Top")] HRESULT Top([in] int newVal);
+		[propget, id(12), helpstring("property Width")] HRESULT Width([out, retval] int *pVal);
+		[propput, id(12), helpstring("property Width")] HRESULT Width([in] int newVal);
+		[propget, id(13), helpstring("property Height")] HRESULT Height([out, retval] int *pVal);
+		[propput, id(13), helpstring("property Height")] HRESULT Height([in] int newVal);
+		[id(14), helpstring("method Move")] HRESULT Move([in] int Left, [in, optional] VARIANT *Top, [in, optional] VARIANT *Width, [in, optional] VARIANT *Height);
+		[propget, id(15), helpstring("property About")] HRESULT About([out, retval] IDeskletInfo* *pVal);
+		[propget, id(16), helpstring("property Layers")] HRESULT Layers([out, retval] ILayers* *pVal);
+		[id(17), helpstring("method PopFront")] HRESULT PopFront();
+		[id(18), helpstring("method Clone")] HRESULT Clone([out, retval] IDesklet **pVal);
+		[propget, id(19), helpstring("property Style")] HRESULT Style([out, retval] DeskletStyles *pVal);
+		[propput, id(19), helpstring("property Style")] HRESULT Style([in] DeskletStyles newVal);
+		[propget, id(20), helpstring("property HWnd")] HRESULT HWnd([out, retval] int *pVal);
+		[propget, id(21), helpstring("property ObjectModel")] HRESULT ObjectModel([out, retval] IDispatch* *pVal);
+		[propget, id(22), helpstring("property Tag")] HRESULT Tag([out, retval] VARIANT*pVal);
+		[propput, id(22), helpstring("property Tag")] HRESULT Tag([in] VARIANT newVal);
+		[id(23), helpstring("method FadeIn")] HRESULT FadeIn([in]VARIANT* async, [in, defaultvalue(-1)] long durationInMs);
+		[id(24), helpstring("method FadeOut")] HRESULT FadeOut([in] VARIANT* async, [in, defaultvalue(-1)] long durationInMs);
+		[propget, id(25), helpstring("property Skin")] HRESULT Skin([out, retval] IDeskletSkin* *pVal);
+		[propputref, id(25), helpstring("property Skin")] HRESULT Skin([in] IDeskletSkin* newVal);
+	};
+	[
+		uuid(93053009-DE11-496B-B7B9-467A8FACEDE2),
+		helpstring("_IDeskletsEvents Interface")
+	]
+	dispinterface _IDeskletsEvents
+	{
+		properties:
+		methods:
+	};
+	[
+		object,
+		uuid(6C2E1D24-6115-43AD-B656-366DD643949E),
+		dual,
+		helpstring("IDesklets Interface"),
+		pointer_default(unique)
+	]
+	interface IDesklets : IDispatch
+	{
+		[id(DISPID_NEWENUM), propget, restricted, helpstring("property _NewEnum")] HRESULT _NewEnum([out, retval] IUnknown* *pVal);
+		[propget, id(DISPID_VALUE), helpstring("property Item")] HRESULT Item([in] VARIANT* Index, [out, retval] IDesklet* *pVal);
+		[propget, id(1), helpstring("property Count")] HRESULT Count([out, retval] long *pVal);
+		[id(2), helpstring("method Add")] HRESULT Add([in]IDeskletInfo *What, [in, optional] VARIANT *Left, [in, optional] VARIANT *Top, [in, optional] VARIANT *Width, [in, optional] VARIANT *Height, [out, retval] IDesklet **pVal);
+		[id(3), helpstring("method AddWithSkin")] HRESULT AddWithSkin([in]IDeskletInfo *What, [in]IDeskletSkin *Skin, [in, optional]VARIANT *Left, [in, optional]VARIANT *Top, [in, optional]VARIANT *Width, [in, optional]VARIANT *Height, [out,retval] IDesklet**pVal);
+	};
+	[
+		object,
+		uuid(6DE0A391-1EDA-4D3D-BC53-F3EB538FF2ED),
+		dual,
+		helpstring("IApplication Interface"),
+		pointer_default(unique)
+	]
+	interface IApplication : IDispatch
+	{
+		[id(1), helpstring("method Close")] HRESULT Close();
+		[id(2), helpstring("method ShowControlPanel")] HRESULT ShowControlPanel();
+		[propget, id(3), helpstring("property RunningDesklets")] HRESULT RunningDesklets([out, retval] IDesklets * *pVal);
+		[id(4), helpstring("method LoadImage")] HRESULT LoadImage([in] BSTR FileName, [out, retval] IAveImage ** pVal);
+		[propget, id(5), helpstring("property AvailableDesklets")] HRESULT AvailableDesklets([out, retval] IDeskletInfos* *pVal);
+		[id(6), helpstring("method Sleep")] HRESULT Sleep(int ms);
+		[id(7), helpstring("method SaveTheme")] HRESULT SaveTheme([in, defaultvalue("Theme.ini")] BSTR Name);
+		[id(8), helpstring("method LoadTheme")] HRESULT LoadTheme([in, defaultvalue("Theme.ini")] BSTR Name);
+		[propget, id(9), helpstring("property ShowCase")] HRESULT ShowCase([out, retval] IShowCase* *pVal);
+		[propget, id(10), helpstring("property Version")] HRESULT Version([out, retval] long *pVal);
+		[id(11), helpstring("method OpenFile")] HRESULT OpenFile(BSTR FileName);
+		[propget, id(12), helpstring("property ExePath")] HRESULT ExePath([out, retval] BSTR *pVal);
+		[propget, id(13), helpstring("property ThemePath")] HRESULT ThemePath([out, retval] BSTR *pVal);
+		[propget, id(14), helpstring("property UserPath")] HRESULT UserPath([out, retval] BSTR *pVal);
+		[propget, id(15), helpstring("property Debug")] HRESULT Debug([out, retval] IDebugHelperClient* *pVal);
+		[id(16), helpstring("method ShowThemeBrowserDialog")] HRESULT ShowThemeBrowserDialog();
+		[id(17), helpstring("method SaveGlobalSettings")] HRESULT SaveGlobalSettings();
+		[id(18), helpstring("method ShowDeskletBrowserDialog")] HRESULT ShowDeskletBrowserDialog();
+	};
+	
+	[
+		object,
+		dual,
+		uuid(B2CFD8D8-9B78-4029-9418-0E244298C91F),
+		helpstring("IEffectLet Interface"),
+		pointer_default(unique)
+	]
+	interface IEffectLet : IDispatch
+	{
+		[propget, id(1)] HRESULT Preferences([out, retval] IPreferences ** pVal);
+		[propget, id(2), helpstring("property Desklet")] HRESULT Desklet([out, retval] IDesklet **pVal);
+		[propget, id(3), helpstring("property Timer")] HRESULT Ticker([out, retval] ITimer* *pVal);
+		[propget, id(4), helpstring("property ColorMatrix")] HRESULT ColorMatrix([out, retval] IColorMatrix* *pVal);
+		[propget, id(5), helpstring("property Matrix")] HRESULT Matrix([out, retval] IMatrix **pVal);
+		[propget, id(6), helpstring("property Name")] HRESULT Name([out, retval] BSTR *pVal);
+		[propget, id(7), helpstring("property Author")] HRESULT Author([out, retval] BSTR *pVal);
+		[propget, id(8), helpstring("property Description")] HRESULT Description([out, retval] BSTR *pVal);
+		[propget, id(9), helpstring("property Version")] HRESULT Version([out, retval] BSTR *pVal);
+		[propget, id(10), helpstring("property Images")] HRESULT Images([out, retval] IAveImages* *pVal);
+		[propget, id(11), helpstring("property Application")] HRESULT Application([out, retval] IApplication* *pVal);
+		[propget, id(12), helpstring("property Canvas")] HRESULT Canvas([out, retval] int *pVal);
+	};
+	[
+		object,
+		uuid(02C79C78-B5BC-427A-8AE6-0DE72EAAE54E),
+		dual,
+		helpstring("IPreferences Interface"),
+		pointer_default(unique)
+	]
+	interface IPreferences : IDispatch
+	{
+		[propget, id(DISPID_NEWENUM), helpstring("property _NewEnum"), restricted] HRESULT _NewEnum([out, retval] IUnknown* *pVal);
+		[id(1), helpstring("method ReadAll")] HRESULT ReadAll();
+		[id(2), helpstring("method SaveAll")] HRESULT SaveAll();
+		[id(3), helpstring("method Show")] HRESULT Show();
+		[propget, id(4), helpstring("property IniFile")] HRESULT IniFile([out, retval] BSTR *pVal);
+		[propput, id(4), helpstring("property IniFile")] HRESULT IniFile([in] BSTR newVal);
+		[propget, id(5), helpstring("property IniSection")] HRESULT IniSection([out, retval] BSTR *pVal);
+		[propput, id(5), helpstring("property IniSection")] HRESULT IniSection([in] BSTR newVal);
+	};
+	[
+		object,
+		uuid(80A161AB-0394-4101-B27A-0B55155E1929),
+		dual,
+		helpstring("IPreference Interface"),
+		pointer_default(unique)
+	]
+	interface IPreference : IDispatch
+	{
+		[propget, id(DISPID_VALUE), helpstring("property Value")] HRESULT Value([out, retval] VARIANT *pVal);
+		[propput, id(DISPID_VALUE), helpstring("property Value")] HRESULT Value([in] VARIANT newVal);
+		[propget, id(1), helpstring("property DefVal")] HRESULT DefVal([out, retval] VARIANT *pVal);
+		[propput, id(1), helpstring("property DefVal")] HRESULT DefVal([in] VARIANT newVal);
+		[propget, id(2), helpstring("property Description")] HRESULT Description([out, retval] BSTR *pVal);
+		[propput, id(2), helpstring("property Description")] HRESULT Description([in] BSTR newVal);
+		[propget, id(3), helpstring("property Name")] HRESULT Name([out, retval] BSTR *pVal);
+		[propput, id(3), helpstring("property Name")] HRESULT Name([in] BSTR newVal);
+		[propget, id(4), helpstring("property Max")] HRESULT Max([out, retval] long *pVal);
+		[propput, id(4), helpstring("property Max")] HRESULT Max([in] long newVal);
+		[propget, id(5), helpstring("property Min")] HRESULT Min([out, retval] long *pVal);
+		[propput, id(5), helpstring("property Min")] HRESULT Min([in] long newVal);
+		[propget, id(6), helpstring("property Type")] HRESULT Type([out, retval] BSTR *pVal);
+		[propput, id(6), helpstring("property Type")] HRESULT Type([in] BSTR newVal);
+		[id(7), helpstring("method Load")] HRESULT Load(BSTR IniFile, BSTR IniSection);
+		[id(8), helpstring("method Save")] HRESULT Save(BSTR IniFile, BSTR IniSection);
+	};
+	[
+		object,
+		uuid(4CA48898-449F-46AE-B7A5-47565B2F5217),
+		dual,
+		helpstring("IColorMatrix Interface"),
+		pointer_default(unique)
+	]
+	interface IColorMatrix : IDispatch
+	{
+		[propget, id(DISPID_VALUE), helpstring("property Value")] HRESULT Value([in] int x, [in] int y, [out, retval] float *pVal);
+		[propput, id(DISPID_VALUE), helpstring("property Value")] HRESULT Value([in] int x, [in] int y, [in] float newVal);
+		[id(1), helpstring("method Reset")] HRESULT Reset();
+		[propget, id(2), helpstring("property Hue")] HRESULT Hue([out, retval] float *pVal);
+		[propput, id(2), helpstring("property Hue")] HRESULT Hue([in] float newVal);
+		[propget, id(3), helpstring("property Saturation")] HRESULT Saturation([out, retval] float *pVal);
+		[propput, id(3), helpstring("property Saturation")] HRESULT Saturation([in] float newVal);
+	};
+	[
+		object,
+		uuid(CC8A3A30-6DE9-487B-974E-49A045985E39),
+		dual,
+		helpstring("IMatrix Interface"),
+		pointer_default(unique)
+	]
+	interface IMatrix : IDispatch
+	{
+		[propget, id(DISPID_VALUE), helpstring("property Value")] HRESULT Value([in] int x, [in] int y, [out, retval] float *pVal);
+		[propput, id(DISPID_VALUE), helpstring("property Value")] HRESULT Value([in] int x, [in] int y, [in] float newVal);
+		[id(1), helpstring("method Rotate")] HRESULT Rotate([in]float Angle, [in, defaultvalue(-1)]VARIANT_BOOL Prepend);
+		[id(2), helpstring("method Reset")] HRESULT Reset();
+		[id(3), helpstring("method Translate")] HRESULT Translate([in]float offsetX, [in]float offsetY, [in, defaultvalue(-1)]VARIANT_BOOL Prepend);
+		[id(4), helpstring("method RotateAt")] HRESULT RotateAt([in]float Angle, [in]float centerX, [in]float centerY, [in, defaultvalue(-1)]VARIANT_BOOL Prepend);
+	};
+	[
+		object,
+		uuid(186EF3B8-F257-4EA5-979F-89D383571284),
+		dual,
+		helpstring("ITimer Interface"),
+		pointer_default(unique)
+	]
+	interface ITimer : IDispatch
+	{
+		[propget, id(1), helpstring("property Enabled")] HRESULT Enabled([out, retval] VARIANT_BOOL *pVal);
+		[propput, id(1), helpstring("property Enabled")] HRESULT Enabled([in] VARIANT_BOOL newVal);
+		[propget, id(2), helpstring("property Interval")] HRESULT Interval([out, retval] long *pVal);
+		[propput, id(2), helpstring("property Interval")] HRESULT Interval([in] long newVal);
+	};
+	[
+		object,
+		uuid(9006A921-8692-4121-8308-1C8740CFF6D2),
+		dual,
+		helpstring("IDebugConsole Interface"),
+		pointer_default(unique)
+	]
+	interface IDebugConsole : IDispatch
+	{
+	};
+	[
+		object,
+		uuid(9006A921-8692-4121-8308-1C8740CFF6D3),
+		dual,
+		helpstring("IDebugHelperClient Interface"),
+		pointer_default(unique)
+	]
+	interface IDebugHelperClient : IDispatch
+	{
+		[id(1), helpstring("method Print")] HRESULT Print([in] BSTR Text);
+		[id(2), helpstring("method Assert")] HRESULT Assert([in] VARIANT Expression);
+		[id(3), helpstring("method Break")] HRESULT Break();
+		[propget, id(4), helpstring("debug console visibility")] HRESULT Console([out,retval]VARIANT_BOOL*pVal);
+		[propput, id(4), helpstring("debug console visibility")] HRESULT Console([in]VARIANT_BOOL IsVisible);
+	};
+	[
+		object,
+		uuid(9006A921-8692-4121-8308-1C8740CFF6D4),
+		helpstring("IDebugHelperServer Interface"),
+		pointer_default(unique)
+	]
+	interface IDebugHelperServer : IUnknown
+	{
+		[hidden, restricted, id(4), helpstring("method AttachDebugClient")] HRESULT AttachDebugClient([in]IUnknown *Document, [out, retval] IDebugHelperClient ** pVal);
+		[hidden, restricted, propget, id(5), helpstring("property DebugDocument")] HRESULT DebugDocument([out, retval] IUnknown* *pVal);
+		[hidden, restricted, propputref, id(5), helpstring("property DebugDocument")] HRESULT DebugDocument([in] IUnknown* newVal);
+		[propget, id(6), helpstring("property DebugApplication"), hidden, restricted] HRESULT DebugApplication([out, retval] IUnknown* *pVal);
+		[propget, id(7), helpstring("property DebugApplicationContext")] HRESULT DebugApplicationContext([out, retval] DWORD *pVal);
+	};
+
+
+
+	[
+		object,
+		uuid(059D563D-FBAA-47FB-B209-98D8D72BD1C7),
+		dual,
+		helpstring("IAveImage Interface"),
+		pointer_default(unique)
+	]
+	interface IAveImage : IDispatch
+	{
+		[propget, id(DISPID_VALUE), helpstring("property Name")] HRESULT Name([out, retval] BSTR *pVal);
+		[propget, id(2), helpstring("property Path")] HRESULT Path([out, retval] BSTR *pVal);
+		[id(3), helpstring("method Render")] HRESULT Render(int Canvas, int left, int top, int width, int height);
+		[propget, id(4), helpstring("property ColorMatrix")] HRESULT ColorMatrix([out, retval] IColorMatrix* *pVal);
+		[propget, id(5), helpstring("property Matrix")] HRESULT Matrix([out, retval] IMatrix* *pVal);
+		[propget, id(6), helpstring("property Width")] HRESULT Width([out, retval] int *pVal);
+		[propget, id(7), helpstring("property Height")] HRESULT Height([out, retval] int *pVal);
+		[id(8), helpstring("method LoadImage")] HRESULT LoadImage([in] BSTR FileName, [out, retval] VARIANT_BOOL * pVal);
+		[id(9), helpstring("method Clone")] HRESULT Clone([in, optional] VARIANT newWidth, [in, optional] VARIANT newHeight, [out, retval] IAveImage ** pVal);
+	};
+	[
+		object,
+		uuid(78D0E8C9-AE97-40F2-AF7A-F66FFB5829AB),
+		dual,
+		helpstring("IAveImages Interface"),
+		pointer_default(unique)
+	]
+	interface IAveImages : IDispatch
+	{
+		[propget, id(DISPID_NEWENUM), helpstring("property _NewEnum"), restricted] HRESULT _NewEnum([out, retval] IUnknown* *pVal);
+		[propget, id(DISPID_VALUE), helpstring("property Item")] HRESULT Item(VARIANT* Index, [out, retval] IAveImage* *pVal);
+		[propget, id(1), helpstring("property Count")] HRESULT Count([out, retval] long *pVal);
+	};
+
+	[
+		object,
+		uuid(8294571D-49C7-4680-831E-F8C54BD809E4),
+		dual,
+		helpstring("IDeskletInfo Interface"),
+		pointer_default(unique)
+	]
+	interface IDeskletInfo : IDispatch
+	{
+		[propget, id(DISPID_VALUE), helpstring("property Name")] HRESULT Name([out, retval] BSTR *pVal);
+		[propget, id(2), helpstring("property Author")] HRESULT Author([out, retval] BSTR *pVal);
+		[propget, id(3), helpstring("property Comments")] HRESULT Comments([out, retval] BSTR *pVal);
+		[propget, id(4), helpstring("property FileName")] HRESULT FileName([out, retval] BSTR *pVal);
+		[propget, id(5), helpstring("property Version")] HRESULT Version([out, retval] int *pVal);
+		[propget, id(6), helpstring("property Skins")] HRESULT Skins([out, retval] IDeskletSkins **pVal);
+	};
+	[
+		object,
+		uuid(53DEBFCA-080A-4748-BE11-80B677DC99AC),
+		dual,
+		helpstring("IDeskletInfos Interface"),
+		pointer_default(unique)
+	]
+	interface IDeskletInfos : IDispatch
+	{
+		[propget, id(DISPID_NEWENUM), helpstring("property _NewEnum"), restricted] HRESULT _NewEnum([out, retval] IUnknown* *pVal);
+		[propget, id(DISPID_VALUE), helpstring("property Item")] HRESULT Item([in] VARIANT *Index, [out, retval] IDeskletInfo* *pVal);
+		[propget, id(1), helpstring("property Count")] HRESULT Count([out, retval] long *pVal);
+		[id(2), helpstring("method Refresh")] HRESULT Refresh();
+		[id(3), helpstring("method Clear")] HRESULT Clear();
+	};
+	
+	[
+		object,
+		uuid(268FB2FF-2866-44CE-A3C7-85464D6E82BE),
+		dual,
+		helpstring("ILayer Interface"),
+		pointer_default(unique)
+	]
+	interface ILayer : IDispatch
+	{
+		[propget, id(1), helpstring("property Name")] HRESULT Name([out, retval] BSTR *pVal);
+		[propget, id(2), helpstring("property FileName")] HRESULT FileName([out, retval] BSTR *pVal);
+		[propget, id(3), helpstring("property Visible")] HRESULT Visible([out, retval] VARIANT_BOOL *pVal);
+		[propput, id(3), helpstring("property Visible")] HRESULT Visible([in] VARIANT_BOOL newVal);
+		[propget, id(4), helpstring("property CanBeIcon")] HRESULT CanBeIcon([out, retval] VARIANT_BOOL *pVal);
+		[propput, id(4), helpstring("property CanBeIcon")] HRESULT CanBeIcon([in] VARIANT_BOOL newVal);
+	};
+	
+	[
+		object,
+		uuid(269B8CE6-200A-4C8E-8D45-FDC880C586E2),
+		dual,
+		helpstring("ILayers Interface"),
+		pointer_default(unique)
+	]
+	interface ILayers : IDispatch
+	{
+		[propget, id(DISPID_NEWENUM), helpstring("property _NewEnum"), restricted] HRESULT _NewEnum([out, retval] IUnknown* *pVal);
+		[propget, id(DISPID_VALUE), helpstring("property Item")] HRESULT Item([in] VARIANT*Index, [out, retval] ILayer* *pVal);
+		[propget, id(1), helpstring("property Count")] HRESULT Count([out, retval] int *pVal);
+	};
+	
+	[
+		object,
+		uuid(7DB5140E-B90D-4DC6-9453-D28937E6A652),
+		dual,
+		helpstring("IShowCase Interface"),
+		pointer_default(unique)
+	]
+	interface IShowCase : IDispatch
+	{
+		[id(1), helpstring("Activates the ShowCase")] HRESULT Activate();
+		[id(2), helpstring("Deactives the ShowCase")] HRESULT Deactivate();
+		[propget, id(3), helpstring("property Active")] HRESULT Active([out, retval] VARIANT_BOOL *pVal);
+		[propput, id(3), helpstring("property Active")] HRESULT Active([in] VARIANT_BOOL newVal);
+		[propget, id(4), helpstring("property MaximumAlpha")] HRESULT MaximumAlpha([out, retval] long *pVal);
+		[propput, id(4), helpstring("property MaximumAlpha")] HRESULT MaximumAlpha([in] long newVal);
+		[propget, id(5), helpstring("property NumberOfAnimationFrames")] HRESULT NumberOfAnimationFrames([out, retval] long *pVal);
+		[propput, id(5), helpstring("property NumberOfAnimationFrames")] HRESULT NumberOfAnimationFrames([in] long newVal);
+		[propget, id(6), helpstring("property DoAnimation")] HRESULT DoAnimation([out, retval] VARIANT_BOOL *pVal);
+		[propput, id(6), helpstring("property DoAnimation")] HRESULT DoAnimation([in] VARIANT_BOOL newVal);
+		[propget, id(7), helpstring("property Color")] HRESULT Color([out, retval] OLE_COLOR *pVal);
+		[propput, id(7), helpstring("property Color")] HRESULT Color([in] OLE_COLOR newVal);
+		[id(8), helpstring("method ActivateOnAllDesklets")] HRESULT ActivateOnAllDesklets();
+		[propget, id(9), helpstring("property Enabled")] HRESULT Enabled([out, retval] VARIANT_BOOL *pVal);
+		[propput, id(9), helpstring("property Enabled")] HRESULT Enabled([in] VARIANT_BOOL newVal);
+		[propget, id(10), helpstring("property IsClickThru")] HRESULT IsClickThru([out, retval] VARIANT_BOOL *pVal);
+		[propput, id(10), helpstring("property IsClickThru")] HRESULT IsClickThru([in] VARIANT_BOOL newVal);
+	};
+	
+	[
+		object,
+		uuid(5DF9D0A8-9968-428C-8969-208EF2C3C2E0),
+		dual,
+		helpstring("ISkinEnumerator Interface"),
+		pointer_default(unique)
+	]
+	interface ISkinEnumerator : IDispatch
+	{
+		[id(1), helpstring("method Next")] HRESULT Next(BSTR *pVal);
+	};
+	
+	[
+		object,
+		uuid(43CB06F6-4FD6-4868-ACED-01F0E03262B5),
+		dual,
+		helpstring("IAveDeskletFile Interface"),
+		pointer_default(unique)
+	]
+	interface IAveDeskletFile : IDispatch
+	{
+	};
+	
+	[
+		object,
+		uuid(22E63B9B-D236-4D07-8500-5E5950DEB6F1),
+		dual,
+		helpstring("IAveThemeFile Interface"),
+		pointer_default(unique)
+	]
+	interface IAveThemeFile : IDispatch
+	{
+	};
+	
+	[
+		object,
+		uuid(C06675E2-3447-4FAC-AF3E-E598D2E6E990),
+		dual,
+		helpstring("IAveInstallFile Interface"),
+		pointer_default(unique)
+	]
+	interface IAveInstallFile : IDispatch
+	{
+	};
+	
+	[
+		object,
+		uuid(40DD6B56-FBDB-4906-B23A-B57CDEC3D81F),
+		dual,
+		helpstring("IDeskletSkin Interface"),
+		pointer_default(unique)
+	]
+	interface IDeskletSkin : IDispatch
+	{
+		[propget, id(1), helpstring("property Key")] HRESULT Key([out, retval] BSTR *pVal);
+		[propget, id(2), helpstring("property Number")] HRESULT Number([out, retval] long *pVal);
+		[propget, id(DISPID_VALUE), helpstring("property Name")] HRESULT Name([out, retval] BSTR *pVal);
+		[propget, id(4), helpstring("property Author")] HRESULT Author([out, retval] BSTR *pVal);
+		[propget, id(5), helpstring("property Version")] HRESULT Version([out, retval] long *pVal);
+		[propget, id(6), helpstring("property Comments")] HRESULT Comments([out, retval] BSTR *pVal);
+	};
+	
+	[
+		object,
+		uuid(649E41F9-73AD-4CC7-A447-FC313C21FFD0),
+		dual,
+		helpstring("IDeskletSkins Interface"),
+		pointer_default(unique)
+	]
+	interface IDeskletSkins : IDispatch
+	{
+	
+		[propget, id(DISPID_NEWENUM), helpstring("property _NewEnum"), restricted] HRESULT _NewEnum([out, retval] IUnknown* *pVal);
+		[propget, id(DISPID_VALUE), helpstring("property Item")] HRESULT Item([in] VARIANT*Index, [out, retval] IDeskletSkin* *pVal);
+		[propget, id(1), helpstring("property Count")] HRESULT Count([out, retval] long *pVal);
+	};
+
+
+
+// CoClasses
+
+	[
+		uuid(F47B7FC0-7482-49E0-9F16-7D6D8C9444DE),
+		appobject,
+		helpstring("Application Class")
+	]
+	coclass Application
+	{
+		[default] interface IApplication;
+	};
+
+	[
+		uuid(21C83410-5CC7-49AD-97A1-B841C67415C6),
+		noncreatable,
+		helpstring("Desklets Class")
+	]
+	coclass Desklets
+	{
+		[default] interface IDesklets;
+		[default, source] dispinterface _IDeskletsEvents;
+	};
+	[
+		uuid(A1EAADEA-AD20-43F3-BCB4-F9AA864C24C1),
+		noncreatable,
+		helpstring("Desklet Class")
+	]
+	coclass Desklet
+	{
+		[default] interface IDesklet;
+		[default, source] dispinterface _IDeskletEvents;
+	};
+	
+	[
+		uuid(6B91160A-4E1C-4131-BC82-C188EB1CDE8A),
+		noncreatable,
+		helpstring("EffectLet Class")
+	]
+	coclass EffectLet
+	{
+		[default] interface IEffectLet;
+		interface IRenderCanvas;
+	};
+	[
+		uuid(0E4CD517-CE73-4C5F-A4B6-4E82804022B4),
+		noncreatable,
+		helpstring("Preferences Class")
+	]
+	coclass Preferences
+	{
+		[default] interface IPreferences;
+	};
+	[
+		uuid(53EA24DA-1454-4818-8096-37F234C0424A),
+		noncreatable,
+		helpstring("Preference Class")
+	]
+	coclass Preference
+	{
+		[default] interface IPreference;
+	};
+	[
+		uuid(1F91B833-C7CA-4C74-B40E-678859A7F9AF),
+		noncreatable,
+		helpstring("Debug Class")
+	]
+	coclass DebugHelperClient
+	{
+		[default] interface IDebugHelperClient;
+	};
+	[
+		uuid(1F91B833-C7CA-4C74-B40E-678859A7F9AE),
+		noncreatable,
+		helpstring("Debug Class")
+	]
+	coclass DebugHelperServer
+	{
+		[default] interface IDebugHelperClient;
+		interface IDebugHelperServer;
+	};
+	[
+		uuid(1F91B833-C7CA-4C74-B40E-678859A7F9AD),
+		noncreatable,
+		helpstring("Debug Class")
+	]
+	coclass DebugConsole
+	{
+		[default] interface IDebugConsole;
+	};
+	[
+		uuid(518C9FE7-2043-45B5-8A8A-C57DC530031D),
+		noncreatable,
+		helpstring("ColorMatrix Class")
+	]
+	coclass ADColorMatrix
+	{
+		[default] interface IColorMatrix;
+	};
+	[
+		uuid(8BC74884-38AB-4185-BB2E-92D074E6CD58),
+		noncreatable,
+		helpstring("Matrix Class")
+	]
+	coclass ADMatrix
+	{
+		[default] interface IMatrix;
+	};
+	[
+		uuid(BA838CBE-E917-4FBF-893E-CB48B292E2F9),
+		noncreatable,
+		helpstring("Timer Class")
+	]
+	coclass Timer
+	{
+		[default] interface ITimer;
+	};
+	[
+		uuid(1737D13A-0443-44F8-B2F8-1989B554A7E4),
+		helpstring("AveImage Class")
+	]
+	coclass AveImage
+	{
+		[default] interface IAveImage;
+	};
+	[
+		uuid(84FB0245-179D-4640-9230-6785828C686D),
+		helpstring("AveImages Class")
+	]
+	coclass AveImages
+	{
+		[default] interface IAveImages;
+	};
+	[
+		uuid(F72C12CA-50F9-4E5E-8A40-BF5B59A06D59),
+		helpstring("DeskletInfo Class")
+	]
+	coclass DeskletInfo
+	{
+		[default] interface IDeskletInfo;
+	};
+	[
+		uuid(4AC8E525-4338-419C-8518-EA3F8F44C50F),
+		helpstring("DeskletInfos Class")
+	]
+	coclass DeskletInfos
+	{
+		[default] interface IDeskletInfos;
+	};
+	[
+		uuid(FEA0F6C6-1F5C-406B-9CA3-A743A3205CE8),
+		helpstring("Layer Class")
+	]
+	coclass oLayer
+	{
+		[default] interface ILayer;
+	};
+	[
+		uuid(1D3CDD9F-8C1D-4738-8D29-60DA97D247F2),
+		helpstring("Layers Class")
+	]
+	coclass Layers
+	{
+		[default] interface ILayers;
+	};
+	
+	[
+		uuid(83947EC4-5584-4CBE-9386-6161003F4C4C),
+		helpstring("ShowCase Class")
+	]
+	coclass ShowCase
+	{
+		[default] interface IShowCase;
+	};
+	
+	[
+		uuid(5D033EFE-4518-4EE4-83E8-262850E64640),
+		helpstring("SkinEnumerator Class")
+	]
+	coclass SkinEnumerator
+	{
+		[default] interface ISkinEnumerator;
+	};
+	
+	[
+		uuid(0DCCF541-9CC0-462A-A012-0F0E040DB134),
+		helpstring("AveDeskletFile Class")
+	]
+	coclass AveDeskletFile
+	{
+		[default] interface IAveDeskletFile;
+	};
+	
+	[
+		uuid(97FAB359-2942-461E-B48E-8B065C8A9AE9),
+		helpstring("AveThemeFile Class")
+	]
+	coclass AveThemeFile
+	{
+		[default] interface IAveThemeFile;
+	};
+	
+	[
+		uuid(E971912D-4653-4EF4-9177-9E1DDDF18E6C),
+		helpstring("AveInstallFile Class")
+	]
+	coclass AveInstallFile
+	{
+		[default] interface IAveInstallFile;
+	};
+	
+	[
+		uuid(7172844F-A976-4A38-96A6-87F88A8ECE88),
+		helpstring("DeskletSkin Class")
+	]
+	coclass DeskletSkin
+	{
+		[default] interface IDeskletSkin;
+	};
+	
+	[
+		uuid(D98A8D0A-A567-4C18-9EBD-EA84E0A8C735),
+		helpstring("DeskletSkins Class")
+	]
+	coclass DeskletSkins
+	{
+		[default] interface IDeskletSkins;
+	};
+};

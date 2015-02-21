@@ -1,0 +1,24 @@
+HKCR
+{
+	AveDesk.Matrix.1 = s 'Matrix Class'
+	{
+		CLSID = s '{8BC74884-38AB-4185-BB2E-92D074E6CD58}'
+	}
+	AveDesk.Matrix = s 'Matrix Class'
+	{
+		CLSID = s '{8BC74884-38AB-4185-BB2E-92D074E6CD58}'
+		CurVer = s 'AveDesk.Matrix.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {8BC74884-38AB-4185-BB2E-92D074E6CD58} = s 'Matrix Class'
+		{
+			ProgID = s 'AveDesk.Matrix.1'
+			VersionIndependentProgID = s 'AveDesk.Matrix'
+			ForceRemove 'Programmable'
+			LocalServer32 = s '%MODULE%'
+			val AppID = s '{3F44B74D-68DC-44D0-B8AA-5CE6CBD4DF71}'
+			'TypeLib' = s '{D3B05B76-65F3-4BDD-A382-543B957A4DDC}'
+		}
+	}
+}

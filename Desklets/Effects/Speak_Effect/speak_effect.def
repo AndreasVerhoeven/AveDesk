@@ -1,0 +1,7 @@
+EXPORTS
+	OnDrawPluginInfo
+	OnCreate
+	OnDestroy
+	OnSave
+	OnEvent
+	OnConfigure

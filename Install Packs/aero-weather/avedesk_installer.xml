@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AveInstaller>
+
+	<About>
+		<Author>Judge</Author>
+		<Email>sys.stats@gmail.com</Email>
+		<HomePage>http://webpages.charter.net/joolsie/SysStats.htm</HomePage>
+
+		<Name>Aero Weather</Name>
+		<Version>1.0</Version>
+		<Description>An aero-style weather config. Graphics by Kevin Keenan.</Description>
+		<URL>http://www.dockex.com/</URL>
+		<GUID>FE71C394-6BC8-4584-A4A3-AD979B4491B4</GUID>
+	</About>
+
+	<Dependencies>
+		<!-- GUID of SysStats 2.5 -->
+		<Item>807BF0E6-B135-4E6C-A267-6106469700B4</Item>
+	</Dependencies>
+
+	<Requirements>
+		<Item Type="RequiredAveDeskVersion">1.2</Item>
+		<Item Type="RequiredInstallerVersion">1.2</Item>
+		<Item Type="FileExists">
+			<Directory BaseFolder="Docklets">
+				<Directory Name="SysStats">
+					<File>SysStats.dll</File>
+				</Directory>
+			</Directory>
+
+			<OnError>
+				<Message>You will need SysStats for this.</Message>
+				<DownloadableFile>
+					<URL>http://dockex.com/__dkpackage.php?dk=38</URL>
+				</DownloadableFile>
+			</OnError>
+		</Item>
+	</Requirements>
+
+	<BeforeCopy/>
+	
+	<CopyInformation>
+		<Directory BaseFolder="Docklets" Name="Docklets">
+			<Directory Name="SysStats">
+				<CopyAll Recursively="yes"/>
+			</Directory>
+		</Directory>
+
+	</CopyInformation>
+
+	<AfterCopySucceeded>
+		<!-- if you don't want an about.png as splashscreen, remove the next Item-node (showbitmap) -->
+		<Item Type="ShowBitmap">Aero-Weather.jpg</Item>
+		<Item Type="LoadDesklet">
+<Desklet><DLL>docklets\sysstats\sysstats.dll</DLL><label><MainLabelProperties><HasShadow>1</HasShadow><Font>Arial</Font><Color>4294967295</Color><Style>0</Style><Size>14</Size><ShadowProperties><XOffset>1</XOffset><YOffset>1</YOffset><ExtraWidth>0</ExtraWidth><ExtraHeight>0</ExtraHeight><BlurRatio>1</BlurRatio><Intensity>20</Intensity><Color>4278190080</Color></ShadowProperties></MainLabelProperties><SubLabelProperties><HasShadow>1</HasShadow><Font>Arial</Font><Color>4294967295</Color><Style>0</Style><Size>14</Size><ShadowProperties><XOffset>1</XOffset><YOffset>1</YOffset><ExtraWidth>0</ExtraWidth><ExtraHeight>0</ExtraHeight><BlurRatio>1</BlurRatio><Intensity>20</Intensity><Color>4278190080</Color></ShadowProperties></SubLabelProperties><Alpha>0</Alpha><Rotation>0</Rotation><VAlign>0</VAlign><HAlign>1</HAlign><Width>200</Width><Height>75</Height><Margin>5</Margin><Position>0</Position><DrawTopDown>0</DrawTopDown><ShowSubLabel>1</ShowSubLabel><MainCaption>Aero Weather</MainCaption><SubCaption></SubCaption><Background></Background></label><labelType>1</labelType><labelOnlyOnMouseOver>0</labelOnlyOnMouseOver><ignoreLeftClicks>0</ignoreLeftClicks><ignoreRightClicks>0</ignoreRightClicks><isClickThru>0</isClickThru><snapToGrid>0</snapToGrid><lockPosition>0</lockPosition><style>0</style><Alpha>255</Alpha><xPos>21</xPos><yPos>90</yPos><width>200</width><height>235</height><rotation>0</rotation><useColorization>0</useColorization><saturation>1</saturation><hue>100</hue><quality>2</quality><drawShadow>0</drawShadow><shadowX>4</shadowX><shadowY>4</shadowY><shadowGray>0</shadowGray><shadowColor>0</shadowColor><shadowAlpha>0</shadowAlpha><Image>docklets\sysstats\images\transparent.png</Image><effectFile></effectFile><ownerSettings>[TMP]
+config=configs\aero-weather.ini
+version=250
+</ownerSettings></Desklet>		</Item>
+	</AfterCopySucceeded>
+
+	<AfterCopyFailed>
+		<Item Type="ShowMessage">
+			<Caption>Installation Failed</Caption>
+			<Text>The installation for this config failed.</Text>
+		</Item>
+	</AfterCopyFailed>
+
+</AveInstaller>

@@ -1,0 +1,137 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1043{\fonttbl{\f0\fmodern\fprq1\fcharset0 Courier New;}{\f1\fswiss\fprq2\fcharset0 Arial;}{\f2\fswiss\fcharset0 Arial;}{\f3\fswiss\fcharset0 Courier New;}{\f4\froman\fcharset0 Times New Roman;}}
+\viewkind4\uc1\pard\b\f0\fs20\par
+\f1\fs40 The Desklet SDK: Events\par
+\par
+\b0\fs20 Desklets can handle respond to events (like a mouseclick) by defining a function for the event. Each event, except some basic ones, is optional for the desklet to respond to. If a desklet must respond to an event, it should define the function for it.\line\line Note that all events are compatible with the events used by Object Dock docklets, but AveDesk doesn't support all events (OnDoubleClick for instance).\par
+\par
+\b Events definition\b0\par
+\par
+\f2 Events are defined by making them CALLBACK and to export them with DEF-linkage. More information on DEF-linkage can be found on MSDN.\par
+\par
+\b Required events\par
+\par
+\b0 The following events are required and must be implemented by a desklet to be reconized as a desklet.\line\line\b\f0\fs24 OnGetInformation\line\line\b0\f1\fs20 This event is required for every desklet. It is used by AveDesk to get information about the desklet that is shown in the "Add desklet-dialog". This event is not associated with an instance of a desklet.\line\line\pard\tx0\tx959\tx1918\tx2877\tx3836\tx4795\tx5754\tx6713\tx7672\tx8631\f3 void CALLBACK OnGetInformation(char *szName, char *szAuthor, int *piVersion, char *szNotes);\par
+\par
+Parameters:\par
+\f1\tab\b\i char* szName\b0\i0\par
+\tab\tab The name of this desklet should be copied into this buffer.\par
+\par
+\tab\b\i char* szAuthor\b0\i0\par
+\tab\tab The name of the author of this desklet should be copied into this buffer.\par
+\par
+\tab\b\i int *piVersion\b0\i0\par
+\tab\tab The version number should be copied into this buffer.\par
+\par
+\tab\b\i char *szNotes\b0\i0\par
+\tab\tab Any additional thoughts/notes should be copied into this buffer.\par
+\par
+Return value:\par
+\tab <none>\par
+\par
+\pard\b\f0\fs24 OnCreate\line\line\b0\f1\fs20 This function is called when a desklet is created. It is therefore required.\line\line\pard\tx0\tx959\tx1918\tx2877\tx3836\tx4795\tx5754\tx6713\tx7672\tx8631\f3 DOCKLET_DATA *CALLBACK OnCreate(HWND hwndDesklet, HINSTANCE Instance, char *szIni, char *szIniGroup);\par
+\par
+Parameters:\par
+\f1\tab\b\i HWND hwndDesklet\b0\i0\par
+\tab\tab The windows handle this desklet is associated with. It should be stored, because it is required to communicate with AveDesk through its functions.\par
+\par
+\tab\b\i HINSTANCE hInstance\b0\i0\par
+\tab\tab Handle to the instance of this DLL.\par
+\par
+\tab\b\i char *szIni\b0\i0\par
+\tab\tab The ini file the settings for this desklet are stored. It is 0 when the desklet is created for the first time.\par
+\par
+\tab\b\i char *szIniGroup\b0\i0\par
+\tab\tab The section in the ini file where the settings for this desklet are stored. It is 0 when the desklet is created for the first time.\line\line Return value:\par
+\tab Any pointer that you want to be associated with this particular desklet instance. The value is passed to all other events. It's is best to return a pointer to a struct / class holding this desklets settings.\par
+\par
+\par
+\par
+\pard\b\f0\fs24 OnSave\line\line\b0\f1\fs20 This function is called when the desklet is saved.\line\line\pard\tx0\tx959\tx1918\tx2877\tx3836\tx4795\tx5754\tx6713\tx7672\tx8631\f3 void CALLBACK OnSave(DOCKLET_DATA *lpData, char *szIni, char *szIniGroup, BOOL bIsForExport);\par
+\par
+\par
+Parameters:\par
+\f1\tab\b\i DOCKLET_DATA *lpData\b0\i0\par
+\tab\tab The pointer value associated with this desklet instance that was returned by the \i OnCreate \i0 event.\par
+\par
+\tab\b\i char *szIni\b0\i0\par
+\tab\tab The ini file where the settings for this desklet are saved.\par
+\par
+\tab\b\i char *szIniGroup\b0\i0\par
+\tab\tab The ini section in the ini file where the settings for this desklet are saved.\par
+\par
+\tab\b\i BOOL bIsForExport\b0\i0\par
+\tab\tab Not used in AveDesk 1.0. Only for compatibility with Object Dock docklets.\line\line Return value:\par
+\tab <none>\par
+\par
+\pard\b\f4\fs28 OnDestroy\b0\fs24  \par
+\b\f0\line\b0\f1\fs20 This function is called before the desklet is destroyed. The desklet should release all memory it is holding, terminate thread etc.\line\line\pard\tx0\tx959\tx1918\tx2877\tx3836\tx4795\tx5754\tx6713\tx7672\tx8631\f3 void CALLBACK OnDestroy(DOCKLET_DATA *lpData, HWND hwndDesklet);\par
+\par
+Parameters:\par
+\f1\tab\b\i DOCKLET_DATA *lpData\b0\i0\par
+\tab\tab The pointer value associated with this desklet instance that was returned by the \i OnCreate \i0 event.\par
+\par
+\tab\b\i HWND hwndDesklet\b0\i0\par
+\tab\tab The handle to the window associated with this desklet. The window is destroyed by AveDesk.\par
+\line\line Return value:\par
+\tab <none>\par
+\par
+\pard\b\f4\fs28 OnLeftButtonClick\b0\fs24  \par
+\b\f0\line\b0\f1\fs20 This function is called when a desklet is left clicked. Clicks can be single clicks or double clicks depending on the users settings.\line\line\pard\tx0\tx959\tx1918\tx2877\tx3836\tx4795\tx5754\tx6713\tx7672\tx8631\f3 BOOL CALLBACK OnLeftButtonClick(DOCKLET_DATA *lpData,POINT *ptCursor, SIZE *sizeDesklet);\par
+\par
+Parameters:\par
+\f1\tab\b\i DOCKLET_DATA *lpData\b0\i0\par
+\tab\tab The pointer value associated with this desklet instance that was returned by the \i OnCreate \i0 event.\par
+\par
+\tab\b\i POINT* ptCursor\b0\i0\par
+\tab\tab The position of the cursor on the time the user clicked the desklet relative to the the upperleft corner of the desklets image.\par
+\tab\par
+\tab\b\i SIZE *sizeDesklet\b0\i0\par
+\tab\tab The size of the desklet when the user clicked the desklet.\line\line Return value:\par
+\tab The desklet should return TRUE if it processed the message, otherwise FALSE.\par
+\par
+\par
+\pard\b\f4\fs28 OnRightButtonClick\b0\fs24  \par
+\b\f0\line\b0\f1\fs20 This function is called when a desklet is single right-clicked. If this event is not processed or implemented, AveDesk shows a default menu for the desklet.\line\line\pard\tx0\tx959\tx1918\tx2877\tx3836\tx4795\tx5754\tx6713\tx7672\tx8631\f3 BOOL CALLBACK OnLeftButtonClick(DOCKLET_DATA *lpData,POINT *ptCursor, SIZE *sizeDesklet);\par
+\par
+Parameters:\par
+\f1\tab\b\i DOCKLET_DATA *lpData\b0\i0\par
+\tab\tab The pointer value associated with this desklet instance that was returned by the \i OnCreate \i0 event.\par
+\par
+\tab\b\i POINT* ptCursor\b0\i0\par
+\tab\tab The position of the cursor on the time the user clicked the desklet relative to the the upperleft corner of the desklets image.\par
+\tab\par
+\tab\b\i SIZE *sizeDesklet\b0\i0\par
+\tab\tab The size of the desklet when the user clicked the desklet.\line\line Return value:\par
+\tab The desklet should return TRUE if it processed the message, otherwise FALSE.\par
+\par
+\par
+\pard\b\f4\fs28 OnAcceptDropFiles\b0\fs24  \par
+\b\f0\line\b0\f1\fs20 This function is called when the desklet is created. Implement it and return TRUE if you want the desklet to be able to accept dropfiles. Otherwise, don't implement it or return FALSE.\line\line\pard\tx0\tx959\tx1918\tx2877\tx3836\tx4795\tx5754\tx6713\tx7672\tx8631\f3 BOOL OnAcceptDropFiles(DOCKLET_DATA *lpData);\par
+\par
+Parameters:\par
+\f1\tab\b\i DOCKLET_DATA *lpData\b0\i0\par
+\tab\tab The pointer value associated with this desklet instance that was returned by the \i OnCreate \i0 event.\par
+\par
+\line Return value:\par
+\tab If you want the desklet to be able to accept dropfiles, return TRUE. Otherwise, return FALSE or don't implement it.\par
+\par
+\par
+\pard\b\f4\fs28 OnProcessMessage\b0\fs24\par
+\b\f0\line\b0\f1\fs20 This function is called when a message is send to the window associated with this docklet.\line\line NOTE: Also, WM_DEVICECHANGE messages are sent to this function, even when the desklet is not a top-level window.\line\line For more information about Window Messages, see the WIN32 SDK.\line\line\pard\tx0\tx959\tx1918\tx2877\tx3836\tx4795\tx5754\tx6713\tx7672\tx8631\f3 void CALLBACK OnProcessMessage(DOCKLET_DATA *lpData,HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam);\par
+\par
+Parameters:\par
+\f1\tab\b\i DOCKLET_DATA *lpData\b0\i0\par
+\tab\tab The pointer value associated with this desklet instance that was returned by the \i OnCreate \i0 event.\par
+\par
+\b\i\tab HWND hwnd\b0\i0\par
+\tab\tab The windows handle that is associated with this window and received the message.\line\line\tab\b UINT msg\b0\line\tab\tab message passed.\line\line\tab\b WPARAM wParam\b0\par
+\tab\tab Depends on the message passed.\line\line\tab\b LPARAM lParam\b0\line\tab\tab Depends on the message passed.\line\line Return value:\par
+\tab <none>\par
+\par
+\par
+\par
+\par
+\par
+\f2\par
+}
+ 

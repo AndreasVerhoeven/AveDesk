@@ -1,0 +1,56 @@
+// AveDeskShellExt.idl : IDL source for AveDeskShellExt.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (AveDeskShellExt.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+	[
+		object,
+		uuid(67F1EFEA-291F-4471-AE26-15C42C32F072),
+		dual,
+		helpstring("ICAveDeskImageShellExt Interface"),
+		pointer_default(unique)
+	]
+	interface ICAveDeskImageShellExt : IDispatch
+	{
+	};
+	[
+		object,
+		uuid(D6EBC484-A1A4-41ED-A8B3-2991E420A4BE),
+		dual,
+		helpstring("ICAveDeskThemeShellExt Interface"),
+		pointer_default(unique)
+	]
+	interface ICAveDeskThemeShellExt : IDispatch
+	{
+	};
+
+[
+	uuid(08DB5256-EA6B-477B-969A-31D489E98355),
+	version(1.0),
+	helpstring("AveDeskShellExt 1.0 Type Library")
+]
+library AVEDESKSHELLEXTLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(6DD050D8-FBDF-4562-AB05-8BF879FAE89E),
+		helpstring("CAveDeskImageShellExt Class")
+	]
+	coclass CAveDeskImageShellExt
+	{
+		[default] interface ICAveDeskImageShellExt;
+	};
+	[
+		uuid(F756AF2A-EB0E-4D42-9495-B61BD6D99B82),
+		helpstring("CAveDeskThemeShellExt Class")
+	]
+	coclass CAveDeskThemeShellExt
+	{
+		[default] interface ICAveDeskThemeShellExt;
+	};
+};

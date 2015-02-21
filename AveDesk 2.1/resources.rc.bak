@@ -1,0 +1,1334 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+// Generated Help ID header file
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.hm"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENUACTIVE MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Create Empty Theme\tCTRL+N", IDM_CREATEEMPTYTHEME
+        MENUITEM "&Load Theme",                 IDM_LOADCONFIG
+        MENUITEM "&Save Theme\tCTRL+S",         40018
+        MENUITEM "Save Theme &As...",           IDM_SAVECONFIGAS
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit\tAlt+F4",               40001
+    END
+    POPUP "&Settings"
+    BEGIN
+        MENUITEM "&Settings...\tAlt+F7",        40012
+        MENUITEM "&New Desklet Properties...\tAlt+F8", 
+                                                IDM_SETTINGS_DEFAULTDESKLETPROPERTIES
+
+    END
+    POPUP "&Desklets"
+    BEGIN
+        MENUITEM "&Close\tdel",                 IDM_DESKLETS_REMOVE
+        MENUITEM "&Duplicate",                  ID_DESKLETS_DUPLICATE
+        MENUITEM "&Properties",                 IDM_DESKLETS_PROPERTIES
+        MENUITEM "&Export...",                  IDM_EXPORTDESKLET
+        MENUITEM "&Import...",                  IDM_IMPORTDESKLET
+        MENUITEM SEPARATOR
+        MENUITEM "A&uto-align",                 IDM_DESKLETS_AUTOALIGN
+    END
+    POPUP "&Extras"
+    BEGIN
+        POPUP "Modules", GRAYED
+        BEGIN
+            MENUITEM "Modify &Modules...",          ID_EXTRAS_MODULES_MODULE0
+
+            MENUITEM SEPARATOR
+            MENUITEM "Module 0",                    50000
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Tool 0\tAlt+0",               40029
+        MENUITEM "Tool 1\tAlt+1",               40030
+        MENUITEM "Tool 2\tAlt+2",               40031
+        MENUITEM "Tool 3\tAlt+3",               40032
+        MENUITEM "Tool 4\tAlt+4",               40033
+        MENUITEM "Tool 5\tAlt+5",               40034
+        MENUITEM "Tool 6\tAlt+6",               40035
+        MENUITEM "Tool 7\tAlt+7",               40036
+        MENUITEM "Tool 8\tAlt+8",               40037
+        MENUITEM "Tool 9\tAlt+9",               40038
+        MENUITEM SEPARATOR
+        MENUITEM "Manage Tools",                ID_EXTRAS_MANAGETOOLS
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Index...\tF1",               40005
+        MENUITEM SEPARATOR
+        MENUITEM "&About",                      40006
+    END
+END
+
+IDR_POPUP MENU DISCARDABLE 
+BEGIN
+    POPUP "TEMP_ITEM"
+    BEGIN
+        MENUITEM "&Desklets Control Panel...",  ID_DESKLETSCONTROLPANEL
+        MENUITEM "&Add a Desklet",              ID_ADDADESKLET
+        MENUITEM "Open &ShowCase",              ID_OPENSHOWCASE
+        MENUITEM "&Hide ShowCase",              ID_CLOSESHOWCASE
+        POPUP "&Themes"
+        BEGIN
+            MENUITEM "&Load...",                    ID_LOADTHEME
+            MENUITEM "Open Browser",                ID_OPENBROWSER
+            MENUITEM SEPARATOR
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Close AveDesk",              ID_CLOSE
+    END
+    POPUP "Desklet Popup Menu"
+    BEGIN
+        MENUITEM "&Lock Position",              ID_DESKLETPOPUPMENU_LOCKPOSITION
+
+        MENUITEM "&Show Sublabel",              ID_DESKLETPOPUPMENU_SHOWSUBLABEL
+
+        MENUITEM "Duplicate Desklet",           ID_DESKLETPOPUPMENU_DUPLICATETHISDESKLET
+
+        MENUITEM "&Close Desklet",              ID_DESKLETPOPUPMENU_REMOVEDESKLET
+
+        MENUITEM "&Desklet Properties...",      ID_DESKLETPOPUPMENU_DESKLETPROPERTIES
+
+        MENUITEM SEPARATOR
+        MENUITEM "&Control Panel...",           ID_DESKLETPOPUPMENU_CONTROLPANEL
+
+    END
+    POPUP "Tools Popup Menu"
+    BEGIN
+        MENUITEM "Remove",                      ID_TOOLSPOPUPMENU_REMOVE
+        MENUITEM "Add new",                     ID_TOOLSPOPUPMENU_ADDNEW
+        MENUITEM "Move Up",                     ID_TOOLSPOPUPMENU_MOVEUP
+        , GRAYED
+        MENUITEM "Move Down",                   ID_TOOLSPOPUPMENU_MOVEDOWN
+        , GRAYED
+    END
+END
+
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// German (Germany) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// REGISTRY
+//
+
+IDR_IMAGE               REGISTRY DISCARDABLE    "Image.rgs"
+IDR_IMAGES              REGISTRY DISCARDABLE    "Images.rgs"
+IDR_DESKLETINFO         REGISTRY DISCARDABLE    "DeskletInfo.rgs"
+IDR_DESKLETINFOS        REGISTRY DISCARDABLE    "DeskletInfos.rgs"
+IDR_OLAYER              REGISTRY DISCARDABLE    "oLayer.rgs"
+IDR_OLAYERS             REGISTRY DISCARDABLE    "oLayers.rgs"
+#endif    // German (Germany) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Dutch (Netherlands) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NLD)
+#ifdef _WIN32
+LANGUAGE LANG_DUTCH, SUBLANG_DUTCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// REGISTRY
+//
+
+IDR_PREFERENCES         REGISTRY DISCARDABLE    "graphics\\Preferences.rgs"
+IDR_APPLICATION         REGISTRY DISCARDABLE    "graphics\\Application.rgs"
+IDR_AveDesk             REGISTRY DISCARDABLE    "graphics\\AveDesk.rgs"
+IDR_COLORMATRIX         REGISTRY DISCARDABLE    "graphics\\ColorMatrix.rgs"
+IDR_DEBUG               REGISTRY DISCARDABLE    "graphics\\Debug.rgs"
+IDR_DESKLET             REGISTRY DISCARDABLE    "graphics\\Desklet.rgs"
+IDR_DESKLETS            REGISTRY DISCARDABLE    "graphics\\Desklets.rgs"
+IDR_MATRIX              REGISTRY DISCARDABLE    "graphics\\Matrix.rgs"
+IDR_PREFERENCE          REGISTRY DISCARDABLE    "graphics\\Preference.rgs"
+IDR_TIMER               REGISTRY DISCARDABLE    "Timer.rgs"
+IDR_EffectLet           REGISTRY DISCARDABLE    "EffectLet.rgs"
+IDR_ShowCase            REGISTRY DISCARDABLE    "graphics\\ShowCase.rgs"
+IDR_SkinEnumerator      REGISTRY DISCARDABLE    "graphics\\SkinEnumerator.rgs"
+IDR_AveDeskletFile      REGISTRY DISCARDABLE    "graphics\\AveDeskletFile.rgs"
+IDR_AveThemeFile        REGISTRY DISCARDABLE    "graphics\\AveThemeFile.rgs"
+IDR_AveInstallFile      REGISTRY DISCARDABLE    "graphics\\AveInstallFile.rgs"
+IDR_DeskletSkin         REGISTRY DISCARDABLE    "graphics\\DeskletSkin.rgs"
+IDR_DeskletSkins        REGISTRY DISCARDABLE    "graphics\\DeskletSkins.rgs"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PREFERENCES DIALOGEX 0, 0, 337, 188
+STYLE DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "EffectLet Preferences"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,84,167,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,143,167,50,14
+    PUSHBUTTON      "About...",IDC_ABOUTEFFECTLET,204,167,51,14
+    CTEXT           "\n\nSorry.\n\nThis EffectLet has no configurable properties.",
+                    IDC_PREFFRAME,83,7,247,146,0,WS_EX_TRANSPARENT
+    LISTBOX         IDC_LIST,7,7,72,151,LBS_NOINTEGRALHEIGHT | NOT WS_BORDER | 
+                    WS_VSCROLL | WS_TABSTOP,WS_EX_CLIENTEDGE
+END
+
+IDD_ADDDOCKLET DIALOGEX DISCARDABLE  0, 0, 317, 220
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_FIXEDSYS | DS_CENTER | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Add Desklet"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,133,200,50,14
+    GROUPBOX        "Desklet properties",IDC_STATIC,142,3,168,180
+    LTEXT           "Name",IDC_STATIC,148,15,20,8
+    LTEXT           "",IDC_NAME,148,25,150,17
+    LTEXT           "Author",IDC_STATIC,148,45,22,8
+    LTEXT           "",IDC_AUTHOR,148,55,150,16
+    LTEXT           "Notes",IDC_STATIC,148,100,20,8
+    EDITTEXT        IDC_NOTES,148,111,155,50,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_OEMCONVERT | ES_READONLY | ES_WANTRETURN | NOT 
+                    WS_BORDER | WS_VSCROLL
+    PUSHBUTTON      "&Add Item",IDADD,253,165,50,14
+    LTEXT           "Version",IDC_STATIC,148,75,24,8
+    LTEXT           "",IDC_VERSION,148,85,150,8
+    CONTROL         "Tree1",IDC_TREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_DISABLEDRAGDROP | 
+                    TVS_FULLROWSELECT | WS_BORDER | WS_TABSTOP,3,3,132,180
+END
+
+IDD_ABOUT DIALOG DISCARDABLE  0, 0, 262, 220
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_FIXEDSYS | DS_CENTER | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "About AveDesk"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,106,200,50,14
+    LTEXT           "AveDesk 2.0",IDC_STATIC,70,5,180,10
+    GROUPBOX        "Version information",IDC_STATIC,65,35,190,56
+    ICON            "",IDC_ABOUTICON,9,8,20,20
+    GROUPBOX        "About",IDC_STATIC,65,95,190,60
+    LTEXT           "Programmers:",IDC_STATIC,70,105,45,10
+    LTEXT           "Andreas Verhoeven (Ave)",IDC_AVE,130,107,82,8,SS_NOTIFY
+    LTEXT           "Hakan Erduman (herd)",IDC_HERD,130,120,72,8,SS_NOTIFY
+    LTEXT           "Graphics:",IDC_STATIC,70,140,45,10
+    LTEXT           "Javier Ocasio (KoL)",IDC_KOL,130,140,62,8,SS_NOTIFY
+    LTEXT           "AveDesk is distributed as donation-ware, which means you are NOT free to distribute this without permission. If you want to distribute AveDesk 2.0, contact one of the authors through e-mail (the names can be clicked).",
+                    IDC_STATIC,67,161,186,32
+    LTEXT           "(c) copyright Andreas Verhoeven 2005",IDC_STATIC,70,18,
+                    122,8
+    LTEXT           "Version:",IDC_STATIC,81,47,26,8
+    LTEXT           "Build Date:",IDC_STATIC,71,62,36,8
+    LTEXT           "Installer:",IDC_STATIC,80,78,27,8
+    LTEXT           "2.0",IDC_VERSION,130,47,11,8
+    LTEXT           "9 January 2006, 22:05",IDC_BUILDDATE,130,62,72,8
+    LTEXT           "2.0",IDC_INSTALLER,130,78,11,8
+END
+
+IDD_ACTIVEDOCKLETS DIALOGEX 0, 0, 241, 264
+STYLE DS_SETFOREGROUND | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | 
+    WS_MAXIMIZEBOX | WS_POPUP | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | 
+    WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Desklets Control Panel"
+MENU IDR_MENUACTIVE
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LISTBOX         IDC_LIST,7,5,225,238,LBS_SORT | LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | 
+                    WS_VSCROLL | WS_TABSTOP,0,HIDC_LIST
+    CTEXT           "Donate to AveDesk's development to keep it alive!",
+                    IDC_LINK,7,247,220,8,SS_NOTIFY | NOT WS_VISIBLE
+    PUSHBUTTON      "&Add a Desklet",IDC_ADDDESKLET,7,246,60,14
+    PUSHBUTTON      "&Manage Themes",IDC_BROWSETHEMES,72,246,60,14
+END
+
+IDD_DOCKLETPROPERTIESTABBED DIALOG DISCARDABLE  0, 0, 337, 257
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_FIXEDSYS | DS_CENTER | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Desklet Properties"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,144,238,50,14
+    CONTROL         "Tab1",IDC_TAB,"SysTabControl32",0x0,0,0,337,233
+END
+
+IDD_APPEARANCE DIALOG DISCARDABLE  0, 0, 323, 220
+STYLE DS_FIXEDSYS | DS_CONTROL | WS_CHILD
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Caption",IDC_CAPTION_LABEL,4,1,25,8
+    EDITTEXT        IDC_CAPTION,4,11,210,12,ES_AUTOHSCROLL
+    GROUPBOX        "Position and Size",IDC_STATIC,4,31,210,85
+    RTEXT           "X",IDC_STATIC,14,46,29,8
+    RTEXT           "Y",IDC_STATIC,115,46,19,8
+    RTEXT           "Width",IDC_STATIC,14,68,29,8
+    RTEXT           "Height",IDC_STATIC,112,68,22,8
+    CONTROL         "&Lock position",IDC_LOCKPOSITION,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,24,91,61,10
+    GROUPBOX        "Appearance",IDC_STATIC,4,119,210,94
+    RTEXT           "Opacity",IDC_STATIC,14,138,29,8
+    RTEXT           "Style",IDC_STATIC,14,174,29,8
+    COMBOBOX        IDC_STYLE,52,171,80,58,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "",IDC_IMAGE,"Static",SS_BITMAP | SS_NOTIFY,226,10,89,80
+    PUSHBUTTON      "&Set Image",IDSETIMAGE,223,95,95,14
+    PUSHBUTTON      "Close &Desklet",IDDELETEITEM,223,198,95,14
+    RTEXT           "Rotation",IDC_ROTATION_LABEL,14,155,29,8
+    RTEXT           "Effect",IDC_STATIC,15,194,29,8
+    COMBOBOX        IDC_EFFECT,52,192,80,58,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "&Configure...",IDCONFIGEFFECT,135,192,50,14
+    PUSHBUTTON      "&Remove Image",IDREMOVEIMAGE,223,112,95,14
+    EDITTEXT        IDC_XPOS,50,45,32,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPINX,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,85,45,11,
+                    14
+    EDITTEXT        IDC_YPOS,140,45,32,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin2",IDC_SPINY,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,175,49,10,
+                    14
+    EDITTEXT        IDC_WIDTH,50,67,32,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin3",IDC_SPINWIDTH,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,85,68,10,
+                    14
+    EDITTEXT        IDC_HEIGHT,140,67,32,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin4",IDC_SPINHEIGHT,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,175,65,11,
+                    14
+    CONTROL         "Slider1",IDC_SLIDERALPHA,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,50,135,120,13
+    CONTROL         "Slider2",IDC_SLIDERROTATION,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,50,154,120,13
+    EDITTEXT        IDC_ALPHA,175,135,32,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin5",IDC_SPINALPHA,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,205,135,
+                    11,14
+    EDITTEXT        IDC_ROTATION,175,154,32,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin6",IDC_SPINROTATION,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,210,160,11,14
+END
+
+IDD_LABEL DIALOG DISCARDABLE  0, 0, 296, 231
+STYLE DS_FIXEDSYS | DS_CONTROL | WS_CHILD
+FONT 8, "MS Shell Dlg"
+BEGIN
+    RTEXT           "Type",IDC_STATIC,16,6,17,8
+    COMBOBOX        IDC_LABELTYPE,38,4,101,47,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "&Only visible on mouseover",IDC_LABELONLYONMOUSEOVER,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,146,6,95,10
+    LTEXT           "Background",IDC_STATIC,28,82,40,8
+    COMBOBOX        IDC_LABELBACKGROUND,28,92,95,98,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | CBS_HASSTRINGS | WS_VSCROLL | 
+                    WS_TABSTOP
+    RTEXT           "Rotation",IDC_STATIC,161,135,34,8
+    RTEXT           "Hor. Alignment",IDC_STATIC,20,134,50,8
+    COMBOBOX        IDC_HALIGN2,78,132,71,61,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    RTEXT           "Ver. Alignment",IDC_STATIC,20,153,50,8
+    COMBOBOX        IDC_VALIGN2,78,151,71,61,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Position",IDC_STATIC,30,192,26,8
+    COMBOBOX        IDC_POSITION,59,190,99,72,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    RTEXT           "Max Width",IDC_STATIC,20,209,36,8
+    EDITTEXT        IDC_WIDTH,59,207,25,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    RTEXT           "Max Height",IDC_STATIC,92,209,36,8
+    EDITTEXT        IDC_HEIGHT,132,207,25,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    RTEXT           "Margin",IDC_STATIC,166,193,27,8
+    EDITTEXT        IDC_MARGIN,198,191,25,12,ES_RIGHT | ES_AUTOHSCROLL
+    GROUPBOX        "Position and Size",IDC_STATIC,10,177,259,46
+    CONTROL         "&Top Down",IDC_TOPDOWN,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,170,152,49,10
+    PUSHBUTTON      "Font...",IDSELECTFONT2,160,41,43,14
+    PUSHBUTTON      "Color...",IDSELECTCOLOR2,211,41,43,14
+    GROUPBOX        "",IDC_STATIC,144,27,123,84
+    CONTROL         "&Sublabel",IDC_SUBLABEL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,150,27,43,10
+    CONTROL         "&Shadow",IDC_SHADOW2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,162,65,42,10
+    PUSHBUTTON      "Settings...",IDCONFIGSUBSHADOW,211,62,43,14
+    PUSHBUTTON      "Font...",IDSELECTFONT,28,41,43,14
+    PUSHBUTTON      "Color...",IDSELECTCOLOR,79,41,43,14
+    PUSHBUTTON      "Settings...",IDCONFIGSHADOW,79,62,43,14
+    GROUPBOX        "Alignment and Rotation",IDC_STATIC,10,117,258,52
+    CONTROL         "&Shadow",IDC_SHADOW,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,30,65,42,10
+    GROUPBOX        "",IDC_STATIC,25,56,102,23
+    GROUPBOX        "",IDC_STATIC,157,56,102,23
+    EDITTEXT        IDC_ROTATION,200,132,30,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin3",IDC_ROTATIONSPINNER,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,235,131,11,11
+    GROUPBOX        "Caption",IDC_CAPTIONGROUP,12,27,123,84,BS_NOTIFY
+END
+
+IDD_ADVANCED DIALOG DISCARDABLE  0, 0, 281, 226
+STYLE DS_FIXEDSYS | DS_CONTROL | WS_CHILD
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Quality",IDC_STATIC,12,3,22,8
+    COMBOBOX        IDC_QUALITY,12,14,233,90,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "",IDC_STATIC,5,104,240,55
+    CONTROL         "&Drop a shadow from the icon",IDC_DROPSHADOW,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,12,104,107,10
+    RTEXT           "X-offset",IDC_STATIC,15,124,25,8
+    EDITTEXT        IDC_XOFFSET,47,122,27,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    RTEXT           "Y-offset",IDC_STATIC,90,124,25,8
+    EDITTEXT        IDC_YOFFSET,122,122,27,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    RTEXT           "Graytint",IDC_STATIC,170,122,25,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_GRAY,202,120,27,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER | NOT WS_VISIBLE
+    RTEXT           "Alpha",IDC_STATIC,95,141,19,8
+    LTEXT           "px",IDC_STATIC,77,124,8,8
+    LTEXT           "px",IDC_STATIC,152,124,8,8
+    LTEXT           "%",IDC_STATIC,233,122,8,8,NOT WS_VISIBLE
+    LTEXT           "(0 - 255)",IDC_STATIC,150,140,27,8
+    CONTROL         "&Ignore Leftclicks",IDC_IGNORELEFTCLICKS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,85,195,68,10
+    GROUPBOX        "",IDC_STATIC,6,34,240,63
+    CONTROL         "&Colorize",IDC_COLORIZE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,12,35,41,10
+    CONTROL         "&Ignore Rightclicks",IDC_IGNORERIGHTCLICKS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,85,210,73,10
+    CONTROL         "&Snap to grid",IDC_SNAPTOGRID,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,210,54,10
+    RTEXT           "Saturation",IDC_STATIC,15,48,33,8
+    RTEXT           "Hue",IDC_STATIC,16,65,35,8
+    CONTROL         "Slider1",IDC_SATURATION,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,59,46,174,15
+    CONTROL         "Slider1",IDC_HUE,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,59,61,174,15
+    PUSHBUTTON      "&Reset",IDC_RESET,183,79,50,14
+    CONTROL         "&Click thru",IDC_ISCLICKTHRU,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,195,45,10
+    EDITTEXT        IDC_ALPHA,122,140,27,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    PUSHBUTTON      "Color",IDSHADOWCOLOR,15,139,59,15
+    GROUPBOX        "",IDC_STATIC,5,164,240,61
+    COMBOBOX        IDC_CLICKING,67,174,105,30,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Clicking mode",IDC_STATIC,15,176,45,8
+END
+
+IDD_MOVECONFIG DIALOG DISCARDABLE  0, 0, 287, 89
+STYLE DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Moving"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    GROUPBOX        "Snap-To-Grid",IDC_STATIC,10,10,266,75
+    LTEXT           "Desklets can be snapped to a grid when moved by the user. Here you can define the grids dimensions.",
+                    IDC_STATIC,21,23,225,17
+    LTEXT           "Width",IDC_STATIC,21,66,20,8
+    EDITTEXT        IDC_GRIDWIDTH,49,66,40,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Height",IDC_STATIC,128,66,22,8
+    EDITTEXT        IDC_GRIDHEIGHT,156,66,40,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "X-Margin",IDC_STATIC,17,53,29,8
+    EDITTEXT        IDC_GRIDXMARGIN,49,50,40,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Y-margin",IDC_STATIC,121,53,28,8
+    EDITTEXT        IDC_GRIDYMARGIN,155,50,40,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+END
+
+IDD_SELECTCONFIG DIALOG DISCARDABLE  0, 0, 297, 93
+STYLE DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Selecting"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    GROUPBOX        "",IDC_STATIC,15,7,265,51
+    LTEXT           "This defines if hover selection is actived. Also the delay in milliseconds can be defined for hoverselection here.",
+                    IDC_STATIC,30,20,230,17
+    EDITTEXT        IDC_SELECTIONDELAY,31,40,40,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "milliseconds",IDC_STATIC,76,41,38,8
+    CONTROL         "&Hover selection",IDC_HOVERSELECTION,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,23,6,65,10
+END
+
+IDD_CLICKCONFIG DIALOG DISCARDABLE  0, 0, 292, 93
+STYLE DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Clicking"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    GROUPBOX        "Clicking Mode",IDC_STATIC,15,11,265,50
+    LTEXT           "Desklets can respond to clicks. A 'click' can be defined as a single- or as a double-click.",
+                    IDC_STATIC,25,20,225,17
+    COMBOBOX        IDC_CLICKINGMODE,25,41,205,68,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_TRAYCONFIG DIALOGEX 0, 0, 300, 201
+STYLE DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tray Icon"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "&Browse...",IDBROWSEFORICON,71,65,69,14
+    PUSHBUTTON      "&Use Default Icon",IDSETDEFAULTICON,152,65,69,14
+    ICON            "",IDC_CURICON2,29,62,21,20,SS_NOTIFY,WS_EX_ACCEPTFILES
+    LTEXT           "Here you can set the tray icon that is used by AveDesk. Click the Browse button to select an icon or drag an icon onto this tabpage.",
+                    IDC_STATIC,26,40,240,18
+    GROUPBOX        "Tray Icon",IDC_STATIC,14,10,266,80
+    CONTROL         "Show a Tray Icon for AveDesk",IDC_SHOWTRAY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,25,24,233,11
+    GROUPBOX        "Tray Animation",IDC_STATIC,14,95,266,100
+    CONTROL         "Animate the tray-icon when AveDesk is busy",
+                    IDC_DOTRAYANIMATION,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,25,110,156,10
+    LISTBOX         IDC_ANIMATIONS,25,126,245,60,LBS_OWNERDRAWFIXED | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_OTHERCONFIG DIALOG DISCARDABLE  0, 0, 300, 103
+STYLE DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Other"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CONTROL         "&Load AveDesk On Windows Startup",IDC_STARTUP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,26,25,235,10
+    GROUPBOX        "Other Settings",IDC_STATIC,15,10,265,86
+    CONTROL         "&Confirm Irreversible Actions",IDC_ASK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,26,40,235,10
+    CONTROL         "&Automatically save the configuration when closing/switching a Theme",
+                    IDC_AUTOSAVE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,26,55,
+                    235,10
+    CONTROL         "&Include Thumbnails In .AveTheme- and .AveDesklet-files.",
+                    IDC_MAKETHUMBNAIL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    26,70,197,10
+END
+
+IDD_TOOLSCONFIG DIALOG DISCARDABLE  0, 0, 321, 189
+STYLE DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Tools Menu Content",IDC_STATIC,15,7,291,12
+    LISTBOX         IDC_LISTTOOLS,15,21,291,58,LBS_NOINTEGRALHEIGHT | 
+                    LBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_CAPTION,104,88,172,14,ES_AUTOHSCROLL
+    LTEXT           "Menu Caption",IDC_STATIC_MENU_CAPTION,15,89,75,10
+    EDITTEXT        IDC_EDIT_COMMAND,104,107,172,14,ES_AUTOHSCROLL
+    LTEXT           "Command",IDC_STATIC_COMMAND,15,109,75,10
+    EDITTEXT        IDC_EDIT_ARGS,104,124,172,14,ES_AUTOHSCROLL
+    LTEXT           "Arguments",IDC_STATIC_ARGS,16,126,75,10
+    EDITTEXT        IDC_EDIT_STARTUP_FOLDER,104,143,172,14,ES_AUTOHSCROLL
+    LTEXT           "Startup folder",IDC_STATIC_STARTUP_FOLDER,15,146,75,10
+    CONTROL         "Retrieve arguments interactively",IDC_CHECK1,"Button",
+                    BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_DISABLED | 
+                    WS_TABSTOP,155,166,121,8
+    PUSHBUTTON      "Browse...",IDC_BUTTON_COMMAND,280,107,39,13,BS_BITMAP
+    PUSHBUTTON      "?",IDC_BUTTON_ARGS,286,124,20,13,BS_BITMAP
+    PUSHBUTTON      "...",IDC_BUTTON_STARTUP_FOLDER,286,143,20,13,BS_BITMAP
+END
+
+IDD_SHOWCASECONFIG DIALOG DISCARDABLE  0, 0, 252, 204
+STYLE DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ShowCase"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CONTROL         "HotKey1",IDC_HKSHOWCASE,"msctls_hotkey32",WS_BORDER | 
+                    WS_TABSTOP,153,28,91,12
+    LTEXT           "Activate ShowCase by pressing",IDC_STATIC,49,30,100,8
+    CONTROL         "HotKey1",IDC_HKSHOWCASE2,"msctls_hotkey32",WS_BORDER | 
+                    WS_TABSTOP,153,46,91,12
+    LTEXT           "Activate ShowCase on all desklets by pressing",
+                    IDC_STATIC,3,48,147,8
+    CONTROL         "Slider1",IDC_ALPHALEVEL,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,70,79,160,15
+    GROUPBOX        "Background",IDC_STATIC,10,64,230,65
+    PUSHBUTTON      "Color",IDBGCOLOR,175,104,50,14
+    LTEXT           "Opacity",IDC_STATIC,31,82,25,8
+    GROUPBOX        "Animation",IDC_STATIC,10,133,230,62
+    CONTROL         "&Use Animation",IDC_DOANIM,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,20,149,61,10
+    LTEXT           "Smoothness",IDC_STATIC,21,175,40,8
+    CONTROL         "Slider1",IDC_NUMFRAMES,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,71,173,160,15
+    CONTROL         "&Enable ShowCase",IDC_ISENABLED,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,10,230,10
+    CONTROL         "Can be clicked through",IDC_SHOWCASEISCLICKTHRU,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,31,106,89,10
+END
+
+IDD_NEWSHADOWPROPERTIES DIALOG DISCARDABLE  0, 0, 222, 124
+STYLE DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Shadow Properties"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,106,104,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,163,104,50,14
+    GROUPBOX        "Color",IDC_STATIC,9,7,71,93
+    PUSHBUTTON      "&Color",IDSETCOLOR,16,18,57,14
+    LTEXT           "Alpha",IDC_STATIC,16,37,19,8
+    EDITTEXT        IDC_ALPHA,15,49,57,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_ALPHASPIN,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,70,47,11,14
+    LTEXT           "Blur Ratio",IDC_STATIC,105,61,32,8
+    EDITTEXT        IDC_BLURRATIO,144,59,49,12,ES_AUTOHSCROLL
+    CONTROL         "Spin2",IDC_BLURSPIN,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,194,57,11,14
+    GROUPBOX        "Appearance",IDC_STATIC,88,7,125,93
+    RTEXT           "X Offset",IDC_STATIC,105,23,32,8
+    EDITTEXT        IDC_EDIT1,144,21,49,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_XSPIN,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_HORZ,194,17,10,14
+    RTEXT           "Y Offset",IDC_STATIC,105,39,32,8
+    EDITTEXT        IDC_EDIT2,144,36,49,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_YSPIN,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,194,33,11,14
+    LTEXT           "Intensity",IDC_STATIC,110,78,27,8
+    EDITTEXT        IDC_INTENSITY,144,76,49,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPININTENSITY,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,192,75,11,14
+END
+
+IDD_INSTALLPROGRESS DIALOG DISCARDABLE  0, 0, 237, 94
+STYLE DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "%Message%",IDC_MESSAGE,11,12,210,20,SS_NOTIFY
+    CONTROL         "Progress1",IDC_PROGRESSBAR,"msctls_progress32",NOT 
+                    WS_VISIBLE | WS_BORDER,11,44,210,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,93,70,50,14,NOT WS_VISIBLE
+END
+
+IDD_MODULES DIALOG DISCARDABLE  0, 0, 272, 169
+STYLE DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Installed Modules"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LISTBOX         IDC_MODULESLIST,9,5,252,140,LBS_OWNERDRAWFIXED | 
+                    LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "&Uninstall",IDC_UNINSTALL,10,150,50,14,WS_DISABLED
+    PUSHBUTTON      "&Install...",IDC_INSTALL,70,150,50,14
+    PUSHBUTTON      "&Close",IDC_CLOSE,210,150,50,14
+END
+
+IDD_INSTALLERROR DIALOG DISCARDABLE  0, 0, 282, 113
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_FIXEDSYS | DS_CENTER | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Installation Error"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,115,92,50,14
+    ICON            "",IDC_ERRORICON,10,10,20,20
+    LTEXT           "%ERRORMESSAGE%",IDC_ERRORTEXT,43,12,230,42
+    LTEXT           "The author gave this link for the error:",
+                    IDC_ERRORLINKTEXT,42,61,119,8
+    LTEXT           "%ERRORLINK%",IDC_ERRORLINK,42,73,230,8
+END
+
+IDD_THEMEBROWSER DIALOG DISCARDABLE  0, 0, 318, 202
+STYLE DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU | 
+    WS_THICKFRAME
+CAPTION "Theme Browser"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LISTBOX         IDC_THEMES,7,7,238,188,LBS_OWNERDRAWFIXED | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "&Load",IDC_LOADTHEME,256,7,50,14,WS_DISABLED
+    PUSHBUTTON      "&Delete",IDC_DELETETHEME,256,28,50,14,WS_DISABLED
+    PUSHBUTTON      "&Close",IDC_CLOSEWINDOW,256,181,50,14
+END
+
+IDD_EFFECTSCONFIG DIALOG DISCARDABLE  0, 0, 282, 211
+STYLE DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Effects"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    GROUPBOX        "Flip Effect",IDC_STATIC,5,5,271,85
+    GROUPBOX        "Close Effect",IDC_STATIC,5,96,271,104
+    CONTROL         "Enable Visual &Flipping Effect",IDC_ENABLEFLIP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,20,105,10
+    CONTROL         "Slider1",IDC_FLIPSPEED,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,13,51,166,15
+    LTEXT           "Speed",IDC_STATIC_FLIP_SPEED,13,38,22,8
+    LTEXT           "Slow",IDC_STATIC_FLIP_SLOW,13,70,16,8
+    LTEXT           "Fast",IDC_STATIC_FLIP_FAST,165,68,14,8
+    PUSHBUTTON      "&Reset",IDBUTRESETFLIP,220,65,50,14
+    CONTROL         "&Enable Visual &Closing Effect",IDC_ENABLECLOSE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,112,140,10
+    CONTROL         "Slider1",IDC_CLOSESPEED,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,13,165,166,15
+    LTEXT           "Speed",IDC_STATIC_CLOSE_SPEED,13,152,22,8
+    LTEXT           "Slow",IDC_STATIC_CLOSE_SLOW,13,184,16,8
+    LTEXT           "Fast",IDC_STATIC_CLOSE_FAST,165,182,14,8
+    PUSHBUTTON      "&Reset",IDBUTRESETCLOSE,220,179,50,14
+    CONTROL         "&Also Fade Out",IDC_CLOSEFADEOUT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,135,61,10
+END
+
+IDD_DESKLETBROWSER DIALOG DISCARDABLE  0, 0, 329, 211
+STYLE DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU | 
+    WS_THICKFRAME
+CAPTION "Add a Desklet"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    PUSHBUTTON      "&Close",IDC_CLOSE,180,187,50,14,NOT WS_VISIBLE
+    COMBOBOX        IDC_SEARCHBOX,219,3,101,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_DESKLETS,77,19,243,166,LBS_SORT | LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "&Add",IDC_ADDDESKLET,126,187,50,14,NOT WS_VISIBLE
+    CONTROL         "Slider1",IDC_ICONSLIDER,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,241,189,81,12
+    LISTBOX         IDC_CATEGORIES,7,19,64,166,LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "",IDC_SPLITTER,70,20,8,165,SS_NOTIFY
+    PUSHBUTTON      "+",IDC_ADDFEED,7,187,16,14
+    PUSHBUTTON      "-",IDC_DELETEFEED,27,187,16,14,WS_DISABLED
+END
+
+IDD_NEWFEED DIALOG DISCARDABLE  0, 0, 270, 81
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Add New Feed"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,157,60,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,213,60,50,14
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,206,13,47,42
+    RTEXT           "URL",IDC_STATIC,46,17,16,8
+    EDITTEXT        IDC_FEEDURL,68,14,130,14,ES_AUTOHSCROLL
+    RTEXT           "Update Interval",IDC_STATIC,12,36,50,8
+    COMBOBOX        IDC_FEEDUPDATEINTERVAL,68,34,130,62,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_PREFERENCES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 330
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 181
+    END
+
+    IDD_ADDDOCKLET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 213
+    END
+
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 255
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 213
+    END
+
+    IDD_ACTIVEDOCKLETS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 234
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 261
+    END
+
+    IDD_DOCKLETPROPERTIESTABBED, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 330
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 250
+    END
+
+    IDD_APPEARANCE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 316
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 213
+    END
+
+    IDD_LABEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 289
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 224
+    END
+
+    IDD_ADVANCED, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 274
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 219
+    END
+
+    IDD_MOVECONFIG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 280
+        VERTGUIDE, 14
+        VERTGUIDE, 280
+        BOTTOMMARGIN, 82
+        HORZGUIDE, 10
+        HORZGUIDE, 20
+    END
+
+    IDD_SELECTCONFIG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 290
+        VERTGUIDE, 15
+        VERTGUIDE, 280
+        BOTTOMMARGIN, 86
+        HORZGUIDE, 10
+        HORZGUIDE, 20
+    END
+
+    IDD_CLICKCONFIG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 285
+        VERTGUIDE, 15
+        VERTGUIDE, 280
+        BOTTOMMARGIN, 86
+        HORZGUIDE, 11
+        HORZGUIDE, 20
+    END
+
+    IDD_TRAYCONFIG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 293
+        VERTGUIDE, 14
+        VERTGUIDE, 280
+        BOTTOMMARGIN, 194
+        HORZGUIDE, 10
+        HORZGUIDE, 20
+    END
+
+    IDD_OTHERCONFIG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 293
+        VERTGUIDE, 15
+        VERTGUIDE, 280
+        BOTTOMMARGIN, 96
+        HORZGUIDE, 10
+    END
+
+    IDD_TOOLSCONFIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 15
+        RIGHTMARGIN, 306
+        VERTGUIDE, 90
+        VERTGUIDE, 104
+        VERTGUIDE, 276
+        VERTGUIDE, 286
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 174
+    END
+
+    IDD_SHOWCASECONFIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 245
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 197
+    END
+
+    IDD_NEWSHADOWPROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 215
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 117
+    END
+
+    IDD_INSTALLPROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 230
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_MODULES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 265
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 162
+    END
+
+    IDD_INSTALLERROR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 275
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 106
+    END
+
+    IDD_THEMEBROWSER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 311
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 195
+    END
+
+    IDD_EFFECTSCONFIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 275
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 204
+    END
+
+    IDD_DESKLETBROWSER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 322
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 201
+    END
+
+    IDD_NEWFEED, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 74
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "1 TYPELIB ""AveDesk.tlb""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,0,0,0
+ PRODUCTVERSION 2,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x29L
+#else
+ FILEFLAGS 0x28L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000004b0"
+        BEGIN
+            VALUE "Comments", "AveDesk 2.0\0"
+            VALUE "CompanyName", " Andreas Verhoeven\0"
+            VALUE "FileDescription", "AveDesk\0"
+            VALUE "FileVersion", "2, 0, 0, 0\0"
+            VALUE "InternalName", "AveDesk 2.0\0"
+            VALUE "LegalCopyright", "Copyright © 2006 by Andreas Verhoeven\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "AveDesk.exe\0"
+            VALUE "PrivateBuild", "Feature Frozen Version\0"
+            VALUE "ProductName", "AveDesk 2.0\0"
+            VALUE "ProductVersion", "2, 0, 0, 0\0"
+            VALUE "SpecialBuild", "test build\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON    DISCARDABLE     "graphics\\avedesk_icon.ico"
+IDI_ICON2               ICON    DISCARDABLE     "graphics\\ave_deskicon.ico"
+IDI_ICON3               ICON    DISCARDABLE     "graphics\\icon_desklet.ico"
+IDI_ICON4               ICON    DISCARDABLE     "graphics\\icon_theme.ico"
+IDI_ICON5               ICON    DISCARDABLE     "graphics\\icon_install.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MENUACTIVE ACCELERATORS DISCARDABLE 
+BEGIN
+    "0",            ID_EXTRAS_TOOL0,        VIRTKEY, ALT, NOINVERT
+    "0",            ID_EXTRAS_TOOL0,        VIRTKEY, ALT, NOINVERT
+    "1",            ID_EXTRAS_TOOL0,        VIRTKEY, ALT, NOINVERT
+    "2",            ID_EXTRAS_TOOL0,        VIRTKEY, ALT, NOINVERT
+    "3",            ID_EXTRAS_TOOL0,        VIRTKEY, ALT, NOINVERT
+    "4",            ID_EXTRAS_TOOL0,        VIRTKEY, ALT, NOINVERT
+    "5",            ID_EXTRAS_TOOL0,        VIRTKEY, ALT, NOINVERT
+    "6",            ID_EXTRAS_TOOL0,        VIRTKEY, ALT, NOINVERT
+    "7",            ID_EXTRAS_TOOL0,        VIRTKEY, ALT, NOINVERT
+    "8",            ID_EXTRAS_TOOL0,        VIRTKEY, ALT, NOINVERT
+    "9",            ID_EXTRAS_TOOL0,        VIRTKEY, ALT, NOINVERT
+    "N",            IDM_CREATEEMPTYTHEME,   VIRTKEY, CONTROL, NOINVERT
+    "S",            IDM_APPLICATION_SAVECONFIGURATION, VIRTKEY, CONTROL, 
+                                                    NOINVERT
+    VK_DELETE,      IDM_DESKLETS_REMOVE,    VIRTKEY, NOINVERT
+    VK_F4,          IDM_APPLICATION_EXIT,   VIRTKEY, ALT, NOINVERT
+    VK_F7,          ID_SETTINGS_GLOBALSETTINGS, VIRTKEY, ALT, NOINVERT
+    VK_F8,          IDM_SETTINGS_DEFAULTDESKLETPROPERTIES, VIRTKEY, ALT, 
+                                                    NOINVERT
+    VK_NUMPAD0,     ID_EXTRAS_TOOL0,        VIRTKEY, ALT, NOINVERT
+    VK_NUMPAD1,     ID_EXTRAS_TOOL0,        VIRTKEY, ALT, NOINVERT
+    VK_NUMPAD2,     ID_EXTRAS_TOOL0,        VIRTKEY, ALT, NOINVERT
+    VK_NUMPAD3,     ID_EXTRAS_TOOL0,        VIRTKEY, ALT, NOINVERT
+    VK_NUMPAD4,     ID_EXTRAS_TOOL0,        VIRTKEY, ALT, NOINVERT
+    VK_NUMPAD5,     ID_EXTRAS_TOOL0,        VIRTKEY, ALT, NOINVERT
+    VK_NUMPAD6,     ID_EXTRAS_TOOL0,        VIRTKEY, ALT, NOINVERT
+    VK_NUMPAD7,     ID_EXTRAS_TOOL0,        VIRTKEY, ALT, NOINVERT
+    VK_NUMPAD8,     ID_EXTRAS_TOOL0,        VIRTKEY, ALT, NOINVERT
+    VK_NUMPAD9,     ID_EXTRAS_TOOL0,        VIRTKEY, ALT, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PACKAGEDATA
+//
+
+IDR_PACKAGEDATA_ZIP PACKAGEDATA DISCARDABLE 
+BEGIN
+    0x4d45, 0x5054, "\131" 
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 24
+//
+
+IDR_241                 24      DISCARDABLE     "graphics\\AveDesk.exe.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERRORLOADINGDOCKLET "Could not load desklet %1!s!"
+    IDS_NOMOREDOCKLETS      "There are no more desklets left. Do you want to quit AveDesk?"
+    IDS_STYLE0              "Normal Window"
+    IDS_STYLE1              "Always-On-Bottom"
+    IDS_STYLE2              "Always-On-Top"
+    IDS_STYLE3              "Desktop Icon"
+    IDS_LABELPOSITION0      "Bottom"
+    IDS_LABELPOSITION1      "Left"
+    IDS_LABELPOSITION2      "Top"
+    IDS_LABELPOSITION3      "Right"
+    IDS_HALIGN0             "Left"
+    IDS_HALIGN1             "Center"
+    IDS_HALIGN2             "Right"
+    IDS_VALIGN0             "Top"
+    IDS_VALIGN1             "Middle"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_VALIGN2             "Bottom"
+    IDS_LABELTYPE0          "Regular label"
+    IDS_LABELTYPE1          "Master label"
+    IDS_ERRORSTARTINGAPP    "The application is already started!"
+    IDS_LABELTYPE2          "No label"
+    IDS_QUALITY0            "Low quality, but fastest"
+    IDS_QUALITY1            "Average quality, average speed"
+    IDS_QUALITY2            "Good quality, slower speed"
+    IDS_QUALITY3            "High quality, but slow"
+    IDS_QUALITY4            "Godlike quality, only for fast CPU's"
+    IDS_SINGLECLICK         "Desklets respond to single-clicks"
+    IDS_DOUBLECLICK         "Desklets respond to double-clicks"
+    IDS_TAB0                "&Appearance"
+    IDS_TAB1                "&Label"
+    IDS_TAB2                "&Advanced"
+    IDS_CLOSE               "Close AveDesk?"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ASKDUPLICATE        "Duplicate this desklet?"
+    IDS_PROPCAPTION         "Desklet Properties"
+    IDS_DEFAULTPROPCAPTION  "Default Desklet Properties"
+    IDS_NOCONFIGFOREFFECT   "This effect cannot be configured."
+    IDS_NOCONFIGFOREFFECTCAPTION "Effect"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PROJNAME            "AveDesk"
+    IDS_GLOBALSETTINGSTITLE "Global Settings"
+    IDS_MOVINGTABTITLE      "Moving"
+    IDS_SELECTINGTABTITLE   "Selecting"
+    IDS_CLICKINGTABTITLE    "Clicking"
+    IDS_TRAYTABTITLE        "Tray Icon"
+    IDS_CURRENTCOLOR        "Current Color"
+    IDS_MORECOLORS          "More Colors..."
+    IDS_OTHERTABTITLE       "Other"
+    IDS_EFFECTLET_DESC      "EffectLet Class"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDD_PREFERENCES         "EffectLet Preferences"
+    IDS_TAB5TOOLS           "&Tools"
+    IDS_EMPTYTOOL           "Unassigned Tool %d\tAlt+%c"
+    IDS_TOOL                "%s\tAlt+%c"
+    IDS_NOSUCHFILE3         "Neither file '$1' nor '$2' exist.\n\n Please check '$3'."
+    IDS_TOOLNOTFOUND        "Error executing Tool"
+    IDS_MODULENOCONFIG      "The module '$N' does not provide\na configuration dialog.\nThis menu entry is hence for information only. \n\nAuthor:\t$A\nVersion:\t$V\n\nDescription:\n$D"
+    IDS_STYLE4              "Showcase"
+    IDS_MAINLABELSHADOWDLGTITLE "Label Shadow Properties"
+    IDS_MAINSUBLABELSHADOWDLGTITLE "Sublabel Shadow Properties"
+    IDS_EXPANDED_ENV_STRING "expanded to: %1"
+    IDS_THEMEDIRCHANGEDQUESTION 
+                            "You have changed your theme folder to \n'%s'.\n Do you want to move all your theme files to this new theme folder?"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SHOWCASE_DESC       "ShowCase Class"
+    IDS_SKINENUMERATOR_DESC "SkinEnumerator Class"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_INITIALTHEMEDIR     "%APPDATA%/AveDesk/Themes/"
+    IDS_THEMEDIRBOXCAPTION  "AveDesk - Changed Theme Folder"
+    IDS_DOWNLOADINGFILE     "Downloading file\n %s  (%s / %s)"
+    IDS_INSTALLINGFILE      "Installing file %s ..."
+    IDS_CONNECTING          "Connecting to the internet..."
+    IDS_FILEINSTALLED       "File installed"
+    IDS_FILEDOWNLOADED      "File downloaded succesfully."
+    IDS_DOWNLOADCANCELED    "Download canceled by the user."
+    IDS_NEWTHEMEFILENAME    "NewTheme%d.avetheme"
+    IDS_REMOVEDESKLETQUESTION "Close this Desklet?"
+    IDS_REMOVEDESKLETCAPTION "Close Desklet"
+    IDS_FILEDOESNOTEXIST    "The file %s does not exist."
+    IDS_DIRECTORYDOESNOTEXIST "The directory %s does not exist."
+    IDS_REQUIREMENTMETERROR "This requirement was met, while it shouldn't be met:\n %s"
+    IDS_AVEDESKVERSIONERROR "Your AveDesk version is $1, while version $2 is required."
+    IDS_INSTALLERVERSIONERROR 
+                            "Your installer version is $1, while version $2 is required."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_AVEDESKLETFILE_DESC "AveDeskletFile Class"
+    IDS_AVETHEMEFILE_DESC   "AveThemeFile Class"
+    IDS_AVEINSTALLFILE_DESC "AveInstallFile Class"
+    IDS_DESKLETSKIN_DESC    "DeskletSkin Class"
+    IDS_DESKLETSKINS_DESC   "DeskletSkins Class"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_INSTALLERCAPTION    "AveDesk Installer"
+    IDS_PACKAGENOTINSTALLED "Package %s is required for this file to install properly, but it isn't installed."
+    IDS_DESKLETVERSIONERROR "The desklet '$1'  has version $2, while version $3 is required."
+    IDS_THEMESFILTER        "AveDesk Themes(*.avetheme)\n*.avetheme\nAll Files(*.*)\n*.*\n\n"
+    IDS_DESKLETSFILTER      "AveDesk Desklets(*.avedesklet)\n*.avedesklet\nAll Files(*.*)\n*.*\n\n"
+    IDS_NEWTOOLNAME         "New Tool"
+    IDS_SELECTSTARTUPFOLDERCAPTION "Select Startup Folder"
+    IDS_TOOLSARGUMENTSHELPCAPTION "Tools -  Arguments Help"
+    IDS_TOOLSARGUMENTSHELPTEXT 
+                            "$S\tselect desklets\n$A\trunning desklets\n$$\t$ character"
+    IDS_DESKLETCLICKINGDEFAULT "Default"
+    IDS_DESKLETCLICKINGSINGLE "Single Click"
+    IDS_DESKLETCLICKINGDOUBLE "Double Click"
+    IDS_DELETETHEME         "Delete the selected theme?"
+    IDS_DELETETHEMECAPTION  "Delete Theme"
+    IDS_NOINFO              "\nNo Information."
+    IDS_INFOSTRING          "\nNumber of desklets: %1\nAuthor: %2\nAveDesk Version: %3"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_REMOVEDESKLETS      "Remove the selected desklets?"
+    IDS_REMOVEDESKLETSCAPTION "Remove Desklets"
+    IDS_NOINSTALLERFILE     "No Valid AveInstaller File (avedesk_installer.xml not found)."
+    IDS_INSTALLERFILEINVALID 
+                            "The Installer file is invalid (avedesk_installer.xml found, but invalid XML)."
+    IDS_INSTALLERREQUIREMENTSERROR 
+                            "One of the requirements of the installer file was not met."
+    IDS_INSTALLERFILENOTCOPIED 
+                            "The file %1 was locked and thus could not have been replaced."
+    IDS_INSTALLERRIGHTS     "You do not have suffient rights to install this AveInstaller file."
+    IDS_SEARCHDEFAULT       "Search"
+    IDS_SEARCHALLDESKLETS   " All Desklets"
+    IDS_TOOLTIP_ICONSLIDER  "Change the size of the icons in the list"
+    IDS_TOOLTIP_MODULES_UNINSTALL "Uninstall the selected module"
+    IDS_TOOLTIP_MODULES_INSTALL "Install a new module"
+    IDS_TOOLTIP_MODULES_CLOSE "Close the Modules Dialog"
+    IDS_TOOLTIP_MODULES_LIST "This list shows the currently installed modules"
+    IDS_TOOLTIP_DESKLETBROWSE_CLOSE "Close the Desklet Browser dialog"
+    IDS_TOOLTIP_DESKLETBROWSE_ADDDESKLET 
+                            "Add the selected desklet to the desktop"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TOOLTIP_DESKLETBROWSE_DESKLETS 
+                            "Drag the preview icon onto the desktop or double click a desklet to add it to the desktop"
+    IDS_TOOLTIP_DESKLETBROWSE_SEARCHBOX "Filter the desklets list"
+    IDS_TOOLTIP_APPEARANCE_CAPTION "The caption for this desklet"
+    IDS_TOOLTIP_APPEARANCE_XPOS "The horizontal position for this desklet"
+    IDS_TOOLTIP_APPEARANCE_YPOS "The vertical position for this desklet"
+    IDS_TOOLTIP_APPEARANCE_WIDTH "The width of this desklet"
+    IDS_TOOLTIP_APPEARANCE_HEIGHT "The height of this desklet"
+    IDS_TOOLTIP_APPEARANCE_ALPHA "The opacity of this desklet, in percentages"
+    IDS_TOOLTIP_APPEARANCE_ROTATION "The rotation of this desklet, in degrees"
+    IDS_TOOLTIP_APPEARANCE_STYLE 
+                            "The style for this desklet determines how the desklet is placed on the desktop"
+    IDS_TOOLTIP_APPEARANCE_EFFECT 
+                            "The effect for this desklet can be set to ehance the possibilites of this desklet"
+    IDS_TOOLTIP_APPEARANCE_CONFIGEFFECT 
+                            "Configure the currently applied effect"
+    IDS_TOOLTIP_APPEARANCE_SETIMAGE "Change this desklet's image"
+    IDS_TOOLTIP_APPEARANCE_REMOVEIMAGE "Remove this desklet's image"
+    IDS_TOOLTIP_APPEARANCE_REMOVEDESKLET "Close this desklet"
+    IDS_TOOLTIP_APPEARANCE_IMAGE 
+                            "Drag-'n-drop an image onto this pane to change this desklet's image"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TOOLTIP_APPEARANCE_LOCKPOSITION 
+                            "By locking the position of this desklet, it cannot be moved by dragging it anymore"
+    IDS_TOOLTIP_DESKLETBROWSE_CATEGORIES 
+                            "Several categories for selecting new desklets can be selected"
+    IDS_TOOLTIP_DESKLETBROWSE_ADDFEED "Add a new desklets-feed"
+    IDS_TOOLTIP_DESKLETBROWSE_DELETEFEED "Remove the selected desklets-feed"
+    IDS_UPDATE_INTERVAL0    "Every 15 minutes"
+    IDS_UPDATE_INTERVAL1    "Every 30 minutes"
+    IDS_UPDATE_INTERVAL2    "Every hour"
+    IDS_UPDATE_INTERVAL3    "Every 12 hours"
+    IDS_UPDATE_INTERVAL4    "Every day"
+    IDS_UPDATE_INTERVAL5    "Every week"
+END
+
+#endif    // Dutch (Netherlands) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+1 TYPELIB "AveDesk.tlb"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

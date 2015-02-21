@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AveInstaller>
+
+	<About>
+		<Author>dsleep</Author>
+		<Email></Email>
+		<HomePage></HomePage>
+
+		<Name>Radial Skin For vumeter</Name>
+		<Version>1.0</Version>
+		<Description>A skin like a speaker for vuMeter.</Description>
+		<URL>http://home.comcast.net/~dpsleep/radial.zip</URL>
+		<GUID>67A5AF-89EA-4FC6-B7FA-9F85E9EEBE10</GUID>
+	</About>
+
+	<Requirements>
+		<Item Type="RequiredAveDeskVersion">1.2</Item>
+		<Item Type="RequiredInstallerVersion">1.2</Item>
+	</Requirements>
+
+	<BeforeCopy>
+		<Item Type="SuspendDesklet">
+			<Directory BaseFolder="Desklets">
+				<Directory Name="vuMeter">
+					<File>vuMeter.dll</File>
+				</Directory>
+			</Directory>
+		</Item>
+	</BeforeCopy>
+	
+	<CopyInformation>
+		<Directory BaseFolder="Desklets" Name="Desklets">
+			<Directory Name="vuMeter">
+				<Directory Name="Skins">
+					<CopyAll Recursively="true"/>
+				</Directory>
+			</Directory>
+		</Directory>
+
+	</CopyInformation>
+
+	<AfterCopySucceeded>
+		<Item Type="ShowBitmap">about.png</Item>
+	</AfterCopySucceeded>
+
+	<AfterCopyFailed>
+		<Item Type="ShowMessage">
+			<Caption>Failed</Caption>
+			<Text>The installation failed.</Text>
+		</Item>
+	</AfterCopyFailed>
+
+</AveInstaller>

@@ -1,0 +1,374 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1043{\fonttbl{\f0\fmodern\fprq1\fcharset0 Courier New;}{\f1\fswiss\fprq2\fcharset0 Arial;}{\f2\fswiss\fcharset0 Arial;}}
+\viewkind4\uc1\pard\b\f0\fs20\par
+\f1\fs40 The Desklet SDK: Functions\par
+\par
+\b0\fs20 Desklets are fully compatible with the Object Dock Docklet API. Therefore, each docklet can be used as a desklet. But real desklets can use the extended Desklet API. Next to the regular Desklet-variant of all Object Dock API functions, there is an extended set of functions. This set gives the programmer control to the extra features of desklets like rotation, alpha level. Also the programmer can set the size and position of the desklet using these functions.\f0\par
+\b\par
+\par
+BOOL CALLBACK DeskletRemove(HWND hwndDesklet, bool Ask)\b0\f2\par
+\i pre:   hwndDesklet is not 0\line post: if the desklet is removed TRUE has been returned, otherwise FALSE\i0\par
+\par
+Parameters:\par
+\tab\b\i HWND hwndDesklet\b0\i0\par
+\tab an HWND that is received by the OnCreate event and identifies this \par
+\tab desklet.\par
+\par
+\tab\b bool Ask\b0\par
+\tab if true, then a dialog is shown asking the user if he want to remove the \par
+\tab desklet. If the user says not to remove the desklet, it is not removed.\par
+\tab if false, the desklet is removed without asking the user.\par
+\par
+\par
+\b\f0 void CALLBACK DeskletHide(HWND hwndDesklet)\par
+\b0\i\f2 pre:   hwndDesklet is not 0\par
+post: the desklet and its label is hidden\i0\par
+\par
+Parameters:\par
+\b\i\tab HWND hwndDesklet\b0\i0\par
+\tab an HWND that is received by the OnCreate event and identifies this \par
+\tab desklet.\par
+\tab\par
+\par
+\f0 void CALLBACK DeskletShow(HWND hwndDesklet)\f2\par
+\i pre:   hwndDesklet is not 0\par
+post: the desklet and its label are shown\i0\par
+\par
+Parameters:\par
+\tab\b\i HWND hwndDesklet\b0\i0\par
+\tab an HWND that is received by the OnCreate event and identifies this \par
+\tab desklet.\par
+\par
+\par
+\f0 void CALLBACK DeskletSetPosition(HWND hwndDesklet,POINT *p)\f2\par
+\i pre:   hwndDesklet is not 0, p is not 0\par
+post: the desklet is repositioned at point p\i0\par
+\par
+Parameters:\par
+\tab\b\i HWND hwndDesklet\b0\i0\par
+\tab an HWND that is received by the OnCreate event and identifies this \par
+\tab desklet.\par
+\par
+\b\i\tab POINT* p\b0\i0\par
+\tab A pointer to a POINT struct that holds the x and y coordinates\par
+\tab the desklet should be repositioned at.\par
+\par
+\f0 void CALLBACK DeskletSetSize(HWND hwndDesklet,SIZE *s)\f2\par
+\i pre:   hwndDesklet is not 0, s is not 0\par
+post: the desklet is resized to size s\i0\par
+\par
+Parameters:\par
+\tab\b\i HWND hwndDesklet\b0\i0\par
+\tab an HWND that is received by the OnCreate event and identifies this \par
+\tab desklet.\par
+\par
+\b\i\tab SIZE* s\b0\i0\par
+\tab A pointer to a SIZE struct that holds the width and height\par
+\tab that the desklet should be resized to.\par
+\par
+\f0 void CALLBACK DeskletSetAlpha(HWND hwndDesklet,BYTE alpha)\f2\par
+\i pre:   hwndDesklet is not 0\par
+post: the desklets alpha level is set to alpha and the desklet is redrawn\i0\par
+\par
+Parameters:\par
+\tab\b\i HWND hwndDesklet\b0\i0\par
+\tab an HWND that is received by the OnCreate event and identifies this \par
+\tab desklet.\par
+\par
+\b\i\tab BYTE alpha\b0\i0\par
+\tab The new alpha level this desklet should use. The alpha level ranges\par
+\tab from 0 (totally transparent) to 255 (totally opaque).\par
+\par
+\f0 void CALLBACK DeskletSetRotation(HWND hwndDesklet,INT rotation)\f2\par
+\i pre:   hwndDesklet is not 0\par
+post: the desklets rotation level is set to rotation\i0\par
+\par
+Parameters:\par
+\tab\b\i HWND hwndDesklet\b0\i0\par
+\tab an HWND that is received by the OnCreate event and identifies this \par
+\tab desklet.\par
+\par
+\b\i\tab INT rotation\b0\i0\par
+\tab The new rotation level this desklet should use. Rotation is given in \par
+\tab degrees (360 degrees is a full turn) and is going clock-wise. The rotation\par
+\tab level could also be negative and more than 360 degrees.\par
+\par
+\f0 void CALLBACK DeskletGetPosition(HWND hwndDesklet,POINT *p)\f2\par
+\i pre:   hwndDesklet is not 0, p is not 0\par
+post: the desklets position is stored in p\i0\par
+\par
+Parameters:\par
+\tab\b\i HWND hwndDesklet\b0\i0\par
+\tab an HWND that is received by the OnCreate event and identifies this \par
+\tab desklet.\par
+\par
+\b\i\tab POINT* p\b0\i0\par
+\tab A pointer to a POINT-struct that has allocated memory to hold\par
+\tab the x- and y-position of this desklet.\par
+\par
+\f0 void CALLBACK DeskletGetSize(HWND hwndDesklet,SIZE *s)\f2\par
+\i pre:   hwndDesklet is not 0, s is not 0\par
+post: the desklets size is stored in s\i0\par
+\par
+Parameters:\par
+\tab\b\i HWND hwndDesklet\b0\i0\par
+\tab an HWND that is received by the OnCreate event and identifies this \par
+\tab desklet.\par
+\par
+\b\i\tab SIZE* s\b0\i0\par
+\tab A pointer to a SIZE-struct that has allocacted memory to hold the\par
+\tab width and height of this desklet.\par
+\par
+\f0 BYTE CALLBACK DeskletGetAlpha(HWND hwndDesklet)\f2\par
+\i pre:   hwndDesklet is not 0\par
+post: the desklets alpha level has been returned\i0\par
+\par
+Parameters:\par
+\tab\b\i HWND hwndDesklet\b0\i0\par
+\tab an HWND that is received by the OnCreate event and identifies this \par
+\tab desklet.\par
+\par
+\f0 INT CALLBACK DeskletGetRotation(HWND hwndDesklet)\f2\par
+\i pre:   hwndDesklet is not 0\par
+post: the desklets rotation level is returned.\i0\par
+\par
+Parameters:\par
+\tab\b\i HWND hwndDesklet\b0\i0\par
+\tab an HWND that is received by the OnCreate event and identifies this \par
+\tab desklet.\par
+\par
+\f0 HWND CALLBACK DeskletLoad(char* filename,char* ini, char* iniGroup,void** p,bool makeVisible=false)\f2\par
+\i pre:   filename is not 0\par
+post: the desklet with as DLL filename has been loaded. The HWND of the desklet\par
+\tab has been returned if it is properly created, otherwise 0 has been returned\i0\par
+\par
+Parameters:\par
+\tab\b\i char* filename\b0\i0\par
+\tab The absolute filename of the desklet to load. If you want to clone a desklet, call \tab GtModuleHandle(hInstanceDLL)\par
+\par
+\tab\b\i char* ini\b0\i0\par
+\tab The INI-file to load settings from, can be 0. In case of 0, no settings are loaded and \tab the e default settings are used.\par
+\tab\par
+\tab\b\i char* iniGroup\b0\i0\par
+\tab The INI-sectionto loadd settings from, can be 0. In case of 0, no settings are loaded \tab an the default settings are used.\par
+\par
+\tab\b\i void** p\b0\i0\par
+\tab This will receive the pointer that the desklet returns from the OnCreate() function.\par
+\par
+\tab\b\i bool makeVisible=false\b0\i0\par
+\tab If true, the docklet is made visible when loading. If false the docklet is not made \tab visible , until a call to DeskletShow(). Set this to false if you want to tweak the \tab desklets settings. After tweaking, call DeskletShow().\line\line\f0 UINT CALLBACK DeskletGetParentOK();\f2\par
+\i // post: the ID from the default config parent OK-button has been returned\i0\par
+\par
+\par
+\f0 void CALLBACK DeskletManager(UINT action);\f2\par
+\i // pre:   action is one of the constants described in the remarks\line // post: the action that is described in the remarks is performed based upon the action parameter\i0\line\line Parameters:\line\tab\b\i UINT action\b0\i0\line\tab\tab An DM_ action constant, see more in the remarks\line\line Remarks:\line\tab AveDesk 1.0 supports the following actions:\line\line\tab\b DM_CONTROLPANEL   \par
+\tab\tab\b0 the desklet control panel is opened\par
+\tab\b DM_SAVE\par
+ \tab\tab\b0 saves the current configuration\par
+\tab\b DM_ABOUT\par
+\b0\tab\tab the about box is opened\par
+\tab\b DM_HELP\b0\par
+\tab\tab the help file is opened\par
+\tab\b DM_EXIT\b0\par
+\tab\tab AveDesk is closed and the configuration is saved\par
+\tab\b DM_GLOBALSETTINGS\b0\par
+\tab\tab the global settings dialog is opened\par
+\tab\b DM_DEFAULTDESKLETPROPERTIES\b0\par
+\tab\tab The default desklet properties dialog is opened\par
+\tab\b DM_ADD\b0\line\tab\tab The add a desklet dialog is opened\par
+\par
+\f0 BOOL CALLBACK DeskletIsVisible(HWND hwndDesklet);\par
+\i\f2 pre:   hwndDesklet is not 0\par
+post: true has been returned if the desklet is visible, otherwise false\par
+\par
+\i0\f1 Parameters:\par
+\tab\b\i\f2 HWND hwndDesklet\b0\i0\par
+\tab an HWND that is received by the OnCreate event and identifies this \par
+\tab desklet.\f0\par
+\par
+BOOL CALLBACK DeskletGetRect(HWND hwndDesklet,RECT *rcDesklet);\par
+\i\f2 pre:   hwndDesklet is not 0 and rcDesklet is not 0\par
+post: true has been returned if the desklet is visible, otherwise false\par
+\par
+\i0\f1 Parameters:\par
+\tab\b\i\f2 HWND hwndDesklet\b0\i0\par
+\tab an HWND that is received by the OnCreate event and identifies this \par
+\tab desklet.\par
+\par
+\tab\b RECT *rcDesklet\b0\par
+\tab This will receive the current bounding rectangle of the desklet.\par
+\f0\par
+int CALLBACK DeskletGetLabel(HWND hwndDesklet,char* szLabel);\par
+\i\f2 pre:   hwndDesklet is not 0 \par
+post: the number of characters for the current label (including the 0-character) is returned\par
+\par
+\i0\f1 Parameters:\par
+\tab\b\i\f2 HWND hwndDesklet\b0\i0\par
+\tab an HWND that is received by the OnCreate event and identifies this \par
+\tab desklet.\par
+\par
+\tab char* szLabel\par
+\tab This will receive the current lable of the desklet. If this is 0, only, the number of characters (including the 0-character) is returned and the label is not changed.\par
+\f0\par
+int CALLBACK DeskletSetLabel(HWND hwndDesklet, char* szLabel);\par
+\i\f2 pre:   hwndDesklet is not 0 and szLabel is not 0\par
+post: the number of copied characters has been returned (including the 0-character)\par
+\par
+\i0\f1 Parameters:\par
+\tab\b\i\f2 HWND hwndDesklet\b0\i0\par
+\tab an HWND that is received by the OnCreate event and identifies this \par
+\tab desklet.\par
+\par
+\tab\b\i char* szLabel\b0\i0\par
+\tab The new label of this desklet.\par
+\f0\par
+Bitmap* CALLBACK DeskletLoadGDIPlusImage(char *szImage);\par
+\i\f2 pre:   szImage is not 0\par
+post: a pointer to a new Bitmap object holding the image to load has been returned\par
+\par
+\i0\f1 Parameters:\par
+\f2\tab\b\i char* szImage\b0\i0\par
+\tab The  file to load. This can be any filetype supported by GDI+, but  it's common to use png files. This can also be a filepath relative to the root directory of AveDesk. If the file cannot be found, the default.png file in the roof of the AveDesk directory is used as the filepath.\par
+\f0\par
+void CALLBACK DeskletSetImage(HWND hwndDesklet, Image *lpImageNew,BOOL bAutomaticallyDeleteImage=TRUE);\par
+\i\f2 pre:   hwndDesklet is not 0 and lpImageNew is not 0\par
+post: the desklets icon is changed to this image\par
+\par
+\i0\f1 Parameters:\par
+\tab\b\i\f2 HWND hwndDesklet\b0\i0\par
+\tab an HWND that is received by the OnCreate event and identifies this \par
+\tab desklet.\par
+\par
+\tab\b\i Image* lpImageNew\b0\i0\par
+\tab The Image object to use as the desklets new icon.\line\line\tab\b\i\f1 BOOL bAutomaticallyDeleteImage=TRUE\b0\i0\f0\par
+\tab if this is TRUE, AveDesk releases the memory for lpImageNew when no longer needed. Otherwise, the desklet must do it itself.\f2\line\line Remarks:\par
+\tab Changing the desklets image doesn't change the overlay image.\par
+\f0\par
+void CALLBACK DeskletSetImageFile(HWND hwndDesklet,char *szImage);\par
+\i\f2 pre:   hwndDesklet is not 0 and szImage is not 0\par
+post: the desklets icon image is changed to this image\par
+\par
+\i0\f1 Parameters:\par
+\tab\b\i\f2 HWND hwndDesklet\b0\i0\par
+\tab an HWND that is received by the OnCreate event and identifies this \par
+\tab desklet.\par
+\par
+\tab\b\i char* szImage\b0\i0\par
+\tab The  file to load set as image. This can be any filetype supported by GDI+, but  it's common to use png files. This can also be a filepath relative to the root directory of AveDesk. If the file cannot be found, the default.png file in the roof of the AveDesk directory is used as the filepath.\line\line Remarks:\par
+\tab Changing the desklets image doesn't change the overlay image.\par
+\f0\par
+void CALLBACK DeskletSetImageOverlay(HWND hwndDesklet, Image *lpImageNew,BOOL bAutomaticallyDeleteImage=TRUE);\par
+\i\f2 pre:   hwndDesklet is not 0 and lpImageNew is not 0\par
+post: the desklets overlay image is changed to this image\par
+\par
+\i0\f1 Parameters:\par
+\tab\b\i\f2 HWND hwndDesklet\b0\i0\par
+\tab an HWND that is received by the OnCreate event and identifies this \par
+\tab desklet.\par
+\par
+\tab\b\i Image* lpImageNew\b0\i0\par
+\tab The Image object to use as the desklets new icon.\line\line\tab\b\i\f1 BOOL bAutomaticallyDeleteImage=TRUE\b0\i0\f0\par
+\tab if this is TRUE, AveDesk releases the memory for lpImageNew when no longer needed. Otherwise, the desklet must do it itself.\f2\line\line Remarks:\par
+\tab Changing the desklets overlay image doesn't change the image. The dropshadow option users can set for a desklet doesn't apply to the overlay image.\par
+\f0\par
+void CALLBACK DeskletSetImageOverlayFile(HWND hwndDesklet,char *szImage);\par
+\i\f2 pre:   hwndDesklet is not 0 and szImage is not 0\par
+post: the desklets overlay image is changed to this image\par
+\par
+\i0\f1 Parameters:\par
+\tab\b\i\f2 HWND hwndDesklet\b0\i0\par
+\tab an HWND that is received by the OnCreate event and identifies this \par
+\tab desklet.\par
+\par
+\tab\b\i char* szImage\b0\i0\par
+\tab The  file to load set as image. This can be any filetype supported by GDI+, but  it's common to use png files. This can also be a filepath relative to the root directory of AveDesk. If the file cannot be found, the default.png file in the roof of the AveDesk directory is used as the filepath.\line\line Remarks:\par
+\tab Changing the desklets overlay image doesn't change the image. The dropshadow option users can set for a desklet doesn't apply to the overlay image.\par
+\f0\par
+BOOL CALLBACK DeskletBrowseForImage(HWND hwndParent,char *szImage);\par
+\i\f2 pre:   szImage is not 0\par
+post: TRUE has been returned if the user selected an image, FALSE if not.\par
+\par
+\i0\f1 Parameters:\par
+\tab\b\i\f2 HWND hwndParent\b0\i0\par
+\tab an HWND that the choose-file dialog uses as his parent.\par
+\par
+\tab\b\i char* szImage\b0\i0\par
+\tab If the user selected an image, the filepath of that image is copied into szImage. This will be a relative path when possible, otherwise it will be an absolute path.\par
+\f0\par
+void CALLBACK DeskletDoAttentionAnimation(HWND hwndDesklet, INT iAnimationType, UINT speed);\par
+\i\f1 // pre:  hwndDesklet is not 0, iAnimationType is one of the constants\par
+described in the remarks\par
+// post: the animation defined by iAnimationType is performed, the functions returns before the animation is started\par
+\i0\par
+Parameters:\par
+\tab\b\i\f2 HWND hwndDesklet\b0\i0\par
+\tab an HWND that is received by the OnCreate event and identifies this \par
+\tab desklet.\par
+\par
+\tab\b\i INT iAnimationType\b0\i0\line\tab Determines which type of animation to do. See the remarks section for current supported animations.\par
+\par
+\tab\b\i UINT speed\b0\i0\par
+\tab The delay in milliseconds between each "frame" of the animation.\par
+\f0\line\f1 Remarks:\par
+\tab AveDesk 1.0 currently support the following animations:\par
+\tab\b ANIMATION_NONE\b0\line\tab\tab no animation.\par
+\tab\b ANIMATION_FADEIN\b0\par
+\tab\tab The desklet fades in from alpha 0 to the value of the current alpha for the desklet. Also, the desklet is made visible.\par
+\tab\b ANIMATION_FADEOUT\b0\par
+\tab\tab The desklet fades out from the value of the current alpha for the desklet to an alpha level of 0. Also, the desklet is hidden.\par
+\tab\b ANIMATION_FADEINANDOUT\b0\par
+\tab\tab A combination of \i ANIMATION_FADEIN\i0  and \i ANIMATION_FADEOUT\i0 .\par
+\tab\b ANIMATION_FADEOUTANDIN\b0\par
+\tab\tab A combination of \i ANIMATION_FADEOUT \i0 and \i ANIMATION_FADEIN\i0 .\f0\par
+\par
+void CALLBACK DeskletGetRelativeFolder(HWND hwndDesklet, char *szFolder)\par
+\i\f1 // pre:  hwndDesklet is not 0 and szFolder is not 0\par
+// post: the relative folder of this desklet is copied into szFolder\par
+\i0\par
+Parameters:\par
+\tab\b\i\f2 HWND hwndDesklet\b0\i0\par
+\tab an HWND that is received by the OnCreate event and identifies this \par
+\tab desklet.\par
+\par
+\tab\b\i char *szFolder\par
+\tab\b0\i0 This will receive the relative folder for this desklet. The relative folder is the path relative to the root of the AveDesk directory. This always ends with a backslash.\par
+\f0\par
+\par
+void CALLBACK DeskletGetRootFolder(HWND hwndDesklet,char *szFolder);\par
+\i\f1 // pre:  hwndDesklet is not 0 and szFolder is not 0\par
+// post: the root folder of AveDesk copied into szFolder\par
+\i0\par
+Parameters:\par
+\tab\b\i\f2 HWND hwndDesklet\b0\i0\par
+\tab an HWND that is received by the OnCreate event and identifies this \par
+\tab desklet.\par
+\par
+\tab\b\i char *szFolder\par
+\tab\b0\i0 This will receive the root folder of AveDesk. This is an absolute path and always ends with a backslash. DeskletGetRootFolder() combined with DeskletGetRelativeFolder() is the absolute path of the folder where the desklet is located in.\par
+\f0\par
+void CALLBACK DeskletDefaultConfigDialog(HWND hwndDesklet, PropertyDialogStruct *pds);\par
+\i\f1 // pre:  hwndDesklet is not 0 \par
+// post: the default configuration dialog is shown for this desklet.\par
+\i0\par
+Parameters:\par
+\tab\b\i\f2 HWND hwndDesklet\b0\i0\par
+\tab an HWND that is received by the OnCreate event and identifies this \par
+\tab desklet.\par
+\par
+\tab\b\i PropertyDialogStruct *pds\par
+\tab\b0\i0 A pointer to  PropertyDialogStruct. for more info, see the document property_pages.rtf . If this is 0, no property pages are added to the dialog.\par
+\par
+\f0 void CALLBACK DeskletSetStatic(HWND hwndDesklet, bool staticValue);\f2\par
+\i // pre:   hwndDesklet is not 0\par
+// post: the desklets static state is set according to staticValue\i0\par
+\par
+\f1 Parameters:\par
+\tab\b\i\f2 HWND hwndDesklet\b0\i0\par
+\tab an HWND that is received by the OnCreate event and identifies this \par
+\tab desklet.\par
+\par
+\tab\b\i bool staticValue\par
+\tab\b0\i0 the new value of the static-state for this desklet.\line\line Remarks:\par
+\tab A desklet that shows the same image always and without setting its overlay, could set its state to \i static\i0 . When a desklet is in static mode, resources for the image are freed and are only loaded when the desklets size, alpha, rotation, quality or dropshadow changes. It is best to call this function in the \i OnCreate\i0 () event.\line\line Note:\par
+\tab The static-state of a desklet is not saved. Therefore, it should be set in the OnCreate().\par
+}
+ 

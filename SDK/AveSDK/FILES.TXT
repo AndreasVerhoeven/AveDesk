@@ -1,0 +1,23 @@
+Doxygen/Javadoc documentationary comments:
+
+ DESKLETEVENTS_DOXYGEN.CPP - docs about all events that a desklet could implement
+ AVEFUNCS_DOXYGEN.cpp - docs about all functions the AveDeskletSDK has.
+
+AveControls Library:
+
+ AVECONSTANTS.H - defines constants and structures used while sending messages to a control.
+ AVECONTROLS.DEF - all current exports of AveControls.dll
+ AVECONTROLS.H - function headers with doxygen/javadoc documentationary comments for all functions inside the AveControls library.
+ AVECONTROLS.LIB - lib file to link against AveControls.dll
+
+
+DeskletSDK:
+ 
+ DESKLETSDK.H - header file for the deskletsdk
+ DESKLETSDK.CPP - implementation file for the deskletsdk
+ DRAWPLUGINSDK.H - header file for the sdk used by drawplugins/effects
+ DRAWPLUGINSDK.CPP - deprecated
+
+Support classes:
+ - CAveHTTP - small class to get webpages (avehttp.h, avehttp.cpp)
+ - mem_buffer - small class to have a generic memory buffer (mem_buffer.cpp, mem_buffer.h)

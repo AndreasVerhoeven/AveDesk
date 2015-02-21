@@ -1,0 +1,141 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Dutch (Netherlands) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NLD)
+#ifdef _WIN32
+LANGUAGE LANG_DUTCH, SUBLANG_DUTCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ITUNESSETTINGS DIALOGEX DISCARDABLE  0, 0, 242, 209
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "iTunes Settings"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "Here, you can specify how iTunes will interact with this widget.",
+                    IDC_STATIC,10,5,215,20
+    CONTROL         "Hide the widget when iTunes is not loaded.",
+                    IDC_HIDEWIDGET,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,
+                    35,152,10
+    CONTROL         "Hide iTunes when this widget is loaded.",IDC_HIDEITUNES,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,53,141,10
+    CONTROL         "Use iTunes 5 stars rating system",IDC_USE5STARSRATING,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,80,150,10
+    LTEXT           "iTunes uses 5 stars to rate a song, where each star represents 20 points. If you check this option, the widget will automatically scale ratings to the 5 star system, like the regular iTunes does.",
+                    IDC_STATIC,30,95,140,40
+    CONTROL         "If there is no artwork, try to use folder.jpg",
+                    IDC_ARTWORK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,150,
+                    145,10
+    LTEXT           "If there is no albumart associated in iTunes wit the current song, the widget will try to use folder.jpg in the MP3 file's folder, if this option is checked.",
+                    IDC_STATIC,30,165,140,35
+END
+
+IDD_SKIN DIALOGEX DISCARDABLE  0, 0, 262, 154
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Skin"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "Here you can select the skin that is used by this widget.",
+                    IDC_STATIC,15,9,220,15
+    COMBOBOX        IDC_SKIN,15,26,185,30,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Current Skin Information",IDC_STATIC,15,43,225,85
+    LTEXT           "Name:",IDC_STATIC,34,58,22,8
+    LTEXT           "Author:",IDC_STATIC,32,73,24,8
+    LTEXT           "Comments:",IDC_STATIC,20,88,36,8
+    LTEXT           "%NAME%",IDC_NAME,70,58,160,8
+    LTEXT           "%AUTHOR%",IDC_AUTHOR,70,73,160,8
+    EDITTEXT        IDC_INFO,70,88,160,35,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_NOHIDESEL | ES_OEMCONVERT | ES_READONLY | ES_NUMBER | 
+                    WS_VSCROLL
+    CONTROL         "&Never Play Sounds In Skins",IDC_NEVERSOUNDS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,135,104,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ITUNESSETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 235
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 202
+    END
+
+    IDD_SKIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 255
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Dutch (Netherlands) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

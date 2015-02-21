@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AveInstaller>
+
+   <About>
+	<Author>jggame</Author>
+	<Email>jggamba@gmail.com</Email>
+	<HomePage>http://www.macthink.net/</HomePage>
+  
+	<Name>Spanish language file (Castellano)</Name>
+	<Version>1.0</Version>
+	<Description>Lenguaje Espanol para Avedesk 1.2</Description>
+	<URL>http://jggamba.spymac.net/Uploads/AVE00A001.zip</URL>
+	<GUID>96E4132F-83A3-45e8-8297-DF8DC24F075B</GUID>
+   </About>
+
+   <Requirements>
+	<Item Type="RequiredAveDeskVersion">1.2</Item>
+	<Item Type="RequiredInstallerVersion">1.2</Item>
+   </Requirements>
+   
+   <BeforeCopy>
+	<Item Type="UnloadLanguage"/>
+   </BeforeCopy>
+
+   <CopyInformation>
+	<Directory BaseFolder="Languages">
+		<File>AVE00A001.DLL</File>
+	</Directory>
+   </CopyInformation>
+
+   <AfterCopySucceeded>
+	<Item Type="ReloadLanguage"/>
+   </AfterCopySucceeded>
+
+   <AfterCopyFailed>
+	<Item Type="ReloadLanguage"/>
+	<Item Type="ShowMessage">
+		<Caption>Failed</Caption>
+		<Text>La instalación falló</Text>
+	</Item>
+   </AfterCopyFailed>
+
+</AveInstaller> 

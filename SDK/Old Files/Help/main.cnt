@@ -1,0 +1,7 @@
+:Base main.hlp
+:Title AveDesk Help
+:Index dummy=dummy.hlp ;(This is necessary when using KLinks - because of a bug in the help
+:Link dummy.hlp        ; compiler. Without this only the first keyword would be looked up!)
+1 Introduction=SHM_contents0001@main.hlp
+1 Getting started=SHM_contents0002@main.hlp
+1 Desklets Control Panel=SHM_contents0003@main.hlp

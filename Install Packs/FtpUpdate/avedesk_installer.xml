@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AveInstaller>
+
+	<About>
+		<Author>Andreas Verhoeven</Author>
+		<Email>averhoev.2@hccnet.nl</Email>
+		<HomePage>http://avedesk.needlemen.com</HomePage>
+
+		<Name>FTP Drop Update</Name>
+		<Version>2.2</Version>
+		<Description>An iTunes remote with style. Supports animation.</Description>
+		<URL>http://avedesk.needlemen.com/desklets/ftpupdate.aveinst</URL>
+		<GUID>8A7900-B8E7-4107-A278-64B7697EBDF4</GUID>
+	</About>
+
+	<Requirements>
+		<Item Type="RequiredAveDeskVersion">1.2</Item>
+		<Item Type="RequiredInstallerVersion">1.2</Item>
+	</Requirements>
+
+	<BeforeCopy>
+		<Item Type="SuspendDesklet">
+			<Directory BaseFolder="Desklets">
+				<Directory Name="FTP">
+					<File>ftp.dll</File>
+				</Directory>
+			</Directory>
+		</Item>
+	</BeforeCopy>
+	
+	<CopyInformation>
+		<Directory BaseFolder="Desklets">
+			<Directory Name="FTP">
+				<CopyAll Recursively="true"/>
+			</Directory>
+		</Directory>
+
+	</CopyInformation>
+
+	<AfterCopySucceeded>
+		<Item Type="ShowMessage">
+			<Caption>Update Succeeded</Caption>
+			<Text>FTP Droplet DLL Succeeded.
+Fixed a bug where the user-defined port was ignored, 21 was always used. 
+With this update, the user-defined port will be used correctly.
+			</Text>
+		</Item>
+	</AfterCopySucceeded>
+
+	<AfterCopyFailed>
+		<Item Type="ShowMessage">
+			<Caption>Failed</Caption>
+			<Text>Updating FTP.dll failed, please contact the author.</Text>
+		</Item>
+	</AfterCopyFailed>
+
+</AveInstaller>

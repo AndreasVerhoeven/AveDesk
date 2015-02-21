@@ -1,0 +1,236 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1043{\fonttbl{\f0\fswiss\fcharset0 Arial;}{\f1\fmodern\fprq1\fcharset0 Courier New;}}
+\viewkind4\uc1\pard\b\f0\fs20 AveDesk Installer: Action types\par
+\par
+\b0 This file will give an overview of all the types that can be used in the \i Action-section's\i0  (BeforeCopy, AfterCopySucceeded, AfterCopyFailed) of an AveDesk Installer XML file.\par
+\par
+\par
+\b NOTE: Silent Installs\par
+\b0 A user can choose to install a package silenty, in this case all actions that will display something to the user will not be done. For example, the \i ShowBitmap \i0 action will not be done if the install is done silently.\par
+Also, packages that are automatically downloaded and installed will always install silently.\par
+\par
+\b NOTE: Aliases\b0\par
+All files that should be described by Directory/File-nodes, can also be described with an Alias. An Alias must be set in the \i CopyInformation-section\i0  and will always map to a file on the users harddisk. You can use an Alias in an Item by adding the Alias="true"  attribute to the Item-node and simply set the Alias' name as the Item-node's Text.\par
+Example:\par
+\f1\tab <Item Type="RegisterCOMServer" UseAlias="true">SomeDLL</Item>\f0\par
+\par
+\par
+\b RunScript\b0\par
+\par
+This action will launch an external 'script' or file. The filename must be in the Text of the node and is always relative to the root of the ZIPped package. Consequently, you cannot run a file from the users harddisk.\par
+\par
+Example:\par
+\f1\tab <Item Type="RunScript">Scripts\\RegisterLibraries.bat</Item>\f0\par
+\par
+\par
+\b ShowBitmap\b0\par
+\par
+This action will show a bitmap as a splash-screen. The filename must be in the Text of the node and is always relative to the root of the ZIPped package. Consequently, you cannot show a bitmap from the users harddisk. The user will be able to click the splash-screen away or the splash-screen will be automatically hidden after 10 seconds.\par
+\par
+\i This action will not be performed if an installation is silent.\i0\par
+\par
+Example:\par
+\f1\tab <Item Type="ShowBitmap">About.png</Item>\f0\par
+\par
+\par
+\b LoadDesklet\b0\par
+\par
+This action will load a desklet. The desklet's information must be a child-node as saved in .avedesklet files. The first child-node should be \i Desklet\i0 . The only mandatory child-node of the \i Desklet-node \i0 is the DLL-node. All other child-nodes, suchs as Label, OwnerSettings are optional.\par
+\par
+\i This action will not be performed if an installation is silent.\i0\par
+\par
+Example:\par
+\f1\tab <Desklet>\par
+\tab\tab <DLL>desklets\\avetunes\\ituneswidget.dll</DLL>\par
+\tab </Desklet>\f0\par
+\par
+\par
+\b RegisterCOMServer\b0\par
+\par
+This action will register a COM-server. The COM-server should be copied to the users harddisk before and thus will be described with Directory/File-nodes or with an Alias.\par
+\par
+\par
+Example:\par
+\f1\tab <Item Type="RegisterCOMServer">\par
+\tab\tab <Directory BaseFolder="Desklets">\par
+\tab\tab\tab <Directory Name="SomeDesklet">\par
+\tab\tab\tab\tab <File>COMstuff.dll</File>\par
+\tab\tab\tab </Directory>\par
+\tab\tab </Directory>\tab\tab\tab\tab\tab\par
+\tab </Item>\f0\par
+\par
+\par
+\b ShowMessage\b0\par
+\par
+This action will show a message to the user. The message will have a Caption- and a Text-part. The caption should be the Text of a Caption-childnode, whereas the Text should be the Text of a Text-childnode.\par
+\par
+\i This action will not be performed if an installation is silent.\i0\par
+\par
+Example:\par
+\f1\tab <Item Type="ShowMessage">\par
+\tab\tab <Caption>Failed</Caption>\par
+\tab\tab <Text>The installation failed.</Text>\par
+\tab </Item>\par
+\par
+\par
+\b\f0 RegisterCOMServer\b0\par
+\par
+This action will register a COM-server. The COM-server should be copied to the users harddisk before and thus will be described with Directory/File-nodes.\par
+\par
+\par
+Example:\par
+\f1\tab <Item Type="InstallModule">\par
+\tab\tab <Directory BaseFolder="Desklets">\par
+\tab\tab\tab <Directory Name="SomeDesklet">\par
+\tab\tab\tab\tab <File>COMstuff.dll</File>\par
+\tab\tab\tab </Directory>\par
+\tab\tab </Directory>\tab\tab\tab\tab\tab\par
+\tab </Item>\f0\par
+\par
+\par
+\b InstallModule\b0\par
+\par
+This action will install an AveDesk Add-on module. The module must be described with Directory/File-nodes or with an Alias.\par
+\par
+\par
+Example:\par
+\f1\tab <Item Type="InstallModule">\par
+\tab\tab <Directory BaseFolder="Desklets">\par
+\tab\tab\tab <Directory Name="SomeDesklet">\par
+\tab\tab\tab\tab <File>SomeModule.dll</File>\par
+\tab\tab\tab </Directory>\par
+\tab\tab </Directory>\tab\tab\tab\tab\tab\par
+\tab </Item>\f0\par
+\par
+\par
+\b UnloadModule\b0\par
+\par
+This action will unload a Module and thus make it possible to update the physical DLL file on the users harddisk. You typically use this action in the \i BeforeCopy-section\i0 . The module must be described with Directory/File-nodes or with an Alias.\par
+\par
+\par
+Example:\par
+\f1\tab <Item Type="UnloadModule">\par
+\tab\tab <Directory BaseFolder="Desklets">\par
+\tab\tab\tab <Directory Name="SomeDesklet">\par
+\tab\tab\tab\tab <File>SomeModule.dll</File>\par
+\tab\tab\tab </Directory>\par
+\tab\tab </Directory>\tab\tab\tab\tab\tab\par
+\tab </Item>\f0\par
+\par
+\par
+\b DownloadAndInstall\b0\par
+\par
+This action will download and install another AveInst-package. The file to be downloaded and installed must be described with a DownloadableFile-node.\par
+\par
+\par
+Example:\par
+\f1\tab <Item Type="DownloadAndInstall">\par
+\tab\tab <DownloadableFile>\par
+\tab\tab\tab <URL>http://mpj.tomaatnet.nl/nolabel.aveinst</URL>\par
+\tab\tab </DownloadableFile>\tab\tab\tab\tab\tab\par
+\tab </Item>\f0\par
+\par
+\par
+\b SuspendDesklet\b0\par
+\par
+This action will suspend a desklet and thus make it possible to update the physical DLL file on the users harddisk. You typically use this action in the \i BeforeCopy-section\i0 . The module must be described with Directory/File-nodes or with an Alias.\par
+\par
+A suspended desklet will stay unloaded as long as the installer is running. The desklet will automatically be resumed if the installer stops.\par
+\par
+\par
+Example:\par
+\f1\tab <Item Type="SuspendDesklet">\par
+\tab\tab <Directory BaseFolder="Desklets">\par
+\tab\tab\tab <Directory Name="AveTunes">\par
+\tab\tab\tab\tab <File>iTunesWidget.dll</File>\par
+\tab\tab\tab </Directory>\par
+\tab\tab </Directory>\tab\tab\tab\tab\tab\par
+\tab </Item>\f0\par
+\par
+\par
+\b DoIf\b0\par
+\par
+This action will perform another action, but only if some requirement is met. A common usage is to only use the LoadDesklet action to load a desklet if a desklet of the same type is not already running.\par
+\par
+The structure of this actions is as follows:\par
+\f1 <Item Type="DoIf">\line\tab <If Type="RequirementsType">\par
+\tab\tab <!-- .... -->\par
+\tab </If>\par
+\par
+\tab <Then Type="ActionType">\par
+\tab\tab <!-- .... -->\par
+\tab </Then>\par
+\par
+\tab <Else Type="ActionType">\par
+\tab\tab <!-- ... -->\par
+\tab </Else>\par
+</Item>\f0\par
+\line If the Requirement in the If-node was met, then the Action in the Then-node will be performed. Otherwise, the Action in the Else-node will be performed, if available (thus Else is optional).\par
+\par
+Example:\par
+\f1\tab <Item Type="DoIf">\par
+\tab\tab\tab <If Type="Not">\par
+\tab\tab\tab\tab <Item Type="DeskletIsUsed">\par
+\tab\tab\tab\tab\tab <Directory BaseFolder="Desklets">\par
+\tab\tab\tab\tab\tab\tab <Directory Name="AveTunes">\par
+\tab\tab\tab\tab\tab\tab\tab <File>\par
+\tab\tab\tab\tab\tab\tab\tab\tab iTunesWidget.dll\par
+\tab\tab\tab\tab\tab\tab\tab </File>\par
+\tab\tab\tab\tab\tab\tab </Directory>\par
+\tab\tab\tab\tab\tab </Directory>\tab\tab\tab\tab\tab\par
+\tab\tab\tab\tab </Item>\par
+\tab\tab\tab </If>\par
+\tab\tab\tab <Then Type="LoadDesklet">\par
+\tab\tab\tab <Desklet>\par
+\tab\tab\tab\tab <DLL>desklets\\avetunes\\ituneswidget.dll</DLL>\tab\tab\tab </Desklet>\par
+\tab\tab\tab </Then>\par
+\tab\tab </Item>\f0\par
+\par
+\par
+\b InstallFont\b0\par
+\par
+This action will install a font. The font must be described with Directory/File-nodes or with an Alias, \b but it will describe files in the ZIPped package, not files on the users harddrive. \b0 The reason for this is that it is possible to install multiple fonts in one action.\par
+\par
+Example:\par
+\f1\tab <Item Type="InstallFont">\par
+\tab\tab <Directory BaseFolder="Resources">\par
+\tab\tab\tab <Directory Name="Fonts">\par
+\tab\tab\tab\tab <File>Arial.ttf</File>\par
+\tab\tab\tab </Directory>\par
+\tab\tab </Directory>\tab\tab\tab\tab\tab\par
+\tab </Item>\par
+\par
+\par
+\b\f0 ReloadLanguage\b0\par
+\par
+This action will install reload the current language file. If you copied a language file to the special Languages BaseFolder, you should call this function.\par
+This function does not have any childnodes.\par
+\par
+Example:\par
+\f1\tab <Item Type="ReloadLanguage"/>\par
+\par
+\par
+\b\f0 UnloadLanguage\b0\par
+\par
+This action will install unload the current language file, so the physical DLL file can be updated. If you want to copy a language file to the special Languages BaseFolder, you should call this function.\par
+Also, be sure to call ReloadLanguage in both the \i AfterCopySucceeded-\i0  and \i AfterCopyFailed-section\i0 .\par
+This function does not have any childnodes.\par
+\par
+Example:\par
+\f1\tab <Item Type="UnloadLanguage"/>\par
+\par
+\par
+\b\f0 LoadThemeFile\b0\par
+\par
+This action will load an .AveTheme file. The theme-file must be described with Directory/File-nodes or with an Alias.\par
+\par
+Example:\par
+\f1\tab <Item Type="LoadThemeFile">\par
+\tab\tab <Directory BaseFolder="Themes">\par
+\tab\tab\tab <File>MyTheme.avetheme</File>\par
+\tab\tab </Directory>\tab\tab\tab\tab\tab\par
+\tab </Item>\f0\par
+\par
+-------------------------------------------------------\par
+(c) copyright Andreas Verhoeven 2005\par
+}
+ 

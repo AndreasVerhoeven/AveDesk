@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<!--
+ Copyrights The AveScripter Tutorial, 2005.
+-->
+<root>
+   <skininfo>
+      <author>Andreas Verhoeven</author>
+      <name>Comics - Scribbly</name>
+      <notes>Shows Comics (Scribbly) on your desktop</notes>
+      <version>1</version>
+   </skininfo>
+
+   <skindata>
+      <desklet>
+         <alpha>255</alpha>
+         <resources></resources>
+		 <ctrlresources>Controls</ctrlresources>
+
+		 <language>JScript</language>
+		 <script>ComicsScribbly.js</script>
+		 <oncreate>changeToComic(new Date())</oncreate>
+      </desklet>
+
+  	  <timers>
+		 <timer name="comicChecker" interval="28800" type="4" ontimer="changeToComic(new Date());"/>
+	  </timers>
+
+	   <sides>
+		     <side id="0" width="553" height="216" closex="12" closey="12" />
+			 <side id="1" width="553" height="216" closex="12" closey="32" />
+	   </sides>
+
+		<layers side="1">
+			<layer name="bg" src="images/backside.png" x="0" y="0" />
+			<layer name="bg_logo" src="images/logos/scribbly.gif" x="15" y="45" mousecursor="IDC_HAND" onclick="visitSite();" />
+			<layer name="bg_logo2" src="images/logos/scribbly_mac.gif" x="360" y="45" mousecursor="IDC_HAND" onclick="visitSite();" />
+			<layer name="bg_donebut" src="images/controls/done.png" dsrc="images/controls/done_pressed.png" x="460" y="160" onclick="!FLIP:0"/>
+		</layers>
+
+	   <layers side="0">
+			<layer name="frame" src="images/frame.png" x="0" y="0" />
+			<layer name="title" src="!TXT:Scribbly" x="106" y="-1" width="120" height="34" fontname="Lucida Sans Unicode" fontsize="25" fontcolor="clWhite" fontstyle="B" fontalign="LT" alpha="100"
+				onclick="changeToComic(new Date());" fullhittest="yes" mousecursor="IDC_HAND" />
+		<layer name="comic" src="!WEBIMG:http://scribbly.nl/beheer/upload/25-november-krant.gif" x="16" y="36" width="500" height="153" />
+			<layer name="nextbut" src="images/next.png" dsrc="images/next_down.png" onclick="doNext();" x="34" y="8" mousecursor="IDC_HAND" />
+			<layer name="prevbut" src="images/prev.png" dsrc="images/prev_down.png" onclick="doPrev();" x="12" y="8" mousecursor="IDC_HAND" />
+			
+			<layer src="images/flip.png" x="513"  y="185" alpha="0" onmouseenter="!EFFECT:SHOW,SELF,255,10,10" onmouseexit="!EFFECT:HIDE,SELF,0" mousecursor="32649" fullhittest="yes" onclick="!FLIP:1" />
+		
+	   </layers>
+
+   </skindata>
+</root> 

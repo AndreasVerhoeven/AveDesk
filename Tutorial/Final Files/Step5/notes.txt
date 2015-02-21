@@ -1,0 +1,1 @@
+Instead of using the real RSS-feed from [ http://avedesk.philc.ca/modules/PDdownloads/latestrss.php?cid=1 ], a static RSS-document is used located at [ http://mpj.tomaatnet.nl/sample_rss.xml ] for this step for testing purposes.

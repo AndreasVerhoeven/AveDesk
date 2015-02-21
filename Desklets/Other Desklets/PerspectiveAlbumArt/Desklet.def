@@ -1,0 +1,6 @@
+EXPORTS
+
+OnCreate
+OnDestroy
+OnGetInformation
+OnProcessMessage

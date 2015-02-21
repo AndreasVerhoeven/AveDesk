@@ -1,0 +1,29 @@
+EXPORTS
+	OnCreate
+	OnSave
+	OnDestroy
+	OnGetInformation
+
+	OnProcessMessage
+	OnLeftButtonClick
+	OnRightButtonClick
+
+	OnMouseWheelForward
+	OnMouseWheelBackward
+
+	OnDragEnter
+	OnDragLeave
+	OnDrop
+
+	OnMouseOn
+	OnMouseOut
+	OnMouseMove
+
+	OnAddPropertySheets
+
+	OnVisibilityNotify
+	
+	OnCreateSkinEnumeratorW
+	OnDestroySkinEnumeratorW
+	OnGetSkinW
+	OnCreateFromSkinW

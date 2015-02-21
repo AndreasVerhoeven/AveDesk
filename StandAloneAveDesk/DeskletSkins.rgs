@@ -1,0 +1,21 @@
+HKCR
+{
+	AveDesk.DeskletSkins.1 = s 'DeskletSkins Class'
+	{
+		CLSID = s '{D98A8D0A-A567-4C18-9EBD-EA84E0A8C735}'
+	}
+	AveDesk.DeskletSkins = s 'DeskletSkins Class'
+	{
+		CLSID = s '{D98A8D0A-A567-4C18-9EBD-EA84E0A8C735}'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {D98A8D0A-A567-4C18-9EBD-EA84E0A8C735} = s 'DeskletSkins Class'
+		{
+			ProgID = s 'AveDesk.DeskletSkins.1'
+			VersionIndependentProgID = s 'AveDesk.DeskletSkins'
+			val AppID = s '{3F44B74D-68DC-44D0-B8AA-5CE6CBD4DF71}'
+			LocalServer32 = s '%Module%'
+		}
+	}
+}

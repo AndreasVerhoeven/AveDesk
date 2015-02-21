@@ -1,0 +1,181 @@
+EXPORTS
+	DockletBrowseForImage
+	DockletDoAttentionAnimation
+	DockletGetLabel
+	DockletGetRect
+	DockletGetRelativeFolder
+	DockletGetRootFolder
+	DockletIsVisible
+	DockletLoadGDIPlusImage
+	DockletLockMouseEffect
+	DockletSetImage
+	DockletSetImageFile
+	DockletSetImageOverlayFile
+	DockletSetLabel
+	DockletSetImageOverlay
+	DockletDefaultConfigDialog
+	DockletQueryDockEdge
+	DockletQueryDockAlign
+	DockletSetDockEdge
+	DockletSetDockAlign
+
+	DeskletBrowseForImage
+	DeskletDoAttentionAnimation
+	DeskletGetLabel
+	DeskletGetRect
+	DeskletGetRelativeFolder
+	DeskletGetRootFolder
+	DeskletIsVisible
+	DeskletLoadGDIPlusImage
+	DeskletSetImage
+	DeskletSetImageFile
+	DeskletSetImageOverlayFile
+	DeskletSetLabel
+	DeskletSetImageOverlay
+	DeskletDefaultConfigDialog
+	DeskletRemove
+
+	DeskletHide
+	DeskletShow
+	DeskletSetPosition
+	DeskletSetSize
+	DeskletSetAlpha
+	DeskletSetRotation
+	DeskletGetPosition
+	DeskletGetSize
+	DeskletGetAlpha
+	DeskletGetRotation
+
+	DeskletLoad
+
+	DeskletGetParentOK
+
+	DeskletManager
+	DeskletSetStatic
+
+	DeskletActivateExtendedDragDrop
+	DeskletDeactivateExtendedDragDrop
+
+	DeskletLayerCount
+	DeskletLayerAdd
+	DeskletLayerRemove
+	DeskletLayerMoveUp
+	DeskletLayerMoveDown
+	DeskletLayerMoveTop
+	DeskletLayerMoveBottom
+	DeskletLayerMergeAll
+	DeskletLayerMergeVisible
+	DeskletLayerSetImage
+	DeskletLayerSetImageFile
+	DeskletLayerSetColorMatrix
+	DeskletLayerSetVisibility
+	DeskletLayerSetRotation
+	DeskletLayerSetAlpha
+	DeskletLayerSetHue
+	DeskletLayerSetSaturation
+	DeskletLayerReset
+	DeskletLayerGetLayer
+	DeskletLayerSetPlacement
+	DeskletLayerSetIconState
+
+	DeskletAddDragDropFormat
+	DeskletRemoveDragDropFormat
+
+	DuplicateDesklet
+	DeskletGetDefaultMenu
+	DeskletDoDefaultMenuCommand
+
+	DeskletRedraw
+	DeskletMove
+
+	DeskletAddPropertySheet
+
+	DeskletGetAveDeskVersion
+
+	DeskletSetHelperDesklet
+	DeskletSetSubLabel
+
+	DeskletGetWrapper
+
+	DeskletSetSubLabelW
+	DeskletGetRelativeFolderW
+	DeskletGetRootFolderW
+
+	DeskletSetLabelW
+	DeskletGetLabelW
+
+	DeskletFadeIn
+	DeskletFadeOut
+
+	DeskletSaveW
+	DeskletLoadFromConfigW
+	DeskletLoadFromDLLW
+	DeskletEnumRunningDesklets
+	DeskletAsyncSetPointer
+
+	DeskletSetSkinInfoW
+	DeskletGetDirectoryW
+
+	DeskletSetImageSetStatus
+
+	DeskletLoadHBITMAPImageW
+	DeskletSetHBITMAP
+
+	DeskletLoadGDIPlusImageW
+
+	DeskletFlip
+	DeskletSetClosePoint
+
+	DeskletLayerSetIsNotMovable
+	DeskletLayerSetIsClickThrough
+	DeskletLayerSetNoAlphaBlendedHitTesting
+	DeskletHitTest
+	DeskletLayerHitTest
+
+	DeskletLayerSetCapture
+	DeskletLayerReleaseCapture
+	DeskletLayerGetCapture
+
+	DeskletLockInvalidating
+	DeskletUnlockInvalidating
+	DeskletInvalidateRect
+	DeskletLayerSetImageSourceBounds
+	DeskletLayerSetImageClipRect
+
+	DeskletLayerSetImageFileW
+
+	DeskletSetCursor
+
+
+	AveCreateADEnumerator
+	AveFreeADEnumerator
+	AveStartEnumerating
+	AveStopEnumerating
+	AveStartCreatingPreviewIcon
+	AveInstantiateEntry
+	AveStartDragOperation
+
+	DeskletLayerAddEx
+
+	DeskletLayerGetImageClipRect
+	DeskletLayerGetPlacement
+
+	DeskletLayerGetIsNotMovable
+	DeskletLayerGetIsClickThrough
+	DeskletLayerGetNoAlphaBlendedHitTesting
+	DeskletLayerRemoveAll
+	DeskletLayerGetAlpha
+	DeskletLayerGetGolorMatrix
+	DeskletLayerGetHue
+	DeskletLayerGetRotation
+	DeskletLayerGetSaturation
+	DeskletLayerGetVisibility
+	DeskletLayerIsLayerVisible
+	DeskletLayerGetParent
+	
+	DeskletLayerSetToolTipText
+	
+	AveRegisterDeskletStyle
+	AveUnregisterDeskletStyle
+	AveRegisterPositionHook
+	AveUnregisterPositionHook

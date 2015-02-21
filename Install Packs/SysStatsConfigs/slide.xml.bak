@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AveInstaller>
+
+	<About>
+		<Author>{YOURNAME}</Author>
+		<Email>{YOUREMAIL}</Email>
+		<HomePage>{YOURHOMEPAGE}</HomePage>
+
+		<Name>{YOURCONFIGNAME}</Name>
+		<Version>{YOURVERSION}</Version>
+		<Description>{YOURDESCRIPTION}</Description>
+		<URL>{DOWNLOADURLFORTHISPACKAGE}</URL>
+		<GUID>8536F8D4-F994-4C0E-89D3-88264911DA26</GUID>
+	</About>
+
+	<Requirements>
+		<Item Type="RequiredAveDeskVersion">1.2</Item>
+		<Item Type="RequiredInstallerVersion">1.2</Item>
+	</Requirements>
+
+	<BeforeCopy/>
+	
+	<CopyInformation>
+		<Directory BaseFolder="Effects">
+			<File>Slide.effectlet</File>
+		</Directory>
+
+	</CopyInformation>
+
+	<AfterCopySucceeded>
+		<!-- if you don't want an about.png as splashscreen, remove the next Item-node (showbitmap) -->
+		<Item Type="ShowBitmap">About.png</Item>
+	</AfterCopySucceeded>
+
+	<AfterCopyFailed>
+		<Item Type="ShowMessage">
+			<Caption>Installation Failed</Caption>
+			<Text>The installation for this config failed.</Text>
+		</Item>
+	</AfterCopyFailed>
+
+</AveInstaller>

@@ -1,0 +1,36 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: DesktopModule - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "c:\temp\RSP3B.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "DESKTOPMODULE_EXPORTS" /Fp"Release/DesktopModule.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\Test\docs\SDK\PidlShortcut\DesktopInstaller\DesktopModule.cpp"
+]
+Creating command line "cl.exe @c:\temp\RSP3B.tmp" 
+Creating temporary file "c:\temp\RSP3C.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"Release/DesktopInstaller.pdb" /machine:I386 /def:".\DesktopModule.def" /out:"H:\AveDesk 1.2 Release\Desklets\PidlShortcut\DesktopInstaller.dll" /implib:"Release/DesktopInstaller.lib" 
+.\Release\DeskletSDK.obj
+.\Release\DesktopModule.obj
+.\Release\Pidl.obj
+.\Release\ShellFolder.obj
+]
+Creating command line "link.exe @c:\temp\RSP3C.tmp"
+<h3>Output Window</h3>
+Compiling...
+DesktopModule.cpp
+Linking...
+   Creating library Release/DesktopInstaller.lib and object Release/DesktopInstaller.exp
+
+
+
+<h3>Results</h3>
+DesktopInstaller.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

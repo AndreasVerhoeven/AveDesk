@@ -1,0 +1,35 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Puzzle - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Andreas\LOCALS~1\Temp\RSP2DB.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "PUZZLE_EXPORTS" /Fp"Release/Puzzle.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\Coding\Projects\Test\docs\SDK\Puzzle\Puzzle.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Andreas\LOCALS~1\Temp\RSP2DB.tmp" 
+Creating temporary file "C:\DOCUME~1\Andreas\LOCALS~1\Temp\RSP2DC.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"Release/Puzzle.pdb" /machine:I386 /def:".\Puzzle.def" /out:"d:\modding\avedesk\desklets\puzzle\Puzzle.dll" /implib:"Release/Puzzle.lib" 
+.\Release\Puzzle.obj
+.\Release\script1.res
+.\Release\OSXPopupMenu.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\Andreas\LOCALS~1\Temp\RSP2DC.tmp"
+<h3>Output Window</h3>
+Compiling...
+Puzzle.cpp
+Linking...
+   Creating library Release/Puzzle.lib and object Release/Puzzle.exp
+
+
+
+<h3>Results</h3>
+Puzzle.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

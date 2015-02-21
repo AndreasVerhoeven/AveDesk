@@ -1,0 +1,20 @@
+EXPORTS
+	OnCreate
+	OnDestroy
+	OnSave
+	OnAddPropertySheets
+	OnGetInformation
+
+	OnLeftButtonClick
+	OnRightButtonClick
+	OnProcessMessage
+	
+	OnDrop
+	OnDragEnter
+	OnDragLeave
+	OnDragDropDataRequest
+
+	OnCreateSkinEnumeratorW
+	OnDestroySkinEnumeratorW
+	OnGetSkinW
+	OnCreateFromSkinW

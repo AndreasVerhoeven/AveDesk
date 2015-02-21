@@ -1,0 +1,93 @@
+<root>
+  <skininfo>
+    <name>Nu.NL</name>
+    <author>Andreas Verhoeven (Ave)</author>
+    <notes>De NU.nl-widget is een miniprogrammaatje voor het Windows Widget programma AveDesk. Hiermee kan je op een eenvoudige manier altijd het laatste nieuws van NU.nl zien, dus zonder je browser te starten en naar de website te gaan. Wanneer je het volledige nieuwsitem wil bekijken klik je op het betreffende nieuwsitem. Je browser opent dan automatisch het artikel op de website van NU.nl.)</notes>
+    <version>101</version>
+	<reqversion>100</reqversion>
+    <icon>icon</icon>
+  </skininfo>
+  <skindata>
+    <desklet>
+      <alpha>255</alpha>
+      <resources></resources>
+      <ctrlresources>Controls</ctrlresources>
+      <language>JScript</language>
+      <keypressanim>100</keypressanim>
+      <script>main.js</script>
+	  <oncreate>onInitDesklet()</oncreate>
+	  <onmouseenter>onDeskletEnter()</onmouseenter>
+	  <onmouseexit>onDeskletExit()</onmouseexit>
+    </desklet>
+
+    <sides>
+      <side id="0" width="300" height="320" closex="10" closey="10"/>
+      <side id="1" width="300" height="320" closex="14" closey="14"/>
+    </sides>
+
+   <xmls>
+      <xml src="http://nu.nl/deeplink_rss2/index.jsp?r=%sourceType%" interval="%refreshDelay%" usewintmp="yes" ongetdata="UpdateDisplay();"/>
+    </xmls>
+    <timers>
+    </timers>
+    <parameters>
+		<parameter name="refreshDelay" save="yes" default="15"/>
+		<parameter name="sourceType" save="yes" default="Algemeen" />
+		<parameter name="SlideState" save="yes" default="1" />
+    </parameters>
+    <layers side="0">
+      <layer name="bg_top" x="0" y="0" width="300" height="44" src="bgtop.png"/>
+      <layer name="bg_mid" x="0" y="44" width="300" height="254" src="bgmid.png" clipSource="0,0,300,100"/>
+      <layer name="bg_bot" x="0" y="298" width="300" height="22" src="bgbottom.png"/>
+	  <layer name="small_logo" x="0" y="0" src="smalllogo.png" onclick="doSlide();" mousecursor="IDC_HAND" />
+
+      <layer name="flipit" x="272" y="292" width="13" height="13" src="flipit.png" onclick="!FLIP:1" mousecursor="IDC_HAND" alpha="0" fontalign="LT" fullhittest="yes"/>
+
+	  <layer name="item1" x="16" y="70" width="266" height="20" fontstyle="" fontalign="CT" fontaa="yes" fontcolor="clBlack" fontsize="12" fontname="Arial" src="!XMLTXT:[//channel/item[1]/title]" mousecursor="IDC_HAND" fullhittest="yes" onmouseenter="Highlight(1);" onmouseexit="Highlight(0);" data="!XMLTXT:[//channel/item[1]/link]" onclick="ClickNews(1);" />
+
+		<layer name="item2" x="16" y="94" width="266" height="20" fontstyle="" fontalign="CT" fontaa="yes" fontcolor="clBlack" fontsize="12" fontname="Arial" src="!XMLTXT:[//channel/item[2]/title]" mousecursor="IDC_HAND" fullhittest="yes" onmouseenter="Highlight(1);" onmouseexit="Highlight(0);" data="!XMLTXT:[//channel/item[2]/link]" onclick="ClickNews(2);" />
+
+		<layer name="item3" x="16" y="117" width="266" height="20" fontstyle="" fontalign="CT" fontaa="yes" fontcolor="clBlack" fontsize="12" fontname="Arial" src="!XMLTXT:[//channel/item[3]/title]" mousecursor="IDC_HAND" fullhittest="yes" onmouseenter="Highlight(1);" onmouseexit="Highlight(0);" data="!XMLTXT:[//channel/item[3]/link]" onclick="ClickNews(3);" />
+
+		<layer name="item4" x="16" y="141" width="266" height="20" fontstyle="" fontalign="CT" fontaa="yes" fontcolor="clBlack" fontsize="12" fontname="Arial" src="!XMLTXT:[//channel/item[4]/title]" mousecursor="IDC_HAND" fullhittest="yes" onmouseenter="Highlight(1);" onmouseexit="Highlight(0);" data="!XMLTXT:[//channel/item[4]/link]" onclick="ClickNews(4);" />
+
+		<layer name="item5" x="16" y="164" width="266" height="20" fontstyle="" fontalign="CT" fontaa="yes" fontcolor="clBlack" fontsize="12" fontname="Arial" src="!XMLTXT:[//channel/item[5]/title]" mousecursor="IDC_HAND" fullhittest="yes" onmouseenter="Highlight(1);" onmouseexit="Highlight(0);" data="!XMLTXT:[//channel/item[5]/link]" onclick="ClickNews(5);" />
+
+		<layer name="item6" x="16" y="187" width="266" height="20" fontstyle="" fontalign="CT" fontaa="yes" fontcolor="clBlack" fontsize="12" fontname="Arial" src="!XMLTXT:[//channel/item[6]/title]" mousecursor="IDC_HAND" fullhittest="yes" onmouseenter="Highlight(1);" onmouseexit="Highlight(0);" data="!XMLTXT:[//channel/item[6]/link]" onclick="ClickNews(6);" />
+
+		<layer name="item7" x="16" y="210" width="266" height="20" fontstyle="" fontalign="CT" fontaa="yes" fontcolor="clBlack" fontsize="12" fontname="Arial" src="!XMLTXT:[//channel/item[7]/title]" mousecursor="IDC_HAND" fullhittest="yes" onmouseenter="Highlight(1);" onmouseexit="Highlight(0);" data="!XMLTXT:[//channel/item[7]/link]" onclick="ClickNews(7);" />
+
+		<layer name="item8" x="16" y="233" width="266" height="20" fontstyle="" fontalign="CT" fontaa="yes" fontcolor="clBlack" fontsize="12" fontname="Arial" src="!XMLTXT:[//channel/item[8]/title]" mousecursor="IDC_HAND" fullhittest="yes" onmouseenter="Highlight(1);" onmouseexit="Highlight(0);" data="!XMLTXT:[//channel/item[8]/link]" onclick="ClickNews(8);" />
+
+		<layer name="item9" x="16" y="256" width="266" height="20" fontstyle="" fontalign="CT" fontaa="yes" fontcolor="clBlack" fontsize="12" fontname="Arial" src="!XMLTXT:[//channel/item[9]/title]" mousecursor="IDC_HAND" fullhittest="yes" onmouseenter="Highlight(1);" onmouseexit="Highlight(0);" data="!XMLTXT:[//channel/item[9]/link]" onclick="ClickNews(9);" />
+
+
+	</layers>
+	<layers side="1">
+      <layer name="bg" x="0" y="0" width="300" height="320" src="back.png"/>
+	  <layer name="logo" x="100" y="30" src="oldicon.png" onclick="this.io.shellexecutes('http://www.nu.nl');" mousecursor="IDC_HAND" />
+	  <layer name="bg_text_shadow" x="67" y="141" width="140" height="30" fontstyle="B" fontalign="CT" fontaa="yes" fontcolor="clBlack" fontsize="14" fontname="Lucida Sans Unicode" text="Refresh Interval" />
+
+	  <layer name="bg_text" x="66" y="140" width="140" height="30" fontstyle="B" fontalign="CT" fontaa="yes" fontcolor="clWhite" fontsize="14" fontname="Lucida Sans Unicode" text="Refresh Interval" />
+	 
+
+      <layer name="backButton" x="214" y="264" width="55" height="25" src="done.png" dsrc="done_pressed.png" onclick="!FLIP:0" mousecursor="crDefault" fontstyle="" fontalign="LT" fontaa="No" fullhittest="yes"/>
+    </layers>
+
+	<controls side="0">
+		<control name="sourceList" type="DROPDOWNLIST" onchange="onSourceListChange();" x="66" y="22" width="160" height="25" fontsize="14" fontname="Tahoma" fontstyle="B" visible="yes" fontcolor="clWhite" value="%sourceType%" listvalues="Algemeen=Algemeen;Economie=Economie;Internet=Internet;Sport=Sport;Achterklap=Achterklap;Yoshe=Yoshe;Jurryt=Jurryt;Plugged=Plugged;Auto=Auto;Wetenschap=Wetenschap" />
+	</controls>
+
+	<controls side="1">
+		<control name="refreshInterval" type="DROPDOWNLIST" onchange="onRefreshIntervalChange();" x="66" y="160" width="160" height="25" fontsize="14" fontalign="C" fontname="Tahoma" fontstyle="B" visible="yes" fontcolor="clWhite" value="%refreshDelay%" listvalues="Elke Minuut=1;Elke 2 Minuten=2;Elke 5 Minuten=5;Elk Kwartier=15;Elk Half Uur=30;Elk Uur=60" ctrlresources="BackControls" />
+	</controls>
+
+  <menus>
+	 <menu showdefault="yes">
+		<menuitem name="-" type="S" />
+		<menuitem name="Refresh" onclick="this.Redraw();" />
+		<menuitem name="Update Data" onclick="this.ForceXDataFetch()" />
+	 </menu>
+  </menus>
+  </skindata>
+</root>

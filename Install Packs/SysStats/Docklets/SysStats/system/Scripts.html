@@ -1,0 +1,3229 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./Scripts_files/filelist.xml">
+<link rel=Edit-Time-Data href="./Scripts_files/editdata.mso">
+<link rel=OLE-Object-Data href="./Scripts_files/oledata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>ScriptMeter</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Paul Andrews</o:Author>
+  <o:LastAuthor>Paul</o:LastAuthor>
+  <o:Revision>30</o:Revision>
+  <o:TotalTime>1516</o:TotalTime>
+  <o:Created>2004-12-20T19:57:00Z</o:Created>
+  <o:LastSaved>2005-02-28T03:01:00Z</o:LastSaved>
+  <o:Pages>25</o:Pages>
+  <o:Words>6514</o:Words>
+  <o:Characters>37130</o:Characters>
+  <o:Company>UBS AG</o:Company>
+  <o:Lines>309</o:Lines>
+  <o:Paragraphs>74</o:Paragraphs>
+  <o:CharactersWithSpaces>45598</o:CharactersWithSpaces>
+  <o:Version>9.2720</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Print</w:View>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+p.MSODOCUMENTMAP
+	{mso-style-noshow:yes;}
+li.MSODOCUMENTMAP
+	{mso-style-noshow:yes;}
+div.MSODOCUMENTMAP
+	{mso-style-noshow:yes;}
+span.SPELLE
+	{mso-spl-e:yes;}
+span.GRAME
+	{mso-gram-e:yes;}
+ /* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:1627421319 -2147483648 8 0 66047 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+h1
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:16.0pt;
+	font-family:Arial;
+	mso-font-kerning:16.0pt;}
+h2
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:14.0pt;
+	font-family:Arial;
+	font-style:italic;}
+h3
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:13.0pt;
+	font-family:Arial;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{mso-style-update:auto;
+	mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{mso-style-update:auto;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:11.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{mso-style-update:auto;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:22.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoToc4, li.MsoToc4, div.MsoToc4
+	{mso-style-update:auto;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:33.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoToc5, li.MsoToc5, div.MsoToc5
+	{mso-style-update:auto;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:44.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoToc6, li.MsoToc6, div.MsoToc6
+	{mso-style-update:auto;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:55.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoToc7, li.MsoToc7, div.MsoToc7
+	{mso-style-update:auto;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:66.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoToc8, li.MsoToc8, div.MsoToc8
+	{mso-style-update:auto;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:77.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoToc9, li.MsoToc9, div.MsoToc9
+	{mso-style-update:auto;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:88.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	font-size:18.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoDocumentMap, li.MsoDocumentMap, div.MsoDocumentMap
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	background:navy;
+	font-size:10.0pt;
+	font-family:Tahoma;
+	mso-fareast-font-family:"Times New Roman";}
+p.FunctionDescription, li.FunctionDescription, div.FunctionDescription
+	{mso-style-name:"Function Description";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:1.0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-font-style:italic;}
+p.FunctionDeclaration, li.FunctionDeclaration, div.FunctionDeclaration
+	{mso-style-name:"Function Declaration";
+	mso-style-next:"Function Description";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+p.listing, li.listing, div.listing
+	{mso-style-name:listing;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:1.0in;
+	margin-bottom:.0001pt;
+	text-indent:-.25in;
+	mso-pagination:widow-orphan;
+	mso-list:l1 level1 lfo2;
+	tab-stops:list 1.0in;
+	font-size:11.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.Code, li.Code, div.Code
+	{mso-style-name:Code;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	border:none;
+	mso-border-alt:solid windowtext .5pt;
+	padding:0in;
+	mso-padding-alt:1.0pt 4.0pt 1.0pt 4.0pt;
+	font-size:11.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:861169789;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1301903886 -1560540250 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	margin-left:1.5in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l1
+	{mso-list-id:1774279925;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-604096758 1231440536 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-style-link:listing;
+	mso-level-text:\F02D;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l2
+	{mso-list-id:1831168000;
+	mso-list-type:hybrid;
+	mso-list-template-ids:466013436 -1560540250 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	margin-left:1.5in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1031" style='mso-position-horizontal:left'
+  o:allowoverlap="f" stroke="f">
+  <v:stroke on="f"/>
+  <o:colormenu v:ext="edit" fillcolor="#9cf" strokecolor="none"/>
+ </o:shapedefaults></xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]--><o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags" name="City"/><o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags" name="place" downloadurl="http://www.5iantlavalamp.com/"/><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">  </w:LatentStyles>
+</xml><![endif]-->
+</head>
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<p class=MsoTitle>Scripts</p>
+
+<p class=MsoNormal>SysStats allows you to write your own meters and controllers
+using any script language that supports the Windows Script Host mechanism.
+Typically this means VBScript.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>This document documents how SyStats interfaces to such a
+script – what functions it expects to find and what objects and functions the
+script can call to control SysStats.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoToc2 style='tab-stops:right dotted 414.8pt'><!--[if supportFields]><span
+style='mso-element:field-begin'></span><span style="mso-spacerun:
+yes"> </span>TOC \o &quot;1-3&quot; \h \z <span style='mso-element:field-separator'></span><![endif]--><span
+class=MsoHyperlink><a href="#_Toc97222061">ScriptMeter<span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'> </span><span style='mso-field-code:"PAGEREF _Toc97222061 \\h"'>1<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F0054006F006300390037003200320032003000360031000000</w:data>
+</xml><![endif]--></span></span></a></span><span style='font-size:12.0pt;
+font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 414.8pt'><span
+class=MsoHyperlink><a href="#_Toc97222062">Synchronous v. ASynchronous<span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'><span style='mso-tab-count:1 dotted'>. </span><span
+style='mso-field-code:"PAGEREF _Toc97222062 \\h"'>3<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F0054006F006300390037003200320032003000360032000000</w:data>
+</xml><![endif]--></span></span></a></span><span style='font-size:12.0pt;
+font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoToc2 style='tab-stops:right dotted 414.8pt'><span
+class=MsoHyperlink><a href="#_Toc97222063">ScriptController<span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'><span style='mso-tab-count:1 dotted'> </span><span
+style='mso-field-code:"PAGEREF _Toc97222063 \\h"'>3<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F0054006F006300390037003200320032003000360033000000</w:data>
+</xml><![endif]--></span></span></a></span><span style='font-size:12.0pt;
+font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 414.8pt'><span
+class=MsoHyperlink><a href="#_Toc97222064">Synchronous v. ASynchronous<span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'><span style='mso-tab-count:1 dotted'>. </span><span
+style='mso-field-code:"PAGEREF _Toc97222064 \\h"'>3<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F0054006F006300390037003200320032003000360034000000</w:data>
+</xml><![endif]--></span></span></a></span><span style='font-size:12.0pt;
+font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoToc2 style='tab-stops:right dotted 414.8pt'><span
+class=MsoHyperlink><a href="#_Toc97222065">WScript<span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'> </span><span style='mso-field-code:"PAGEREF _Toc97222065 \\h"'>3<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F0054006F006300390037003200320032003000360035000000</w:data>
+</xml><![endif]--></span></span></a></span><span style='font-size:12.0pt;
+font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoToc2 style='tab-stops:right dotted 414.8pt'><span
+class=MsoHyperlink><a href="#_Toc97222066">SysStatsModel<span style='color:
+windowtext;display:none;mso-hide:screen;text-decoration:none;text-underline:
+none'><span style='mso-tab-count:1 dotted'> </span><span style='mso-field-code:
+"PAGEREF _Toc97222066 \\h"'>4<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F0054006F006300390037003200320032003000360036000000</w:data>
+</xml><![endif]--></span></span></a></span><span style='font-size:12.0pt;
+font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoToc2 style='tab-stops:right dotted 414.8pt'><span
+class=MsoHyperlink><a href="#_Toc97222067">Collections<span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>. </span><span style='mso-field-code:"PAGEREF _Toc97222067 \\h"'>5<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F0054006F006300390037003200320032003000360037000000</w:data>
+</xml><![endif]--></span></span></a></span><span style='font-size:12.0pt;
+font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoToc2 style='tab-stops:right dotted 414.8pt'><span
+class=MsoHyperlink><a href="#_Toc97222068">Label<span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'> </span><span style='mso-field-code:"PAGEREF _Toc97222068 \\h"'>6<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F0054006F006300390037003200320032003000360038000000</w:data>
+</xml><![endif]--></span></span></a></span><span style='font-size:12.0pt;
+font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoToc2 style='tab-stops:right dotted 414.8pt'><span
+class=MsoHyperlink><a href="#_Toc97222069">Meter<span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'> </span><span style='mso-field-code:"PAGEREF _Toc97222069 \\h"'>6<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F0054006F006300390037003200320032003000360039000000</w:data>
+</xml><![endif]--></span></span></a></span><span style='font-size:12.0pt;
+font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 414.8pt'><span
+class=MsoHyperlink><a href="#_Toc97222070">DiskMeter<span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'> </span><span style='mso-field-code:"PAGEREF _Toc97222070 \\h"'>8<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F0054006F006300390037003200320032003000370030000000</w:data>
+</xml><![endif]--></span></span></a></span><span style='font-size:12.0pt;
+font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 414.8pt'><span
+class=MsoHyperlink><a href="#_Toc97222071">FixedMeter<span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'> </span><span style='mso-field-code:"PAGEREF _Toc97222071 \\h"'>8<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F0054006F006300390037003200320032003000370031000000</w:data>
+</xml><![endif]--></span></span></a></span><span style='font-size:12.0pt;
+font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 414.8pt'><span
+class=MsoHyperlink><a href="#_Toc97222072">MBMMeter<span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'> </span><span style='mso-field-code:"PAGEREF _Toc97222072 \\h"'>8<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F0054006F006300390037003200320032003000370032000000</w:data>
+</xml><![endif]--></span></span></a></span><span style='font-size:12.0pt;
+font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 414.8pt'><span
+class=MsoHyperlink><a href="#_Toc97222073">MemoryMeter<span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'> </span><span style='mso-field-code:"PAGEREF _Toc97222073 \\h"'>9<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F0054006F006300390037003200320032003000370033000000</w:data>
+</xml><![endif]--></span></span></a></span><span style='font-size:12.0pt;
+font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 414.8pt'><span
+class=MsoHyperlink><a href="#_Toc97222074">PDHMeter<span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'> </span><span style='mso-field-code:"PAGEREF _Toc97222074 \\h"'>9<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F0054006F006300390037003200320032003000370034000000</w:data>
+</xml><![endif]--></span></span></a></span><span style='font-size:12.0pt;
+font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 414.8pt'><span
+class=MsoHyperlink><a href="#_Toc97222075">ScriptMeter<span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'> </span><span style='mso-field-code:"PAGEREF _Toc97222075 \\h"'>9<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F0054006F006300390037003200320032003000370035000000</w:data>
+</xml><![endif]--></span></span></a></span><span style='font-size:12.0pt;
+font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 414.8pt'><span
+class=MsoHyperlink><a href="#_Toc97222076">TimeMeter<span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'> </span><span style='mso-field-code:"PAGEREF _Toc97222076 \\h"'>10<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F0054006F006300390037003200320032003000370036000000</w:data>
+</xml><![endif]--></span></span></a></span><span style='font-size:12.0pt;
+font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 414.8pt'><span
+class=MsoHyperlink><a href="#_Toc97222077">XMLMeter<span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'> </span><span style='mso-field-code:"PAGEREF _Toc97222077 \\h"'>10<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F0054006F006300390037003200320032003000370037000000</w:data>
+</xml><![endif]--></span></span></a></span><span style='font-size:12.0pt;
+font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 414.8pt'><span
+class=MsoHyperlink><a href="#_Toc97222078">MailMeter<span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'> </span><span style='mso-field-code:"PAGEREF _Toc97222078 \\h"'>11<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F0054006F006300390037003200320032003000370038000000</w:data>
+</xml><![endif]--></span></span></a></span><span style='font-size:12.0pt;
+font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 414.8pt'><span
+class=MsoHyperlink><a href="#_Toc97222079">Animation<span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>. </span><span style='mso-field-code:"PAGEREF _Toc97222079 \\h"'>11<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F0054006F006300390037003200320032003000370039000000</w:data>
+</xml><![endif]--></span></span></a></span><span style='font-size:12.0pt;
+font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoToc2 style='tab-stops:right dotted 414.8pt'><span
+class=MsoHyperlink><a href="#_Toc97222080">Overlay<span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>. </span><span style='mso-field-code:"PAGEREF _Toc97222080 \\h"'>12<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F0054006F006300390037003200320032003000380030000000</w:data>
+</xml><![endif]--></span></span></a></span><span style='font-size:12.0pt;
+font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 414.8pt'><span
+class=MsoHyperlink><a href="#_Toc97222081">SimpleOverlay<span style='color:
+windowtext;display:none;mso-hide:screen;text-decoration:none;text-underline:
+none'><span style='mso-tab-count:1 dotted'>. </span><span style='mso-field-code:
+"PAGEREF _Toc97222081 \\h"'>13<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F0054006F006300390037003200320032003000380031000000</w:data>
+</xml><![endif]--></span></span></a></span><span style='font-size:12.0pt;
+font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 414.8pt'><span
+class=MsoHyperlink><a href="#_Toc97222082">SimpleOverlay2<span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'><span style='mso-tab-count:1 dotted'>. </span><span
+style='mso-field-code:"PAGEREF _Toc97222082 \\h"'>14<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F0054006F006300390037003200320032003000380032000000</w:data>
+</xml><![endif]--></span></span></a></span><span style='font-size:12.0pt;
+font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 414.8pt'><span
+class=MsoHyperlink><a href="#_Toc97222083">GaugeOverlay<span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>. </span><span style='mso-field-code:"PAGEREF _Toc97222083 \\h"'>15<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F0054006F006300390037003200320032003000380033000000</w:data>
+</xml><![endif]--></span></span></a></span><span style='font-size:12.0pt;
+font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 414.8pt'><span
+class=MsoHyperlink><a href="#_Toc97222084">ImageOverlay<span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>. </span><span style='mso-field-code:"PAGEREF _Toc97222084 \\h"'>15<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F0054006F006300390037003200320032003000380034000000</w:data>
+</xml><![endif]--></span></span></a></span><span style='font-size:12.0pt;
+font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 414.8pt'><span
+class=MsoHyperlink><a href="#_Toc97222085">MeterOverlay<span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>. </span><span style='mso-field-code:"PAGEREF _Toc97222085 \\h"'>16<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F0054006F006300390037003200320032003000380035000000</w:data>
+</xml><![endif]--></span></span></a></span><span style='font-size:12.0pt;
+font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 414.8pt'><span
+class=MsoHyperlink><a href="#_Toc97222086">TextOverlay<span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>. </span><span style='mso-field-code:"PAGEREF _Toc97222086 \\h"'>16<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F0054006F006300390037003200320032003000380036000000</w:data>
+</xml><![endif]--></span></span></a></span><span style='font-size:12.0pt;
+font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 414.8pt'><span
+class=MsoHyperlink><a href="#_Toc97222087">CompositeOverlay<span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'><span style='mso-tab-count:1 dotted'>. </span><span
+style='mso-field-code:"PAGEREF _Toc97222087 \\h"'>18<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F0054006F006300390037003200320032003000380037000000</w:data>
+</xml><![endif]--></span></span></a></span><span style='font-size:12.0pt;
+font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 414.8pt'><span
+class=MsoHyperlink><a href="#_Toc97222088">MappedOverlay<span style='color:
+windowtext;display:none;mso-hide:screen;text-decoration:none;text-underline:
+none'><span style='mso-tab-count:1 dotted'>. </span><span style='mso-field-code:
+"PAGEREF _Toc97222088 \\h"'>18<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F0054006F006300390037003200320032003000380038000000</w:data>
+</xml><![endif]--></span></span></a></span><span style='font-size:12.0pt;
+font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 414.8pt'><span
+class=MsoHyperlink><a href="#_Toc97222089">Scroller<span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'> </span><span style='mso-field-code:"PAGEREF _Toc97222089 \\h"'>19<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F0054006F006300390037003200320032003000380039000000</w:data>
+</xml><![endif]--></span></span></a></span><span style='font-size:12.0pt;
+font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 414.8pt'><span
+class=MsoHyperlink><a href="#_Toc97222090">Animator<span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'> </span><span style='mso-field-code:"PAGEREF _Toc97222090 \\h"'>20<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F0054006F006300390037003200320032003000390030000000</w:data>
+</xml><![endif]--></span></span></a></span><span style='font-size:12.0pt;
+font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoToc2 style='tab-stops:right dotted 414.8pt'><span
+class=MsoHyperlink><a href="#_Toc97222091">Controller<span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'> </span><span style='mso-field-code:"PAGEREF _Toc97222091 \\h"'>21<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F0054006F006300390037003200320032003000390031000000</w:data>
+</xml><![endif]--></span></span></a></span><span style='font-size:12.0pt;
+font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 414.8pt'><span
+class=MsoHyperlink><a href="#_Toc97222092">ValueSetter<span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'> </span><span style='mso-field-code:"PAGEREF _Toc97222092 \\h"'>21<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F0054006F006300390037003200320032003000390032000000</w:data>
+</xml><![endif]--></span></span></a></span><span style='font-size:12.0pt;
+font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 414.8pt'><span
+class=MsoHyperlink><a href="#_Toc97222093">MessageSender<span style='color:
+windowtext;display:none;mso-hide:screen;text-decoration:none;text-underline:
+none'><span style='mso-tab-count:1 dotted'> </span><span style='mso-field-code:
+"PAGEREF _Toc97222093 \\h"'>22<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F0054006F006300390037003200320032003000390033000000</w:data>
+</xml><![endif]--></span></span></a></span><span style='font-size:12.0pt;
+font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 414.8pt'><span
+class=MsoHyperlink><a href="#_Toc97222094">ScriptController<span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'><span style='mso-tab-count:1 dotted'> </span><span
+style='mso-field-code:"PAGEREF _Toc97222094 \\h"'>22<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F0054006F006300390037003200320032003000390034000000</w:data>
+</xml><![endif]--></span></span></a></span><span style='font-size:12.0pt;
+font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 414.8pt'><span
+class=MsoHyperlink><a href="#_Toc97222095">ASyncScriptController<span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'><span style='mso-tab-count:1 dotted'> </span><span
+style='mso-field-code:"PAGEREF _Toc97222095 \\h"'>22<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F0054006F006300390037003200320032003000390035000000</w:data>
+</xml><![endif]--></span></span></a></span><span style='font-size:12.0pt;
+font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 414.8pt'><span
+class=MsoHyperlink><a href="#_Toc97222096">Shortcut<span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'> </span><span style='mso-field-code:"PAGEREF _Toc97222096 \\h"'>22<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F0054006F006300390037003200320032003000390036000000</w:data>
+</xml><![endif]--></span></span></a></span><span style='font-size:12.0pt;
+font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 414.8pt'><span
+class=MsoHyperlink><a href="#_Toc97222097">DropTargetController<span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'><span style='mso-tab-count:1 dotted'> </span><span
+style='mso-field-code:"PAGEREF _Toc97222097 \\h"'>23<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F0054006F006300390037003200320032003000390037000000</w:data>
+</xml><![endif]--></span></span></a></span><span style='font-size:12.0pt;
+font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 414.8pt'><span
+class=MsoHyperlink><a href="#_Toc97222098">Mapped<span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>. </span><span style='mso-field-code:"PAGEREF _Toc97222098 \\h"'>23<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F0054006F006300390037003200320032003000390038000000</w:data>
+</xml><![endif]--></span></span></a></span><span style='font-size:12.0pt;
+font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 414.8pt'><span
+class=MsoHyperlink><a href="#_Toc97222099">Cursor<span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'> </span><span style='mso-field-code:"PAGEREF _Toc97222099 \\h"'>23<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F0054006F006300390037003200320032003000390039000000</w:data>
+</xml><![endif]--></span></span></a></span><span style='font-size:12.0pt;
+font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 414.8pt'><span
+class=MsoHyperlink><a href="#_Toc97222100">Timer<span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'> </span><span style='mso-field-code:"PAGEREF _Toc97222100 \\h"'>23<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F0054006F006300390037003200320032003100300030000000</w:data>
+</xml><![endif]--></span></span></a></span><span style='font-size:12.0pt;
+font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoToc2 style='tab-stops:right dotted 414.8pt'><span
+class=MsoHyperlink><a href="#_Toc97222101">AppConfig<span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>. </span><span style='mso-field-code:"PAGEREF _Toc97222101 \\h"'>24<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F0054006F006300390037003200320032003100300031000000</w:data>
+</xml><![endif]--></span></span></a></span><span style='font-size:12.0pt;
+font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoNormal><!--[if supportFields]><span style='mso-element:field-end'></span><![endif]--><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h2><a name="_Toc97222061"></a><a name="_Toc96620061"></a><a name="_ScriptMeter"></a><span
+style='mso-bookmark:_Toc97222061'><span style='mso-bookmark:_Toc96620061'>ScriptMeter</span></span></h2>
+
+<p class=MsoNormal>Add a <i>ScriptMeter</i> using the ‘Configure meters…’
+dialog and configure it by selecting the script and specifying its type – if
+you ever need to reload the script (if you edit the script for example) you
+will have to re-select the same file to get SysStats to re-load it.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>SysStats communicates with a script meter through three
+pre-defined functions:</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=FunctionDeclaration>ScriptMeter_Update()<span class=MsoHyperlink><span
+style='color:windowtext;text-decoration:none;text-underline:none'><o:p></o:p></span></span></p>
+
+<p class=FunctionDeclaration>ScriptMeter_GetValue(selector)</p>
+
+<p class=FunctionDeclaration>ScriptMeter_PutValue(value)</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Any given script can use any, all or none of these functions
+as it sees fit. In addition to these functions a script can define whatever
+other functions it likes – it is just these three functions that have a special
+meaning to SysStats.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=FunctionDeclaration>ScriptMeter_Update()<span class=MsoHyperlink><span
+style='color:windowtext;text-decoration:none;text-underline:none'><o:p></o:p></span></span></p>
+
+<p class=FunctionDescription>This is called every <i style='mso-bidi-font-style:
+normal'>interval</i> seconds as set in the <i style='mso-bidi-font-style:normal'>Configure
+meters…</i> dialog. It should return <i style='mso-bidi-font-style:normal'>true</i>
+if the value of the meter has changed since it was last called, <i
+style='mso-bidi-font-style:normal'>false</i> otherwise.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=FunctionDeclaration>ScriptMeter_GetValue(selector)<span
+class=MsoHyperlink><span style='color:windowtext;text-decoration:none;
+text-underline:none'><o:p></o:p></span></span></p>
+
+<p class=FunctionDescription>This is called whenever SysStats wants to get the
+latest value of the meter. This is not necessarily when ScriptMeter_Update()
+returns true – SysStats may need to retrieve the value for other reasons.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDescription>Selector is a string that is passed in by whatever
+overlay is trying to render it. Normally this value is set via the overlay’s
+configuration dialog. The script can use it however it likes – including
+totally ignoring it.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDescription>The value returned by the function can be:</p>
+
+<p class=FunctionDescription style='margin-left:1.5in;text-indent:-.25in;
+mso-list:l0 level1 lfo4;tab-stops:list 1.5in'><![if !supportLists]><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>A string</p>
+
+<p class=FunctionDescription style='margin-left:1.5in;text-indent:-.25in;
+mso-list:l0 level1 lfo4;tab-stops:list 1.5in'><![if !supportLists]><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>An integer</p>
+
+<p class=FunctionDescription style='margin-left:1.5in;text-indent:-.25in;
+mso-list:l0 level1 lfo4;tab-stops:list 1.5in'><![if !supportLists]><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>A float</p>
+
+<p class=FunctionDescription>It is up to the calling overlay to render the
+value properly.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>ScriptMeter_PutValue(value)</p>
+
+<p class=FunctionDescription>This is typically called by a ValueSetter
+controller, though it could be called by another script.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>So. One possible VB script would be:</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:solid windowtext .5pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=Code>myValue = 0</p>
+
+<p class=Code>&nbsp;</p>
+
+<p class=Code>‘ Increment the value</p>
+
+<p class=Code>Function ScriptMeter_Update</p>
+
+<p class=Code><span style='mso-tab-count:1'>     </span>myValue = myValue + 1</p>
+
+<p class=Code><span style='mso-tab-count:1'>     </span>‘We always have a new
+value!</p>
+
+<p class=Code><span style='mso-tab-count:1'>     </span>ScriptMeter_Update =
+true</p>
+
+<p class=Code>End Function</p>
+
+<p class=Code>&nbsp;</p>
+
+<p class=Code>‘ Return the current value</p>
+
+<p class=Code>Function ScriptMeter_GetValue(selector)</p>
+
+<p class=Code><span style='mso-tab-count:1'>     </span>ScriptMeter_GetValue =
+myValue</p>
+
+<p class=Code>End Function</p>
+
+<p class=Code>&nbsp;</p>
+
+<p class=Code>‘ Set the value</p>
+
+<p class=Code>Function ScriptMeter_PutValue(newVal)</p>
+
+<p class=Code><span style='mso-tab-count:1'>     </span>myValue = newVal</p>
+
+<p class=Code>End Function</p>
+
+</div>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>In addition to a script being called <b>by</b> SysStats, a
+script can <b>call</b> SysStats. SysStats makes all of its objects available to
+a script in a structured fashion – this is often referred to as a ‘Document
+Object Model’. If you’ve ever scripted a web page, you will probably already
+have come across one DOM.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3><a name="_Toc96620062"></a><a name="_Toc97222062"><span style='mso-bookmark:
+_Toc96620062'>Synchronous v. ASynchronous</span></a><span class=MsoHyperlink><span
+style='color:windowtext;text-decoration:none;text-underline:none'><o:p></o:p></span></span></h3>
+
+<p class=MsoNormal>There are two flavors: Synchronous and Asynchronous. If you
+use a <i style='mso-bidi-font-style:normal'>synchronous</i> script controller
+SysStats waits for its <i style='mso-bidi-font-style:normal'>HandleMessage()</i>
+function to complete. If you use an <i style='mso-bidi-font-style:normal'>ASyncScriptController</i>
+SysStats will not wait for the function to complete.</p>
+
+<h2><a name="_Toc96620063"></a><a name="_Toc97222063"><span style='mso-bookmark:
+_Toc96620063'>ScriptController</span></a><span class=MsoHyperlink><span
+style='color:windowtext;text-decoration:none;text-underline:none'><o:p></o:p></span></span></h2>
+
+<p class=MsoNormal>A script controller is a controller that you write in a
+scripting language such as VBScript.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>SysStats communicates with a script controller through one
+pre-defined function:</p>
+
+<p class=FunctionDeclaration>ScriptController_HandleMessage(wparam, lparam, x,
+y)<span class=MsoHyperlink><span style='color:windowtext;text-decoration:none;
+text-underline:none'><o:p></o:p></span></span></p>
+
+<p class=FunctionDescription>The arguments are the windows message wparam and
+lparam values and the x and y location of the mouse pointer relative to the
+docklet’s window. See Microsoft’s documentation on these for complete
+descriptions.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDescription>The return value should be true if you want to
+stop any further processing of the message by the docklet. False otherwise.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<h3><a name="_Toc96620064"></a><a name="_Toc97222064"><span style='mso-bookmark:
+_Toc96620064'>Synchronous v. ASynchronous</span></a></h3>
+
+<p class=MsoNormal>There are two flavors: Synchronous and Asynchronous. If you
+use a <i style='mso-bidi-font-style:normal'>synchronous</i> script controller
+SysStats waits for its <i style='mso-bidi-font-style:normal'>HandleMessage()</i>
+function to complete. If you use an <i style='mso-bidi-font-style:normal'>ASyncScriptController</i>
+SysStats will not wait for the function to complete.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name="_Toc96620065"></a><a name="_Toc97222065"><span style='mso-bookmark:
+_Toc96620065'>WScript</span></a><span class=MsoHyperlink><span
+style='color:windowtext;text-decoration:none;text-underline:none'><o:p></o:p></span></span></h2>
+
+<p class=MsoNormal>This is one of two global objects that SysStats makes available
+to scripts. This one mimics some of the functionality of Microsoft’s WScript
+object. Namely:</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=FunctionDeclaration>ConnectObject(object, prefix)<span
+class=MsoHyperlink><span style='color:windowtext;text-decoration:none;
+text-underline:none'><o:p></o:p></span></span></p>
+
+<p class=FunctionDescription>This connects the event methods of an existing COM
+object to the script using the passed prefix.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>Disconnect(object)</p>
+
+<p class=FunctionDescription>This disconnects a previously connected object.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>DisconnectAll()</p>
+
+<p class=FunctionDescription>This disconnects all objects previously connected
+with ConnectObject().</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>Echo(string)</p>
+
+<p class=FunctionDescription>This echos a single string to the script’s
+console. This can be useful for debugging!</p>
+
+<h2><a name="_Toc96620066"></a><a name="_Toc97222066"><span style='mso-bookmark:
+_Toc96620066'>SysStatsModel</span></a></h2>
+
+<p class=MsoNormal>The ‘root’ of SysStat’s DOM is the <i>ClientModel</i>. You
+can access this object using a variable called <i>SysStatsModel</i>: Here’s an
+example:</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:solid windowtext .5pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=Code>Value = 0</p>
+
+<p class=Code>&nbsp;</p>
+
+<p class=Code>Function ScriptMeter_Update</p>
+
+<p class=Code><span style='mso-tab-count:1'>     </span>‘We always have a new
+value!</p>
+
+<p class=Code><span style='mso-tab-count:1'>     </span>ScriptMeter_Update =
+true</p>
+
+<p class=Code>End Function</p>
+
+<p class=Code>&nbsp;</p>
+
+<p class=Code>‘ Return the previous value + 1 and rotate the overlay</p>
+
+<p class=Code>‘ at position 0 by value degrees clockwise.</p>
+
+<p class=Code>Function ScriptMeter_GetValue(selector)</p>
+
+<p class=Code><span style='mso-tab-count:1'>     </span>Value = Value + 1</p>
+
+<p class=Code><span style='mso-tab-count:1'>     </span>ScriptMeter_GetValue =
+Value</p>
+
+<p class=Code><span style='mso-tab-count:1'>     </span>SysStatsModel.Overlays(0).Rotation
+= Value</p>
+
+<p class=Code>End Function</p>
+
+</div>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The key to using SysStat’s <i>ClientModel</i> is knowing
+your way around it.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The client model holds all of the overlays, meters and
+controllers for a single instance of SysStats (or, for a single <i>config</i>,
+which amounts to the same thing):</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=FunctionDeclaration><span style='mso-field-code:"REF _Ref74498361 \\h"'>Meter<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600370034003400390038003300360031000000</w:data>
+</xml><![endif]--></span>s</p>
+
+<p class=FunctionDescription>This is an collection of all of the meters in this
+config. The collection can be indexed by number or name. Numerical indices
+always start at 0. So <i style='mso-bidi-font-style:normal'>SysStatsModel.Meters(0)</i>
+will return you the first meter in the list. <i>SysStatsModel.Meters(“first”)</i>
+will return you the meter called <i>first</i> (or the first one in the list
+with that name if you have several with the same name!).</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration><span style='mso-field-code:"REF _Ref74499237 \\h"'>Overlay<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600370034003400390039003200330037000000</w:data>
+</xml><![endif]--></span>s</p>
+
+<p class=FunctionDescription>This is a collection of all of the overlays in
+this config. The collection can be indexed by number or name. Numerical indices
+always start at 0.. So <i style='mso-bidi-font-style:normal'>SysStatsModel.Overlays(0)</i>
+will return you the first overlay in the list. <i>SysStatsModel.Overlays(“first”)</i>
+will return you the overlay called <i>first</i> (or the first one in the list
+with that name if you have several with the same name!).</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDescription>If you’ve looked at some of the existing configs
+you might have noticed that overlays can be nested inside other overlays so <i>SysStatsModel.Overlays(0)</i>
+might return you another collection of overlays, which might return another
+collection of overlays etc. etc.. A script should know what to expect.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=MsoNormal>NOTE: This is in fact just one example of <i
+style='mso-bidi-font-style:normal'>polymorphism</i>: Although each type of
+overlay (and each type of meter for that matter) all share a common set of
+properties and functions, they can also have extra properties and functions too
+– specific to their own type. I’ll go into all of the properties and functions
+of each type a little later. But for now lets continue with the client model
+itself:</p>
+
+<p class=FunctionDeclaration>Controllers</p>
+
+<p class=FunctionDescription>Another collection (but you guessed that right?).
+This time of <i style='mso-bidi-font-style:normal'>controllers</i> (you
+probably guessed that too). The collection can be indexed by number or name.
+Numerical indices always start at 0. So <i style='mso-bidi-font-style:normal'>SysStatsModel.Controllers(0)</i>
+will return you the first controller in the list. <i>SysStatsModel.Controllers(“first”)</i>
+will return you the controller called <i>first</i> (or the first one in the
+list with that name if you have several with the same name!).</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>&nbsp;</p>
+
+<p class=MsoToc1>NOTE: <i>SysStatsModel.Models(0)</i> is in fact shorthand for:
+<i>SysStatsModel.Models.Item(0)</i>. You see, collections have their very own
+properties too. You can get their size, and you can add elements to them. More
+on this later. Lets continue with the client model!</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=FunctionDeclaration><span style='mso-field-code:"REF _Ref74666053 \\h"'>Label<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600370034003600360036003000350033000000</w:data>
+</xml><![endif]--></span></p>
+
+<p class=FunctionDescription>This is an object that represents the label.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration><span style='mso-field-code:"REF _Ref74500271 \\h"'>AppConfig<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600370034003500300030003200370031000000</w:data>
+</xml><![endif]--></span></p>
+
+<p class=FunctionDescription>This object holds some configuration information
+for the model itself and provides some useful filepath manipulation functions.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=FunctionDeclaration>Dirty</p>
+
+<p class=FunctionDescription>This is a simple Boolean value. If it is set to <i
+style='mso-bidi-font-style:normal'>true</i> SysStats will render all of the overlays.
+You can get it or set it. You might set this if you do some work using a timer,
+for example, and want to force SysStats to re-render the overlays afterwards.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>X</p>
+
+<p class=FunctionDescription>The X location of the window. This is ignored in
+ObjectDock and YzDock.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>Y</p>
+
+<p class=FunctionDescription>The Y location of the window. This is ignored in
+ObjectDock and YzDock.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>Width</p>
+
+<p class=FunctionDescription>The width of the window.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>Height</p>
+
+<p class=FunctionDescription>The height of the window.</p>
+
+<p class=FunctionDescription><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=FunctionDeclaration>Name</p>
+
+<p class=FunctionDescription>The name of the docklet.</p>
+
+<p class=FunctionDescription><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=FunctionDeclaration>Description</p>
+
+<p class=FunctionDescription>The description of the docklet.</p>
+
+<p class=FunctionDescription><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=FunctionDeclaration>Version</p>
+
+<p class=FunctionDescription>The version of the docklet.</p>
+
+<p class=FunctionDescription><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=FunctionDeclaration>Author</p>
+
+<p class=FunctionDescription>The author of the docklet.</p>
+
+<p class=FunctionDescription><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=FunctionDeclaration>ConfigFile</p>
+
+<p class=FunctionDescription>The config file for this docklet.</p>
+
+<p class=FunctionDescription><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=FunctionDeclaration>hWnd</p>
+
+<p class=FunctionDescription>The handle to the window for this docklet.</p>
+
+<p class=FunctionDescription><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=FunctionDeclaration>UpdateMeters()</p>
+
+<p class=FunctionDescription>Calling this method is like selecting <i
+style='mso-bidi-font-style:normal'>Update…</i> from the context menu – it will
+call the <i style='mso-bidi-font-style:normal'>Update</i> method of every meter.</p>
+
+<p class=FunctionDescription><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=FunctionDeclaration>PostMessage(messageID, wParam, lParam)</p>
+
+<p class=FunctionDescription>This method will post the passed message onto the windows
+message queue for this docklet.</p>
+
+<p class=FunctionDescription><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=FunctionDeclaration>Load()</p>
+
+<p class=FunctionDescription>Load the config for this docklet.</p>
+
+<p class=FunctionDescription><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=FunctionDeclaration>Save(bool interactive)</p>
+
+<p class=FunctionDescription>Save this docklet. If <i style='mso-bidi-font-style:
+normal'>interactive</i> is true the docklet may open a confirmation dialog.</p>
+
+<h2><a name="_Toc97222067"></a><a name="_Toc96620067"></a><a name="_Ref74411490"></a><a
+name="_Collections"></a><span style='mso-bookmark:_Toc97222067'><span
+style='mso-bookmark:_Toc96620067'><span style='mso-bookmark:_Ref74411490'>Collections</span></span></span><span
+style='mso-bookmark:_Ref74411490'></span></h2>
+
+<p class=MsoNormal><span style='mso-bookmark:_Ref74411490'>When something can
+have more than one value it is held in a collection. You can get at an entry in
+an collection using two techniques. Taking <i>SysStatsModel.Overlays </i>as an
+example, the following two statements will both return the entry at index 1:</span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Ref74411490'>&nbsp;</span></p>
+
+<div style='border:solid windowtext .5pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=Code><span style='mso-bookmark:_Ref74411490'>SysStatsModel.Overlays(1)</span></p>
+
+<p class=Code><span style='mso-bookmark:_Ref74411490'>SysStatsModel.Overlays.Item(1)</span></p>
+
+</div>
+
+<p class=MsoNormal><span style='mso-bookmark:_Ref74411490'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Ref74411490'>You can also get the
+number of entries in a collection using the <i>Count() </i>method. For example
+the following code retrieves the number of entries in the <i>meters</i>
+collection:</span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Ref74411490'>&nbsp;</span></p>
+
+<div style='border:solid windowtext .5pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=Code><span style='mso-bookmark:_Ref74411490'>SysStatsModel.Meters.Count</span></p>
+
+</div>
+
+<p class=MsoNormal><span style='mso-bookmark:_Ref74411490'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Ref74411490'>You can also add and
+remove entries from a collection using the <i>Add()</i> and <i>Remove()</i>
+entries. Add() takes a single argument – the element to be added. Remove also
+takes a single argument – the index of the element to be removed.</span></p>
+
+<h2><span style='mso-bookmark:_Ref74411490'><a name="_Ref74666053"></a><a
+name="_Toc96620068"></a><a name="_Toc97222068"><span style='mso-bookmark:_Toc96620068'><span
+style='mso-bookmark:_Ref74666053'>Label</span></span></a></span></h2>
+
+<p class=MsoNormal>Label is accessed as <i>SysStatsModel.Label.<o:p></o:p></i></p>
+
+<p class=MsoNormal><i>&nbsp;<o:p></o:p></i></p>
+
+<p class=MsoNormal>Label has the following properties and functions:</p>
+
+<p class=FunctionDeclaration>Format</p>
+
+<p class=FunctionDescription>If the label has no meter associated with it, this
+will be the string that is displayed for the label.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDescription>If the label <b>does</b> have a meter associated
+with it, the meter will be called to return a value and that value might be
+used to make up the label. For example if the <i style='mso-bidi-font-style:
+normal'>Format</i> is ‘%d’ and the meter returns an integer that integer will
+be displayed in the label. If the <i style='mso-bidi-font-style:normal'>Format</i>
+is ‘This is a label’, it won’t matter what the meter value is – it won’t be
+displayed – the label will always read ‘This is a label’.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>MeterIndex</p>
+
+<p class=FunctionDescription>An index into the collection of meters. This is
+the meter that will be called when rendering the label. A value of –1 means no
+meter.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>selector</p>
+
+<p class=FunctionDescription>A string that will be passed to the meter when it
+is called to return a value. Its meaning depends on which meter is being called
+– most don’t use it.</p>
+
+<p class=FunctionDescription style='margin-left:0in'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=FunctionDeclaration>GetLabel()</p>
+
+<p class=FunctionDescription>This will return the label string as it would be
+displayed, i.e. it will call any meter associated with the label and format the
+result.</p>
+
+<h2><a name="_Toc97222069"></a><a name="_Toc96620069"></a><a name="_Ref74498361"></a><a
+name="_Meter"></a><span style='mso-bookmark:_Toc97222069'><span
+style='mso-bookmark:_Toc96620069'><span style='mso-bookmark:_Ref74498361'>Meter</span></span></span>
+</h2>
+
+<p class=MsoNormal><a href="Meters.html">Meters</a> are held in a collection
+indexed from 0 and are accessed as <i>SysStatsModel.Meters(n)</i> - where <i>n</i>
+is the index of the meter, or as <i style='mso-bidi-font-style:normal'>SysStatsModel.Meters(name)</i>
+– where <i style='mso-bidi-font-style:normal'>name</i> is the name of the
+meter.<span style='mso-bidi-font-style:italic'><o:p></o:p></span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>All meters share the properties and methods defined by <i>Meter</i>.
+In OO-speak, they<b> inherit</b> <i>Meter</i>.</p>
+
+<p class=FunctionDeclaration>GetAsLong(selector)</p>
+
+<p class=FunctionDescription>Returns the current value of the meter as a long
+integer.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDescription><i style='mso-bidi-font-style:normal'>Selector</i>
+is a string that the meter can interpret any way it likes. Different <i
+style='mso-bidi-font-style:normal'>types</i> of meter (or <i style='mso-bidi-font-style:
+normal'>sub-classes</i> in OO-speak) will define how they interpret this value.
+It is typically used to select one value from several that the meter might hold
+– most meters only hold one value so most meters ignore this.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>GetAsDouble(selector)</p>
+
+<p class=FunctionDescription>Returns the current value of the meter as a
+double.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDescription>See <i style='mso-bidi-font-style:normal'>GetAsLong()</i>
+above for an explanation of <i style='mso-bidi-font-style:normal'>selector</i>
+.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>GetAsString(format, selector)</p>
+
+<p class=FunctionDescription>Returns the current value of the meter as a
+string.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDescription><i style='mso-bidi-font-style:normal'><a
+href="Formats.html">Format</a></i> is a string that the meter can interpret any
+way it likes. Different <i style='mso-bidi-font-style:normal'>types</i> of
+meter (or <i style='mso-bidi-font-style:normal'>sub-classes</i> in OO-speak)
+will define how they interpret this value. This will be described later for
+each type of meter.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDescription>See <i style='mso-bidi-font-style:normal'>GetAsLong()</i>
+above for an explanation of <i style='mso-bidi-font-style:normal'>selector</i>
+.</p>
+
+<p class=FunctionDeclaration>GetValue()</p>
+
+<p class=FunctionDescription>Returns the value of the meter as a <i
+style='mso-bidi-font-style:normal'>variant</i>. The type of the return value
+(integer, float, string etc.) will depend on the type of the meter.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDescription>This is also the <i style='mso-bidi-font-style:
+normal'>default</i> method for a meter – which will be explained below.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=MsoNormal>So we could use:</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:solid windowtext .5pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=Code>‘ Just return the value of the first meter:</p>
+
+<p class=Code>Function ScriptMeter_GetValue(selector)</p>
+
+<p class=Code><span style='mso-tab-count:1'>     </span>DIM meter<span
+style='font-family:Arial;mso-bidi-font-family:"Courier New"'><o:p></o:p></span></p>
+
+<p class=Code><span style='mso-tab-count:1'>     </span><span
+style="mso-spacerun: yes"> </span>Set meter = SysStatsModel.Meters(0)</p>
+
+<p class=Code>&nbsp;</p>
+
+<p class=Code><span style='mso-tab-count:1'>     </span>‘ This will call
+GetValue() on the meter:</p>
+
+<p class=Code><span style='mso-tab-count:1'>     </span>ScriptMeter_GetValue =
+SysStatsModel.Meters(0)</p>
+
+<p class=Code><span style='mso-tab-count:1'>     </span>‘ So will this:</p>
+
+<p class=Code><span style='mso-tab-count:1'>     </span>ScriptMeter_GetValue =
+meter.GetValue()</p>
+
+<p class=Code><span style='mso-tab-count:1'>     </span>` So will this:</p>
+
+<p class=Code><span style='mso-tab-count:1'>     </span>ScriptMeter_GetValue =
+meter</p>
+
+<p class=Code>&nbsp;</p>
+
+<p class=Code><span style='mso-tab-count:1'>     </span>‘ This will return a
+string value from a time meter:</p>
+
+<p class=Code><span style='mso-tab-count:1'>     </span>ScriptMeter_GetValue =
+meter.GetAsString(“%H”, selector)</p>
+
+<p class=Code><span style='mso-tab-count:1'>     </span>` This will return an
+integer value:</p>
+
+<p class=Code><span style='mso-tab-count:1'>     </span>ScriptMeter_GetValue =
+meter.GetAsLong(selector)</p>
+
+<p class=Code><span style='mso-tab-count:1'>     </span>` This will return a
+double value:</p>
+
+<p class=Code><span style='mso-tab-count:1'>     </span>ScriptMeter_GetValue =
+meter.GetAsDouble(selector)</p>
+
+<p class=Code>&nbsp;</p>
+
+<p class=Code>End Function</p>
+
+</div>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>There are other methods and properties you can call too:</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=FunctionDeclaration>Update()</p>
+
+<p class=FunctionDescription>This <i style='mso-bidi-font-style:normal'>may</i>
+cause the meter to update its value – some meters update themselves
+independently, e.g. <i style='mso-bidi-font-style:normal'>MBMMeter</i> or <i
+style='mso-bidi-font-style:normal'>TimeMeter</i> .</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDescription>It returns <i style='mso-bidi-font-style:normal'>true</i>
+if the value has changed since the last time <i style='mso-bidi-font-style:
+normal'>Update</i> was called.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>Name</p>
+
+<p class=FunctionDescription>Is the name displayed in the ‘Configure meters…’
+dialog.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>Type</p>
+
+<p class=FunctionDescription>Is the type of the meter. e.g. a PDH meter has a
+type of ‘PDHMeter Class’.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>Interval</p>
+
+<p class=FunctionDescription>This is the number of seconds that SysStats will
+wait between calling the Update() method. A value of 0 means that SysStats will
+never call the Update() method.</p>
+
+<h3><a name="_Toc96620070"></a><a name="_Toc97222070"><span style='mso-bookmark:
+_Toc96620070'>DiskMeter</span></a> </h3>
+
+<p class=MsoNormal><a href="Meters.html#_Disk">DiskMeter</a> is used to measure
+the space of a disk or partition. A meter of type <i>DiskMeter</i> adds three
+properties to those defined by <i>Meter</i>.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=FunctionDeclaration>Path</p>
+
+<p class=FunctionDescription>Path is the path of the disk whose space will be
+monitored, e.g. <i style='mso-bidi-font-style:normal'>C:</i></p>
+
+<p class=FunctionDeclaration>Selector</p>
+
+<p class=FunctionDescription>This is an integer that specifies what exactly
+should be monitored:</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDescription>0 - % space used.</p>
+
+<p class=FunctionDescription>1 - % space free.</p>
+
+<p class=FunctionDescription>2 – Number of bytes used.</p>
+
+<p class=FunctionDescription>3 – Number of bytes free</p>
+
+<p class=FunctionDescription>4 – Total size in bytes</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>Scale</p>
+
+<p class=FunctionDescription>This is a value that specifies a scale factor for
+the value the meter returns. The value is divided by this number – for example
+a scale of 1024, coupled with a selector of 2 will cause the meter to return
+the number of kilobytes used.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<h3><a name="_Toc96620071"></a><a name="_Toc97222071"><span style='mso-bookmark:
+_Toc96620071'>FixedMeter</span></a> </h3>
+
+<p class=MsoNormal><a href="Meters.html#_Fixed">FixedMeter</a> is used to hold
+an unchanging value. A meter of type <i>FixedMeter </i>adds a single property
+to those of <i>Meter</i>:</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=FunctionDeclaration>Value</p>
+
+<p class=FunctionDescription>This is the value that is to be stored. It should
+be a string (note that this doesn’t mean that it will be interpreted as a
+string by an overlay).</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<h3><a name="_Toc96620072"></a><a name="_Toc97222072"><span style='mso-bookmark:
+_Toc96620072'>MBMMeter</span></a> </h3>
+
+<p class=MsoNormal><a href="Meters.html#_MBM">MBMMeter</a> is used to access
+values monitored by <a href="http://mbm.livewiredev.com/">MBM</a>. A meter of
+type <i>MBMMeter</i> adds three properties to those of <i>Meter</i>.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=FunctionDeclaration>Index</p>
+
+<p class=FunctionDescription>This is the index of the probe being monitored.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>Reading</p>
+
+<p class=FunctionDescription>This is an integer specifying exactly which value
+to return for the probe. It can be one of:</p>
+
+<p class=FunctionDescription>0 – the current value.</p>
+
+<p class=FunctionDescription>1 – the all-time-low value.</p>
+
+<p class=FunctionDescription>2 – the all-time-high value.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>Scale</p>
+
+<p class=FunctionDescription>This is a value that specifies a scale factor for
+the value the meter returns. The value is divided by this number.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<h3><a name="_Toc96620073"></a><a name="_Toc97222073"><span style='mso-bookmark:
+_Toc96620073'>MemoryMeter</span></a> </h3>
+
+<p class=MsoNormal><a href="Meters.html#_Memory">MemoryMeter</a> is used to
+monitor RAM. A meter of type <i>MemoryMeter</i> adds two properties to those of
+<i>Meter</i>.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=FunctionDeclaration>Selector</p>
+
+<p class=FunctionDescription>This is an integer that specifies what exactly
+should be monitored:</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDescription>0 - % space used.</p>
+
+<p class=FunctionDescription>1 - % space free.</p>
+
+<p class=FunctionDescription>2 – Number of bytes used.</p>
+
+<p class=FunctionDescription>3 – Number of bytes free</p>
+
+<p class=FunctionDescription>4 – Total size in bytes</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>Scale</p>
+
+<p class=FunctionDescription>This is a value that specifies a scale factor for
+the value the meter returns. The value is divided by this number – for example
+a scale of 1024, coupled with a selector of 2 will cause the meter to return
+the number of kilobytes used.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<h3><a name="_Toc96620074"></a><a name="_Toc97222074"><span style='mso-bookmark:
+_Toc96620074'>PDHMeter</span></a> </h3>
+
+<p class=MsoNormal><a href="Meters.html#_PDH">PDHMeter</a> is used to monitor
+values using the Performance Data Helper APIs, through which a wide range of
+system performance metrics can be monitored. A meter of type <i>PDHMeter</i>
+adds two properties to those of <i>Meter</i>.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=FunctionDeclaration>Counters</p>
+
+<p class=FunctionDescription>This is an array of strings that define what
+should be monitored. The format of these string is defined <a
+href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/perfmon/base/performance_objects_and_counters.asp">here</a>.
+For example <i style='mso-bidi-font-style:normal'>\Processor(_Total)\%
+Processor Time</i> specifies the CPU usage.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDescription>Although this is an array, only the first entry is
+ever used by <i style='mso-bidi-font-style:normal'>PDHMeter</i> .</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>Scale</p>
+
+<p class=FunctionDescription>This is a value that specifies a scale factor for
+the value the meter returns. The value is divided by this number</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<h3><a name="_Toc96620075"></a><a name="_Toc97222075"><span style='mso-bookmark:
+_Toc96620075'>ScriptMeter</span></a> </h3>
+
+<p class=MsoNormal><a href="Meters.html#_Script">ScriptMeter</a> is used to
+execute a script supported by the windows scripting host (e.g. vbscript) as if
+it were a meter. See also <a href="#_ScriptMeter">here</a> for more
+information. A meter of type <i>ScriptMeter</i> adds the following properties
+to those of <i>Meter</i>:</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=FunctionDeclaration>FileName</p>
+
+<p class=FunctionDescription>This is the path to the file containing the
+script.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>ScriptType</p>
+
+<p class=FunctionDescription>This defines the script language. This can be one
+of:</p>
+
+<p class=FunctionDescription><span style='mso-tab-count:1'>            </span>JavaScript</p>
+
+<p class=FunctionDescription><span style='mso-tab-count:1'>            </span>Perl</p>
+
+<p class=FunctionDescription><span style='mso-tab-count:1'>            </span>ActivePHP</p>
+
+<p class=FunctionDescription><span style='mso-tab-count:1'>            </span>Python</p>
+
+<p class=FunctionDescription><span style='mso-tab-count:1'>            </span>RubyScript</p>
+
+<p class=FunctionDescription><span style='mso-tab-count:1'>            </span>vbScript</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>Value</p>
+
+<p class=FunctionDescription>If you set this property to a value the method
+ScriptMeter_PutValue(value).</p>
+
+<h3><a name="_Toc96620076"></a><a name="_Toc97222076"><span style='mso-bookmark:
+_Toc96620076'>TimeMeter</span></a> </h3>
+
+<p class=MsoNormal><a href="Meters.html#_Time">TimeMeter</a> is used to monitor
+the time.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>If the string value of a <i>TimeMeter</i> is accessed, the <i>GetValue</i>
+function requires a format string as defined <a
+href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/vclib/html/_crt_strftime.2c_.wcsftime.asp">here</a>.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>If a numeric value is accessed – the number of seconds since
+midnight is returned.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=FunctionDeclaration>TimeZone</p>
+
+<p class=FunctionDescription>A long list of possible timezones culled from the
+following registry entry: LOCALMACHINE\SOFTWARE\Microsoft\Windows
+NT\CurrentVersion\Time Zones</p>
+
+<p class=FunctionDescription><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=FunctionDeclaration>TZDescription</p>
+
+<p class=FunctionDescription>A description of the timezone.</p>
+
+<h3><a name="_Toc96620077"></a><a name="_Toc97222077"><span style='mso-bookmark:
+_Toc96620077'>XMLMeter</span></a> </h3>
+
+<p class=MsoNormal><a href="Meters.html#_XML">XMLMeter</a> is used to retrieve
+an XML document and access values in it. A meter of type <i>XMLMeter</i> adds
+seven properties to those of <i>Meter</i>. All but the first of these require
+you to install <a
+href="http://www.microsoft.com/downloads/details.aspx?FamilyID=3144B72B-B4F2-46DA-B4B6-C5D7485F2B42&amp;displaylang=en">MSXML4</a>
+on your computer. Do yourself a favor and install it <span style='font-family:
+Wingdings;mso-ascii-font-family:Arial;mso-hansi-font-family:Arial;mso-char-type:
+symbol;mso-symbol-font-family:Wingdings'><span style='mso-char-type:symbol;
+mso-symbol-font-family:Wingdings'>J</span></span>.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=FunctionDeclaration>URL</p>
+
+<p class=FunctionDescription>The URL of the XML document.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>Username</p>
+
+<p class=FunctionDescription>A username that can be used if the URL requires a
+username/password</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>Password</p>
+
+<p class=FunctionDescription>A password that can be used if the URL requires a
+username/password</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>ProxyURL</p>
+
+<p class=FunctionDescription>The URL of a proxy server – this might be required
+if you are behind a firewall.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>ProxyUsername</p>
+
+<p class=FunctionDescription>A username that can be used if the proxy server
+requires a username/password</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>ProxyPassword</p>
+
+<p class=FunctionDescription>A password that can be used if the proxy server
+requires a username/password.</p>
+
+<p class=FunctionDescription><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=FunctionDeclaration>UseXPath</p>
+
+<p class=FunctionDescription>If true this will force the XML meter to use true
+xpath expressions. This may require that you define namespaces for the query.</p>
+
+<p class=FunctionDescription><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=FunctionDeclaration>NameSpaces</p>
+
+<p class=FunctionDescription>This is an array of strings defining namespaces in
+the XML document for use by XPath. These are only used if <i style='mso-bidi-font-style:
+normal'>UseXPath</i> is set to true. An example namespace definition is:</p>
+
+<p class=FunctionDescription><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<div style='border:solid windowtext .5pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=Code style='margin-left:1.0in'>xmlns:a=&quot;http://purl.org/atom/ns#&quot;</p>
+
+</div>
+
+<p class=FunctionDescription><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=FunctionDescription>The namespace <i style='mso-bidi-font-style:normal'>a</i>
+can then be used in subsequent Xpath expressions such as:</p>
+
+<p class=FunctionDescription><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<div style='border:solid windowtext .5pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=Code style='margin-left:1.0in'>format-number(count(//a:entry), '#')</p>
+
+</div>
+
+<p class=FunctionDescription><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=FunctionDeclaration>Value</p>
+
+<p class=FunctionDescription>This attribute can be set to an XML document that
+is then used as the source for all of the other operations.</p>
+
+<p class=FunctionDescription><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=FunctionDeclaration>IXMLDOMNodeList *GetNodeList(String Xpath)</p>
+
+<p class=FunctionDescription>This method executes the passed Xpath expression
+and returns a <a
+href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/xmlsdk/html/xmobjxmldomnodelist.asp">nodelist</a>.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=MsoNormal>When obtaining a value from an XMLMeter you need to provide
+a <i>selector</i> in the format of an <i><a
+href="http://www.w3schools.com/xpath/xpath_syntax.asp">XPath</a></i>
+expression.</p>
+
+<h3><a name="_Toc96620079"></a><a name="_Toc97222078"><span style='mso-bookmark:
+_Toc96620079'>MailMeter</span></a></h3>
+
+<p class=MsoNormal>The <a href="Meters.html#_Mail">mail meter</a> is used to
+retrieve inbox information from MAPI mail clients such as Outlook and
+OutlookExpress. It adds the following properties to those of <i><a
+href="#_Meter">meter</a></i>.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=FunctionDeclaration>Username</p>
+
+<p class=FunctionDescription>If SysStats needs to authenticate it will use this
+username.</p>
+
+<p class=FunctionDescription><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=FunctionDeclaration>Password</p>
+
+<p class=FunctionDescription>If SysStats needs to authenticate it will use this
+password.</p>
+
+<p class=FunctionDescription><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=FunctionDeclaration>ValidDays</p>
+
+<p class=FunctionDescription>Mail message older than this value (in days) will
+not count as part of the value of the meter.</p>
+
+<h3><a name="_Toc97222079"></a><a name="_Toc96620080"></a><a name="_Animation"></a><span
+style='mso-bookmark:_Toc97222079'><span style='mso-bookmark:_Toc96620080'>Animation</span></span></h3>
+
+<p class=MsoNormal>The <a href="Meters.html#_Animation">animation meter</a> is used
+to provide state information to animated overlays (or anything else that
+requires an animation state I guess). It adds the following properties and
+methods to those of <i><a href="#_Meter">meter</a></i>:</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=FunctionDeclaration>FrameCount</p>
+
+<p class=FunctionDescription>The number of frames in the animation.</p>
+
+<p class=FunctionDescription><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=FunctionDeclaration>FrameRate</p>
+
+<p class=FunctionDescription>The rate in frames/sec of the animation.</p>
+
+<p class=FunctionDescription><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=FunctionDeclaration>PlayState</p>
+
+<p class=FunctionDescription>The current state of the animation – playing,
+paused etc. If you set the value it will force the animation into that state.
+This is how the animation is started/stopped etc.</p>
+
+<p class=FunctionDescription><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=FunctionDeclaration>Position</p>
+
+<p class=FunctionDescription>The current position of the animation. Start, end
+etc.</p>
+
+<p class=FunctionDescription><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=FunctionDeclaration>Loop</p>
+
+<p class=FunctionDescription>If true the animation should loop when it reaches
+the end.</p>
+
+<p class=FunctionDescription><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=FunctionDeclaration>AutoReverse</p>
+
+<p class=FunctionDescription>If true the animation will reverse after reaching
+either end.</p>
+
+<p class=FunctionDescription><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=FunctionDeclaration>SingleStep</p>
+
+<p class=FunctionDescription>If true the animation will pause after each frame.</p>
+
+<p class=FunctionDescription><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=FunctionDeclaration>PutValue(String selector, BSTR value)</p>
+
+<p class=FunctionDescription>This single method can be called to set a value
+specified by the <i style='mso-bidi-font-style:normal'>selector</i> to the
+passed value.</p>
+
+<p class=FunctionDescription><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=FunctionDescription>The selector can be one of:</p>
+
+<p class=FunctionDescription style='margin-left:1.5in;text-indent:-.25in;
+mso-list:l2 level1 lfo6;tab-stops:list 1.5in'><![if !supportLists]><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>framerate</p>
+
+<p class=FunctionDescription style='margin-left:1.5in;text-indent:-.25in;
+mso-list:l2 level1 lfo6;tab-stops:list 1.5in'><![if !supportLists]><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>framecount</p>
+
+<p class=FunctionDescription style='margin-left:1.5in;text-indent:-.25in;
+mso-list:l2 level1 lfo6;tab-stops:list 1.5in'><![if !supportLists]><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>loop</p>
+
+<p class=FunctionDescription style='margin-left:1.5in;text-indent:-.25in;
+mso-list:l2 level1 lfo6;tab-stops:list 1.5in'><![if !supportLists]><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>autoreverse</p>
+
+<p class=FunctionDescription style='margin-left:1.5in;text-indent:-.25in;
+mso-list:l2 level1 lfo6;tab-stops:list 1.5in'><![if !supportLists]><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>singelstep</p>
+
+<p class=FunctionDescription style='margin-left:1.5in;text-indent:-.25in;
+mso-list:l2 level1 lfo6;tab-stops:list 1.5in'><![if !supportLists]><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>autostart</p>
+
+<p class=FunctionDescription style='margin-left:1.5in;text-indent:-.25in;
+mso-list:l2 level1 lfo6;tab-stops:list 1.5in'><![if !supportLists]><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>playstate</p>
+
+<p class=FunctionDescription style='margin-left:1.5in;text-indent:-.25in;
+mso-list:l2 level1 lfo6;tab-stops:list 1.5in'><![if !supportLists]><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>position</p>
+
+<p class=FunctionDescription style='margin-left:1.5in;text-indent:-.25in;
+mso-list:l2 level1 lfo6;tab-stops:list 1.5in'><![if !supportLists]><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>currentframe</p>
+
+<p class=FunctionDescription style='margin-left:1.5in;text-indent:-.25in;
+mso-list:l2 level1 lfo6;tab-stops:list 1.5in'><![if !supportLists]><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>framedelta</p>
+
+<p class=FunctionDescription style='margin-left:1.5in;text-indent:-.25in;
+mso-list:l2 level1 lfo6;tab-stops:list 1.5in'><![if !supportLists]><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>step</p>
+
+<p class=FunctionDescription><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=FunctionDeclaration>Step()</p>
+
+<p class=FunctionDescription>Call this method to step the animation to the next
+frame.</p>
+
+<p class=FunctionDescription><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=FunctionDeclaration>AutoStart</p>
+
+<p class=FunctionDescription>If true the animation will start playing when
+SysStats loads.</p>
+
+<p class=FunctionDescription><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=FunctionDeclaration>StateMsg</p>
+
+<p class=FunctionDescription>This is a windows message that should be posted
+when the playstate of the animation changes.</p>
+
+<p class=FunctionDescription><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=FunctionDeclaration>StateLParam</p>
+
+<p class=FunctionDescription>This is the value of the LParam that should be
+passed with the message. WParam will be the new state and position of the
+animation.</p>
+
+<h2><a name="_Toc97222080"></a><a name="_Toc96620081"></a><a name="_Ref74499237"></a><a
+name="_Overlay"></a><span style='mso-bookmark:_Toc97222080'><span
+style='mso-bookmark:_Toc96620081'><span style='mso-bookmark:_Ref74499237'>Overlay</span></span></span></h2>
+
+<p class=MsoNormal>Overlays are held in an collection indexed from 0 and are
+accessed as <i>SysStatsModel.Overlays(n)</i>. Where <i>n</i> is the index of
+the overlay. Some of the overlays retrieved may themselves be a collection.<i><o:p></o:p></i></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>All overlays share the properties defined by <i>Overlay</i>.
+In OO-speak, they<b> inherit</b> <i>Overlay</i>.</p>
+
+<p class=FunctionDeclaration>Name</p>
+
+<p class=FunctionDescription>Is the name displayed in the ‘Configure meters…’
+dialog.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>Type</p>
+
+<p class=FunctionDescription>Is the type of the overlay. e.g. an image overlay
+has a type of ‘ImageOverlay Class’.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>MeterIndex</p>
+
+<p class=FunctionDescription>The index of the referenced meter in the list of
+meters. A value of –1 means no meter.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>Visible</p>
+
+<p class=FunctionDescription>If this is false then the overlay will not be
+drawn. In fact, because it won’t be drawn it won’t get a chance to get the
+value of a meter. So if you set an overlay’s visibility to false in <i
+style='mso-bidi-font-style:normal'>ScriptMeter_GetValue()</i> , make sure that
+it isn’t the overlay that called <i style='mso-bidi-font-style:normal'>ScriptMeter_GetValue()</i>
+in the first place, or you might never get a chance to set it to true again.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>Mode</p>
+
+<p class=FunctionDescription>The combination mode used when compositing the
+image. Ignored in this version of SysStats.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<h3><a name="_Toc97222081"></a><a name="_Toc96620082"></a><a
+name="_SimpleOverlay"></a><span style='mso-bookmark:_Toc97222081'><span
+style='mso-bookmark:_Toc96620082'>SimpleOverlay</span></span> </h3>
+
+<p class=MsoNormal>SimpleOverlay is the base class for all of the overlays
+provided with SysStats. It adds the following properties to those defined by <i><a
+href="#_Overlay">Overlay</a></i>:</p>
+
+<p class=MsoNormal align=center style='text-align:center'><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:239.25pt;
+ height:181.5pt' o:ole="">
+ <v:imagedata src="./Scripts_files/image001.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=319 height=242
+src="./Scripts_files/image002.gif" v:shapes="_x0000_i1025"><![endif]><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Word.Picture.8" ShapeID="_x0000_i1025"
+  DrawAspect="Content" ObjectID="_1171046822">
+ </o:OLEObject>
+</xml><![endif]--><u><o:p></o:p></u></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=FunctionDeclaration>X</p>
+
+<p class=FunctionDescription>The x-coordinate in the docklet’s window at which
+the center of the overlay will be rendered.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>Y</p>
+
+<p class=FunctionDescription>The y-coordinate in the docklet’s window at which
+the center of the overlay will be rendered.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>Rotation</p>
+
+<p class=FunctionDescription>The angle in degrees running clockwise from 3
+o’clock at which the overlay will be rendered. The overlay is rotated about its
+center.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>CenterX</p>
+
+<p class=FunctionDescription>The x-coorindate of the center of the overlay measured
+from the top-left corner of the overlay itself.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>CenterY</p>
+
+<p class=FunctionDescription>The y-coorindate of the center of the overlay
+measured from the top-left corner of the overlay itself.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>HAlign</p>
+
+<p class=FunctionDescription>Some overlays do not have a fixed size (e.g. the
+TextOverlay). In that case this value is used to specify how the overlays
+boundaries should grow in the horizontal direction.</p>
+
+<p class=FunctionDescription>0 – Left Aligned: The left boundary is fixed –
+grow only to the right.</p>
+
+<p class=FunctionDescription>1 – Center Aligned: Grow equally to the left and
+right.</p>
+
+<p class=FunctionDescription>2 -<span style="mso-spacerun: yes">  </span>Right
+Aligned: The right boundary is fixed – grow only to the left.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>VAlign</p>
+
+<p class=FunctionDescription>Some overlays do not have a fixed size (e.g. the
+TextOverlay). In that case this value is used to specify how the overlays
+boundaries should grow in the vertical direction.</p>
+
+<p class=FunctionDescription>0 – Top Aligned: The top boundary is fixed – grow
+only down the ways.</p>
+
+<p class=FunctionDescription>1 – Middle Aligned: Grow equally up and down.</p>
+
+<p class=FunctionDescription>2 -<span style="mso-spacerun: yes">  </span>Bottom
+Aligned: The bottom boundary is fixed – grow only upwards.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>HScale</p>
+
+<p class=FunctionDescription>A scale factor for the horizontal direction. 1.0 =
+no scaling. The horizontal axis rotates with the overlay.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>Vscale</p>
+
+<p class=FunctionDescription>A scale factor for the vertical direction. 1.0 =
+no scaling. The vertical axis rotates with the overlay.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>Selector</p>
+
+<p class=FunctionDescription>A value used by some meters to select one from
+many possible values.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<h3><a name="_Toc97222082"></a><a name="_SimplOverlay2"></a><a
+name="_SimpleOverlay2"></a><span style='mso-bookmark:_Toc97222082'>SimpleOverlay2</span></h3>
+
+<p class=MsoNormal>SimpleOverlay2 adds some extra features to those of <a
+href="#_SimpleOverlay">SimpleOverlay</a>:</p>
+
+<p class=FunctionDeclaration>bool HitTest(int X, int Y)</p>
+
+<p class=FunctionDescription>This method returns <i style='mso-bidi-font-style:
+normal'>true</i> if the pixel addressed by the passed X and Y value has a
+non-zero alpha channel (i.e. if the pixel is opaque).</p>
+
+<p class=FunctionDeclaration><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=FunctionDeclaration>Parent</p>
+
+<p class=FunctionDescription>This property holds a reference to the containing
+composite overlay (if any). If there is no parent, it holds NULL. The value
+should be treated as read-only.</p>
+
+<p class=FunctionDescription><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=FunctionDeclaration>EffectOverlay</p>
+
+<p class=FunctionDescription>This property holds a reference to an overlay that
+is used for masking this overlay.</p>
+
+<p class=FunctionDescription><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=FunctionDeclaration>EffectOverlayEffect</p>
+
+<p class=FunctionDescription>This defines how the <i style='mso-bidi-font-style:
+normal'>effect overlay </i>is used. It can be one of:</p>
+
+<p class=FunctionDescription style='margin-left:1.5in'>0 = Mask out</p>
+
+<p class=FunctionDescription style='margin-left:1.5in'>1 = Mask in</p>
+
+<h3><a name="_Toc96620083"></a><a name="_Toc97222083"><span style='mso-bookmark:
+_Toc96620083'>GaugeOverlay</span></a> </h3>
+
+<p class=MsoNormal><a href="Overlays.html#_Gauge">GaugeOverlay</a> draws a dial
+whose angle is determined by the value of a meter. An overlay of type
+GaugeOverlay adds the following properties to those defined by <a
+href="#_SimplOverlay2">SimpleOverlay2</a>, <a href="#_SimpleOverlay">SimpleOverlay</a>
+and <a href="#_Overlay">Overlay</a>:</p>
+
+<p class=FunctionDeclaration>Length</p>
+
+<p class=FunctionDescription>This is the length of the line drawn.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>Thickness</p>
+
+<p class=FunctionDescription>This is the thickness of the line.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>Span</p>
+
+<p class=FunctionDescription>This is the maximum number of degrees that the
+gauge can rotate.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>Min</p>
+
+<p class=FunctionDescription>This is the meter value that is represented by a
+rotation of zero.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>Max</p>
+
+<p class=FunctionDescription>This is the meter value that is represented by a rotation
+of <i style='mso-bidi-font-style:normal'>Span </i>degrees.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>Color</p>
+
+<p class=FunctionDescription>This is the color of the line in BGR form! I.e.
+0x00FF0000 is blue, 0x0000FF00 is green. 0x000000FF is red.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>Alpha</p>
+
+<p class=FunctionDescription>This is the transparency of the line from 0 to 255
+with 0 being totally transparent and 255 being totally solid.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3><a name="_Toc96620084"></a><a name="_Toc97222084"><span style='mso-bookmark:
+_Toc96620084'>ImageOverlay</span></a> </h3>
+
+<p class=MsoNormal><a href="Overlays.html#_Image">ImageOverlay</a> draws an
+image into the window. An overlay of type <i>ImageOverlay</i> adds the
+following properties to those defined by <i><a href="#_SimplOverlay2">SimpleOverlay2</a></i>,
+<i><a href="#_SimpleOverlay">SimpleOverlay</a> </i>and <i><a href="#_Overlay">Overlay</a></i>:</p>
+
+<p class=FunctionDeclaration>Path</p>
+
+<p class=FunctionDescription>This is the pathname of the image.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>Alpha</p>
+
+<p class=FunctionDescription>This is the transparency of the image from 0 to
+255 with 0 being totally transparent and 255 being totally solid. This is in
+addition to any per-pixel transparency that the image may have.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>ImageWidth</p>
+
+<p class=FunctionDescription>This is a read-only property giving the width of
+the source image in pixels. Note that the image drawn may differ if a scale
+factor is being used.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>ImageHeight</p>
+
+<p class=FunctionDescription>This is a read-only property giving the height of
+the image in pixels. Note that the image drawn may differ if a scale factor is
+being used.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>long GetPixelValue(int X, int Y)</p>
+
+<p class=FunctionDescription>This returns the value of the pixel at the given
+location.</p>
+
+<p class=FunctionDescription><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=FunctionDeclaration>Dispose()</p>
+
+<p class=FunctionDescription>ImageMeter caches the image. This will make it
+impossible to change the file containing the image. Calling this method causes
+the file to be released.</p>
+
+<p class=FunctionDescription><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=FunctionDeclaration>AnimationMeter</p>
+
+<p class=FunctionDescription>This is a reference to an <i style='mso-bidi-font-style:
+normal'><a href="#_Animation">AnimationMeter</a></i> that can be used to control
+the animation of a multi-frame image.</p>
+
+<p class=FunctionDescription><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=FunctionDeclaration>HueShift</p>
+
+<p class=FunctionDescription>This is a value between –180 and 180 that is used
+to shift the hue of an image. The default of 0 means no hue shift.</p>
+
+<p class=FunctionDescription><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=FunctionDeclaration>Saturation</p>
+
+<p class=FunctionDescription>This is a value between 0 and 3 that controls the
+saturation of an image. A value of 0 will give a grey-scale image. The default
+value of 1 will leave the saturation unaltered.</p>
+
+<h3><a name="_Toc96620085"></a><a name="_Toc97222085"><span style='mso-bookmark:
+_Toc96620085'>MeterOverlay</span></a> </h3>
+
+<p class=MsoNormal><a href="Overlays.html#_Meter">MeterOverlay</a> draws a bar
+whose length is determined by the value of a meter. An overlay of type
+MeterOverlay adds the following properties to those defined by <i><a
+href="#_SimplOverlay2">SimpleOverlay2</a></i>, <a href="#_SimpleOverlay">SimpleOverlay</a>
+and <a href="#_Overlay">Overlay</a>:</p>
+
+<p class=FunctionDeclaration>Length</p>
+
+<p class=FunctionDescription>This is the maximum number of pixels a meter can
+extend to. Depending on the value of a meter the MeterOverlay will extend from
+0 to <i style='mso-bidi-font-style:normal'>Length</i> pixels.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>Thickness</p>
+
+<p class=FunctionDescription>This is the thickness of the bar in pixels.</p>
+
+<p class=FunctionDeclaration>Min</p>
+
+<p class=FunctionDescription>This is the meter value that is represented by a
+zero length bar.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>Max</p>
+
+<p class=FunctionDescription>This is the meter value that is represented by a
+bar of <i style='mso-bidi-font-style:normal'>Length</i> pixels.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>Color</p>
+
+<p class=FunctionDescription>This is the color of the bar in BGR form! I.e.
+0x00FF0000 is blue, 0x0000FF00 is green. 0x000000FF is red.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>Alpha</p>
+
+<p class=FunctionDescription>This is the transparency of the bar from 0 to 255
+with 0 being totally transparent and 255 being totally solid.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<h3><a name="_Toc96620086"></a><a name="_Toc97222086"><span style='mso-bookmark:
+_Toc96620086'>TextOverlay</span></a> </h3>
+
+<p class=MsoNormal><a href="Overlays.html#_Text">TextOverlay</a> draws a
+string. The size of an image rendered by a text overlay is not known until it
+is drawn, thus the <i>HAlign</i> and <i>VAlign</i> properties of <i><a
+href="#_SimpleOverlay">SimpleOverlay</a></i> are used to specify how the
+position of the image is adjusted as the size changes. Essentially the X
+location of the image is used as either the left, center or right of the drawn
+image and the Y location of the image is used as either the top, middle or
+bottom of the image.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The diagram below shows how text would be drawn if <i>HAlign</i>
+were set to center and <i>VAlign</i> were set to middle. Note that the vertical
+‘middle’ is actually the baseline of the text., not the actual middle in pixel
+terms.</p>
+
+<p class=MsoNormal align=center style='text-align:center'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1026" type="#_x0000_t75" style='width:239.25pt;height:181.5pt'
+ o:ole="">
+ <v:imagedata src="./Scripts_files/image003.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=319 height=242
+src="./Scripts_files/image004.gif" v:shapes="_x0000_i1026"><![endif]><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Word.Picture.8" ShapeID="_x0000_i1026"
+  DrawAspect="Content" ObjectID="_1171046823">
+ </o:OLEObject>
+</xml><![endif]--><u><o:p></o:p></u></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The picture is complicated a little if <i>CenterX</i> and <i>CenterY</i>
+are non-zero:</p>
+
+<p class=MsoToc1>&nbsp;</p>
+
+<p class=MsoNormal align=center style='text-align:center'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1027" type="#_x0000_t75" style='width:239.25pt;height:181.5pt'
+ o:ole="">
+ <v:imagedata src="./Scripts_files/image005.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=319 height=242
+src="./Scripts_files/image006.gif" v:shapes="_x0000_i1027"><![endif]><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Word.Picture.8" ShapeID="_x0000_i1027"
+  DrawAspect="Content" ObjectID="_1171046824">
+ </o:OLEObject>
+</xml><![endif]--><u><o:p></o:p></u></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>A meter of type <i>TextOverlay</i> adds the following
+properties to those of <i><a href="#_SimplOverlay2">SimpleOverlay2</a></i>, <i><a
+href="#_SimpleOverlay">SimpleOverlay</a></i> and <i><a href="#_Overlay">Overlay</a></i>:</p>
+
+<p class=FunctionDeclaration>Format</p>
+
+<p class=FunctionDescription>This determines the string that will be displayed.
+The format of this string is define <a href="Formats.html">here</a>.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>FontName</p>
+
+<p class=FunctionDescription>The name of the font face, e.g. ‘Arial’.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>FontStyle</p>
+
+<p class=FunctionDescription>The font style, e.g. ‘Italic’.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>FontSize</p>
+
+<p class=FunctionDescription>The font size.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>FontColor</p>
+
+<p class=FunctionDescription>This is the color of the text in BGR form! I.e.
+0x00FF0000 is blue, 0x0000FF00 is green. 0x000000FF is red.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>Alpha</p>
+
+<p class=FunctionDescription>This is the transparency of the bar from 0 to 255
+with 0 being totally transparent and 255 being totally solid.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>Radius</p>
+
+<p class=FunctionDescription>This specifies a glow radius for the text.</p>
+
+<p class=FunctionDescription><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=FunctionDeclaration>BlurColor</p>
+
+<p class=FunctionDescription>Specifies the color of the glow in BGR form!</p>
+
+<p class=FunctionDescription><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=FunctionDeclaration>Width</p>
+
+<p class=FunctionDescription>If this is &gt; -1 it specifies a clipping width
+for the text. This is also used to wrap the text if <i style='mso-bidi-font-style:
+normal'>Wrap</i> is set to true.</p>
+
+<p class=FunctionDescription><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=FunctionDeclaration>Height</p>
+
+<p class=FunctionDescription>If this is &gt; -1 it specifies a clipping height
+for the text.</p>
+
+<p class=FunctionDescription><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=FunctionDeclaration>Wrap</p>
+
+<p class=FunctionDescription>If this is <i style='mso-bidi-font-style:normal'>true</i>
+and a clipping width is specified the text will be wrapped to fit inside the
+width.</p>
+
+<p class=FunctionDescription><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=FunctionDeclaration>AlternateRender</p>
+
+<p class=FunctionDescription>If this is true the following properties can be
+used to change how the text is drawn:</p>
+
+<p class=FunctionDescription><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=FunctionDeclaration>TextRenderingHint</p>
+
+<p class=FunctionDescription>This changes the anti-aliasing. It can be one of:</p>
+
+<p class=FunctionDescription style='margin-left:1.5in'>0 = Default (use system
+setting)</p>
+
+<p class=FunctionDescription style='margin-left:1.5in'>1 = No AntiAlias Grid
+Fit</p>
+
+<p class=FunctionDescription style='margin-left:1.5in'>2 = No AntiAlias</p>
+
+<p class=FunctionDescription style='margin-left:1.5in'>3 = AntiAlias Grid Fit</p>
+
+<p class=FunctionDescription style='margin-left:1.5in'>4 = AntiAlias</p>
+
+<p class=FunctionDescription style='margin-left:1.5in'>5 = ClearType</p>
+
+<p class=FunctionDescription style='margin-left:1.5in'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=FunctionDeclaration>TextContrast</p>
+
+<p class=FunctionDescription>This should be a value between 1 and 8. Though it
+doesn’t seem to make any difference anyway!</p>
+
+<p class=FunctionDescription><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h3><a name="_Toc97222087"></a><a name="_Toc96620087"></a><a name="_Ref74499248"></a><a
+name="_CompositeOverlay"></a><span style='mso-bookmark:_Toc97222087'><span
+style='mso-bookmark:_Toc96620087'><span style='mso-bookmark:_Ref74499248'>CompositeOverlay</span></span></span><span
+style='mso-bookmark:_Ref74499248'></span></h3>
+
+<p class=MsoNormal><span style='mso-bookmark:_Ref74499248'></span><a
+href="Overlays.html#_Composite"><span style='mso-bookmark:_Ref74499248'>CompositeOverlays</span><span
+style='mso-bookmark:_Ref74499248'></span></a><span style='mso-bookmark:_Ref74499248'>
+can contain other overlays. They behave like </span><a href="#_Collections"><span
+style='mso-bookmark:_Ref74499248'><i>collections</i></span><span
+style='mso-bookmark:_Ref74499248'></span></a><span style='mso-bookmark:_Ref74499248'>
+to scripting languages, so they can be indexed, entries can be added and
+entries can be removed.</span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Ref74499248'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Ref74499248'>Any type of overlay
+can be contained, including other <i>CompositeOverlay</i>s.</span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Ref74499248'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Ref74499248'>CompositeOverlay
+inherits all of the methods of </span><a href="#_SimpleOverlay2"><span
+style='mso-bookmark:_Ref74499248'><i>SimpleOverlay2</i></span><span
+style='mso-bookmark:_Ref74499248'></span></a><span style='mso-bookmark:_Ref74499248'>,
+</span><a href="#_SimpleOverlay"><span style='mso-bookmark:_Ref74499248'><i>SimpleOverlay</i></span><span
+style='mso-bookmark:_Ref74499248'></span></a><span style='mso-bookmark:_Ref74499248'>
+and </span><a href="#_Overlay"><span style='mso-bookmark:_Ref74499248'><i>Overlay</i></span><span
+style='mso-bookmark:_Ref74499248'></span></a><span style='mso-bookmark:_Ref74499248'>.</span></p>
+
+<h3><span style='mso-bookmark:_Ref74499248'><a name="_Toc96620088"></a><a
+name="_Toc97222088"><span style='mso-bookmark:_Toc96620088'>MappedOverlay</span></a></span></h3>
+
+<p class=MsoNormal><span style='mso-bookmark:_Ref74499248'>A <i>MappedOverlay</i>
+is a special sort of <i>ImageOverlay</i>. It displays an image using a <i>Map</i>
+to control what portion of the main image is visible. This is all explained </span><a
+href="Overlays.html#_Mapped"><span style='mso-bookmark:_Ref74499248'>here</span><span
+style='mso-bookmark:_Ref74499248'></span></a><span style='mso-bookmark:_Ref74499248'>.</span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Ref74499248'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Ref74499248'>MappedOverlay
+inherits all of the methods of </span><a href="#_SimpleOverlay2"><span
+style='mso-bookmark:_Ref74499248'><i>SimpleOverlay2</i></span><span
+style='mso-bookmark:_Ref74499248'></span></a><span style='mso-bookmark:_Ref74499248'>,
+</span><a href="#_SimpleOverlay"><span style='mso-bookmark:_Ref74499248'><i>SimpleOverlay</i></span><span
+style='mso-bookmark:_Ref74499248'></span></a><span style='mso-bookmark:_Ref74499248'>
+and </span><a href="#_Overlay"><span style='mso-bookmark:_Ref74499248'><i>Overlay</i></span><span
+style='mso-bookmark:_Ref74499248'></span></a><span style='mso-bookmark:_Ref74499248'>.</span></p>
+
+<p class=FunctionDeclaration><span style='mso-bookmark:_Ref74499248'>Min</span></p>
+
+<p class=FunctionDescription><span style='mso-bookmark:_Ref74499248'>This
+should be set to the minimum value of the meter being monitored. Often this is
+0.</span></p>
+
+<p class=FunctionDescription><span style='mso-bookmark:_Ref74499248'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=FunctionDeclaration><span style='mso-bookmark:_Ref74499248'>Max</span></p>
+
+<p class=FunctionDescription><span style='mso-bookmark:_Ref74499248'>This
+should be set to the maximum value of the meter being monitored.</span></p>
+
+<p class=FunctionDescription><span style='mso-bookmark:_Ref74499248'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=FunctionDeclaration><span style='mso-bookmark:_Ref74499248'>MapPath</span></p>
+
+<p class=FunctionDescription><span style='mso-bookmark:_Ref74499248'>This is
+the pathname of the map.</span></p>
+
+<p class=FunctionDescription><span style='mso-bookmark:_Ref74499248'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=FunctionDeclaration><span style='mso-bookmark:_Ref74499248'>ImagePath</span></p>
+
+<p class=FunctionDescription><span style='mso-bookmark:_Ref74499248'>This is
+the pathname of the image.</span></p>
+
+<p class=FunctionDescription><span style='mso-bookmark:_Ref74499248'>&nbsp;</span></p>
+
+<p class=FunctionDeclaration><span style='mso-bookmark:_Ref74499248'>Alpha</span></p>
+
+<p class=FunctionDescription><span style='mso-bookmark:_Ref74499248'>This is
+the transparency of the image from 0 to 255 with 0 being totally transparent
+and 255 being totally solid. This is in addition to any per-pixel transparency
+that the image may have.</span></p>
+
+<p class=FunctionDescription><span style='mso-bookmark:_Ref74499248'>&nbsp;</span></p>
+
+<p class=FunctionDeclaration><span style='mso-bookmark:_Ref74499248'>ImageWidth</span></p>
+
+<p class=FunctionDescription><span style='mso-bookmark:_Ref74499248'>This is a
+read-only property giving the width of the source image in pixels. Note that
+the image drawn may differ if a scale factor is being used.</span></p>
+
+<p class=FunctionDescription><span style='mso-bookmark:_Ref74499248'>&nbsp;</span></p>
+
+<p class=FunctionDeclaration><span style='mso-bookmark:_Ref74499248'>ImageHeight</span></p>
+
+<p class=FunctionDescription><span style='mso-bookmark:_Ref74499248'>This is a read-only
+property giving the height of the image in pixels. Note that the image drawn
+may differ if a scale factor is being used.</span></p>
+
+<p class=FunctionDescription><span style='mso-bookmark:_Ref74499248'>&nbsp;</span></p>
+
+<p class=FunctionDeclaration><span style='mso-bookmark:_Ref74499248'>long
+GetPixelValue(int X, int Y)</span></p>
+
+<p class=FunctionDescription><span style='mso-bookmark:_Ref74499248'>This
+returns the value of the pixel at the given location.</span></p>
+
+<p class=FunctionDescription><span style='mso-bookmark:_Ref74499248'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=FunctionDeclaration><span style='mso-bookmark:_Ref74499248'>Dispose()</span></p>
+
+<p class=FunctionDescription><span style='mso-bookmark:_Ref74499248'>MappedMeter
+caches its images. This will make it impossible to change the files containing
+the images. Calling this method causes the files to be released.</span></p>
+
+<p class=FunctionDescription><span style='mso-bookmark:_Ref74499248'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=FunctionDeclaration><span style='mso-bookmark:_Ref74499248'>HueShift</span></p>
+
+<p class=FunctionDescription><span style='mso-bookmark:_Ref74499248'>This is a
+value between –180 and 180 that is used to shift the hue of an image. The
+default of 0 means no hue shift.</span></p>
+
+<p class=FunctionDescription><span style='mso-bookmark:_Ref74499248'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=FunctionDeclaration><span style='mso-bookmark:_Ref74499248'>Saturation</span></p>
+
+<p class=FunctionDescription><span style='mso-bookmark:_Ref74499248'>This is a
+value between 0 and 3 that controls the saturation of an image. A value of 0
+will give a grey-scale image. The default value of 1 will leave the saturation
+unaltered.</span></p>
+
+<h3><span style='mso-bookmark:_Ref74499248'><a name="_Toc96620089"></a><a
+name="_Toc97222089"><span style='mso-bookmark:_Toc96620089'>Scroller</span></a></span></h3>
+
+<p class=MsoNormal><span style='mso-bookmark:_Ref74499248'>A </span><a
+href="Overlays.html#_Scroller"><span style='mso-bookmark:_Ref74499248'>scroller</span><span
+style='mso-bookmark:_Ref74499248'></span></a><span style='mso-bookmark:_Ref74499248'>
+overlay is a special sort of composite overlay. It adds the following methods
+and properties to those of </span><a href="#_CompositeOverlay"><span
+style='mso-bookmark:_Ref74499248'>CompositeOverlay</span><span
+style='mso-bookmark:_Ref74499248'></span></a><span style='mso-bookmark:_Ref74499248'>.</span></p>
+
+<p class=FunctionDeclaration><span style='mso-bookmark:_Ref74499248'>Alpha</span></p>
+
+<p class=FunctionDescription><span style='mso-bookmark:_Ref74499248'>This is the
+transparency of the image from 0 to 255 with 0 being totally transparent and
+255 being totally solid. This is in addition to any per-pixel transparency that
+the image may have.</span></p>
+
+<p class=FunctionDeclaration><span style='mso-bookmark:_Ref74499248'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=FunctionDeclaration><span style='mso-bookmark:_Ref74499248'>dx</span></p>
+
+<p class=FunctionDescription><span style='mso-bookmark:_Ref74499248'>This is
+the amount that the x coordinate of the contained image should change with each
+frame.</span></p>
+
+<p class=FunctionDescription><span style='mso-bookmark:_Ref74499248'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=FunctionDeclaration><span style='mso-bookmark:_Ref74499248'>dy</span></p>
+
+<p class=FunctionDescription><span style='mso-bookmark:_Ref74499248'>This is
+the amount that the y coordinate of the contained image should change with each
+frame.</span></p>
+
+<p class=FunctionDescription><span style='mso-bookmark:_Ref74499248'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=FunctionDeclaration><span style='mso-bookmark:_Ref74499248'>SmoothScrollMeter</span></p>
+
+<p class=FunctionDescription><span style='mso-bookmark:_Ref74499248'>This is a
+reference to an </span><a href="#_Animation"><span style='mso-bookmark:_Ref74499248'>AnimationMeter</span><span
+style='mso-bookmark:_Ref74499248'></span></a><span style='mso-bookmark:_Ref74499248'>
+that can be used to implement a smooth scroll between frames.</span></p>
+
+<p class=FunctionDescription><span style='mso-bookmark:_Ref74499248'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=FunctionDeclaration><span style='mso-bookmark:_Ref74499248'>DupliateLastFrame</span></p>
+
+<p class=FunctionDescription><span style='mso-bookmark:_Ref74499248'>This is
+used for animations that wrap around. Setting it to true will ensure that the
+scroller displays correctly when the scroll wraps around.</span></p>
+
+<h3><span style='mso-bookmark:_Ref74499248'><a name="_Toc96620090"></a><a
+name="_Toc97222090"><span style='mso-bookmark:_Toc96620090'>Animator</span></a></span></h3>
+
+<p class=MsoNormal><span style='mso-bookmark:_Ref74499248'>The </span><a
+href="Overlays.html#_Animator"><span style='mso-bookmark:_Ref74499248'>Animator</span><span
+style='mso-bookmark:_Ref74499248'></span></a><span style='mso-bookmark:_Ref74499248'>
+overlay is used to in-between a source image and a destination image. It adds
+the following methods to those of </span><a href="#_SimplOverlay2"><span
+style='mso-bookmark:_Ref74499248'>SimpleOverlay2</span><span style='mso-bookmark:
+_Ref74499248'></span></a><span style='mso-bookmark:_Ref74499248'>, </span><a
+href="#_SimpleOverlay"><span style='mso-bookmark:_Ref74499248'>SimpleOverlay</span><span
+style='mso-bookmark:_Ref74499248'></span></a><span style='mso-bookmark:_Ref74499248'>
+and </span><a href="#_Overlay"><span style='mso-bookmark:_Ref74499248'>Overlay</span><span
+style='mso-bookmark:_Ref74499248'></span></a><span style='mso-bookmark:_Ref74499248'>.</span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Ref74499248'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=FunctionDeclaration><span style='mso-bookmark:_Ref74499248'>Alpha</span></p>
+
+<p class=FunctionDescription><span style='mso-bookmark:_Ref74499248'>This is
+the transparency of the image from 0 to 255 with 0 being totally transparent
+and 255 being totally solid. This is in addition to any per-pixel transparency
+that the image may have.</span></p>
+
+<p class=FunctionDescription><span style='mso-bookmark:_Ref74499248'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=FunctionDeclaration><span style='mso-bookmark:_Ref74499248'>AlphaEnd</span></p>
+
+<p class=FunctionDescription><span style='mso-bookmark:_Ref74499248'>The desired
+end transparency.</span></p>
+
+<p class=FunctionDescription><span style='mso-bookmark:_Ref74499248'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=FunctionDeclaration><span style='mso-bookmark:_Ref74499248'>XEnd</span></p>
+
+<p class=FunctionDescription><span style='mso-bookmark:_Ref74499248'>Specifies
+the X coordinate for the image at the end of the animation period.</span></p>
+
+<p class=FunctionDescription><span style='mso-bookmark:_Ref74499248'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=FunctionDeclaration><span style='mso-bookmark:_Ref74499248'>YEnd</span></p>
+
+<p class=FunctionDescription><span style='mso-bookmark:_Ref74499248'>Specifies
+the Y coordinate for the image at the end of the animation period.</span></p>
+
+<p class=FunctionDescription><span style='mso-bookmark:_Ref74499248'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=FunctionDeclaration><span style='mso-bookmark:_Ref74499248'>CenterXEnd</span></p>
+
+<p class=FunctionDescription><span style='mso-bookmark:_Ref74499248'>Specifies
+the X coordinate for the image center at the end of the animation period.</span></p>
+
+<p class=FunctionDescription><span style='mso-bookmark:_Ref74499248'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=FunctionDeclaration><span style='mso-bookmark:_Ref74499248'>CenterYEnd</span></p>
+
+<p class=FunctionDescription><span style='mso-bookmark:_Ref74499248'>Specifies
+the Y coordinate for the image at the end of the animation period.</span></p>
+
+<p class=FunctionDescription><span style='mso-bookmark:_Ref74499248'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=FunctionDeclaration><span style='mso-bookmark:_Ref74499248'>RotationEnd</span></p>
+
+<p class=FunctionDescription><span style='mso-bookmark:_Ref74499248'>Specifies
+the rotation for the image at the end of the period.</span></p>
+
+<p class=FunctionDeclaration><span style='mso-bookmark:_Ref74499248'>VScaleEnd</span></p>
+
+<p class=FunctionDescription><span style='mso-bookmark:_Ref74499248'>Specifies
+the end VScale at the end of the animation.</span></p>
+
+<p class=FunctionDescription><span style='mso-bookmark:_Ref74499248'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=FunctionDeclaration><span style='mso-bookmark:_Ref74499248'>HScaleEnd</span></p>
+
+<p class=FunctionDescription><span style='mso-bookmark:_Ref74499248'>Specifies
+the end HScale at the end of the animation.</span></p>
+
+<h2><span style='mso-bookmark:_Ref74499248'><a name="_Toc97222091"></a><a
+name="_Toc96620091"></a><a name="_Controller"></a><span style='mso-bookmark:
+_Toc97222091'><span style='mso-bookmark:_Toc96620091'>Controller</span></span></span>
+</h2>
+
+<p class=MsoNormal>Controllers are held in a collection indexed from 0 and are
+accessed as <i>SysStatsModel.Controllers(n)</i>. Where <i>n</i> is the index of
+the controller. </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>All controllers share the properties and methods defined by <i>Controller</i>.
+In OO-speak, they<b> inherit</b> <i>Controller</i>. Controllers are not a fully
+integrated feature in this version of SysStats so you should use them with
+caution.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=FunctionDeclaration>Name</p>
+
+<p class=FunctionDescription>Will be the name displayed in the ‘Configure
+meters…’ dialog.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>Type</p>
+
+<p class=FunctionDescription>Is the type of the controller. e.g. a shortcut
+controller has a type of ‘Shortcut Class’.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration><a name=MeterIndex>MeterIndex</a></p>
+
+<span style='mso-bookmark:MeterIndex'></span>
+
+<p class=FunctionDescription>The index of the referenced meter in the list of
+meters. A value of –1 means no meter.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>OverlayPath</p>
+
+<p class=FunctionDescription>A variant array holding a set of overlay names
+that identify the overlay the mouse pointer has to be over for the controller
+to be triggered.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>MessageType</p>
+
+<p class=FunctionDescription>An integer giving the windows message that this
+controller is triggered by. Some controllers don’t use this value (e.g. <i>Timer</i>
+and <i>DropTarget</i>).</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>Key</p>
+
+<p class=FunctionDescription>A modifier key mask that can be used in
+combination with a mouse message type to further refine the trigger.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>PassThrough</p>
+
+<p class=FunctionDescription>If <i>true</i> the controller should return <i>false</i>
+from its <i>HandleMessage()</i> method.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>HandleMessage(wparam, lparam, x, y)</p>
+
+<p class=FunctionDescription>This function takes four arguments: The wparam
+associated with the windows message, the lparam, the x location of the mouse
+and the y location of the mouse relative to the docklet’s window.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDescription>This is the function that causes the controller to
+perform its action.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDescription>If the function handled the message it will return
+true, otherwise it will return false (which just means that it wants you to
+continue handling the message).</p>
+
+<h3><a name="_Toc96620092"></a><a name="_Toc97222092"><span style='mso-bookmark:
+_Toc96620092'>ValueSetter</span></a> </h3>
+
+<p class=MsoNormal><a href="Controllers.html#_ValueSetter">ValueSetter</a>
+calls the <i style='mso-bidi-font-style:normal'>PutValue</i> method of a meter
+– if it has one. It adds the following properties to those of the base <a
+href="#_Controller">controller</a> class:</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=FunctionDeclaration>Selector</p>
+
+<p class=FunctionDescription>This is passed to the <i>PutValue</i> method along
+with the value – if the meter supports selectors in its <i>PutValue</i> method.</p>
+
+<p class=FunctionDeclaration>Value</p>
+
+<p class=FunctionDescription>This is the value that the meter referred to by <i>MeterIndex</i>
+will be set to.</p>
+
+<h3><a name="_Toc97222093"></a><a name="_Toc96620093"></a><a
+name="_MessageSender"></a><span style='mso-bookmark:_Toc97222093'><span
+style='mso-bookmark:_Toc96620093'>MessageSender</span></span></h3>
+
+<p class=MsoNormal><a href="Controllers.html#_MessageSender">MessageSender</a>
+can be used to send another message when it is triggered. This is useful for
+trapping some standard messages and converting them to a single message type.
+It adds the following properties to those of the base <a href="#_Controller">controller</a>
+class:</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=FunctionDeclaration>SendMessage</p>
+
+<p class=FunctionDescription>This is an integer specifying the windows message
+that will be sent when the controller is triggered. </p>
+
+<p class=FunctionDeclaration>UseLParam</p>
+
+<p class=FunctionDescription>If this is true then the <i>LParam</i> value is
+used when the message is sent, otherwise the <i>LParam</i> value that is
+received by the <i>HandleMessage</i> method is used.</p>
+
+<p class=FunctionDeclaration>LParam</p>
+
+<p class=FunctionDescription>This is an integer that is passed as the <i>LParam</i>
+value of the windows message if <i>UseLParam</i> is set to true.</p>
+
+<p class=FunctionDeclaration>UseWParam</p>
+
+<p class=FunctionDescription>If this is true then the <i>WParam</i> value is
+used when the message is sent, otherwise the <i>WParam</i> value that is
+received by the <i>HandleMessage</i> method is used.</p>
+
+<p class=FunctionDeclaration>WParam</p>
+
+<p class=FunctionDescription>This is an integer that is passed as the <i>WParam</i>
+value of the windows message if <i>UseWParam</i> is set to true.</p>
+
+<h3><a name="_Toc97222094"></a><a name="_Toc96620094"></a><a
+name="_ScriptController"></a><span style='mso-bookmark:_Toc97222094'><span
+style='mso-bookmark:_Toc96620094'>ScriptController</span></span> </h3>
+
+<p class=MsoNormal><a href="Controllers.html#_Script">ScriptController</a> is
+used to execute a script supported by the windows scripting host (e.g. vbscript)
+as if it were a controller. A controller of type <i>ScriptController</i> adds
+two properties to those of <a href="#_Controller"><i>Controller</i></a>:</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=FunctionDeclaration>FileName</p>
+
+<p class=FunctionDescription>This is the path to the file containing the
+script.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>ScriptType</p>
+
+<p class=FunctionDescription>This defines the script language. This can be one
+of:</p>
+
+<p class=FunctionDescription><span style='mso-tab-count:1'>            </span>JavaScript</p>
+
+<p class=FunctionDescription><span style='mso-tab-count:1'>            </span>Perl</p>
+
+<p class=FunctionDescription><span style='mso-tab-count:1'>            </span>ActivePHP</p>
+
+<p class=FunctionDescription><span style='mso-tab-count:1'>            </span>Python</p>
+
+<p class=FunctionDescription><span style='mso-tab-count:1'>            </span>RubyScript</p>
+
+<p class=FunctionDescription><span style='mso-tab-count:1'>            </span>vbScript</p>
+
+<h3><a name="_Toc96620095"></a><a name="_Toc97222095"><span style='mso-bookmark:
+_Toc96620095'>ASyncScriptController</span></a> </h3>
+
+<p class=FunctionDescription style='margin-left:0in'><span style='mso-tab-count:
+1'>            </span>The interface to this is the same as the interface to <a
+href="#_ScriptController">ScriptController</a>.</p>
+
+<h3><a name="_Toc96620096"></a><a name="_Toc97222096"><span style='mso-bookmark:
+_Toc96620096'>Shortcut</span></a></h3>
+
+<p class=MsoNormal><a href="Controllers.html#_Shortcut">Shortcut</a> adds the
+following properties to those of the base <a href="#_Controller">controller</a>
+class:</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=FunctionDeclaration>Args</p>
+
+<p class=FunctionDescription>This is a string specifying the command line
+arguments for the shortcut.</p>
+
+<p class=FunctionDeclaration>Selector</p>
+
+<p class=FunctionDescription>This is used with the meter specified by <i><a
+href="#MeterIndex">MeterIndex</a></i> to format the value in <i>shortcut</i>.</p>
+
+<p class=FunctionDeclaration>Shortcut</p>
+
+<p class=FunctionDescription>This is the command that will be executed. It can
+be a <a href="Formats.html">format string</a> that the meter defined by <i><a
+href="#MeterIndex">MeterIndex</a></i> can use to provide the final value.</p>
+
+<p class=FunctionDeclaration>StartIn</p>
+
+<p class=FunctionDescription>This specifies what the working directory for the
+command will be set to.</p>
+
+<h3><a name="_Toc96620097"></a><a name="_Toc97222097"><span style='mso-bookmark:
+_Toc96620097'>DropTargetController</span></a> </h3>
+
+<p class=MsoNormal><a href="Controllers.html#_DropController">DropTargetController</a>
+adds the following property to that of <i style='mso-bidi-font-style:normal'><a
+href="#_MessageSender">MessageSender</a></i>.</p>
+
+<p class=FunctionDeclaration>Effect</p>
+
+<p class=FunctionDescription style='margin-left:1.5in;text-indent:-.5in'>This
+is an integer mask made up out of the following values:</p>
+
+<p class=FunctionDescription style='margin-left:1.5in;text-indent:-.5in'>0 –
+The controller does not accept drops</p>
+
+<p class=FunctionDescription style='margin-left:1.5in;text-indent:-.5in'>1 –
+The controller accepts <i>copy</i> drops</p>
+
+<p class=FunctionDescription style='margin-left:1.5in;text-indent:-.5in'>2 –
+The controller accepts <i>move</i> drops</p>
+
+<p class=FunctionDescription style='margin-left:1.5in;text-indent:-.5in'>4 –
+The controller accepts <i>link</i> drops</p>
+
+<h3><a name="_Toc96620098"></a><a name="_Toc97222098"><span style='mso-bookmark:
+_Toc96620098'>Mapped</span></a> </h3>
+
+<p class=MsoNormal><a href="Controllers.html#_Mapped">Mapped</a> controller
+doesn’t add any extra attributes or methods over and above those of <i><a
+href="#_MessageSender">MessageSender</a>.<o:p></o:p></i></p>
+
+<h3><a name="_Toc96620099"></a><a name="_Toc97222099"><span style='mso-bookmark:
+_Toc96620099'>Cursor</span></a> </h3>
+
+<p class=MsoNormal><a href="Controllers.html#_Cursor">Cursor</a> controller
+adds the following attribute to those of the base <a href="#_Controller">controller</a>
+class:</p>
+
+<p class=FunctionDeclaration>CursorID</p>
+
+<p class=FunctionDescription>An integer that should have one of the following
+values:</p>
+
+<p class=FunctionDescription style='tab-stops:2.25in'>Arrow (default) =<span
+style='mso-tab-count:1'>   </span>32512</p>
+
+<p class=FunctionDescription style='tab-stops:2.25in'>IBeam =<span
+style='mso-tab-count:1'>                </span>32513</p>
+
+<p class=FunctionDescription style='tab-stops:2.25in'>Wait =<span
+style='mso-tab-count:1'>                   </span>32514</p>
+
+<p class=FunctionDescription style='tab-stops:2.25in'>Cross =<span
+style='mso-tab-count:1'>                 </span>32515</p>
+
+<p class=FunctionDescription style='tab-stops:2.25in'>Up Arrow =<span
+style='mso-tab-count:1'>            </span>32516</p>
+
+<p class=FunctionDescription style='tab-stops:2.25in'>Size =<span
+style='mso-tab-count:1'>                    </span>32640</p>
+
+<p class=FunctionDescription style='tab-stops:2.25in'>Icon =<span
+style='mso-tab-count:1'>                    </span>32641</p>
+
+<p class=FunctionDescription style='tab-stops:2.25in'>Size NWSE =<span
+style='mso-tab-count:1'>       </span>32642</p>
+
+<p class=FunctionDescription style='tab-stops:2.25in'>Size NESW =<span
+style='mso-tab-count:1'>       </span>32643</p>
+
+<p class=FunctionDescription style='tab-stops:2.25in'>Size WE =<span
+style='mso-tab-count:1'>            </span>32644</p>
+
+<p class=FunctionDescription style='tab-stops:2.25in'>Size NS =<span
+style='mso-tab-count:1'>              </span>32645</p>
+
+<p class=FunctionDescription style='tab-stops:2.25in'>Size All =<span
+style='mso-tab-count:1'>               </span>32646</p>
+
+<p class=FunctionDescription style='tab-stops:2.25in'>No =<span
+style='mso-tab-count:1'>                      </span>32648</p>
+
+<p class=FunctionDescription style='tab-stops:2.25in'>Hand =<span
+style='mso-tab-count:1'>                  </span>32649</p>
+
+<p class=FunctionDescription style='tab-stops:2.25in'>App Starting =<span
+style='mso-tab-count:1'>       </span>32650</p>
+
+<p class=FunctionDescription style='tab-stops:2.25in'>Help =<span
+style='mso-tab-count:1'>                    </span>32651</p>
+
+<h3><a name="_Toc96620100"></a><a name="_Toc97222100"><span style='mso-bookmark:
+_Toc96620100'>Timer</span></a> </h3>
+
+<p class=MsoNormal><a href="Controllers.html#_Timer">Timer</a> controller adds
+the following attributes and methods to those of <a href="#_MessageSender">MessageSender</a>:</p>
+
+<p class=FunctionDeclaration>Start</p>
+
+<p class=FunctionDescription>This method starts the timer.</p>
+
+<p class=FunctionDeclaration>Stop</p>
+
+<p class=FunctionDescription>This method stops the timer</p>
+
+<p class=FunctionDeclaration>Interval</p>
+
+<p class=FunctionDescription>This attribute specifies the timer interval in
+seconds. A fractional value is accepted (e.g. 0.5 for ½ sec).</p>
+
+<h2><a name="_Ref74500271"></a><a name="_Toc96620101"></a><a name="_Toc97222101"><span
+style='mso-bookmark:_Toc96620101'><span style='mso-bookmark:_Ref74500271'>AppConfig</span></span></a>
+</h2>
+
+<p class=FunctionDeclaration>RootPath</p>
+
+<p class=FunctionDescription>AppConfig uses various algorithms to try and
+determine the directory in which SysStats is installed. This property
+represents that directory.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>NormalizePath(path)</p>
+
+<p class=FunctionDescription>If the passed path is contained within RootPath,
+return a relative path, otherwise return an absolute path.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDescription>E.g. if RootPath is <i style='mso-bidi-font-style:
+normal'>\Program Files\ObjectDock\Docklets\SysStats</i>, then <i
+style='mso-bidi-font-style:normal'>NormalizePath(“\Program
+Files\ObjectDock\Docklets\SysStats\images\clock.png”)</i> will return <i
+style='mso-bidi-font-style:normal'>images\clock.png</i></p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDescription>And</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDescription><i style='mso-bidi-font-style:normal'>NormalizePath(“\Program
+Files\ObjectDock\images\clock.png”)</i> will return <i style='mso-bidi-font-style:
+normal'>\Program Files\ObjectDock\images\clock.png<o:p></o:p></i></p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=FunctionDeclaration>CanonicalPath(path)</p>
+
+<p class=FunctionDescription>If the passed path is relative, convert it to an
+absolute path starting with our root directory. I.e.
+CanonicalPath(NormalizePath(path)) will return path.</p>
+
+<p class=FunctionDescription>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+EXPORTS
+	OnGetInformation
+	OnCreate
+	OnDestroy
+	OnSave
+	OnProcessMessage
+
+	OnDrop
+	OnDragEnter
+	OnDragOver
+	OnDragLeave
+	OnDragDropDataRequest
+
+	OnLeftButtonClick
+	OnRightButtonClick
+	OnAddPropertySheets

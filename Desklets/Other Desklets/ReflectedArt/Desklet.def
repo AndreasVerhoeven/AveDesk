@@ -1,0 +1,8 @@
+EXPORTS
+
+OnCreate
+OnDestroy
+OnSave
+OnGetInformation
+OnProcessMessage
+OnRightButtonClick

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<rss version="2.0">
+
+	<channel>
+	<title>AveDesk Downloads</title>
+	<link>http://www.avedesk.philc.ca</link>
+	<description>The latest desklets added to the downloads section</description>
+
+	<item>
+		<title>Weather for AveScripter</title>
+		<link>http://www.avedesk.philc.ca/downloads/item?id=303</link>
+		<description>A weather desklet designed by KoL, coded by Phil Caetano</description>
+	</item>
+
+	<item>
+		<title>Calculator for AveScripter</title>
+		<link>http://www.avedesk.philc.ca/downloads/item?id=302</link>
+		<description>A calculator desklet designed by KoL, coded by Phil Caetano</description>
+	</item>
+
+	<item>
+		<title>iTunesRemote for AveScripter</title>
+		<link>http://www.avedesk.philc.ca/downloads/item?id=301</link>
+		<description>A iTunes remote controller desklet designed by KoL, coded by Phil Caetano</description>
+	</item>
+
+	<item>
+		<title>FTP Desklet Update</title>
+		<link>http://www.avedesk.philc.ca/downloads/item?id=300</link>
+		<description>Update for the default FTP desklet bundled with AveDesk 1.3</description>
+	</item>
+
+	<item>
+		<title>iTunes Lyrics</title>
+		<link>http://www.avedesk.philc.ca/downloads/item?id=299</link>
+		<description>A desklet that shows the lyrics of the song you are listening to in iTunes</description>
+	</item>
+
+		<item>
+		<title>Clock for AveScripter</title>
+		<link>http://www.avedesk.philc.ca/downloads/item?id=298</link>
+		<description>A clock desklet designed by KoL, coded by Phil Caetano</description>
+	</item>
+
+</channel>
+</rss>

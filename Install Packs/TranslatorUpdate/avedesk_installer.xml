@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AveInstaller>
+
+	<About>
+		<Author>Andreas Verhoeven</Author>
+		<Email>averhoev.2@hccnet.nl</Email>
+		<HomePage>http://avedesk.needlemen.com</HomePage>
+
+		<Name>Translator Update</Name>
+		<Version>131</Version>
+		<Description>An update for the Translator Desklet. Fixed a bug where the selected languages weren't saved.</Description>
+		<URL>http://avedesk.needlemen.com/desklets/translator.aveinst</URL>
+		<GUID>0C27AF-DFF1-4294-9F72-ED35724A17C4</GUID>
+	</About>
+
+	<Requirements>
+		<Item Type="RequiredAveDeskVersion">1.2</Item>
+		<Item Type="RequiredInstallerVersion">1.2</Item>
+	</Requirements>
+
+	<BeforeCopy>
+		<Item Type="SuspendDesklet">
+			<Directory BaseFolder="Desklets">
+				<Directory Name="Translator">
+					<File>translator.dll</File>
+				</Directory>
+			</Directory>
+		</Item>
+	</BeforeCopy>
+	
+	<CopyInformation>
+		<Directory BaseFolder="Desklets">
+			<Directory Name="Translator">
+				<CopyAll Recursively="true"/>
+			</Directory>
+		</Directory>
+
+	</CopyInformation>
+
+	<AfterCopySucceeded>
+		<Item Type="ShowMessage">
+			<Caption>Update Succeeded</Caption>
+			<Text>Translator Desklet Update Succeeded.
+Fixed a bug where the selected languages were not saved when reloading AveDesk.
+With this update, the selected languages will be saved correctly.
+			</Text>
+		</Item>
+	</AfterCopySucceeded>
+
+	<AfterCopyFailed>
+		<Item Type="ShowMessage">
+			<Caption>Failed</Caption>
+			<Text>Updating Translator.dll failed, please contact the author.</Text>
+		</Item>
+	</AfterCopyFailed>
+
+</AveInstaller>

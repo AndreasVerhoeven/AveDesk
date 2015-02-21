@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AveInstaller>
+
+	<About>
+		<Author>{YOURNAME}</Author>
+		<Email>{YOUREMAIL}</Email>
+		<HomePage>{YOURHOMEPAGE}</HomePage>
+
+		<Name>SysStats</Name>
+		<Version>2.5.1</Version>
+		<Description>{DESCRIPTION}</Description>
+		<URL>http://dockex.com/__dkpackage.php?dk=38</URL>
+		<GUID>807BF0E6-B135-4E6C-A267-6106469700B4</GUID>
+	</About>
+
+	<Requirements>
+		<Item Type="RequiredAveDeskVersion">1.2</Item>
+		<Item Type="RequiredInstallerVersion">1.2</Item>
+	</Requirements>
+
+	<BeforeCopy>
+		<Item Type="SuspendDesklet">
+			<Directory BaseFolder="Docklets">
+				<Directory Name="SysStats">
+					<File>SysStats.dll</File>
+				</Directory>
+			</Directory>
+		</Item>
+	</BeforeCopy>
+	
+	<CopyInformation>
+		<Directory BaseFolder="AveDesk">
+			<File Alias="ComDLL">SysStatsCOM.dll</File>
+		</Directory>
+
+		<Directory BaseFolder="Docklets" Name="Docklets">
+			<Directory Name="SysStats">
+				<File Alias="DLL">SysStats.dll</File>
+				<CopyAll Recursively="yes"/>
+			</Directory>
+		</Directory>
+
+	</CopyInformation>
+
+	<AfterCopySucceeded>
+		<Item Type="ShowBitmap">\Docklets\SysStats\screenshot.jpg</Item>
+		<Item Type="RegisterCOMServer" UseAlias="true">ComDLL</Item>
+		<Item Type="LoadDesklet"><Desklet><DLL>docklets\sysstats\sysstats.dll</DLL><label><MainLabelProperties><HasShadow>1</HasShadow><Font>Arial</Font><Color>4294967295</Color><Style>0</Style><Size>24</Size><ShadowProperties><XOffset>1</XOffset><YOffset>1</YOffset><ExtraWidth>0</ExtraWidth><ExtraHeight>0</ExtraHeight><BlurRatio>1.5</BlurRatio><Intensity>30</Intensity><Color>4278190080</Color></ShadowProperties></MainLabelProperties><SubLabelProperties><HasShadow>1</HasShadow><Font>Arial</Font><Color>4294967295</Color><Style>0</Style><Size>14</Size><ShadowProperties><XOffset>1</XOffset><YOffset>1</YOffset><ExtraWidth>0</ExtraWidth><ExtraHeight>0</ExtraHeight><BlurRatio>1</BlurRatio><Intensity>20</Intensity><Color>4278190080</Color></ShadowProperties></SubLabelProperties><Alpha>0</Alpha><Rotation>0</Rotation><VAlign>0</VAlign><HAlign>1</HAlign><Width>200</Width><Height>75</Height><Margin>5</Margin><Position>0</Position><DrawTopDown>0</DrawTopDown><ShowSubLabel>1</ShowSubLabel><MainCaption>SysStats</MainCaption><SubCaption></SubCaption><Background></Background></label><labelType>0</labelType><labelOnlyOnMouseOver>0</labelOnlyOnMouseOver><ignoreLeftClicks>0</ignoreLeftClicks><ignoreRightClicks>0</ignoreRightClicks><isClickThru>0</isClickThru><snapToGrid>0</snapToGrid><lockPosition>0</lockPosition><style>2</style><Alpha>255</Alpha><xPos>33</xPos><yPos>53</yPos><width>128</width><height>128</height><rotation>0</rotation><useColorization>0</useColorization><saturation>1</saturation><hue>100</hue><quality>2</quality><drawShadow>0</drawShadow><shadowX>4</shadowX><shadowY>4</shadowY><shadowGray>0</shadowGray><shadowColor>0</shadowColor><shadowAlpha>255</shadowAlpha><Image>docklets\sysstats\images\NoOverlays.png</Image><effectFile></effectFile><ownerSettings>[TMP]
+config=
+version=250
+</ownerSettings></Desklet>
+		</Item>
+	</AfterCopySucceeded>
+
+	<AfterCopyFailed>
+		<Item Type="ShowMessage">
+			<Caption>Failed</Caption>
+			<Text>The installation failed.</Text>
+		</Item>
+	</AfterCopyFailed>
+
+</AveInstaller>

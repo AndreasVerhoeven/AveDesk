@@ -1,0 +1,163 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Dutch (Netherlands) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NLD)
+#ifdef _WIN32
+LANGUAGE LANG_DUTCH, SUBLANG_DUTCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CONFIGLABELFORMAT DIALOG DISCARDABLE  0, 0, 257, 244
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Label Format"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Here you can configure the sublabels format for this shortcut desklet.",
+                    IDC_STATIC,10,5,215,10
+    LTEXT           "Formats:",IDC_STATIC,10,38,28,8
+    LTEXT           "percentage sign",IDC_STATIC,49,52,52,8
+    LTEXT           "%%",IDC_STATIC,10,52,12,8
+    EDITTEXT        IDC_LABEL,10,20,215,12,ES_AUTOHSCROLL
+    LTEXT           "%#",IDC_STATIC,10,67,11,8
+    LTEXT           "newline",IDC_STATIC,49,67,25,8
+    CONTROL         "&Automatically update the desklets caption to the file name",
+                    IDC_AUTOCAPTION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,
+                    230,197,10
+    LISTBOX         IDC_FORMATS,10,82,215,89,NOT LBS_NOTIFY | 
+                    LBS_USETABSTOPS | LBS_NOINTEGRALHEIGHT | LBS_NOSEL | NOT 
+                    WS_BORDER | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Save...",IDSAVEPRESET,10,184,50,14
+    PUSHBUTTON      "&Load...",IDLOADPRESET,69,184,50,14
+    CONTROL         "&Automatically load the preset that matches the files extension",
+                    IDC_AUTOLABEL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,
+                    205,205,10
+    PUSHBUTTON      "Save As &Default",IDSAVEDEFAULTPRESET,128,184,82,14
+END
+
+IDD_CONFIGIMAGES DIALOG DISCARDABLE  0, 0, 237, 129
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Images"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Here you can configure the extra images used by this file desklet.",
+                    IDC_STATIC,10,10,205,15
+    LTEXT           "Drag-'n-drop Overlay",IDC_STATIC,7,25,66,8
+    CONTROL         "",IDC_EJECTIMG,"Static",SS_BLACKFRAME,7,35,80,70
+    PUSHBUTTON      "Set &D-'n-D Image",IDSETEJECT,5,110,81,14
+END
+
+IDD_CONFIGOTHER DIALOG DISCARDABLE  0, 0, 237, 164
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "File"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Here you can configure the file this desklet points to.",
+                    IDC_STATIC,15,5,195,13
+    EDITTEXT        IDC_FOLDER,17,35,157,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDBROWSE,179,35,15,13
+    LTEXT           "Parameters",IDC_STATIC,17,60,36,8
+    EDITTEXT        IDC_PARAMETERS,17,70,157,12,ES_AUTOHSCROLL
+    LTEXT           "Start In",IDC_STATIC,17,95,24,8
+    EDITTEXT        IDC_STARTIN,17,105,157,12,ES_AUTOHSCROLL
+    LTEXT           "Execute",IDC_STATIC,19,130,27,8
+    COMBOBOX        IDC_WINDOW,19,143,156,30,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "...",IDBROWSE2,180,105,15,13
+    LTEXT           "Target",IDC_STATIC,17,24,22,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_CONFIGLABELFORMAT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 250
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 237
+    END
+
+    IDD_CONFIGIMAGES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 230
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 122
+    END
+
+    IDD_CONFIGOTHER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 230
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 157
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Dutch (Netherlands) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

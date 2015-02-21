@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AveInstaller>
+
+	<About>
+		<Author>Andreas Verhoeven</Author>
+		<Email>averhoev.2@hccnet.nl</Email>
+		<HomePage>http://www.avedesk.com</HomePage>
+
+		<Name>Show Hide Tool</Name>
+		<Version>1.0</Version>
+		<Description>Converts your icons to desklets!</Description>
+		<URL>http://www.mpj.tomaatnet.nl/desktopinstaller.aveinst</URL>
+		<GUID>6207FD-C66F-4D21-8BC8-CD6FE6850A29</GUID>
+	</About>
+
+	<Requirements>
+		<Item Type="RequiredAveDeskVersion">1.2</Item>
+		<Item Type="RequiredInstallerVersion">1.2</Item>
+	</Requirements>
+
+	
+	<CopyInformation>
+		<Directory BaseFolder="AveDesk">
+			<Directory Name="Tools">
+				<File Alias="DLL">ShowHide.vbs</File>
+			</Directory>
+		</Directory>
+
+	</CopyInformation>
+
+	<AfterCopySucceeded>
+		<Item Type="ShowMessage">
+			<Caption>Instructions</Caption>
+			<Text>1) Add a New Tool in the Tools dialog
+2) Select The file in AveDesk/Tools/ShowHide.vbs
+3) Set the arguments to $S</Text>
+		</Item>
+	</AfterCopySucceeded>
+
+</AveInstaller>

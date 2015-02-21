@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AveInstaller>
+
+	<About>
+		<Author>Andreas Verhoeven</Author>
+		<Email>averhoev.2@hccnet.nl</Email>
+		<HomePage>http://avedesk.philc.ca/</HomePage>
+
+		<Name>Calculator</Name>
+		<Version>1.0</Version>
+		<Description>A calculator with style. Graphics by Javier Ocasio [KoL].</Description>
+		<URL></URL>
+		<GUID>260B00-4F85-4B6B-BDB5-19DF040E684E</GUID>
+	</About>
+
+	<Requirements>
+		<Item Type="RequiredAveDeskVersion">1.2</Item> <!-- 1.3 actually, but due to an AveDesk bug, 1.3 is not reconized -->
+		<Item Type="RequiredInstallerVersion">1.2</Item> <!-- idem -->
+				<Item Type="FileExists">
+			<Directory BaseFolder="Desklets">
+				<Directory Name="AveScripter">
+					<File>AveScripter.dll</File>
+				</Directory>
+			</Directory>
+
+			<OnError>
+				<Message>You will need AveScripter for this.</Message>
+				<DownloadableFile>
+					<URL>http://avedesk.philc.ca/desklets/AveScripter.aveinst</URL>
+				</DownloadableFile>
+			</OnError>
+		</Item>
+	</Requirements>
+
+	<BeforeCopy>
+		<Item Type="SuspendDesklet">
+			<Directory BaseFolder="Desklets">
+				<Directory Name="AveScripter">
+					<File>AveScripter.dll</File>
+				</Directory>
+			</Directory>
+		</Item>
+	</BeforeCopy>
+
+	<CopyInformation>
+		<Directory BaseFolder="Desklets">
+			<Directory Name="AveScripter">
+				<CopyAll Recursively="true"/>
+			</Directory>
+		</Directory>
+
+	</CopyInformation>
+
+	<AfterCopySucceeded>
+		<Item Type="ShowBitmap">about.png</Item>
+		<Item Type="LoadDesklet">
+<Desklet><DLL>desklets\avescripter\avescripter.dll</DLL><label><MainLabelProperties><HasShadow>1</HasShadow><Font>Arial</Font><Color>4294967295</Color><Style>0</Style><Size>14</Size><ShadowProperties><XOffset>1</XOffset><YOffset>1</YOffset><ExtraWidth>0</ExtraWidth><ExtraHeight>0</ExtraHeight><BlurRatio>1</BlurRatio><Intensity>20</Intensity><Color>4278190080</Color></ShadowProperties></MainLabelProperties><SubLabelProperties><HasShadow>1</HasShadow><Font>Arial</Font><Color>4294967295</Color><Style>0</Style><Size>14</Size><ShadowProperties><XOffset>1</XOffset><YOffset>1</YOffset><ExtraWidth>0</ExtraWidth><ExtraHeight>0</ExtraHeight><BlurRatio>1</BlurRatio><Intensity>20</Intensity><Color>4278190080</Color></ShadowProperties></SubLabelProperties><Alpha>255</Alpha><Rotation>0</Rotation><VAlign>0</VAlign><HAlign>1</HAlign><Width>200</Width><Height>75</Height><Margin>5</Margin><Position>0</Position><DrawTopDown>0</DrawTopDown><ShowSubLabel>1</ShowSubLabel><MainCaption></MainCaption><SubCaption></SubCaption><Background></Background></label><labelType>0</labelType><labelOnlyOnMouseOver>0</labelOnlyOnMouseOver><ignoreLeftClicks>0</ignoreLeftClicks><ignoreRightClicks>0</ignoreRightClicks><isClickThru>0</isClickThru><snapToGrid>0</snapToGrid><lockPosition>0</lockPosition><style>0</style><m_DeskletClickingMode>0</m_DeskletClickingMode><Alpha>255</Alpha><xPos>0</xPos><yPos>0</yPos><width>186</width><height>269</height><rotation>0</rotation><useColorization>0</useColorization><saturation>1</saturation><hue>100</hue><quality>2</quality><drawShadow>0</drawShadow><shadowX>4</shadowX><shadowY>4</shadowY><shadowGray>0.2</shadowGray><shadowColor>0</shadowColor><shadowAlpha>255</shadowAlpha><Image></Image><effectFile></effectFile><ownerSettings>[TMP]
+SkinPath=Calculator\Calculator.xml
+PRECISION=0
+</ownerSettings></Desklet>
+		</Item>
+	</AfterCopySucceeded>
+
+	<AfterCopyFailed>
+		<Item Type="ShowMessage">
+			<Caption>Failed</Caption>
+			<Text>The installation failed.</Text>
+		</Item>
+	</AfterCopyFailed>
+
+</AveInstaller>

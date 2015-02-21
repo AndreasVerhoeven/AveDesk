@@ -1,0 +1,127 @@
+Release Notes
+=============
+
+See the help available from the right-click context menu for more details.
+
+Notes
+=====
+- Not everything works on ObjectDock (dropped files allegedly)
+- Not everything works on AveDesk 1.1 or earlier (anything that requires dragging).
+- There are no configs with this release (to keep it small). All existing configs
+  will work. I will release showcase configs for all the new features over the coming
+  weeks/months.
+- The SDK will be updated sometime too.
+
+Installing
+==========
+1. Quit all copies of AveDesk, ObjectDock and YzDock.
+2. Unzip directly into your ObjectDock and/or AveDesk folder
+   Make sure you replace *all* copies of SysStats.
+3. Restart ObjectDock/AveDesk.
+
+Thanks
+======
+Ave
+Herd
+All my beta testers
+
+Support SysStats
+================
+SysStats has taken a huge chunk out of my life. Its been fun learning about Windows
+development but I can't continue to devote this amount of time to it without a little
+compensation (other than the enjoyment I get out of seeing it being used). If you would
+like to see improvements to SysStats (and maybe a decent web-site to support it)
+please consider donating some of your hard earned cash. You can find a link here:
+http://webpages.charter.net/joolsie/SysStats.htm
+
+New/Changed functionality
+=========================
+Controllers:
+	This relase adds 'controllers' - a generalized way of interacting
+	with a SysStats docklet/desklet. With controllers you can specify regions
+	of a docklet/desklet that respond to various events such as a mouse event,
+	a key press, a timer, files being dropped, the mouse hovering over a part of
+	the desklet, a control being dragged etc.
+	
+	You can execute an application, change the appearance of the docklet,
+	or execute a script.
+	
+	Specific controllers include:
+	CursorController	Changes the appearance of the cursor
+	DropTargetController	Accepts dropped files
+	MappedController	Use this to implement slider controls of any shape (e.g. circular)
+	MessageSender		Use this to convert one message type to another
+	ValueSetter		Use this to set the value of a meter
+	ScriptController	Executes a script in response to an event
+	ASyncScriptController	Executes a script in the background
+	Shortcut		Executes an application
+	TimerController		Sends a windows message at regular intervals
+
+New Meters
+	- An animation meter used to control overlay animations
+	- A MAPI mailcheck meter
+	- ASycnhronous script meter
+
+New Overlays
+	- A scroller overlay (controlled by an animation meter)
+	- An animator overlay that implements 'in-betweening'
+	  (you can use this to implement 'drawers')
+	- Animated images (in combination with an AnimationMeter).
+	- A 'mapped' image overlay that can be used to change the shape of an image
+	  according to the value of a meter.
+
+Integration with AveDesk 1.2:
+	- Added an AveDesk 1.2 hack to allow a user to create a new config by selecting the
+  	  skin called '_New' from the list.
+	- Improved windows message handling
+	- Integrated SysStats config browsing into 'add desklet' dialog.
+	- Added support to navigate to SysStats object model from AveDesk
+	  object model. i.e. you can get to the SysStatsModel object from
+	  an AveDesk script. As an example, you can contol the AeroWeather
+	  widget using the included script 'aeroweather.vbs'.
+	- Integrated with AveDesk desklet show/hide
+	- Fixed missing 'Properties' window
+	
+General Improvements:
+	- Uses less CPU
+	- Added hue and saturation controls to image and mapped overlays
+	- Added 'Help' button to configuration dialog, since that's where
+	  it is most useful.
+	- Dialogs no longer hog the limelight :)
+	- Any overlay can now act as a mask for any other overlay.
+	- Can scale the whole desklet for AveDesk
+	- Can access items by name in scripts
+	- Help documentation is much improved.
+	- Plugins are now automatically loaded without having to restart.
+	- Plugins are now versioned.
+
+Improved XML Meter:
+	- Added extra method to XML meter to allow scripts to access nodelists
+	- The XML meter can now use full XPath expressions
+  
+Improved Localalization:
+	- Fractional update times for meters now work in all locales.
+	- Time meter display now uses current locale properly (i.e. French in France
+	  English in England, etc. etc.)
+	- In fact all meters now support current locale (e.g. ',' for decimal points).
+	- Time meter now supports timezones
+	
+Improved Text Overlay:
+	- Added text wrapping
+	- Added alternate text rendering that includes control over antialiasing
+	- Easier to create outlined text (can set blur color separately from font color).
+	
+Improved Scripting
+	- SysStats now emulates some of the features found in the WScript object
+	  such as 'ConnectObject()' and 'Echo()'.
+	- There is now a script console for each script that can be used to help
+	  debugging.
+
+Bug Fixes
+	- Fixed a lot of memory problems
+	- PDH meter dialogs no longer give the message 'Can't connect to machine'.
+	- Relative pathnames are now always computed correctly.
+	- SysStats no longer crashes on a dual CPU machine when a docklet is destroyed.
+	- Works on W2K (yay).
+	- XML meter should work on just about everything.
+

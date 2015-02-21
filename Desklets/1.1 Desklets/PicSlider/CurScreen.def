@@ -1,0 +1,8 @@
+EXPORTS
+	OnGetInformation
+	OnCreate
+	OnDestroy
+	OnProcessMessage
+	OnLeftButtonClick
+	OnSave
+	OnAddPropertySheets

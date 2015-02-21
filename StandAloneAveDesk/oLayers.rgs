@@ -1,0 +1,24 @@
+HKCR
+{
+	AveDesk.Layers.1 = s 'Layers Class'
+	{
+		CLSID = s '{1D3CDD9F-8C1D-4738-8D29-60DA97D247F2}'
+	}
+	AveDesk.Layers = s 'Layers Class'
+	{
+		CLSID = s '{1D3CDD9F-8C1D-4738-8D29-60DA97D247F2}'
+		CurVer = s 'AveDesk.Layers.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {1D3CDD9F-8C1D-4738-8D29-60DA97D247F2} = s 'Layers Class'
+		{
+			ProgID = s 'AveDesk.Layers.1'
+			VersionIndependentProgID = s 'AveDesk.Layers'
+			ForceRemove 'Programmable'
+			LocalServer32 = s '%MODULE%'
+			val AppID = s '{3F44B74D-68DC-44D0-B8AA-5CE6CBD4DF71}'
+			'TypeLib' = s '{D3B05B76-65F3-4BDD-A382-543B957A4DDC}'
+		}
+	}
+}

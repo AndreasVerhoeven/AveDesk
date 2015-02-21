@@ -1,0 +1,24 @@
+HKCR
+{
+	AveDesk.ColorMatrix.1 = s 'ColorMatrix Class'
+	{
+		CLSID = s '{518C9FE7-2043-45B5-8A8A-C57DC530031D}'
+	}
+	AveDesk.ColorMatrix = s 'ColorMatrix Class'
+	{
+		CLSID = s '{518C9FE7-2043-45B5-8A8A-C57DC530031D}'
+		CurVer = s 'AveDesk.ColorMatrix.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {518C9FE7-2043-45B5-8A8A-C57DC530031D} = s 'ColorMatrix Class'
+		{
+			ProgID = s 'AveDesk.ColorMatrix.1'
+			VersionIndependentProgID = s 'AveDesk.ColorMatrix'
+			ForceRemove 'Programmable'
+			LocalServer32 = s '%MODULE%'
+			val AppID = s '{3F44B74D-68DC-44D0-B8AA-5CE6CBD4DF71}'
+			'TypeLib' = s '{D3B05B76-65F3-4BDD-A382-543B957A4DDC}'
+		}
+	}
+}

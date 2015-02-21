@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AveInstaller>
+
+	<About>
+		<Author>Andreas Verhoeven</Author>
+		<Email>averhoev.2@hccnet.nl</Email>
+		<HomePage>http://www.avedesk.com</HomePage>
+
+		<Name>DesktopGrabber Add-on Module</Name>
+		<Version>1.0</Version>
+		<Description>Dropped files on the desktop will become desklets!</Description>
+		<URL>http://www.mpj.tomaatnet.nl/desktopgrabber.aveinst</URL>
+		<GUID>EFB7AAEF-F02C-4EF1-85FF-D6E2D77B95C1</GUID>
+	</About>
+
+	<Dependencies>
+		<Item>E0289F6C-8F58-4752-9F39-022F36EC9D65</Item>
+	</Dependencies>
+
+	<Requirements>
+		<Item Type="RequiredAveDeskVersion">1.2</Item>
+		<Item Type="RequiredInstallerVersion">1.2</Item>
+		<Item Type="FileExists">
+			<Directory BaseFolder="Desklets">
+				<Directory Name="PidlShortcut">
+					<File>pidlshortcut.dll</File>
+				</Directory>
+			</Directory>
+
+			<OnError>
+				<Message>You will need PIDLShortcut for this.</Message>
+				<DownloadableFile>
+					<URL>http://mpj.tomaatnet.nl/PidlShortcut.aveinst</URL>
+				</DownloadableFile>
+			</OnError>
+		</Item>
+	</Requirements>
+
+	<BeforeCopy>
+		<Item Type="UnloadModule">
+			<Directory BaseFolder="Desklets">
+				<Directory Name="Pidlshortcut">
+					<File>desktopmodule.dll</File>
+				</Directory>
+			</Directory>
+		</Item>
+	</BeforeCopy>
+	
+	<CopyInformation>
+		<Directory BaseFolder="Desklets">
+			<Directory Name="Pidlshortcut">
+				<File Alias="DLL">DesktopModule.dll</File>
+			</Directory>
+		</Directory>
+
+	</CopyInformation>
+
+	<AfterCopySucceeded>
+		<Item Type="InstallModule" UseAlias="True">DLL</Item>
+		<Item Type="ShowBitmap">About.png</Item>
+	</AfterCopySucceeded>
+
+	<AfterCopyFailed>
+		<Item Type="ShowMessage">
+			<Caption>Failed</Caption>
+			<Text>The installation failed.</Text>
+		</Item>
+	</AfterCopyFailed>
+
+</AveInstaller>

@@ -1,0 +1,6 @@
+EXPORTS
+	OnGetInformation
+	OnCreate
+	OnDestroy
+	OnLeftButtonClick
+	OnVisibilityNotify

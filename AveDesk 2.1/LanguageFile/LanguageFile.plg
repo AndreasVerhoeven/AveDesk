@@ -1,0 +1,29 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: LanguageFile - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x413 /fo"Release/resources.res" /d "NDEBUG" "E:\Coding\Projects\AveDesk\1.2 lang branch\LanguageFile\resources.rc"" 
+Creating temporary file "c:\DOCUME~1\andreas\LOCALS~1\Temp\RSP77B.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"Release/LanguageFile.pdb" /machine:I386 /nodefaultlib /def:".\LanguageFile.def" /out:"Release/LanguageFile.dll" /implib:"Release/LanguageFile.lib" /NOENTRY 
+".\Release\LanguageFile.obj"
+".\Release\resources.res"
+]
+Creating command line "link.exe @c:\DOCUME~1\andreas\LOCALS~1\Temp\RSP77B.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Linking...
+   Creating library Release/LanguageFile.lib and object Release/LanguageFile.exp
+LINK : warning LNK4078: multiple ".text" sections found with different attributes (40000040)
+
+
+
+<h3>Results</h3>
+LanguageFile.dll - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

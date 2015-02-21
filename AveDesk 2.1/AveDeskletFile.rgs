@@ -1,0 +1,21 @@
+HKCR
+{
+	AveDesk.AveDeskletFile.1 = s 'AveDeskletFile Class'
+	{
+		CLSID = s '{0DCCF541-9CC0-462A-A012-0F0E040DB134}'
+	}
+	AveDesk.AveDeskletFile = s 'AveDeskletFile Class'
+	{
+		CLSID = s '{0DCCF541-9CC0-462A-A012-0F0E040DB134}'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {0DCCF541-9CC0-462A-A012-0F0E040DB134} = s 'AveDeskletFile Class'
+		{
+			ProgID = s 'AveDesk.AveDeskletFile.1'
+			VersionIndependentProgID = s 'AveDesk.AveDeskletFile'
+			val AppID = s '{3F44B74D-68DC-44D0-B8AA-5CE6CBD4DF71}'
+			LocalServer32 = s '%Module%'
+		}
+	}
+}

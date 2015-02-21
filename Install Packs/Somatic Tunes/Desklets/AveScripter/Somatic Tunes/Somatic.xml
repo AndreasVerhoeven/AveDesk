@@ -1,0 +1,78 @@
+<root>
+  <skininfo>
+    <name>Somatic Tunes</name>
+    <author>David Lanham and Austin Sarner (Port by Ave)</author>
+    <notes>Shows albumart and controls iTunes in a Somatic style. Ported From Menuet:MonkeyBars (David Lanham and Austin Sarner) by Ave.</notes>
+    <version>100</version>
+	<reqversion>100</reqversion>
+    <icon>icon</icon>
+  </skininfo>
+  <skindata>
+	<desklet>
+	  <alpha>255</alpha>
+	  <resources></resources>
+	  <ctrlresources>Controls</ctrlresources>
+	  <language>VBScript</language>
+	  <keypressanim>100</keypressanim>
+	  <script>main.vbs</script>
+	  <oncreate>InitDesklet()</oncreate>
+	  <ondestroy>unbindTunes()</ondestroy>
+	  <onmouseenter>OnDeskletEnter()</onmouseenter>
+	  <onmouseexit>OnDeskletExit()</onmouseexit>
+	</desklet>
+	<sides>
+		<side id="0" width="209" height="172" />
+		<side id="1" width="209" height="172" />
+	</sides>
+	<xmls>
+	</xmls>
+	<timers>
+	</timers>
+	<parameters>
+		<parameter name="albumartvisible" default="1" save="yes" />
+		<parameter name="showartonlywhenavailable" default="1" save="yes" />
+	</parameters>
+	<layers side="0">
+		<layer name="albumart0" x="13" y="10"  src="art.png" width="94" height="93" onclick="ToggleAlbumArt()" />
+		<layer name="albumart1" x="13" y="10"  src="" width="94" height="93" onclick="ToggleAlbumArt()" />
+		<layer name="frame" x="0" y="0" src="frame.png"/>
+		<layer name="bg" x="0" y="0" src="bg2.png" />
+		<layer name="fakeclicky" x="0" src="invisible.png" y="0" width="121" height="15" visible="false" onclick="ToggleAlbumArt()" fullhittest="true" />
+		<layer name="prev" x="139" y="123" src="prevnorm.png" dsrc="prevpress.png" mousecursor="IDC_HAND" onmousedown="PrevDown()" onmouseup="PrevUp()"/>
+		<layer name="togglePlayPause"  x="157" y="119" src="playnorm.png" dsrc="playpress.png" mousecursor="IDC_HAND"  onclick="TogglePlayPause()" fullhittest="true" />
+		<layer name="next" x="178" y="122" src="nextnorm.png" dsrc="nextpress.png" mousecursor="IDC_HAND" onmousedown="NextDown()" onmouseup="NextUp()"/>
+		<layer name="flipit" src="flipit.png" x="186"  y="150" alpha="0" fullhittest="yes" mousecursor="IDC_HAND" onclick="!FLIP:1" />
+	</layers>
+
+	<layers side="1">
+		<layer name="backside_bg" x="0" y="0" src="backside.png" />
+		<layer x="14" y="22" width="80" height="34" text="Graphics by" fontname="Arial" fontsize="14" fontcolor="clWhite" fontalign="LT" fontstyle="B"  />
+
+		<layer x="17" y="38" width="60" height="40" text="David Lanham" fontname="Arial" fontsize="14" fontcolor="#578EE1" fontalign="RT" fontstyle="BU" mousecursor="IDC_HAND" fullhittest="true" onmouseenter="HighLightLink(true)"  onmouseexit="HighLightLink(false)" onclick="this.io.shellexecutes(LANHAM)" />
+
+		<layer x="14" y="80" width="60" height="34" text="Original app is" fontname="Arial" fontsize="14" fontcolor="clWhite" fontalign="CT" fontstyle="B"  />
+
+		<layer x="17" y="112" width="60" height="20" text="Menuet" fontname="Arial" fontsize="14" fontcolor="#578EE1" fontalign="LT" fontstyle="BU" mousecursor="IDC_HAND" fullhittest="true" onmouseenter="HighLightLink(true)"  onmouseexit="HighLightLink(false)" onclick="this.io.shellexecutes(MENUET)" />
+
+		<layer x="100" y="10" width="100" height="50" text="Cover art is visible:" fontname="Arial" fontsize="12" fontcolor="clWhite" fontalign="LT" fontstyle="B" />
+
+		<layer name="bg_donebut" src="done.png" dsrc="done_pressed.png" x="148" y="84" onclick="!FLIP:0"/>
+
+		<layer name="bg_checkArt" src="check_off.png" x="120" y="40" />
+
+	</layers>
+
+	<controls side="1">
+			<control name="comboArt" type="DROPDOWNLIST" onchange="OnCoverArtComboChange" x="100" y="40" width="100" height="25" fontsize="12" fontname="Lucida Sans Unicode" fontalign="C" fontstyle="B" visible="yes" fontcolor="clBlack" value="2" listvalues="Always=0;Never=1;if Available=2" />
+		</controls>
+
+
+	<menus>
+		 <menu showdefault="yes">
+			<menuitem name="-" type="S" />
+			<menuitem name="About This Desklet" onclick="this.FlipTo(1)" />
+		 </menu>
+	  </menus>
+
+  </skindata>
+</root>

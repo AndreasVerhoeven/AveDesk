@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AveInstaller>
+
+	<About>
+		<Author>Andreas Verhoeven</Author>
+		<Email>averhoev.2@hccnet.nl</Email>
+		<HomePage>http://www.avedesk.com</HomePage>
+
+		<Name>No Label</Name>
+		<Version>1.2</Version>
+		<Description>No Label! OSX style</Description>
+		<URL>http://www.mpj.tomaatnet.nl/nolabel.aveinst</URL>
+		<GUID>{Some-guid}</GUID>
+	</About>
+	
+	<CopyInformation>
+		<Directory BaseFolder="Labels">
+			<Directory Name="No Label">
+				<CopyAll Recursively="true"/>
+			</Directory>
+		</Directory>
+	</CopyInformation>
+
+</AveInstaller>

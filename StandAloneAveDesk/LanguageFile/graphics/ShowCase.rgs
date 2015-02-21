@@ -1,0 +1,21 @@
+HKCR
+{
+	AveDesk.ShowCase.1 = s 'ShowCase Class'
+	{
+		CLSID = s '{83947EC4-5584-4CBE-9386-6161003F4C4C}'
+	}
+	AveDesk.ShowCase = s 'ShowCase Class'
+	{
+		CLSID = s '{83947EC4-5584-4CBE-9386-6161003F4C4C}'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {83947EC4-5584-4CBE-9386-6161003F4C4C} = s 'ShowCase Class'
+		{
+			ProgID = s 'AveDesk.ShowCase.1'
+			VersionIndependentProgID = s 'AveDesk.ShowCase'
+			val AppID = s '{3F44B74D-68DC-44D0-B8AA-5CE6CBD4DF71}'
+			LocalServer32 = s '%Module%'
+		}
+	}
+}

@@ -1,0 +1,20 @@
+// DeskletOwnerSettingsWrapper.cpp: implementation of the CDeskletOwnerSettingsWrapper class.
+//
+//////////////////////////////////////////////////////////////////////
+
+#include "stdafx.h"
+#include "DeskletOwnerSettingsWrapper.h"
+
+//////////////////////////////////////////////////////////////////////
+// Construction/Destruction
+//////////////////////////////////////////////////////////////////////
+
+CDeskletOwnerSettingsWrapper::CDeskletOwnerSettingsWrapper()
+{
+
+}
+
+CDeskletOwnerSettingsWrapper::~CDeskletOwnerSettingsWrapper()
+{
+
+}

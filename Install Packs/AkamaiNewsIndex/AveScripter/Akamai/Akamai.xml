@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<root>
+   <skininfo>
+      <author>Akamai (Ported by Andreas Verhoeven)</author>
+      <name>Akamai Net Usage Index for News</name>
+      <notes>Displays the net usage.</notes>
+      <version>1</version>
+   </skininfo>
+
+   <skindata>
+      <desklet>
+         <alpha>255</alpha>
+         <resources></resources>
+		 <ctrlresources>Controls</ctrlresources>
+
+		 <language>JScript</language>
+		 <script>Akamai.js</script>
+		 <oncreate>initDesklet();</oncreate>		 
+      </desklet>
+
+	
+	<parameters>
+		<param name="Location" save="yes" default="0" />
+	</parameters>
+	
+	<xmls>
+		<xml src="http://wwwns.akamai.com/en/resources/includes/net_usage/vmdata.xml" interval="5" usewintmp="yes" ongetdata="onUpdateXML();" />
+	</xmls>
+
+   <sides>
+	     <side id="0" width="321" height="122" closex="12" closey="12" />
+		 <side id="1" width="321" height="122" closex="12" closey="12" />
+	</sides>
+
+	<layers side="0">
+			
+		<layer name="bg" src="images/bg.png" x="0" y="0" />
+		<layer name="map" src="images/map/hov_none.png" x="20" y="1" onmousemove="onMapMouseMove()" fullhittest="yes" mousecursor="IDC_HAND" onclick="onMapClick()" onmouseenter="onMapMouseEnter()" onmouseexit="onMapMouseExit()" />
+
+		<layer name="infobox" src="images/infobox.png" x="39" y="2" clickable="false" />
+		<layer name="infotext" text="" x="40" y="2" width="140" height="36" fontname="Lucida Sans Unicode" fontstyle="Bold" fontcolor="clWhite" fontsize="11" clickable="false" />
+		<layer name="globe" src="images/globe_norm.png" dsrc="images/globe_press.png" msrc="images/globe_hover.png" alpha="0" x="168" y="3" onclick="onGlobeClick()" onmouseenter="onGlobeEnter()" onmouseexit="onGlobeExit()" mousecursor="IDC_HAND" fullhittest="yes" />
+		<layer name="sidetext" src="images/netnewsindex.png" x="9" y="8" clickable="false" />
+
+		<layer name="meterbg" src="images/meter/meterbg.png" y="4" x="207" />
+		<layer name="dial" src="images/meter/dial.png" y="18" x="253" />
+		<layer name="dial_holder" src="images/meter/dialholder.png" y="47" x="250" />
+
+		<layer name="gloss" src="images/glossoverlay.png" x="5" y="1" clickable="false" />
+
+		<layer name="flipit" src="images/flip.png" x="29"  y="92" alpha="0" onmouseenter="!EFFECT:SHOW,SELF,255,10,10" onmouseexit="!EFFECT:HIDE,SELF,0" fullhittest="yes" mousecursor="IDC_HAND" onclick="!FLIP:1" />
+	</layers>
+
+	<layers side="1">
+		<layer name="back_bg" src="images/back/bg.png" x="0" y="0" />
+		<layer name="back_text" text="The Akamai Net Usage Index for News presents a global view of online media consumption. To learn more, visit" x="110" y="10" width="170" height="100" ontname="Lucida Sans Unicode" fontstyle="Bold" fontcolor="clWhite" fontsize="11" />
+
+		<layer name="back_url" text="The Net Usage Index for News" x="138" y="61" width="90" height="30" ontname="Lucida Sans Unicode" fontstyle="Bold" fontcolor="clYellow" fontsize="11" onmouseenter="highlight(true)" onmouseexit="highlight(false)" onclick="this.io.shellexecutes('http://www.akamai.com/en/html/industry/net_usage_index.html');" mousecursor="IDC_HAND" fullhittest="yes"/>
+
+		<layer name="back_done" src="images/back/done_norm.png" dsrc="images/back/done_press.png" x="243" y="79"  onclick="!FLIP:0" />
+		<layer name="back_logo" src="images/back/akamailogo.png" x="15" y="35" />
+
+	</layers>
+
+   </skindata>
+</root> 

@@ -1,0 +1,163 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Dutch (Netherlands) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NLD)
+#ifdef _WIN32
+LANGUAGE LANG_DUTCH, SUBLANG_DUTCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CONFIGLABELFORMAT DIALOG DISCARDABLE  0, 0, 257, 215
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Label Format"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Here you can configure the sublabels format for this drive desklet.",
+                    IDC_STATIC,10,5,215,10
+    LTEXT           "Formats:",IDC_STATIC,12,40,28,8
+    LTEXT           "number of files",IDC_STATIC,45,50,46,8
+    LTEXT           "total size of the drive in bytes. The size is automatically adjusted.",
+                    IDC_STATIC,45,83,125,19
+    LTEXT           "percentage sign",IDC_STATIC,45,156,52,8
+    LTEXT           "%f",IDC_STATIC,12,50,8,8
+    LTEXT           "%t",IDC_STATIC,12,83,8,8
+    LTEXT           "%%",IDC_STATIC,12,156,12,8
+    EDITTEXT        IDC_LABEL,12,20,205,12,ES_AUTOHSCROLL
+    LTEXT           "%#",IDC_STATIC,12,171,11,8
+    LTEXT           "newline",IDC_STATIC,45,171,25,8
+    LTEXT           "number of directories",IDC_STATIC,46,65,66,8
+    LTEXT           "%d",IDC_STATIC,12,65,10,8
+    CONTROL         "&Automatically update the desklets caption to the drive name",
+                    IDC_AUTOCAPTION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,
+                    187,203,10
+    LTEXT           "free size of the drives in bytes. The size is automatically adjusted.",
+                    IDC_STATIC,45,110,125,19
+    LTEXT           "%s",IDC_STATIC,11,110,10,8
+    LTEXT           "percentage of free space for the drive.",IDC_STATIC,46,
+                    138,122,8
+    LTEXT           "%p",IDC_STATIC,13,138,10,8
+    CONTROL         "&Add drive letter before auto-caption",
+                    IDC_AUTODRIVELETTER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,12,200,127,10
+END
+
+IDD_CONFIGIMAGES DIALOG DISCARDABLE  0, 0, 237, 174
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Images"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Here you can configure the images used by this drives desklet.",
+                    IDC_STATIC,10,10,205,15
+    LTEXT           "Drag-'n-drop",IDC_STATIC,12,30,40,8
+    CONTROL         "",IDC_EJECTIMG,"Static",SS_BLACKFRAME,12,40,80,70
+    PUSHBUTTON      "Set &D-'n-D Image",IDSETEJECT,10,115,81,14
+END
+
+IDD_CONFIGOTHER DIALOG DISCARDABLE  0, 0, 237, 158
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Drive"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Here you can configure the drive this desklet points to .",
+                    IDC_STATIC,17,10,195,13
+    COMBOBOX        IDC_DRIVES,15,32,196,93,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "&Hide desklet when the drive is not mounted",IDC_HIDE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,60,152,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_CONFIGLABELFORMAT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 250
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 208
+    END
+
+    IDD_CONFIGIMAGES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 230
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 167
+    END
+
+    IDD_CONFIGOTHER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 230
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 151
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Dutch (Netherlands) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

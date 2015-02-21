@@ -1,0 +1,24 @@
+HKCR
+{
+	AveDesk.DeskletInfo.1 = s 'DeskletInfo Class'
+	{
+		CLSID = s '{F72C12CA-50F9-4E5E-8A40-BF5B59A06D59}'
+	}
+	AveDesk.DeskletInfo = s 'DeskletInfo Class'
+	{
+		CLSID = s '{F72C12CA-50F9-4E5E-8A40-BF5B59A06D59}'
+		CurVer = s 'AveDesk.DeskletInfo.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {F72C12CA-50F9-4E5E-8A40-BF5B59A06D59} = s 'DeskletInfo Class'
+		{
+			ProgID = s 'AveDesk.DeskletInfo.1'
+			VersionIndependentProgID = s 'AveDesk.DeskletInfo'
+			ForceRemove 'Programmable'
+			LocalServer32 = s '%MODULE%'
+			val AppID = s '{3F44B74D-68DC-44D0-B8AA-5CE6CBD4DF71}'
+			'TypeLib' = s '{D3B05B76-65F3-4BDD-A382-543B957A4DDC}'
+		}
+	}
+}

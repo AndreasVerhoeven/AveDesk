@@ -1,0 +1,16 @@
+Arrow (default) = 32512
+IBeam = 32513
+Wait = 32514
+Cross = 32515
+Up Arrow = 32516
+Size = 32640
+Icon = 32641
+Size NWSE = 32642
+Size NESW = 32643
+Size WE = 32644
+Size NS = 32645
+Size All = 32646
+No = 32648
+Hand = 32649
+App Starting = 32650
+Help = 32651

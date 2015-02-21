@@ -1,0 +1,21 @@
+HKCR
+{
+	AveDesk.AveThemeFile.1 = s 'AveThemeFile Class'
+	{
+		CLSID = s '{97FAB359-2942-461E-B48E-8B065C8A9AE9}'
+	}
+	AveDesk.AveThemeFile = s 'AveThemeFile Class'
+	{
+		CLSID = s '{97FAB359-2942-461E-B48E-8B065C8A9AE9}'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {97FAB359-2942-461E-B48E-8B065C8A9AE9} = s 'AveThemeFile Class'
+		{
+			ProgID = s 'AveDesk.AveThemeFile.1'
+			VersionIndependentProgID = s 'AveDesk.AveThemeFile'
+			val AppID = s '{3F44B74D-68DC-44D0-B8AA-5CE6CBD4DF71}'
+			LocalServer32 = s '%Module%'
+		}
+	}
+}

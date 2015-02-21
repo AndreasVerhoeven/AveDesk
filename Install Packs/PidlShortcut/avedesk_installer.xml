@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AveInstaller>
+
+	<About>
+		<Author>Andreas Verhoeven</Author>
+		<Email>averhoev.2@hccnet.nl</Email>
+		<HomePage>http://www.avedesk.com</HomePage>
+
+		<Name>PidlShortcut</Name>
+		<Version>1.1</Version>
+		<Description>An all-round shortcut desklet.</Description>
+		<URL>http://www.mpj.tomaatnet.nl/pidlshortcut.aveinst</URL>
+		<GUID>E0289F6C-8F58-4752-9F39-022F36EC9D65</GUID>
+	</About>
+
+	<Requirements>
+		<Item Type="RequiredAveDeskVersion">1.2</Item>
+		<Item Type="RequiredInstallerVersion">1.2</Item>
+	</Requirements>
+
+	<BeforeCopy>
+		<Item Type="SuspendDesklet">
+			<Directory BaseFolder="Desklets">
+				<Directory Name="PidlShortcut">
+					<File>pidlshortcut.dll</File>
+				</Directory>
+			</Directory>
+		</Item>
+	</BeforeCopy>
+	
+	<CopyInformation>
+		<Directory BaseFolder="Desklets">
+			<Directory Name="PidlShortcut">
+				<File Alias="DLL">pidlshortcut.dll</File>
+				<Directory Name="ShortcutOverlays">
+					<CopyAll Recursively="yes"/>
+				</Directory>
+			</Directory>
+		</Directory>
+
+	</CopyInformation>
+
+	<AfterCopy>
+		<Item Type="ShowBitmap">About.png</Item>
+	</AfterCopy>
+
+	<AfterCopyFailed>
+		<Item Type="ShowMessage">
+			<Caption>Failed</Caption>
+			<Text>The installation failed.</Text>
+		</Item>
+	</AfterCopyFailed>
+
+</AveInstaller>

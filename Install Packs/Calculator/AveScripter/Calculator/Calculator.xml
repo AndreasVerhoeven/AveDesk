@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+
+<!-- 
+ *	Calculator for AveScripter.
+ *	Design & Graphics by Javier Ocasio (KoL).
+ *  Coding by Andreas Verhoeven, based on a Calculator by Phil Caetano.
+ *
+ *  (c) copyright Javier Ocasio & Phil Caetano, 2005.
+-->
+
+<root>
+
+   <!-- give some general information about this desklet -->
+   <skininfo>
+      <author>Javier Ocasio</author>
+      <name>Calculator</name>
+      <notes>A Calculator to perform small calculations</notes>
+      <version>1</version>
+   </skininfo>
+
+   <!-- this node holds the data for this desklet -->
+   <skindata>
+
+	  <!-- some global desklet properties -->
+      <desklet>
+		 <!-- this desklet is totally visible, alpha range is invisible[0,255]totally visible -->
+         <alpha>255</alpha>
+
+		 <!-- the directory which hold the image & scripting resources -->
+         <resources></resources>
+
+		 <!-- the directory for the control resources -->
+		 <ctrlresources>Controls</ctrlresources>
+
+		 <!-- the scripting language used in this desklet -->
+         <language>JScript</language>
+
+		 <!-- the (optional) external scripting file -->
+         <script>main.js</script>
+
+		 <!-- some other property -->
+         <animdelay>5</animdelay>
+      </desklet>
+
+	  <!-- under the parameters node, parameters can be defined which can be used in code directly -->
+	  <parameters>
+	     <!-- declared is a parameter for the precision of the calculator. It defaults to 5 and will -->
+		 <!-- be persisted when the calculator is saved/loaded -->
+         <param name="PRECISION" default="0" save="yes"/>
+      </parameters>
+
+	  <!-- a desklet can have multiple sides, but only one side is active (and thus visible) at the time -->
+	  <!-- we define two sides. One for the front and one for the back -->
+	  <!-- the closex and closey properties define the point where the closebutton is positioned -->
+      <sides>
+         <side id="0" width="186" height="269" closex="10" closey="10"/>
+         <side id="1" width="186" height="269" closex="10" closey="10"/>
+      </sides>
+
+	  <!-- the layers-nodes define the layer for each side. The side property tells what side the layers under the node are for -->
+	  <!-- layers for the frontside -->
+      <layers side="0">
+
+		 <!-- the background for this layer -->
+         <layer src="frontside.png" x="0" y="0"/>
+
+		 <!-- display is a text-layer, so we define some text properties-->
+         <layer src="!TXT:0" name="display" fontsize="19" x="14" y="24" fontname="Lucida Sans Unicode" fontstyle="B" fontalign="R"  fontcolor="#8B96A6" width="145" height="24"/>
+
+		 <!-- memory operations -->
+		 <!-- src is the normal layer image, the optional dsrc is the image when the mouse is down on the layer-->
+         <layer onclick="memoryOperation('m+');" src="m+.png" dsrc="m+_pressed.png" x="24" y="62" />
+         <layer onclick="memoryOperation('m-');" src="m-.png" dsrc="m-_pressed.png" x="52" y="62" />
+         <layer onclick="memoryOperation('mc');" src="mc.png" dsrc="mc_pressed.png" x="80" y="62" />
+         <layer onclick="memoryOperation('mr');" src="mr.png" dsrc="mr_pressed.png" x="108" y="62" />
+
+		 <!-- math operations -->
+         <layer onclick="operation('/');" src="div.png" dsrc="div_pressed.png" x="136" y="62" key="/"/>
+		   <layer onclick="operation('*');" src="mult.png" dsrc="mult_pressed.png" x="136" y="93" key="*"/>
+         <layer onclick="operation('-');" src="sub.png" dsrc="sub_pressed.png" x="136" y="124" key="-"/>
+         <layer onclick="operation('+');" src="add.png" dsrc="add_pressed.png" x="136" y="155" key="+"/>
+         <layer onclick="evaluate();" src="equals.png" dsrc="equals_pressed.png" x="136" y="186" key="CR" mousecursor="crHandPoint"/>
+
+		 <!-- numbers -->
+
+		 <!-- first row -->
+         <layer onclick="numberPressed('7');" src="7.png" dsrc="7_pressed.png" x="24" y="96"  key="7"/>
+         <layer onclick="numberPressed('8');" src="8.png" dsrc="8_pressed.png" x="62" y="96"  key="8"/>
+         <layer onclick="numberPressed('9');" src="9.png" dsrc="9_pressed.png" x="100" y="96"  key="9"/>
+
+		 <!-- second row -->
+		 <layer onclick="numberPressed('4');" src="4.png" dsrc="4_pressed.png" x="24" y="134"  key="4"/>
+         <layer onclick="numberPressed('5');" src="5.png" dsrc="5_pressed.png" x="62" y="134"  key="5"/>
+         <layer onclick="numberPressed('6');" src="6.png" dsrc="6_pressed.png" x="100" y="134"  key="6"/>
+
+		 <!-- third row -->
+		 <layer onclick="numberPressed('1');" src="1.png" dsrc="1_pressed.png" x="24" y="172"  key="1"/>
+         <layer onclick="numberPressed('2');" src="2.png" dsrc="2_pressed.png" x="62" y="172"  key="2"/>
+         <layer onclick="numberPressed('3');" src="3.png" dsrc="3_pressed.png" x="100" y="172"  key="3"/>
+
+		 <!-- fourth row -->
+		 <layer onclick="numberPressed('0');" src="0.png" dsrc="0_pressed.png" x="24" y="210"  key="0"/>
+         <layer onclick="addPeriod();" src="point.png" dsrc="point_pressed.png" x="62" y="210"  key="."/>
+         <layer onclick="clearInput();" src="c.png" dsrc="c_pressed.png" x="100" y="210"  key="C"/>
+
+		<!-- flippie to switch to the backside -->
+		<!-- !FLIP:1 is a shortcut to flip to side 1 [backside] -->
+		<!-- also, this flippie layer is hidden initially (alpha=0), and will fade in when the mouse
+			is moved over the layer. !EFFECT:SHOW, SELF, 255 is a shortcut for fading in this layer
+			to alpha = 255. the !EFFECT:HIDE,SELF,0 is a shortcut for fading out this layer to alpha=0 when
+			the mouse leaves the layer -->
+         <layer onclick="!FLIP:1" onmouseenter="!EFFECT:SHOW,SELF,255" onmouseexit="!EFFECT:HIDE,SELF,0" name="flip1" src="flip.png" x="157" y="238" side="0"  alpha="0" mousecursor="crHandPoint"/>
+      </layers>
+
+	  <!-- layers for the backside [side=1] -->
+      <layers side="1">
+
+		 <!-- background layer -->
+         <layer src="backside.png" x="0" y="0"/>
+
+		  <!-- some text for above the precision control -->
+		  <layer src="!TXT:Precision" x="60" y="100" fontsize="12" fontname="Lucida Sans Unicode" fontstyle="B" alpha="255" fontcolor="clwhite" width="68" height="20" fontalign="L"/>
+
+		 <!-- flippie to switch back to the frontside -->
+         <layer onclick="!FLIP:0" src="controls/done.png" dsrc="controls/done_pressed.png" name="flip0" x="110" y="218"/>
+      </layers>
+
+	   <!-- the controls for the backside [side=1] -->
+	   <controls side="1">
+         <control name="droplistPrecision" type="DROPDOWNLIST" onchange="updatePrecision()" x="48" y="120" width="88" height="23" fontsize="14" fontname="Lucida Sans Unicode" fontstyle="B" visible="yes" fontcolor="clwhite" fontbg="clyellow" listvalues="Auto=0;1 digit=1;2 digits=2;3 digits=3;4 digits=4;5 digits=5;6 digits=6" value="%PRECISION%" />
+      </controls>
+
+   </skindata>
+
+</root>

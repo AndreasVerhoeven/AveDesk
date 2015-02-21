@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AveInstaller>
+
+	<About>
+		<Author>Alex</Author>
+		<Email>contacts@ds-studio.net</Email>
+		<HomePage>http://ds-studio.net</HomePage>
+
+		<Name>7 AM</Name>
+		<Version>1.0</Version>
+		<Description>Little widget for AveTunes to match a few new wallpapers on my desk =)
+Just put "7 am" folder in AveTunes desklet's skins directory.
+See the preview image for more info.
+See Ya!
+</Description>
+		<URL>http://www.deviantart.com/download/16000262/</URL>
+		<GUID>CDD10299-B6E9-4960-B238-707961109C61</GUID>
+	</About>
+
+	<Requirements>
+		<Item Type="RequiredAveDeskVersion">1.2</Item>
+		<Item Type="RequiredInstallerVersion">1.2</Item>
+		<Item Type="FileExists">
+			<Directory BaseFolder="Desklets">
+				<Directory Name="AveTunes">
+					<File>iTunesWidget.dll</File>
+				</Directory>
+			</Directory>
+			<OnError>
+				<Message> You will need the AveTunes desklet for this skin</Message>
+				<DownloadableFile>
+					<URL>http://mpj.tomaatnet.nl/AveTunes.aveinst</URL>
+				</DownloadableFile>
+			</OnError>
+		</Item>
+	</Requirements>
+	
+	<CopyInformation>
+		<Directory BaseFolder="Desklets">
+			<Directory Name="AveTunes">
+				<Directory Name="Skins">
+					<Directory Name="7 am">
+						<CopyAll Recursively="true"/>
+					</Directory>
+				</Directory>
+			</Directory>
+		</Directory>
+
+	</CopyInformation>
+
+	<AfterCopySucceeded>
+		<Item Type="ShowBitmap">7-AM-preview.gif</Item>
+		<Item Type="DoIf">
+			<If Type="Not">
+				<Item Type="DeskletIsUsed">
+					<Directory BaseFolder="Desklets">
+						<Directory Name="AveTunes">
+							<File>iTunesWidget.dll</File>
+						</Directory>
+					</Directory>					
+				</Item>
+			</If>
+			<Then Type="LoadDesklet">
+<Desklet><DLL>desklets\avetunes\ituneswidget.dll</DLL><label><MainLabelProperties><HasShadow>1</HasShadow><Font>Arial</Font><Color>4294967295</Color><Style>0</Style><Size>14</Size><ShadowProperties><XOffset>1</XOffset><YOffset>1</YOffset><ExtraWidth>0</ExtraWidth><ExtraHeight>0</ExtraHeight><BlurRatio>1</BlurRatio><Intensity>20</Intensity><Color>4278190080</Color></ShadowProperties></MainLabelProperties><SubLabelProperties><HasShadow>1</HasShadow><Font>Arial</Font><Color>4294967295</Color><Style>0</Style><Size>14</Size><ShadowProperties><XOffset>1</XOffset><YOffset>1</YOffset><ExtraWidth>0</ExtraWidth><ExtraHeight>0</ExtraHeight><BlurRatio>1</BlurRatio><Intensity>20</Intensity><Color>4278190080</Color></ShadowProperties></SubLabelProperties><Alpha>0</Alpha><Rotation>0</Rotation><VAlign>0</VAlign><HAlign>1</HAlign><Width>200</Width><Height>75</Height><Margin>5</Margin><Position>0</Position><DrawTopDown>0</DrawTopDown><ShowSubLabel>1</ShowSubLabel><MainCaption></MainCaption><SubCaption></SubCaption><Background></Background></label><labelType>1</labelType><labelOnlyOnMouseOver>0</labelOnlyOnMouseOver><ignoreLeftClicks>0</ignoreLeftClicks><ignoreRightClicks>0</ignoreRightClicks><isClickThru>0</isClickThru><snapToGrid>0</snapToGrid><lockPosition>0</lockPosition><style>3</style><Alpha>255</Alpha><xPos>25</xPos><yPos>136</yPos><width>250</width><height>50</height><rotation>0</rotation><useColorization>0</useColorization><saturation>1</saturation><hue>100</hue><quality>2</quality><drawShadow>0</drawShadow><shadowX>4</shadowX><shadowY>4</shadowY><shadowGray>0</shadowGray><shadowColor>0</shadowColor><shadowAlpha>255</shadowAlpha><Image>desklets\avetunes\skins\GreenGlass\images\bg.png</Image><effectFile></effectFile><ownerSettings>[TMP]
+ShowTimePlayed=1
+HideWhenNotLoaded=0
+AutoHideiTunes=0
+SkinDir=7 AM
+Use5Rating=1
+UseFolderForArtWork=0
+NeverPlaySoundsInSkin=1
+</ownerSettings></Desklet>
+			</Then>
+		</Item>
+	</AfterCopySucceeded>
+
+	<AfterCopyFailed>
+		<Item Type="ShowMessage">
+			<Caption>Failed</Caption>
+			<Text>The installation failed.</Text>
+		</Item>
+	</AfterCopyFailed>
+
+</AveInstaller>

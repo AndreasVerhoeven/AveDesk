@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AveInstaller>
+
+	<About>
+		<Author>Florian Pichler (pichfl)</Author>
+		<Email>{UNKNOWN}</Email>
+		<HomePage>http://www.einserver.de</HomePage>
+
+		<Name>iPod_Shuffle_by_pichfl</Name>
+		<Version>1.0</Version>
+		<Description>(I tryed to get the Volume-Buttons working, but the Overlay doesn't work, so I decided to put some other features in there place)
+</Description>
+		<URL>http://yoursite/PichflFonts.aveinst</URL>
+		<GUID>B8690504-1F51-41EE-8A11-B485D3EF2164</GUID>
+	</About>
+
+	<Requirements>
+		<Item Type="RequiredAveDeskVersion">1.2</Item>
+		<Item Type="RequiredInstallerVersion">1.2</Item>
+	</Requirements>
+
+	<CopyInformation>
+		<Directory BaseFolder="AveDesk">
+			<Directory Name="ExtraResources">
+				<CopyAll Recursively="true"/>
+			</Directory>
+		</Directory>
+
+	</CopyInformation>
+
+	<AfterCopySucceeded>
+		<Item Type="InstallFont">
+			<Directory Name="ExtraResources">
+				<File>frutbd.ttf</File>
+				<File>frutiger.ttf</File>
+				<File>frutz.ttf</File>
+			</Directory>
+		</Item>
+
+
+		<Item Type="DoIf">
+			<If Type="AcceptText">
+				<Text>Because there are new fonts installed, AveDesk must be restarted to reconize them.
+As a consequence, you will need to double-click the file you were installing again.
+Do you want to restart AveDesk now?</Text>
+			</If>
+			<Then Type="RunScript">restart_avedesk.vbs</Then>
+		</Item>
+
+		<Item Type="ShowMessage">
+			<Caption>AveDesk</Caption>
+			<Text>AveDesk is now restarting....</Text>
+		</Item>
+
+	</AfterCopySucceeded>
+
+	<AfterCopyFailed>
+		<Item Type="ShowMessage">
+			<Caption>Failed</Caption>
+			<Text>The installation failed.</Text>
+		</Item>
+	</AfterCopyFailed>
+
+</AveInstaller>

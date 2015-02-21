@@ -1,0 +1,1 @@
+7z a -tzip ..\ad.zip @packngo.txt

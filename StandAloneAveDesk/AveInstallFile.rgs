@@ -1,0 +1,21 @@
+HKCR
+{
+	AveDesk.AveInstallFile.1 = s 'AveInstallFile Class'
+	{
+		CLSID = s '{E971912D-4653-4EF4-9177-9E1DDDF18E6C}'
+	}
+	AveDesk.AveInstallFile = s 'AveInstallFile Class'
+	{
+		CLSID = s '{E971912D-4653-4EF4-9177-9E1DDDF18E6C}'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {E971912D-4653-4EF4-9177-9E1DDDF18E6C} = s 'AveInstallFile Class'
+		{
+			ProgID = s 'AveDesk.AveInstallFile.1'
+			VersionIndependentProgID = s 'AveDesk.AveInstallFile'
+			val AppID = s '{3F44B74D-68DC-44D0-B8AA-5CE6CBD4DF71}'
+			LocalServer32 = s '%Module%'
+		}
+	}
+}

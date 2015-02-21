@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZipTest", "ZipTest.vcproj", "{0F7C3F0C-6689-4FF7-94B0-DB52C8DA8082}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 1
+		SccProjectUniqueName0 = ZipTest.vcproj
+		SccProjectName0 = \u0022$/ZipTest\u0022,\u0020OYBAAAAA
+		SccLocalPath0 = .
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0F7C3F0C-6689-4FF7-94B0-DB52C8DA8082}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0F7C3F0C-6689-4FF7-94B0-DB52C8DA8082}.Debug|Win32.Build.0 = Debug|Win32
+		{0F7C3F0C-6689-4FF7-94B0-DB52C8DA8082}.Release|Win32.ActiveCfg = Release|Win32
+		{0F7C3F0C-6689-4FF7-94B0-DB52C8DA8082}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

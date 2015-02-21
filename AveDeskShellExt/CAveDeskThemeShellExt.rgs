@@ -1,0 +1,42 @@
+HKCR
+{
+	AveDeskShellExt.CAveDeskThemeShellExt.1 = s 'CAveDeskThemeShellExt Class'
+	{
+		CLSID = s '{F756AF2A-EB0E-4D42-9495-B61BD6D99B82}'
+	}
+	AveDeskShellExt.CAveDeskThemeShellExt = s 'CAveDeskThemeShellExt Class'
+	{
+		CLSID = s '{F756AF2A-EB0E-4D42-9495-B61BD6D99B82}'
+		CurVer = s 'AveDeskShellExt.CAveDeskThemeShellExt.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {F756AF2A-EB0E-4D42-9495-B61BD6D99B82} = s 'CAveDeskThemeShellExt Class'
+		{
+			ProgID = s 'AveDeskShellExt.CAveDeskThemeShellExt.1'
+			VersionIndependentProgID = s 'AveDeskShellExt.CAveDeskThemeShellExt'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{08DB5256-EA6B-477B-969A-31D489E98355}'
+		}
+	}
+
+	NoRemove .avetheme
+	{
+		shellex
+		{
+			{BB2E617C-0920-11d1-9A0B-00C04FC2D6C1} = s '{F756AF2A-EB0E-4D42-9495-B61BD6D99B82}'
+		}
+	}
+
+	NoRemove .avedesklet
+	{
+		shellex
+		{
+			{BB2E617C-0920-11d1-9A0B-00C04FC2D6C1} = s '{F756AF2A-EB0E-4D42-9495-B61BD6D99B82}'
+		}
+	}
+}

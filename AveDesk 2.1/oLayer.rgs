@@ -1,0 +1,24 @@
+HKCR
+{
+	AveDesk.oLayer.1 = s 'oLayer Class'
+	{
+		CLSID = s '{FEA0F6C6-1F5C-406B-9CA3-A743A3205CE8}'
+	}
+	AveDesk.oLayer = s 'oLayer Class'
+	{
+		CLSID = s '{FEA0F6C6-1F5C-406B-9CA3-A743A3205CE8}'
+		CurVer = s 'AveDesk.oLayer.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {FEA0F6C6-1F5C-406B-9CA3-A743A3205CE8} = s 'oLayer Class'
+		{
+			ProgID = s 'AveDesk.oLayer.1'
+			VersionIndependentProgID = s 'AveDesk.oLayer'
+			ForceRemove 'Programmable'
+			LocalServer32 = s '%MODULE%'
+			val AppID = s '{3F44B74D-68DC-44D0-B8AA-5CE6CBD4DF71}'
+			'TypeLib' = s '{D3B05B76-65F3-4BDD-A382-543B957A4DDC}'
+		}
+	}
+}

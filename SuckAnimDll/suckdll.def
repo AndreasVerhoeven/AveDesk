@@ -1,0 +1,4 @@
+EXPORTS
+	AveCreateSuck
+	AveNextSuckStep
+	AveFreeSuck

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AveInstaller>
+
+	<About>
+		<Author>Florian Pichler (pichfl)</Author>
+		<Email>{UNKNOWN}</Email>
+		<HomePage>http://www.einserver.de</HomePage>
+
+		<Name>iPod_Shuffle_by_pichfl</Name>
+		<Version>1.0</Version>
+		<Description>(I tryed to get the Volume-Buttons working, but the Overlay doesn't work, so I decided to put some other features in there place)
+</Description>
+		<URL>http://www.einserver.de/files/private/releases/avetunesshuffle/iPod_Shuffle_by_pichfl.aveinst</URL>
+		<GUID>57863FC9-FEA5-4FFE-A4F1-E0C2125C377A</GUID>
+	</About>
+
+	<Requirements>
+		<Item Type="RequiredAveDeskVersion">1.2</Item>
+		<Item Type="RequiredInstallerVersion">1.2</Item>
+		<Item Type="PackageIsInstalled">
+			<GUID>B8690504-1F51-41EE-8A11-B485D3EF2164</GUID>
+			<OnError>
+				<Message> You will need the Pichfl Fontspackage</Message>
+				<DownloadableFile>
+					<URL>http://yoursite/PichflFonts.aveinst</URL>
+				</DownloadableFile>
+			</OnError>
+		</Item>
+		<Item Type="FileExists">
+			<Directory BaseFolder="Desklets">
+				<Directory Name="AveTunes">
+					<File>iTunesWidget.dll</File>
+				</Directory>
+			</Directory>
+			<OnError>
+				<Message> You will need the AveTunes desklet for this skin</Message>
+				<DownloadableFile>
+					<URL>http://mpj.tomaatnet.nl/AveTunes.aveinst</URL>
+				</DownloadableFile>
+			</OnError>
+		</Item>
+	</Requirements>
+
+	<CopyInformation>
+		<Directory BaseFolder="Desklets">
+			<Directory Name="AveTunes">
+				<Directory Name="Skins">
+					<Directory Name="iPod Shuffle by pichfl">
+						<CopyAll Recursively="true"/>
+					</Directory>
+				</Directory>
+			</Directory>
+		</Directory>
+
+	</CopyInformation>
+
+	<AfterCopySucceeded>
+		<Item Type="InstallFont">
+			<Directory Name="Desklets">
+				<Directory Name="AveTunes">
+					<Directory Name="Skins">
+						<Directory Name="iPod Shuffle by pichfl">
+							<Directory Name="Resources">
+								<File>frutbd.ttf</File>
+								<File>frutiger.ttf</File>
+								<File>frutz.ttf</File>
+							</Directory>
+						</Directory>
+					</Directory>
+				</Directory>
+			</Directory>
+		</Item>
+
+		<Item Type="DoIf">
+			<If Type="Not">
+				<Item Type="DeskletIsUsed">
+					<Directory BaseFolder="Desklets">
+						<Directory Name="AveTunes">
+							<File>iTunesWidget.dll</File>
+						</Directory>
+					</Directory>					
+				</Item>
+			</If>
+			<Then Type="LoadDesklet">
+<Desklet><DLL>desklets\avetunes\ituneswidget.dll</DLL><label><MainLabelProperties><HasShadow>1</HasShadow><Font>Arial</Font><Color>4294967295</Color><Style>0</Style><Size>14</Size><ShadowProperties><XOffset>1</XOffset><YOffset>1</YOffset><ExtraWidth>0</ExtraWidth><ExtraHeight>0</ExtraHeight><BlurRatio>1</BlurRatio><Intensity>20</Intensity><Color>4278190080</Color></ShadowProperties></MainLabelProperties><SubLabelProperties><HasShadow>1</HasShadow><Font>Arial</Font><Color>4294967295</Color><Style>0</Style><Size>14</Size><ShadowProperties><XOffset>1</XOffset><YOffset>1</YOffset><ExtraWidth>0</ExtraWidth><ExtraHeight>0</ExtraHeight><BlurRatio>1</BlurRatio><Intensity>20</Intensity><Color>4278190080</Color></ShadowProperties></SubLabelProperties><Alpha>0</Alpha><Rotation>0</Rotation><VAlign>0</VAlign><HAlign>1</HAlign><Width>200</Width><Height>75</Height><Margin>5</Margin><Position>0</Position><DrawTopDown>0</DrawTopDown><ShowSubLabel>1</ShowSubLabel><MainCaption></MainCaption><SubCaption></SubCaption><Background></Background></label><labelType>1</labelType><labelOnlyOnMouseOver>0</labelOnlyOnMouseOver><ignoreLeftClicks>0</ignoreLeftClicks><ignoreRightClicks>0</ignoreRightClicks><isClickThru>0</isClickThru><snapToGrid>0</snapToGrid><lockPosition>0</lockPosition><style>3</style><Alpha>255</Alpha><xPos>25</xPos><yPos>136</yPos><width>250</width><height>50</height><rotation>0</rotation><useColorization>0</useColorization><saturation>1</saturation><hue>100</hue><quality>2</quality><drawShadow>0</drawShadow><shadowX>4</shadowX><shadowY>4</shadowY><shadowGray>0</shadowGray><shadowColor>0</shadowColor><shadowAlpha>255</shadowAlpha><Image>desklets\avetunes\skins\GreenGlass\images\bg.png</Image><effectFile></effectFile><ownerSettings>[TMP]
+ShowTimePlayed=1
+HideWhenNotLoaded=0
+AutoHideiTunes=0
+SkinDir=iPod Shuffle by pichfl
+Use5Rating=1
+UseFolderForArtWork=1
+NeverPlaySoundsInSkin=1
+</ownerSettings></Desklet>
+			</Then>
+		</Item>
+
+		<Item Type="ShowBitmap">about.png</Item>
+
+	</AfterCopySucceeded>
+
+	<AfterCopyFailed>
+		<Item Type="ShowMessage">
+			<Caption>Failed</Caption>
+			<Text>The installation failed.</Text>
+		</Item>
+	</AfterCopyFailed>
+
+</AveInstaller>

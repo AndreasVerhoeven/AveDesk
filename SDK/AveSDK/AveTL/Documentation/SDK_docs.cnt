@@ -1,0 +1,146 @@
+:Base SDK_docs.hlp
+:Title The Desklet SDK
+:Index dummy=dummy.hlp ;(This is necessary when using KLinks - because of a bug in the help
+:Link dummy.hlp        ; compiler. Without this only the first keyword would be looked up!)
+1 Introduction=SHM_contents0001@SDK_docs.hlp
+1 Working of Desklets=SHM_contents0002@SDK_docs.hlp
+1 Layers
+2 Layers - Introduction=SHM_contents0003@SDK_docs.hlp
+2 Layers Overview=SHM_contents0004@SDK_docs.hlp
+2 Basic functions
+3 DeskletLayerAdd=SHM_contents0005@SDK_docs.hlp
+3 DeskletLayerCount=SHM_contents0006@SDK_docs.hlp
+3 DeskletLayerGetLayer=SHM_contents0007@SDK_docs.hlp
+3 DeskletLayerRemove=SHM_contents0008@SDK_docs.hlp
+2 Reordering functions
+3 DeskletLayerMergeAll=SHM_contents0009@SDK_docs.hlp
+3 DeskletLayerMergeVisible=SHM_contents0010@SDK_docs.hlp
+3 DeskletLayerMoveBottom=SHM_contents0011@SDK_docs.hlp
+3 DeskletLayerMoveDown=SHM_contents0012@SDK_docs.hlp
+3 DeskletLayerMoveTop=SHM_contents0013@SDK_docs.hlp
+3 DeskletLayerMoveUp=SHM_contents0014@SDK_docs.hlp
+2 Appearance functions
+3 DeskletLayerReset=SHM_contents0015@SDK_docs.hlp
+3 DeskletLayerSetAlpha=SHM_contents0016@SDK_docs.hlp
+3 DeskletLayerSetColorMatrix=SHM_contents0017@SDK_docs.hlp
+3 DeskletLayerSetHue=SHM_contents0018@SDK_docs.hlp
+3 DeskletLayerSetImage=SHM_contents0019@SDK_docs.hlp
+3 DeskletLayerSetImageFile=SHM_contents0020@SDK_docs.hlp
+3 DeskletLayerSetRotation=SHM_contents0021@SDK_docs.hlp
+3 DeskletLayerSetSaturation=SHM_contents0022@SDK_docs.hlp
+3 DeskletLayerSetVisibility=SHM_contents0023@SDK_docs.hlp
+3 DeskletLayerSetPlacement=SHM_contents0024@SDK_docs.hlp
+2 Other functions
+3 DeskletLayerSetIconState=SHM_contents0025@SDK_docs.hlp
+1 Desklet Functions
+2 Appearance functions
+3 DeskletDoAttentionAnimation=SHM_contents0026@SDK_docs.hlp
+3 DeskletGetAlpha=SHM_contents0027@SDK_docs.hlp
+3 DeskletGetLabel=SHM_contents0028@SDK_docs.hlp
+3 DeskletGetPosition=SHM_contents0029@SDK_docs.hlp
+3 DeskletGetRect=SHM_contents0030@SDK_docs.hlp
+3 DeskletGetRotation=SHM_contents0031@SDK_docs.hlp
+3 DeskletGetSize=SHM_contents0032@SDK_docs.hlp
+3 DeskletHide=SHM_contents0033@SDK_docs.hlp
+3 DeskletIsVisible=SHM_contents0034@SDK_docs.hlp
+3 DeskletSetAlpha=SHM_contents0035@SDK_docs.hlp
+3 DeskletSetImage=SHM_contents0036@SDK_docs.hlp
+3 DeskletSetImageFile=SHM_contents0037@SDK_docs.hlp
+3 DeskletSetImageOverlay=SHM_contents0038@SDK_docs.hlp
+3 DeskletSetImageOverlayFile=SHM_contents0039@SDK_docs.hlp
+3 DeskletSetLabel=SHM_contents0040@SDK_docs.hlp
+3 DeskletSetPosition=SHM_contents0041@SDK_docs.hlp
+3 DeskletSetRotation=SHM_contents0042@SDK_docs.hlp
+3 DeskletSetSize=SHM_contents0043@SDK_docs.hlp
+3 DeskletShow=SHM_contents0044@SDK_docs.hlp
+2 Control Functions
+3 DeskletLoad=SHM_contents0045@SDK_docs.hlp
+3 DeskletRemove=SHM_contents0046@SDK_docs.hlp
+2 Other Functions
+3 DeskletActivateExtendedDragDrop=SHM_contents0047@SDK_docs.hlp
+3 DeskletBrowseForImage=SHM_contents0048@SDK_docs.hlp
+3 DeskletDeactivateExtendedDragDrop=SHM_contents0049@SDK_docs.hlp
+3 DeskletDefaultConfigDialog=SHM_contents0050@SDK_docs.hlp
+3 DeskletGetParentOK=SHM_contents0051@SDK_docs.hlp
+3 DeskletGetRelativeFolder=SHM_contents0052@SDK_docs.hlp
+3 DeskletGetRootFolder=SHM_contents0053@SDK_docs.hlp
+3 DeskletLoadGDIPlusImage=SHM_contents0054@SDK_docs.hlp
+3 DeskletManager=SHM_contents0055@SDK_docs.hlp
+3 DeskletSetStatic=SHM_contents0056@SDK_docs.hlp
+3 DeskletAddPropertySheet=SHM_contents0057@SDK_docs.hlp
+2 Drag-'n-Drop Functions
+3 DeskletAddDragDropFormat=SHM_contents0058@SDK_docs.hlp
+3 DeskletRemoveDragDropFormat=SHM_contents0059@SDK_docs.hlp
+1 Helper functions
+2 GetDLLPath=SHM_contents0060@SDK_docs.hlp
+2 IsDataObjectHDROP=SHM_contents0061@SDK_docs.hlp
+2 LockHDROP=SHM_contents0062@SDK_docs.hlp
+2 ShowContextMenu=SHM_contents0063@SDK_docs.hlp
+2 UnlockHDROP=SHM_contents0064@SDK_docs.hlp
+2 WritePrivateProfileInt=SHM_contents0065@SDK_docs.hlp
+1 Structures
+2 DropStruct=SHM_contents0066@SDK_docs.hlp
+2 PropertyDialogStruct=SHM_contents0067@SDK_docs.hlp
+2 TabPage=SHM_contents0068@SDK_docs.hlp
+1 Property Pages
+2 Property Pages=SHM_contents0069@SDK_docs.hlp
+2 Default Property Pages=SHM_contents0070@SDK_docs.hlp
+2 Other Property Pages=SHM_contents0071@SDK_docs.hlp
+2 Property Pages and DLGPROCs=SHM_contents0072@SDK_docs.hlp
+1 Guidelines
+2 Guidelines Introduction=SHM_contents0073@SDK_docs.hlp
+2 Icons=SHM_contents0074@SDK_docs.hlp
+2 Layers=SHM_contents0075@SDK_docs.hlp
+2 Left-click behaviour=SHM_contents0076@SDK_docs.hlp
+2 Right-click behaviour=SHM_contents0077@SDK_docs.hlp
+2 Label=SHM_contents0078@SDK_docs.hlp
+2 Property Pages=SHM_contents0079@SDK_docs.hlp
+2 Resources=SHM_contents0080@SDK_docs.hlp
+1 Events
+2 Events Introduction=SHM_contents0081@SDK_docs.hlp
+2 Required Events
+3 OnCreate=SHM_contents0082@SDK_docs.hlp
+3 OnDestroy=SHM_contents0083@SDK_docs.hlp
+3 OnGetInformation=SHM_contents0084@SDK_docs.hlp
+3 Required Events=SHM_contents0085@SDK_docs.hlp
+2 Mouse Events
+3 OnLeftButtonClick=SHM_contents0086@SDK_docs.hlp
+3 OnRightButtonClick=SHM_contents0087@SDK_docs.hlp
+3 OnMouseMove=SHM_contents0088@SDK_docs.hlp
+3 OnMouseOn=SHM_contents0089@SDK_docs.hlp
+3 OnMouseOut=SHM_contents0090@SDK_docs.hlp
+3 OnMouseWheelForward=SHM_contents0091@SDK_docs.hlp
+3 OnMouseWheelBackward=SHM_contents0092@SDK_docs.hlp
+2 Drag-'n-Drop Events
+3 OnAcceptDropFiles=SHM_contents0093@SDK_docs.hlp
+3 OnDragEnter=SHM_contents0094@SDK_docs.hlp
+3 OnDragLeave=SHM_contents0095@SDK_docs.hlp
+3 OnDragOver=SHM_contents0096@SDK_docs.hlp
+3 OnDrop=SHM_contents0097@SDK_docs.hlp
+3 OnDragDropDataRequest=SHM_contents0098@SDK_docs.hlp
+4 Extra Information
+5 DROPEFFECT=SHM_contents0099@SDK_docs.hlp
+2 Other Events
+3 OnSave=SHM_contents0100@SDK_docs.hlp
+3 OnProcesssMessage=SHM_contents0101@SDK_docs.hlp
+3 OnAddPropertySheets=SHM_contents0102@SDK_docs.hlp
+1 Effects
+2 Effects=SHM_contents0103@SDK_docs.hlp
+2 Working of Effects=SHM_contents0104@SDK_docs.hlp
+2 Events
+3 Events=SHM_contents0105@SDK_docs.hlp
+3 Required Events
+4 OnDrawPluginInfo=SHM_contents0106@SDK_docs.hlp
+4 OnCreate=SHM_contents0107@SDK_docs.hlp
+3 Plugin Events
+4 OnConfigure=SHM_contents0108@SDK_docs.hlp
+4 OnSave=SHM_contents0109@SDK_docs.hlp
+4 OnDestroy=SHM_contents0110@SDK_docs.hlp
+3 Effect Events
+4 OnEvent=SHM_contents0111@SDK_docs.hlp
+4 BeforeDraw=SHM_contents0112@SDK_docs.hlp
+4 AfterDraw=SHM_contents0113@SDK_docs.hlp
+2 DrawPlugin SDK
+3 DrawPluginSDK=SHM_contents0114@SDK_docs.hlp
+3 DeskletRedraw=SHM_contents0115@SDK_docs.hlp
+3 DeskletSetSizeAndPosition=SHM_contents0116@SDK_docs.hlp

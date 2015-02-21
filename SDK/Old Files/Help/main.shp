@@ -1,0 +1,96 @@
+##v##00.4.50
+EditHelpFileTitle.Text=AveDesk Help
+form2.STextForeHeadline.Color=0
+form2.STextForeText.Color=0
+form2.STextBackHeadline.Color=16777215
+form2.STextBackText.Color=16777215
+form2.STextHeadlineFont.Caption=Arial
+form2.STextTextFont.Caption=Arial
+form2.sTextFontSizeForHeadline.Caption=12
+form2.sTextFontSizeForText.Caption=9
+form2.CBoxBold.Checked=1
+form2.CBoxNoForeColor.Checked=1
+form2.CBoxLanguageID.ItemIndex=0
+form2.CBoxCharSet.ItemIndex=0
+form2.EditContents.Text=Contents
+form2.EditFrontpageName.Text=Front page with index
+form2.CBoxDontMakeFrontpage.Checked=1
+form2.EditLogoPath.Text=
+form2.EditFrontpageButtonCaption.Text=Front page
+form2.RGroupHorizontalAlignment.ItemIndex=0
+form2.RGroupVerticalAlignment.ItemIndex=0
+form2.CBoxBlankLineBeforeEachHeading.Checked=1
+form2.CBoxMakeFrontPageButton.Checked=0
+form2.SpinEditFrontpageIDnumber.Value=9999
+form2.CBoxAddAboutMenu.Checked=0
+form2.EditAboutMenuCaption.Text=&About this help file...
+form2.CBoxPopupPagesForAboutMenu.Tag=-1
+form2.EditConstantNameFilePrefix.Text=pageConstants_
+form2.EditConstantNameFileExt.Text=txt
+form5.sTextColor1=0
+form5.sTextColor2=9743070
+form5.sTextColor3=12386403
+form5.sTextColor4=255
+form5.sTextColor5=8421376
+form5.sTextColor6=8650752
+form5.sTextColor7=33280
+form5.sTextColor8=32896
+form5.sTextColor9=13026246
+form5.sTextColor10=16711680
+form5.sTextColor11=65280
+form5.sTextColor12=8651007
+form5.sTextColor13=16777215
+form5.sTextColor14=16757429
+form5.sTextColor15=9764863
+form5.sTextColor16=8421504
+form5.sTextComment1=
+form5.sTextComment2=
+form5.sTextComment3=
+form5.sTextComment4=
+form5.sTextComment5=
+form5.sTextComment6=
+form5.sTextComment7=
+form5.sTextComment8=
+form5.sTextComment9=
+form5.sTextComment10=
+form5.sTextComment11=
+form5.sTextComment12=
+form5.sTextComment13=
+form5.sTextComment14=
+form5.sTextComment15=
+form5.sTextComment16=
+NumOfPages=2
+------------ end of project settings / page settings follow ------------
+pageC.pages[0].ImageIndex=-1
+pageTitle(0).Text=Introduction
+getPageConstantLabel(0).Caption=
+getPageContentHeaderLabel(0).Caption=
+pageKeywords(0).Text=
+pageC.pages[1].ImageIndex=-1
+pageTitle(1).Text=Getting started
+getPageConstantLabel(1).Caption=
+getPageContentHeaderLabel(1).Caption=
+pageKeywords(1).Text=
+pageC.pages[2].ImageIndex=-1
+pageTitle(2).Text=Desklets Control Panel
+getPageConstantLabel(2).Caption=
+getPageContentHeaderLabel(2).Caption=
+pageKeywords(2).Text=
+------------ end of page titles / full text of pages follow ------------
+----- SHM ---- page 0 ---- 
+<l>Welcome to <b>AveDesk</b>
+<i>A desktop enhancement utility</i>
+
+AveDesk is an utility that can add <i>interactive icons</i>, so called desklets, to your desktop.
+
+Each desklet is a little plug in that can be virtually anything: a desklet can be an e-mailchecker, a weather forecast icon, a calendar, a simple shortcut, etc. It all depends on the imagination of the programmer. Desklets can be set to acts as a normal window, to be always on top, to be always on bottom or to acts as a desktop icon.
+
+Currently, AveDesk is totally compatible with \{bmc shortcut.bmp\} {\uldb Object Dock}{\v !ExecFile(http://www.objectdock.com,,9,)} docklets, which can be downloaded at \{bmc shortcut.bmp\} {\uldb DockEx}{\v !ExecFile(http://www.dockex.com,,9,)} or \{bmc shortcut.bmp\} {\uldb Wincustomize}{\v !ExecFile(http://www.wincustomize.com,,9,)} .
+----- SHM ---- page 1 ---- 
+After AveDesk installed an executed, you can configure AveDesk by accessing the <jump=SHM_contents0003>Desklets Control Panel</jump>.
+This is done by using the icon in the system notification area. You can either double-click on the icon or right-click it and select the <b><i>Desklets Control Panel...</i></b> item from the popup menu.
+
+In the <i>Control Panel</i> you can add desklets, configure AveDesk or exit AveDesk.
+
+See for more information, <jump=SHM_contents0003>Desklets Control Panel</jump>.
+----- SHM ---- page 2 ---- 

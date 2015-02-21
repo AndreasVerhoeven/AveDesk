@@ -1,0 +1,8 @@
+cwd=E:\Docklet-SDK\Test, buf=E:\Docklet-SDK\Test\Debug\icons\MeterHilite.png
+image=0X9CE700
+cwd=E:\Docklet-SDK\Test, buf=E:\Docklet-SDK\Test\Debug\icons\MeterHilite.png
+image=0X9CEF88
+cwd=E:\Docklet-SDK\Test, buf=E:\Docklet-SDK\Test\Debug\icons\MeterHilite.png
+image=0X9CEFA0
+cwd=E:\Docklet-SDK\Test, buf=E:\Docklet-SDK\Test\Debug\icons\MeterHilite.png
+image=0X9CEFB8

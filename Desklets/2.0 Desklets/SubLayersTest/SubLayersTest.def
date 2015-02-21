@@ -1,0 +1,7 @@
+EXPORTS
+	OnGetInformation
+	OnCreate
+	OnDestroy
+	
+	OnLeftButtonClick
+	OnLayerMouseMove

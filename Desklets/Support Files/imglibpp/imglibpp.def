@@ -1,0 +1,7 @@
+EXPORTS
+
+	HBitmapToCppGDIPlusBitmap
+
+	OpenIconFile
+	WriteIconEntry
+	CloseIconFile

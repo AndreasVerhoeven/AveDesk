@@ -1,0 +1,15 @@
+AveControls		contains the sources for the AVECONTROLS.DLL library.
+AveDesk 2.1		contains the current (beta) files for the 2.0 and 2.1 branch.
+AveDeskShellExt		contains the files for the avedesk shell extension for .avedesklet, .aveinst and
+			.avetheme preview generation in Explorer.
+aveimagehelper		contains the aveimg.dll DLL file.
+Desklets		contains ALL "Ave" desklets for AveDesk.
+Documents		contains various documents collected over time.
+Images			contains various images collected over time.
+Install Packs		contains installation packs for various stuff.
+PidlShortcut		contains the `holy` pidlshortcut desklet sources. Includes AutoMounter,
+			DesktopInstaller and DesktopModule code.
+SDK			contains any AveDesk SDK related files. Includes old files and the current
+			AveSDK.
+zlib			contains the zlib unzip/zip library files.
+

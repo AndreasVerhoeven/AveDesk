@@ -1,0 +1,24 @@
+HKCR
+{
+	AveDesk.Application.1 = s 'Application Class'
+	{
+		CLSID = s '{F47B7FC0-7482-49E0-9F16-7D6D8C9444DE}'
+	}
+	AveDesk.Application = s 'Application Class'
+	{
+		CLSID = s '{F47B7FC0-7482-49E0-9F16-7D6D8C9444DE}'
+		CurVer = s 'AveDesk.Application.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {F47B7FC0-7482-49E0-9F16-7D6D8C9444DE} = s 'Application Class'
+		{
+			ProgID = s 'AveDesk.Application.1'
+			VersionIndependentProgID = s 'AveDesk.Application'
+			ForceRemove 'Programmable'
+			LocalServer32 = s '%MODULE%'
+			val AppID = s '{3F44B74D-68DC-44D0-B8AA-5CE6CBD4DF71}'
+			'TypeLib' = s '{D3B05B76-65F3-4BDD-A382-543B957A4DDC}'
+		}
+	}
+}

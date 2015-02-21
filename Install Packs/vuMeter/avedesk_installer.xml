@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AveInstaller>
+
+	<About>
+		<Author>Hakan Erduman</Author>
+		<Email></Email>
+		<HomePage></HomePage>
+
+		<Name>vuMeter</Name>
+		<Version>1.1</Version>
+		<Description>Its a small volume meter widget for ObjectDock and AveDesk. Like the scales you get on older hifi equipment. Its skinnable by drawing a lot of graphics and editing an ini-File. I always wanted to have that on my dock or desktop.</Description>
+		<URL>http://www.mpj.tomaatnet.nl/vuMeter.dll</URL>
+		<GUID>01F7BB22-5536-4B46-8467-5119F5BD4BF0</GUID>
+	</About>
+
+	<Requirements>
+		<Item Type="RequiredAveDeskVersion">1.2</Item>
+		<Item Type="RequiredInstallerVersion">1.2</Item>
+	</Requirements>
+
+	<BeforeCopy>
+		<Item Type="SuspendDesklet">
+			<Directory BaseFolder="Desklets">
+				<Directory Name="vuMeter">
+					<File>vuMeter.dll</File>
+				</Directory>
+			</Directory>
+		</Item>
+	</BeforeCopy>
+	
+	<CopyInformation>
+		<Directory BaseFolder="Desklets">
+			<Directory Name="vuMeter">
+				<File Alias="DLL">vuMeter.dll</File>
+				<File>vuMeter.chm</File>
+				<Directory Name="Skins">
+					<CopyAll Recursively="yes"/>
+				</Directory>
+			</Directory>
+		</Directory>
+
+	</CopyInformation>
+
+	<AfterCopy>
+		<Item Type="ShowBitmap">About.png</Item>
+		<Item Type="DoIf">
+			<If Type="Not">
+				<Item Type="DeskletIsUsed">
+					<Directory BaseFolder="Desklets">
+						<Directory Name="vuMeter">
+							<File>vuMeter.dll</File>
+						</Directory>
+					</Directory>
+				</Item>
+			</If>
+			<Then Type="LoadDesklet">
+				<Desklet>
+					<DLL>Desklets/vuMeter/vuMeter.dll</DLL>
+				</Desklet>
+			</Then>
+		</Item>
+	</AfterCopy>
+
+	<AfterCopyFailed>
+		<Item Type="ShowMessage">
+			<Caption>Failed</Caption>
+			<Text>The installation failed.</Text>
+		</Item>
+	</AfterCopyFailed>
+
+</AveInstaller>

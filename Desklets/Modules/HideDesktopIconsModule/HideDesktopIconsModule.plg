@@ -1,0 +1,33 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: HideDesktopIconsModule - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "c:\temp\RSP1CE.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "HIDEDESKTOPICONSMODULE_EXPORTS" /Fp"Release/HideDesktopIconsModule.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\Test\docs\SDK\HideDesktopIconsModule\HideDesktopIconsModule.cpp"
+]
+Creating command line "cl.exe @c:\temp\RSP1CE.tmp" 
+Creating temporary file "c:\temp\RSP1CF.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"Release/HideDesktopIconsModule.pdb" /machine:I386 /def:".\HideDesktopIconsModule.def" /out:"f:\ad11release\modules\HideDesktopIconsModule.dll" /implib:"Release/HideDesktopIconsModule.lib" 
+.\Release\HideDesktopIconsModule.obj
+]
+Creating command line "link.exe @c:\temp\RSP1CF.tmp"
+<h3>Output Window</h3>
+Compiling...
+HideDesktopIconsModule.cpp
+Linking...
+   Creating library Release/HideDesktopIconsModule.lib and object Release/HideDesktopIconsModule.exp
+
+
+
+<h3>Results</h3>
+HideDesktopIconsModule.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
